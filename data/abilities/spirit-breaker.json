@@ -1,1 +1,124 @@
-{"id":"spirit-breaker","talents":[{"level":25,"option1":"+800 Health","option2":"+25% Greater Bash Damage"},{"level":20,"option1":"+175 Charge of Darkness Move Speed","option2":"+10% Greater Bash Chance"},{"level":15,"option1":"+40 Damage","option2":"-4.0s Bulldoze Cooldown"},{"level":10,"option1":"+4 Armor","option2":"+500 Night Vision"}],"abilities":[{"cooldown":"17 / 15 / 13 / 11","desc":"Spirit Breaker fixes his sight on an enemy unit and starts charging through all objects.  All enemy units passed through and the targeted unit will be hit by a Greater Bash.  If the targeted unit dies, Spirit Breaker will change his target to the nearest enemy unit to that location.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"spirit-breaker-charge-of-darkness","manacost":"120","name":"Charge of Darkness","notes":"Spirit Breaker gains shared vision of the target.","stats":{"CHARGE BONUS SPEED":"300 / 325 / 350 / 375","STUN DURATION":"1.5 / 1.8 / 2.1 / 2.4","COOLDOWN":"7.0","CAST POINT":"0.3s"}},{"cooldown":"22 / 20 / 18 / 16","desc":"Spirit Breaker gains movement speed and status resistance to ram through enemies. Can be used while charging.","effects":{"ABILITY":"No Target","DISPELLABLE":"Yes"},"id":"spirit-breaker-bulldoze","manacost":"30 / 40 / 50 / 60","name":"Bulldoze","notes":null,"stats":{"MOVEMENT SPEED":"10% / 15% / 20% / 25%","STATUS RESISTANCE":"35% / 45% / 55% / 65%","DURATION":"8"}},{"cooldown":"1.5","desc":"Gives a chance to stun and knockback an enemy unit on an attack. Deals a percentage of movement speed as damage. Deals 1.5x damage to creeps.","effects":{"ABILITY":"Passive","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Strong Dispels Only"},"id":"spirit-breaker-greater-bash","manacost":null,"name":"Greater Bash","notes":"Does not stack with Skull Basher.","stats":{"CHANCE TO BASH":"17%","MOVEMENT SPEED AS DAMAGE":"15% / 20% / 25% / 30%","STUN DURATION":"0.9 / 1.2 / 1.5 / 1.8","KNOCKBACK DURATION":"0.5"}},{"cooldown":"20","desc":"Barathrum distorts the fabric of planar space, increasing his own magic resistance and briefly redirecting one targeted enemy hero spells in a radius towards him.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"spirit-breaker-planar-pocket","manacost":"75","name":"Planar Pocket","notes":null,"stats":{"RADIUS":"900","DURATION":"6","SELF MAGIC RESISTANCE":"25%","CAST POINT":"0s"}},{"cooldown":"90 / 70 / 50","desc":"Spirit Breaker slips into the nether realm, reappearing next to his hapless victim. Upon reappearing, a Greater Bash of the current level occurs and deals bonus damage. Knocks back for double the normal distance.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Strong Dispels Only"},"id":"spirit-breaker-nether-strike","manacost":"125 / 150 / 175","name":"Nether Strike","notes":"Spirit Breaker appears behind the target to deliver the bash.","stats":{"BONUS DAMAGE":"0","BREAK DURATION":"0.0","SPELL IMMUNITY DURATION":"0.0","CAST POINT":"1s"}}]}
+{
+  "id":"spirit-breaker",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+800 Health",
+      "option2":"+25% Greater Bash Damage"
+    },
+    {
+      "level":20,
+      "option1":"+175 Charge of Darkness Move Speed",
+      "option2":"+10% Greater Bash Chance"
+    },
+    {
+      "level":15,
+      "option1":"+40 Damage",
+      "option2":"-4.0s Bulldoze Cooldown"
+    },
+    {
+      "level":10,
+      "option1":"+4 Armor",
+      "option2":"+500 Night Vision"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"17 / 15 / 13 / 11",
+      "desc":"Spirit Breaker fixes his sight on an enemy unit and starts charging through all objects.  All enemy units passed through and the targeted unit will be hit by a Greater Bash.  If the targeted unit dies, Spirit Breaker will change his target to the nearest enemy unit to that location.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"spirit-breaker-charge-of-darkness",
+      "manacost":"120",
+      "name":"Charge of Darkness",
+      "notes":"Spirit Breaker gains shared vision of the target.",
+      "stats":{
+        "CHARGE BONUS SPEED":"300 / 325 / 350 / 375",
+        "STUN DURATION":"1.5 / 1.8 / 2.1 / 2.4",
+        "COOLDOWN":"7.0",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"22 / 20 / 18 / 16",
+      "desc":"Spirit Breaker gains movement speed and status resistance to ram through enemies. Can be used while charging.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"spirit-breaker-bulldoze",
+      "manacost":"30 / 40 / 50 / 60",
+      "name":"Bulldoze",
+      "notes":null,
+      "stats":{
+        "MOVEMENT SPEED":"10% / 15% / 20% / 25%",
+        "STATUS RESISTANCE":"35% / 45% / 55% / 65%",
+        "DURATION":"8"
+      }
+    },
+    {
+      "cooldown":"1.5",
+      "desc":"Gives a chance to stun and knockback an enemy unit on an attack. Deals a percentage of movement speed as damage. Deals 1.5x damage to creeps.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"spirit-breaker-greater-bash",
+      "manacost":null,
+      "name":"Greater Bash",
+      "notes":"Does not stack with Skull Basher.",
+      "stats":{
+        "CHANCE TO BASH":"17%",
+        "MOVEMENT SPEED AS DAMAGE":"15% / 20% / 25% / 30%",
+        "STUN DURATION":"0.9 / 1.2 / 1.5 / 1.8",
+        "KNOCKBACK DURATION":"0.5"
+      }
+    },
+    {
+      "cooldown":"20",
+      "desc":"Barathrum distorts the fabric of planar space, increasing his own magic resistance and redirecting the first targeted enemy hero spell in a radius towards him. Effect ends when the first spell is redirected.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"spirit-breaker-planar-pocket",
+      "manacost":"75",
+      "name":"Planar Pocket",
+      "notes":null,
+      "stats":{
+        "RADIUS":"900",
+        "DURATION":"6",
+        "SELF MAGIC RESISTANCE":"25%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"90 / 70 / 50",
+      "desc":"Spirit Breaker slips into the nether realm, reappearing next to his hapless victim. Upon reappearing, a Greater Bash of the current level occurs and deals bonus damage. Knocks back for double the normal distance.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"spirit-breaker-nether-strike",
+      "manacost":"125 / 150 / 175",
+      "name":"Nether Strike",
+      "notes":"Spirit Breaker appears behind the target to deliver the bash.",
+      "stats":{
+        "BONUS DAMAGE":"0",
+        "BREAK DURATION":"0.0",
+        "SPELL IMMUNITY DURATION":"0.0",
+        "CAST POINT":"1s"
+      }
+    }
+  ]
+}

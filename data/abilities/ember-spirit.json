@@ -1,1 +1,128 @@
-{"id":"ember-spirit","talents":[{"level":25,"option1":"-12s Remnant Charge Restore Time","option2":"2 Sleight of Fist Charges"},{"level":20,"option1":"+65 Sleight of Fist Hero Damage","option2":"+1 Searing Chains Target"},{"level":15,"option1":"+1.0s Searing Chains Duration","option2":"+50 Flame Guard DPS"},{"level":10,"option1":"+200 Flame Guard Absorption","option2":"+15 Damage"}],"abilities":[{"cooldown":"13 / 12 / 11 / 10","desc":"Ember Spirit unleashes fiery bolas that wrap around nearby enemies, anchoring them in place and dealing damage each second.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"ember-spirit-searing-chains","manacost":"80 / 90 / 100 / 110","name":"Searing Chains","notes":"Does not affect Spell Immune or invisible units.","stats":{"DURATION":"1.5 / 2.0 / 2.5 / 3.0","RADIUS":"400","DAMAGE PER SECOND":"50 / 70 / 90 / 110","UNIT COUNT":"2","CAST POINT":"0s"}},{"cooldown":"15 / 12 / 9 / 6","desc":"Ember Spirit dashes around with blazing speed, attacking all enemies in the targeted area of effect, then returning to his start location.  Deals bonus damage to heroes.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes"},"id":"ember-spirit-sleight-of-fist","manacost":"50","name":"Sleight of Fist","notes":"Abilities and items can be used while Sleight of Fist is active.","stats":{"RADIUS":"250 / 350 / 450 / 550","BONUS HERO DAMAGE":"45 / 80 / 115 / 150","ATTACK INTERVAL":"0.2","CAST POINT":"0s"}},{"cooldown":"35","desc":"Ember Spirit surrounds himself with a ring of fire that consumes incoming magic damage, absorbing a percentage of the damage taken.  Flame Guard deals damage per second in an area around Ember Spirit while Flame Guard is active.  If the shield is broken, the damage is also lost.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"ember-spirit-flame-guard","manacost":"65 / 80 / 95 / 110","name":"Flame Guard","notes":"Magic damage reduction is calculated before any reductions.","stats":{"DURATION":"11 / 14 / 17 / 20","RADIUS":"400","MAGIC ABSORB":"85 / 190 / 295 / 400","DAMAGE PER SECOND":"25 / 35 / 45 / 55","PERCENTAGE ABSORBED":"70%","CAST POINT":"0s"}},{"cooldown":"0","desc":"Select the Fire Remnant to arrive at.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"ember-spirit-activate-fire-remnant","manacost":"100 / 125 / 150","name":"Activate Fire Remnant","notes":null,"stats":{}},{"cooldown":"0.5","desc":"Sends a Fire Remnant that runs to the target location at 250% Ember Spirit's speed.  Using Activate Fire Remnant, Ember Spirit will dash out to all active Fire Remnants, destroying them and dealing damage in an area and then moving to the nearest Remnant.  Ember Spirit will end at the Remnant closest to the targeted location.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"ember-spirit-fire-remnant","manacost":"0","name":"Fire Remnant","notes":"Starts with 3 charges (maximum).","stats":{"DAMAGE":"100 / 200 / 300","RADIUS":"450","DURATION":"45.0","RANGE":"3000","SPEED MULTIPLIER":"2","MAX CHARGES":"5","BURN RADIUS":"600","DAMAGE PER SECOND":"45","CHARGE RADIUS":"400","CAST POINT":"0.1s"}}]}
+{
+  "id":"ember-spirit",
+  "talents":[
+    {
+      "level":25,
+      "option1":"-12s Remnant Charge Restore Time",
+      "option2":"2 Sleight of Fist Charges"
+    },
+    {
+      "level":20,
+      "option1":"+55 Sleight of Fist Hero Damage",
+      "option2":"+1 Searing Chains Target"
+    },
+    {
+      "level":15,
+      "option1":"+1.0s Searing Chains Duration",
+      "option2":"+50 Flame Guard DPS"
+    },
+    {
+      "level":10,
+      "option1":"+200 Flame Guard Absorption",
+      "option2":"+12 Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"13 / 12 / 11 / 10",
+      "desc":"Ember Spirit unleashes fiery bolas that wrap around nearby enemies, anchoring them in place and dealing damage each second.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"ember-spirit-searing-chains",
+      "manacost":"80 / 90 / 100 / 110",
+      "name":"Searing Chains",
+      "notes":"Does not affect Spell Immune or invisible units.",
+      "stats":{
+        "DURATION":"1.5 / 2.0 / 2.5 / 3.0",
+        "RADIUS":"400",
+        "DAMAGE PER SECOND":"50 / 70 / 90 / 110",
+        "UNIT COUNT":"2",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"15 / 12 / 9 / 6",
+      "desc":"Ember Spirit dashes around with blazing speed, attacking all enemies in the targeted area of effect, then returning to his start location.  Deals bonus damage to heroes.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"ember-spirit-sleight-of-fist",
+      "manacost":"50",
+      "name":"Sleight of Fist",
+      "notes":"Abilities and items can be used while Sleight of Fist is active.",
+      "stats":{
+        "RADIUS":"250 / 350 / 450 / 550",
+        "BONUS HERO DAMAGE":"45 / 80 / 115 / 150",
+        "ATTACK INTERVAL":"0.2",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"35",
+      "desc":"Ember Spirit surrounds himself with a ring of fire that consumes incoming magic damage, absorbing a percentage of the damage taken.  Flame Guard deals damage per second in an area around Ember Spirit while Flame Guard is active.  If the shield is broken, the damage is also lost.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"ember-spirit-flame-guard",
+      "manacost":"65 / 80 / 95 / 110",
+      "name":"Flame Guard",
+      "notes":"Magic damage reduction is calculated before any reductions.",
+      "stats":{
+        "DURATION":"11 / 14 / 17 / 20",
+        "RADIUS":"400",
+        "MAGIC ABSORB":"85 / 190 / 295 / 400",
+        "DAMAGE PER SECOND":"25 / 35 / 45 / 55",
+        "PERCENTAGE ABSORBED":"70%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Select the Fire Remnant to arrive at.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"ember-spirit-activate-fire-remnant",
+      "manacost":"100 / 125 / 150",
+      "name":"Activate Fire Remnant",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"0.5",
+      "desc":"Sends a Fire Remnant that runs to the target location at 250% Ember Spirit\\'s speed.  Using Activate Fire Remnant, Ember Spirit will dash out to all active Fire Remnants, destroying them and dealing damage in an area and then moving to the nearest Remnant.  Ember Spirit will end at the Remnant closest to the targeted location.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"ember-spirit-fire-remnant",
+      "manacost":"0",
+      "name":"Fire Remnant",
+      "notes":"Starts with 3 charges (maximum).",
+      "stats":{
+        "DAMAGE":"100 / 200 / 300",
+        "RADIUS":"450",
+        "DURATION":"45.0",
+        "RANGE":"3000",
+        "SPEED MULTIPLIER":"2",
+        "MAX CHARGES":"5",
+        "BURN RADIUS":"600",
+        "DAMAGE PER SECOND":"45",
+        "CHARGE RADIUS":"400",
+        "CAST POINT":"0.1s"
+      }
+    }
+  ]
+}

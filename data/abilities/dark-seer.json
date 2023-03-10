@@ -1,1 +1,124 @@
-{"id":"dark-seer","talents":[{"level":25,"option1":"350 AoE Surge","option2":"+2 Ion Shell Charges "},{"level":20,"option1":"+50 Ion Shell Damage","option2":"-40.0s Wall of Replica Cooldown"},{"level":15,"option1":"Ion Shell Provides +225 Max Health","option2":"+100 Vacuum AoE"},{"level":10,"option1":"+50 Ion Shell Radius","option2":"+20% Wall of Replica Illusion Damage"}],"abilities":[{"cooldown":"60 / 50 / 40 / 30","desc":"Dark Seer creates a vacuum over the target area that sucks in enemy units, disrupting them and dealing damage.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"dark-seer-vacuum","manacost":"60 / 90 / 120 / 150","name":"Vacuum","notes":"Trees near the center of the vacuum will be destroyed.","stats":{"RADIUS":"400 / 450 / 500 / 550","DAMAGE":"100 / 150 / 200 / 250","CAST POINT":"0.4s"}},{"cooldown":"9","desc":"Surrounds the target unit with a bristling shield that damages enemy units in an area around it.","effects":{"ABILITY":"Unit Target","AFFECTS":"Creeps, Heroes","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"dark-seer-ion-shell","manacost":"110 / 120 / 130 / 140","name":"Ion Shell","notes":"If cast on a unit that already has Ion Shell, the new Shell replaces the old one.","stats":{"RADIUS":"275","DAMAGE PER SECOND":"30 / 50 / 70 / 90","DURATION":"21 / 24 / 27 / 30","CAST POINT":"0.4s"}},{"cooldown":"19 / 16 / 13 / 10","desc":"Charges a target friendly unit with power, giving it a brief burst of movement speed and removes unit collisions. Allows the unit to reach maximum movement speed and cannot be slowed.","effects":{"ABILITY":"Unit Target","AFFECTS":"Allied Units","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Yes"},"id":"dark-seer-surge","manacost":"35 / 40 / 45 / 50","name":"Surge","notes":"Units with Surge cannot be slowed unless the Surge effect is removed.","stats":{"DURATION":"3 / 4 / 5 / 6","CAST POINT":"0.4s"}},{"cooldown":"9","desc":"Passive cooldown attack. Causes Dark Seer's next attack on a hero to have True Strike, knock an illusion out of the victim, damaging and stunning them based on how far Dark Seer has moved in the past 3.0 seconds. Max power is reached after 900 distance moved.","effects":{"ABILITY":"Passive","AFFECTS":"Enemy Units"},"id":"dark-seer-normal-punch","manacost":null,"name":"Normal Punch","notes":null,"stats":{"MAX STUN DURATION":"2.25","MAX KNOCKBACK DISTANCE":"350","ILLUSION DURATION":"6.0","MAX DAMAGE":"450"}},{"cooldown":"100","desc":"Raises a wall of warping light that slows and creates replicas of any enemy hero who crosses it. Enemy replicas serve at the Dark Seer's will. Replicas last until they are destroyed, or until the wall's duration ends.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes"},"id":"dark-seer-wall-of-replica","manacost":"125 / 250 / 375","name":"Wall of Replica","notes":"Wall of Replica will not slow spell-immune enemies.","stats":{"WALL DURATION":"30.0","REPLICA DAMAGE":"70% / 85% / 100%","REPLICA DAMAGE TAKEN":"200%","MOVEMENT SLOW":"50% / 60% / 70%","SLOW DURATION":"1.0","CAST POINT":"0.2s"}}]}
+{
+  "id":"dark-seer",
+  "talents":[
+    {
+      "level":25,
+      "option1":"350 AoE Surge",
+      "option2":"+2 Ion Shell Charges"
+    },
+    {
+      "level":20,
+      "option1":"+50 Ion Shell Damage",
+      "option2":"-40.0s Wall of Replica Cooldown"
+    },
+    {
+      "level":15,
+      "option1":"Ion Shell Provides +250 Max Health",
+      "option2":"+100 Vacuum AoE"
+    },
+    {
+      "level":10,
+      "option1":"+50 Ion Shell Radius",
+      "option2":"+20% Wall of Replica Illusion Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"60 / 50 / 40 / 30",
+      "desc":"Dark Seer creates a vacuum over the target area that sucks in enemy units, disrupting them and dealing damage.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"dark-seer-vacuum",
+      "manacost":"60 / 90 / 120 / 150",
+      "name":"Vacuum",
+      "notes":"Trees near the center of the vacuum will be destroyed.",
+      "stats":{
+        "RADIUS":"400 / 450 / 500 / 550",
+        "DAMAGE":"100 / 150 / 200 / 250",
+        "CAST POINT":"0.4s"
+      }
+    },
+    {
+      "cooldown":"9",
+      "desc":"Surrounds the target unit with a bristling shield that damages enemy units in an area around it.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Creeps, Heroes",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"dark-seer-ion-shell",
+      "manacost":"110 / 120 / 130 / 140",
+      "name":"Ion Shell",
+      "notes":"If cast on a unit that already has Ion Shell, the new Shell replaces the old one.",
+      "stats":{
+        "RADIUS":"275",
+        "DAMAGE PER SECOND":"30 / 50 / 70 / 90",
+        "DURATION":"21 / 24 / 27 / 30",
+        "CAST POINT":"0.4s"
+      }
+    },
+    {
+      "cooldown":"18 / 15 / 12 / 9",
+      "desc":"Charges a target friendly unit with power, giving it a brief burst of phased movement speed. Allows the unit to reach maximum movement speed and cannot be slowed.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Allied Units",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"dark-seer-surge",
+      "manacost":"35 / 40 / 45 / 50",
+      "name":"Surge",
+      "notes":"Units with Surge cannot be slowed unless the Surge effect is removed.",
+      "stats":{
+        "DURATION":"3 / 4 / 5 / 6",
+        "CAST POINT":"0.4s"
+      }
+    },
+    {
+      "cooldown":"9",
+      "desc":"Passive ability. Causes Dark Seer\\'s next attack on a hero to have True Strike, knock a replica out of the victim, damaging and stunning them based on how far Dark Seer has moved in the past 3.0 seconds. Max power is reached after 900 distance moved.",
+      "effects":{
+        "ABILITY":"Passive",
+        "AFFECTS":"Enemy Units",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"dark-seer-normal-punch",
+      "manacost":null,
+      "name":"Normal Punch",
+      "notes":null,
+      "stats":{
+        "MAX STUN DURATION":"2",
+        "MAX KNOCKBACK DISTANCE":"350",
+        "ILLUSION DURATION":"6.0",
+        "MAX DAMAGE":"450"
+      }
+    },
+    {
+      "cooldown":"100",
+      "desc":"Raises a wall of warping light that slows and creates replicas of any enemy hero who crosses it. Enemy replicas serve at the Dark Seer\\'s will. Replicas last until they are destroyed, or until the wall\\'s duration ends.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"dark-seer-wall-of-replica",
+      "manacost":"125 / 250 / 375",
+      "name":"Wall of Replica",
+      "notes":"Wall of Replica will not slow spell-immune enemies.",
+      "stats":{
+        "WALL DURATION":"30.0",
+        "REPLICA DAMAGE":"70% / 85% / 100%",
+        "REPLICA DAMAGE TAKEN":"200%",
+        "MOVEMENT SLOW":"50% / 60% / 70%",
+        "SLOW DURATION":"1.0",
+        "CAST POINT":"0.2s"
+      }
+    }
+  ]
+}

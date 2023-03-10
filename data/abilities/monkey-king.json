@@ -1,1 +1,166 @@
-{"id":"monkey-king","talents":[{"level":25,"option1":"Additional Wukong's Command Ring","option2":"0 Cooldown Primal Spring"},{"level":20,"option1":"-7.0s Boundless Strike Cooldown","option2":"+2 Jingu Mastery Charges"},{"level":15,"option1":"+130 Jingu Mastery Damage","option2":"+450 Tree Dance Cast Range"},{"level":10,"option1":"+0.3s Boundless Strike Stun Duration","option2":"+0.2s Mischief Invulnerability Duration"}],"abilities":[{"cooldown":"28 / 26 / 24 / 22","desc":"Monkey King enlarges his staff and slams it against the ground, stunning enemies in a line and damaging them with a critical hit based on his attack. Has True Strike.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No"},"id":"monkey-king-boundless-strike","manacost":"100","name":"Boundless Strike","notes":"Does not affect spell-immune enemies.","stats":{"STUN DURATION":"1","CRITICAL DAMAGE":"135% / 165% / 195% / 225%","DISTANCE":"1100","CAST POINT":"0.4s"}},{"cooldown":"1.45 / 1.3 / 1.15 / 1.0","desc":"Monkey King jumps to a tree and perches atop it. While perched, he gains the Primal Spring ability-a channeled leap attack. If Monkey King's tree is destroyed, he falls and is stunned for 4 seconds. Taking damage from player controlled units or Roshan while on the ground puts Tree Dance on cooldown.","effects":{"ABILITY":"Unit Target"},"id":"monkey-king-tree-dance","manacost":"0","name":"Tree Dance","notes":"Right-clicking the ground will have Monkey King drop from the tree.","stats":{"DISTANCE":"1000","DAMAGE COOLDOWN":"3.0","PRIMAL SPRING DAMAGE":"140 / 210 / 280 / 350","PRIMAL SPRING SLOW":"20% / 40% / 60% / 80%","CAST POINT":"0.1s"}},{"cooldown":"20 / 18 / 16 / 14","desc":"Monkey King springs out from his tree perch, damaging and slowing enemies in the area where he lands. Damage and slow amounts are in proportion to channel duration.","effects":{"ABILITY":"Channelled, Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"monkey-king-primal-spring","manacost":"100","name":"Primal Spring","notes":null,"stats":{"DAMAGE":"140 / 210 / 280 / 350","MOVEMENT SLOW":"20% / 40% / 60% / 80%","MAX SLOW DURATION":"4.0","CAST POINT":"0s"}},{"cooldown":"0","desc":"Monkey King's attacks awaken the Jingu Bang's power. Upon the fourth hit on the same enemy hero, Monkey King earns four charged attacks that have bonus damage and lifesteal.","effects":{"ABILITY":"Passive","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"monkey-king-jingu-mastery","manacost":null,"name":"Jingu Mastery","notes":"Hit charges on enemies cannot be dispelled.","stats":{"REQUIRED HITS":"4","COUNTER DURATION":"7 / 8 / 9 / 10","CHARGES":"4","BONUS DAMAGE":"40 / 70 / 100 / 130","BONUS LIFESTEAL":"25% / 40% / 55% / 70%"}},{"cooldown":"15","desc":"Changes Monkey King's shape to deceive opponents, using the environment nearby as inspiration for the disguise. Taking damage, attacking, or using any item or ability breaks Monkey King's disguise. Grants damage immunity for 0.2 seconds upon transforming.","effects":{"ABILITY":"No Target"},"id":"monkey-king-mischief","manacost":"0","name":"Mischief","notes":"If transformed into a courier, Monkey King matches the movement speed of the courier.","stats":{"MOVE SPEED":"200","CAST POINT":"0s"}},{"cooldown":"120 / 100 / 80","desc":"Monkey King creates a circular formation of soldiers that spread out from his position. If Monkey King leaves the area his soldiers disperse. The soldiers have Monkey King's attack and only target heroes. Monkey King is granted bonus armor for the spell's duration.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Physical"},"id":"monkey-king-wukong's-command","manacost":"100","name":"Wukong's Command","notes":"Soldiers do not copy Basher or Abyssal.","stats":{"BONUS ARMOR":"12 / 18 / 24","SOLDIER ATK SPEED":"1.2","DURATION":"13.0","SOLDIER SPAWN INTERVAL":"4.0","SOLDIER DURATION":"12.0","CAST POINT":"1.2s"}},{"cooldown":null,"desc":"","effects":{"ABILITY":"No Target"},"id":"monkey-king-spring-early","manacost":null,"name":"Spring Early","notes":null,"stats":{}},{"cooldown":"1","desc":"Reverts Monkey King's shape to his original form.","effects":{"ABILITY":"No Target"},"id":"monkey-king-revert-form","manacost":"0","name":"Revert Form","notes":null,"stats":{}}]}
+{
+  "id":"monkey-king",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Additional Wukong's Command Ring",
+      "option2":"0 Cooldown Primal Spring"
+    },
+    {
+      "level":20,
+      "option1":"-7.0s Boundless Strike Cooldown",
+      "option2":"+2 Jingu Mastery Charges"
+    },
+    {
+      "level":15,
+      "option1":"+130 Jingu Mastery Damage",
+      "option2":"+450 Tree Dance Cast Range"
+    },
+    {
+      "level":10,
+      "option1":"+0.3s Boundless Strike Stun Duration",
+      "option2":"+0.2s Mischief Invulnerability Duration"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"Monkey King enlarges his staff and slams it against the ground, stunning enemies in a line and damaging them with a critical hit based on his attack. Has True Strike.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"monkey-king-boundless-strike",
+      "manacost":"100",
+      "name":"Boundless Strike",
+      "notes":"Does not affect spell-immune enemies.",
+      "stats":{
+        "STUN DURATION":"1",
+        "CRITICAL DAMAGE":"135% / 165% / 195% / 225%",
+        "DISTANCE":"1100",
+        "CAST POINT":"0.4s"
+      }
+    },
+    {
+      "cooldown":"1.45 / 1.3 / 1.15 / 1.0",
+      "desc":"Monkey King jumps to a tree and perches atop it. While perched, he gains the Primal Spring ability-a channeled leap attack. If Monkey King\\'s tree is destroyed, he falls and is stunned for 4 seconds. Taking damage from player controlled units or Roshan while on the ground puts Tree Dance on cooldown.",
+      "effects":{
+        "ABILITY":"Unit Target"
+      },
+      "id":"monkey-king-tree-dance",
+      "manacost":"0",
+      "name":"Tree Dance",
+      "notes":"Right-clicking the ground will have Monkey King drop from the tree.",
+      "stats":{
+        "DISTANCE":"1000",
+        "DAMAGE COOLDOWN":"3.0",
+        "PRIMAL SPRING DAMAGE":"140 / 210 / 280 / 350",
+        "PRIMAL SPRING SLOW":"20% / 40% / 60% / 80%",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"20 / 18 / 16 / 14",
+      "desc":"CHANNELED - Monkey King springs out from his tree perch, damaging and slowing enemies in the area where he lands. Damage and slow amounts are in proportion to channel duration.",
+      "effects":{
+        "ABILITY":"Channelled, Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"monkey-king-primal-spring",
+      "manacost":"100",
+      "name":"Primal Spring",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"140 / 210 / 280 / 350",
+        "MOVEMENT SLOW":"20% / 40% / 60% / 80%",
+        "MAX SLOW DURATION":"4.0",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Monkey King\\'s attacks awaken the Jingu Bang\\'s power. Upon the fourth hit on the same enemy hero, Monkey King earns four charged attacks that have bonus damage and lifesteal.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"monkey-king-jingu-mastery",
+      "manacost":null,
+      "name":"Jingu Mastery",
+      "notes":"Jingu Mastery buff on self can be dispelled.",
+      "stats":{
+        "REQUIRED HITS":"4",
+        "COUNTER DURATION":"7 / 8 / 9 / 10",
+        "CHARGES":"4",
+        "BONUS DAMAGE":"40 / 70 / 100 / 130",
+        "BONUS LIFESTEAL":"25% / 40% / 55% / 70%"
+      }
+    },
+    {
+      "cooldown":"15",
+      "desc":"Changes Monkey King\\'s shape to deceive opponents, using the environment nearby as inspiration for the disguise. Taking damage, attacking, or using any item or ability breaks Monkey King\\'s disguise. Grants damage immunity for 0.2 seconds upon transforming.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"monkey-king-mischief",
+      "manacost":"0",
+      "name":"Mischief",
+      "notes":"If transformed into a courier, Monkey King matches the movement speed of the courier.",
+      "stats":{
+        "MOVE SPEED":"200",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"120 / 100 / 80",
+      "desc":"Monkey King creates a circular formation of soldiers that spread out from his position. If Monkey King leaves the area his soldiers disperse. The soldiers have Monkey King\\'s attack and only target heroes. Monkey King is granted bonus armor for the spell\\'s duration.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Physical"
+      },
+      "id":"monkey-king-wukong's-command",
+      "manacost":"100",
+      "name":"Wukong's Command",
+      "notes":"Soldiers do not copy Basher or Abyssal.",
+      "stats":{
+        "BONUS ARMOR":"14 / 19 / 24",
+        "SOLDIER ATK SPEED":"1.2",
+        "DURATION":"13.0",
+        "SOLDIER SPAWN INTERVAL":"4.0",
+        "SOLDIER DURATION":"12.0",
+        "CAST POINT":"1s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"monkey-king-spring-early",
+      "manacost":null,
+      "name":"Spring Early",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"1",
+      "desc":"Reverts Monkey King\\'s shape to his original form.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"monkey-king-revert-form",
+      "manacost":"0",
+      "name":"Revert Form",
+      "notes":null,
+      "stats":{}
+    }
+  ]
+}

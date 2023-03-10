@@ -1,1 +1,118 @@
-{"id":"natures-prophet","talents":[{"level":25,"option1":"2.5x Treant HP/Damage","option2":"Removed Teleportation Cooldown"},{"level":20,"option1":"100% Miss chance for Sprouted units","option2":"Sprout Leashes"},{"level":15,"option1":"+5 Treants Summoned","option2":"+25 Attack Speed"},{"level":10,"option1":"+30 Wrath of Nature Base Damage","option2":"-8s Nature's Call Cooldown"}],"abilities":[{"cooldown":"11 / 10 / 9 / 8","desc":"Sprouts a ring of trees around a unit, trapping it in place, and providing vision in a 250 radius.","effects":{"ABILITY":"Point Target, Unit Target","AFFECTS":"Heroes"},"id":"natures-prophet-sprout","manacost":"70 / 90 / 110 / 130","name":"Sprout","notes":"Trees created by Sprout have the same interactions with abilities as regular trees.","stats":{"DURATION":"3 / 4 / 5 / 6","CAST POINT":"0.35s"}},{"cooldown":"65 / 50 / 35 / 20","desc":"Teleports to any point on the map.","effects":{"ABILITY":"Point Target","DISPELLABLE":"Cannot be dispelled"},"id":"natures-prophet-teleportation","manacost":"50","name":"Teleportation","notes":"When the cast begins, an effect is created at the target location, which is visible to allies and enemies.","stats":{}},{"cooldown":"37","desc":"Converts an area of trees into Treants under the command of Nature's Prophet.","effects":{"ABILITY":"Point Target"},"id":"natures-prophet-nature's-call","manacost":"150","name":"Nature's Call","notes":"Nature's Call can only create as many treants as there are trees in the target area.","stats":{"TREANT COUNT":"2 / 3 / 4 / 5","TREANT DURATION":"60","TREANT HEALTH":"550","TREANT DAMAGE":"18 / 26 / 34 / 42","CAST POINT":"0.5s"}},{"cooldown":"20","desc":"Applies a curse on all enemy heroes within 1200 range, displaying them in fog, slowing them, and causing damage over time based on the number of trees within 250 radius. Treants count as trees for this purpose.","effects":{"ABILITY":"No Target","AFFECTS":"Enemy Heroes","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"natures-prophet-curse-of-the-oldgrowth","manacost":"80","name":"Curse of the Oldgrowth","notes":null,"stats":{"DURATION":"6","DPS PER TREE":"15","SLOW PER TREE":"7%","CAST POINT":"0.2s"}},{"cooldown":"85","desc":"Damaging energy bounces around the map, striking enemies close to the cast point that are in vision. Each enemy hit beyond the first adds damage. Enemies that die under this spell grant you bonus damage for 50.0 seconds.","effects":{"ABILITY":"Point Target, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"natures-prophet-wrath-of-nature","manacost":"150 / 175 / 200","name":"Wrath of Nature","notes":"Can be cast through the minimap; the nearest valid target will be selected.","stats":{"MAX TARGETS":"18","DAMAGE":"115 / 150 / 185","ADDED DAMAGE PER BOUNCE":"10%","BONUS DAMAGE PER UNIT":"6","BONUS DAMAGE DURATION":"50.0","CAST POINT":"0.5s"}}]}
+{
+  "id":"natures-prophet",
+  "talents":[
+    {
+      "level":25,
+      "option1":"2.5x Treant HP/Damage",
+      "option2":"Removed Teleportation Cooldown"
+    },
+    {
+      "level":20,
+      "option1":"100% Miss chance for Sprouted units",
+      "option2":"Sprout Leashes"
+    },
+    {
+      "level":15,
+      "option1":"+5 Treants Summoned",
+      "option2":"+25 Attack Speed"
+    },
+    {
+      "level":10,
+      "option1":"+30 Wrath of Nature Base Damage",
+      "option2":"-8s Nature's Call Cooldown"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"11 / 10 / 9 / 8",
+      "desc":"Sprouts a ring of trees around a unit, trapping it in place, and providing vision in a 250 radius.",
+      "effects":{
+        "ABILITY":"Point Target, Unit Target",
+        "AFFECTS":"Heroes"
+      },
+      "id":"natures-prophet-sprout",
+      "manacost":"70 / 90 / 110 / 130",
+      "name":"Sprout",
+      "notes":"A Tango that consumes a tree created by Sprout provides double the heal duration.",
+      "stats":{
+        "DURATION":"3 / 4 / 5 / 6",
+        "CAST POINT":"0.35s"
+      }
+    },
+    {
+      "cooldown":"62 / 48 / 34 / 20",
+      "desc":"Teleports to any point on the map.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"natures-prophet-teleportation",
+      "manacost":"50",
+      "name":"Teleportation",
+      "notes":"When the cast begins, an effect is created at the target location, which is visible to allies and enemies.",
+      "stats":{}
+    },
+    {
+      "cooldown":"37",
+      "desc":"Converts an area of trees into Treants under the command of Nature\\'s Prophet.",
+      "effects":{
+        "ABILITY":"Point Target"
+      },
+      "id":"natures-prophet-nature's-call",
+      "manacost":"150",
+      "name":"Nature's Call",
+      "notes":"Nature's Call can only create as many treants as there are trees in the target area.",
+      "stats":{
+        "TREANT COUNT":"2 / 3 / 4 / 5",
+        "TREANT DURATION":"60",
+        "TREANT HEALTH":"550",
+        "TREANT DAMAGE":"18 / 26 / 34 / 42",
+        "CAST POINT":"0.5s"
+      }
+    },
+    {
+      "cooldown":"18",
+      "desc":"Applies a curse on all enemy heroes within 1200 range, displaying them in fog, slowing them, and causing damage over time based on the number of trees within 250 radius. Treants count as trees for this purpose.",
+      "effects":{
+        "ABILITY":"No Target",
+        "AFFECTS":"Enemy Heroes",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"natures-prophet-curse-of-the-oldgrowth",
+      "manacost":"80",
+      "name":"Curse of the Oldgrowth",
+      "notes":null,
+      "stats":{
+        "DURATION":"7",
+        "DPS PER TREE":"15",
+        "SLOW PER TREE":"7%",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"85",
+      "desc":"Damaging energy bounces around the map, striking enemies close to the cast point that are in vision. Each enemy hit beyond the first adds damage. Enemies that die under this spell grant you bonus damage for 50.0 seconds.",
+      "effects":{
+        "ABILITY":"Point Target, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"natures-prophet-wrath-of-nature",
+      "manacost":"130 / 160 / 190",
+      "name":"Wrath of Nature",
+      "notes":"Can be cast through the minimap; the nearest valid target will be selected.",
+      "stats":{
+        "MAX TARGETS":"18",
+        "DAMAGE":"105 / 145 / 185",
+        "ADDED DAMAGE PER BOUNCE":"10%",
+        "BONUS DAMAGE PER UNIT":"6",
+        "BONUS DAMAGE DURATION":"50.0",
+        "CAST POINT":"0.5s"
+      }
+    }
+  ]
+}

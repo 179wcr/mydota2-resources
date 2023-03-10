@@ -1,1 +1,113 @@
-{"id":"razor","talents":[{"level":25,"option1":"Static Link Steals Attack Speed","option2":"Creates A Second Plasma Field Delayed By +0.8s"},{"level":20,"option1":"0.1s Eye of the Storm Strike Interval","option2":"+21% Storm Surge Move Speed"},{"level":15,"option1":"+14 Strength","option2":"+5 Static Link Damage Steal"},{"level":10,"option1":"+9 Agility","option2":"+30 Plasma Field Damage"}],"abilities":[{"cooldown":"13 / 12 / 11 / 10","desc":"Releases a wave of energetic plasma that grows in power as it expands, but also zaps on contraction, slowing and dealing damage to enemy units caught in its path. Damage and slow increases with distance from Razor. The Plasma Field hits each unit twice, once each direction.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"razor-plasma-field","manacost":"125","name":"Plasma Field","notes":null,"stats":{"DAMAGE MIN":"35 / 40 / 45 / 50","DAMAGE MAX":"80 / 115 / 150 / 185","RADIUS":"700","SLOW MIN":"5%","SLOW MAX":"25% / 30% / 35% / 40%","SLOW DURATION":"1.5","CAST POINT":"0s"}},{"cooldown":"40 / 35 / 30 / 25","desc":"Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor. Allows Razor to attack while moving with the link active.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Heroes","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"razor-static-link","manacost":"65","name":"Static Link","notes":"Can target Spell Immune units.","stats":{"LINK DURATION":"5 / 6 / 7 / 8","BUFF DURATION":"9 / 12 / 15 / 18","DAMAGE DRAIN RATE":"7 / 12 / 17 / 22","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Passively increases Razor's movement speed.","effects":{"ABILITY":"Passive"},"id":"razor-storm-surge","manacost":null,"name":"Storm Surge","notes":null,"stats":{"BONUS SPEED":"12% / 16% / 20% / 24%","ON ATTACKED CHANCE":"18%","TARGETS HIT":"3","DAMAGE":"150","MOVEMENT SLOW":"50%","SLOW DURATION":"1.5","STRIKE SEARCH AREA":"900"}},{"cooldown":"80 / 70 / 60","desc":"A powerful lightning storm strikes out at enemy units with the lowest health, dealing damage and reducing their armor.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"razor-eye-of-the-storm","manacost":"100 / 150 / 200","name":"Eye of the Storm","notes":"Successive casts of Eye of the Storm will stack.","stats":{"RADIUS":"500","DURATION":"30.0","STRIKE INTERVAL":"0.7 / 0.6 / 0.5","ARMOR REDUCTION":"1","DAMAGE":"60 / 75 / 90","CAST POINT":"0s"}}]}
+{
+  "id":"razor",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Static Link Steals Attack Speed",
+      "option2":"Creates A Second Plasma Field Delayed By +0.8s"
+    },
+    {
+      "level":20,
+      "option1":"-0.1s Eye of the Storm Strike Interval",
+      "option2":"+21% Storm Surge Move Speed"
+    },
+    {
+      "level":15,
+      "option1":"+14 Strength",
+      "option2":"+5 Static Link Damage Steal"
+    },
+    {
+      "level":10,
+      "option1":"+12 Agility",
+      "option2":"+30 Plasma Field Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"13 / 12 / 11 / 10",
+      "desc":"Releases a wave of energetic plasma that grows in power as it expands, but also zaps on contraction, slowing and dealing damage to enemy units caught in its path. Damage and slow increases with distance from Razor. The Plasma Field hits each unit twice, once each direction.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"razor-plasma-field",
+      "manacost":"125",
+      "name":"Plasma Field",
+      "notes":null,
+      "stats":{
+        "DAMAGE MIN":"35 / 40 / 45 / 50",
+        "DAMAGE MAX":"80 / 115 / 150 / 185",
+        "RADIUS":"700",
+        "SLOW MIN":"5%",
+        "SLOW MAX":"25% / 30% / 35% / 40%",
+        "SLOW DURATION":"1.5",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"40 / 35 / 30 / 25",
+      "desc":"Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor. Allows Razor to attack while moving with the link active.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Heroes",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"razor-static-link",
+      "manacost":"65",
+      "name":"Static Link",
+      "notes":"The link is broken when either unit dies or the distance between them becomes 250 units greater than Static Link's cast range.",
+      "stats":{
+        "LINK DURATION":"5 / 6 / 7 / 8",
+        "BUFF DURATION":"9 / 12 / 15 / 18",
+        "DAMAGE DRAIN RATE":"7 / 12 / 17 / 22",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Passively increases Razor\\'s movement speed.",
+      "effects":{
+        "ABILITY":"Passive"
+      },
+      "id":"razor-storm-surge",
+      "manacost":null,
+      "name":"Storm Surge",
+      "notes":null,
+      "stats":{
+        "BONUS SPEED":"6% / 12% / 18% / 24%",
+        "CHANCE TO STRIKE":"18%",
+        "TARGETS HIT":"3",
+        "DAMAGE":"175",
+        "MOVEMENT SLOW":"50%",
+        "SLOW DURATION":"1.5",
+        "STRIKE SEARCH AREA":"900",
+        "STRIKE COOLDOWN":"1.0"
+      }
+    },
+    {
+      "cooldown":"80 / 70 / 60",
+      "desc":"A powerful lightning storm strikes out at enemy units with the lowest health, dealing damage and reducing their armor.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"razor-eye-of-the-storm",
+      "manacost":"100 / 150 / 200",
+      "name":"Eye of the Storm",
+      "notes":"Successive casts of Eye of the Storm will stack.",
+      "stats":{
+        "RADIUS":"500",
+        "DURATION":"30.0",
+        "STRIKE INTERVAL":"0.7 / 0.6 / 0.5",
+        "ARMOR REDUCTION":"1",
+        "DAMAGE":"60 / 75 / 90",
+        "CAST POINT":"0s"
+      }
+    }
+  ]
+}

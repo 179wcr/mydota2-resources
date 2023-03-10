@@ -1,1 +1,141 @@
-{"id":"dawnbreaker","talents":[{"level":25,"option1":"+1100 Celestial Hammer Cast Range","option2":"2 Starbreaker Charges"},{"level":20,"option1":"-1 Luminosity Attacks Required","option2":"+150 Solar Guardian Radius"},{"level":15,"option1":"-20s Solar Guardian Cooldown","option2":"+50% Luminosity Crit"},{"level":10,"option1":"+15% Celestial Hammer Slow","option2":"+25 Starbreaker Swipe/Smash Damage"}],"abilities":[{"cooldown":"17 / 15 / 13 / 11","desc":"Dawnbreaker whirls her hammer around 3 times, damaging enemies with her attack plus bonus damage. On the final strike, she smashes her hammer down, stunning and damaging enemies in front of her.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes"},"id":"dawnbreaker-starbreaker","manacost":"100","name":"Starbreaker","notes":"Can be self-cast to move forward","stats":{"COMBO DURATION":"1.1","SWIPE/SMASH RADIUS":"300","SWIPE/SMASH BONUS DAMAGE":"25 / 40 / 55 / 70","SMASH STUN DURATION":"0.8 / 1.0 / 1.2 / 1.4","CAST POINT":"0.2s"}},{"cooldown":"18 / 16 / 14 / 12","desc":"Dawnbreaker hurls her weapon at a target, damaging enemies struck along the way. The hammer pauses for 2.0 seconds at the destination before flying back to her, leaving a trail of fire that slows enemies. Dawnbreaker can recall the hammer at any time, pulling her towards it so they meet in the middle.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"dawnbreaker-celestial-hammer","manacost":"110 / 120 / 130 / 140","name":"Celestial Hammer","notes":"Starbreaker or Solar Guardian cannot be cast while the Hammer is out.","stats":{"HAMMER DAMAGE":"60 / 90 / 120 / 150","FIRE TRAIL DURATION":"2.5","FIRE TRAIL RADIUS":"200","FIRE TRAIL MOVEMENT SLOW":"24% / 28% / 32% / 36%","FIRE TRAIL BURN DPS":"20 / 30 / 40 / 50","CAST RANGE":"700 / 900 / 1100 / 1300","CAST POINT":"0.2s"}},{"cooldown":null,"desc":"After 3 attacks, Dawnbreaker powers up, charging her next attack with a critical hit that heals all allied heroes within 650 units around her for a portion of attack damage dealt. Creeps and neutral enemies provide less healing. Allies are healed for 50% of the amount.","effects":{"ABILITY":"Passive","PIERCES SPELL IMMUNITY":"Yes"},"id":"dawnbreaker-luminosity","manacost":null,"name":"Luminosity","notes":"Luminosity Heal is considered a lifesteal and increased by sources of Lifesteal Amplification.","stats":{"HEALING FROM HEROES":"30% / 40% / 50% / 60%","CRITICAL STRIKE DAMAGE":"125% / 150% / 175% / 200%","CREEP HEAL PENALTY":"50%","CAST POINT":"0s"}},{"cooldown":"0.25","desc":"Dawnbreaker recalls her hammer, pulling them together so they meet in the middle.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"dawnbreaker-converge","manacost":"0","name":"Converge","notes":null,"stats":{}},{"cooldown":"120 / 105 / 90","desc":"Dawnbreaker creates a pulsing effect at a location within 350 units of an allied hero anywhere on the map, damaging enemies and healing allies with each pulse. After a short duration, she flies to the target location, dealing additional damage and stunning enemies upon landing. Once channeled, Dawnbreaker cannot stop the ability.","effects":{"ABILITY":"Channelled, Point Target","AFFECTS":"Allied Heroes","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"dawnbreaker-solar-guardian","manacost":"150 / 200 / 250","name":"Solar Guardian","notes":"Healing does not affect Dawnbreaker herself.","stats":{"LAND RADIUS":"500","DAMAGE PER PULSE":"30 / 50 / 70","HEAL PER PULSE":"45 / 70 / 95","LANDING DAMAGE":"130 / 160 / 190","LANDING STUN DURATION":"1 / 1 / 2","CHANNEL TIME":"1.0","BONUS AIR TIME":"3.5","EVASION":"60%","CAST POINT":"0.1s"}},{"cooldown":"2","desc":"Can be cast to land Dawnbreaker into the target area at any time.","effects":{"ABILITY":"No Target"},"id":"dawnbreaker-land-solar-guardian","manacost":null,"name":"Land Solar Guardian","notes":null,"stats":{}}]}
+{
+  "id":"dawnbreaker",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+1100 Celestial Hammer Cast Range",
+      "option2":"2 Starbreaker Charges"
+    },
+    {
+      "level":20,
+      "option1":"-1 Luminosity Attacks Required",
+      "option2":"+150 Solar Guardian Radius"
+    },
+    {
+      "level":15,
+      "option1":"-20s Solar Guardian Cooldown",
+      "option2":"+50% Luminosity Critical Strike Damage"
+    },
+    {
+      "level":10,
+      "option1":"+12% Celestial Hammer Slow",
+      "option2":"+18 Starbreaker Swipe/Smash Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"17 / 15 / 13 / 11",
+      "desc":"Dawnbreaker whirls her hammer around 3 times, damaging enemies with her attack plus bonus damage. On the final strike, she smashes her hammer down, stunning and damaging enemies in front of her.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"dawnbreaker-starbreaker",
+      "manacost":"100",
+      "name":"Starbreaker",
+      "notes":"Can be self-cast to move forward",
+      "stats":{
+        "COMBO DURATION":"1.1",
+        "SWIPE/SMASH RADIUS":"300",
+        "SWIPE/SMASH BONUS DAMAGE":"25 / 40 / 55 / 70",
+        "SMASH STUN DURATION":"0.8 / 1.0 / 1.2 / 1.4",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"18 / 16 / 14 / 12",
+      "desc":"Dawnbreaker hurls her weapon at a target, damaging enemies struck along the way. The hammer pauses for 2.0 seconds at the destination before flying back to her, leaving a trail of fire that slows enemies. Dawnbreaker can recall the hammer at any time, pulling her towards it so they meet in the middle.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"dawnbreaker-celestial-hammer",
+      "manacost":"110 / 120 / 130 / 140",
+      "name":"Celestial Hammer",
+      "notes":"Starbreaker or Solar Guardian cannot be cast while the Hammer is out.",
+      "stats":{
+        "HAMMER DAMAGE":"50 / 80 / 110 / 140",
+        "FIRE TRAIL DURATION":"2.5",
+        "FIRE TRAIL RADIUS":"200",
+        "FIRE TRAIL MOVEMENT SLOW":"24% / 28% / 32% / 36%",
+        "FIRE TRAIL BURN DPS":"20 / 30 / 40 / 50",
+        "CAST RANGE":"700 / 900 / 1100 / 1300",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"After a number of attacks, Dawnbreaker powers up, charging her next attack with a critical hit that heals all allied heroes within 650 units around her for a portion of attack damage dealt. Creeps and neutral enemies provide less healing. Allies are healed for 50% of the amount.",
+      "effects":{
+        "ABILITY":"Passive",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"dawnbreaker-luminosity",
+      "manacost":null,
+      "name":"Luminosity",
+      "notes":"Luminosity Heal is considered a lifesteal and increased by sources of Lifesteal Amplification.",
+      "stats":{
+        "ATTACKS REQUIRED":"3",
+        "HEALING FROM HEROES":"35% / 40% / 45% / 50%",
+        "CREEP HEAL PENALTY":"50%",
+        "CRITICAL STRIKE DAMAGE":"125% / 150% / 175% / 200%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"0.25",
+      "desc":"Dawnbreaker recalls her hammer, pulling them together so they meet in the middle.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"dawnbreaker-converge",
+      "manacost":"0",
+      "name":"Converge",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"120 / 105 / 90",
+      "desc":"CHANNELED - Dawnbreaker creates a pulsing effect at a location within 350 units of an allied hero anywhere on the map, damaging enemies and healing allies with each pulse. After a short duration, she flies to the target location, dealing additional damage and stunning enemies upon landing. Once channeled, Dawnbreaker cannot stop the ability.",
+      "effects":{
+        "ABILITY":"Channelled, Point Target",
+        "AFFECTS":"Allied Heroes",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"dawnbreaker-solar-guardian",
+      "manacost":"150 / 200 / 250",
+      "name":"Solar Guardian",
+      "notes":"Healing does not affect Dawnbreaker herself.",
+      "stats":{
+        "LAND RADIUS":"500",
+        "DAMAGE PER PULSE":"30 / 50 / 70",
+        "HEAL PER PULSE":"45 / 70 / 95",
+        "LANDING DAMAGE":"130 / 160 / 190",
+        "LANDING STUN DURATION":"1 / 1 / 2",
+        "CHANNEL TIME":"1.0",
+        "BONUS AIR TIME":"3.5",
+        "EVASION":"60%",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"2",
+      "desc":"Can be cast to land Dawnbreaker into the target area at any time.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"dawnbreaker-land-solar-guardian",
+      "manacost":null,
+      "name":"Land Solar Guardian",
+      "notes":null,
+      "stats":{}
+    }
+  ]
+}

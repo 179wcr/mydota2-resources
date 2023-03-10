@@ -1,1 +1,105 @@
-{"id":"lone-druid","talents":[{"level":25,"option1":"+1000 True Form and Spirit Bear Health","option2":"0.1 Spirit Bear Attack Time"},{"level":20,"option1":"0 Entangling Claws Cooldown","option2":"-50s True Form Cooldown"},{"level":15,"option1":"+8 Spirit Bear Armor","option2":"-8s Savage Roar Cooldown"},{"level":10,"option1":"+25 Spirit Bear Movement Speed","option2":"+200 Health"}],"abilities":[{"cooldown":"120","desc":"Summons a powerful Spirit Bear companion that can equip items.  If the bear moves 1100 distance away from the Lone Druid, it cannot attack.  Lone Druid suffers 20.0% of his max health as backlash damage if the Spirit Bear dies. Spirit Bear does not benefit from attributes.Spirit Bear has the Return, Demolish and Entangling Claws abilities.","effects":{"ABILITY":"No Target"},"id":"lone-druid-summon-spirit-bear","manacost":"75","name":"Summon Spirit Bear","notes":"Most spells interact with the Spirit Bear in the same way as they do with heroes.","stats":{"BEAR HP":"1100 / 1400 / 1700 / 2000","BEAR HP REGEN":"5 / 6 / 7 / 8","BEAR BASE ATTACK TIME":"1.75 / 1.65 / 1.55 / 1.45","BEAR ARMOR":"3 / 4 / 5 / 6","BEAR MOVESPEED":"340 / 360 / 380 / 400","CAST POINT":"0.5s"}},{"cooldown":null,"desc":"Links Lone Druid and the Spirit Bear, sharing a percentage of their armor with each other, increasing the attack speed of both and causing damage dealt by the Spirit Bear to heal Lone Druid.","effects":{"ABILITY":"Passive","DISPELLABLE":"Yes"},"id":"lone-druid-spirit-link","manacost":null,"name":"Spirit Link","notes":null,"stats":{"ATTACK SPEED":"16 / 32 / 48 / 64","SHARED LIFESTEAL":"20% / 35% / 50% / 65%","ARMOR SHARED":"8% / 12% / 16% / 20%"}},{"cooldown":"38 / 32 / 26 / 20","desc":"Lone Druid and the Spirit Bear roar fiercely causing nearby enemies to flee towards their base in terror. Their movement speed is increased by 20%.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"lone-druid-savage-roar","manacost":"50","name":"Savage Roar","notes":"Cooldown is shared with Spirit Bear.","stats":{"RANGE":"375","ENEMY MOVEMENT SPEED BONUS":"20%","DURATION":"5.0","RADIUS":"700","BONUS MOVEMENT SPEED":"20%","BONUS ATTACK SPEED":"60","CAST POINT":"0.1s"}},{"cooldown":"100","desc":"Lone Druid learns to morph himself into a raging bear, losing his ranged advantage, but gaining increased bonus armor and health, and improved versions of Entangling Claws and Demolish.","effects":{"ABILITY":"No Target","DISPELLABLE":"Cannot be dispelled"},"id":"lone-druid-true-form","manacost":"200","name":"True Form","notes":"Cooldowns of items that are different for ranged and melee units will be based on which form Lone Druid was in when the item was used.","stats":{"BONUS ARMOR":"8 / 10 / 12","BONUS HP":"500 / 1000 / 1500","BASE ATTACK TIME":"1.7","DURATION":"40.0","TRANSFORM TIME":"1.933","CAST POINT":"0s"}}]}
+{
+  "id":"lone-druid",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+1000 True Form and Spirit Bear Health",
+      "option2":"-0.1 Spirit Bear Base Attack Time"
+    },
+    {
+      "level":20,
+      "option1":"0 Entangling Claws Cooldown",
+      "option2":"-50s True Form Cooldown"
+    },
+    {
+      "level":15,
+      "option1":"+8 Spirit Bear Armor",
+      "option2":"-8s Savage Roar Cooldown"
+    },
+    {
+      "level":10,
+      "option1":"+25 Spirit Bear Movement Speed",
+      "option2":"+200 Health"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"120",
+      "desc":"Summons a powerful Spirit Bear companion that can equip items.  If the bear moves 1100 distance away from the Lone Druid, it cannot attack.  Lone Druid suffers 20.0% of his max health as backlash damage if the Spirit Bear dies. Spirit Bear does not benefit from attributes.Spirit Bear has the Return, Demolish and Entangling Claws abilities.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"lone-druid-summon-spirit-bear",
+      "manacost":"75",
+      "name":"Summon Spirit Bear",
+      "notes":"Most spells interact with the Spirit Bear in the same way as they do with heroes.",
+      "stats":{
+        "BEAR HP":"1100 / 1400 / 1700 / 2000",
+        "BEAR HP REGEN":"5 / 6 / 7 / 8",
+        "BEAR BASE ATTACK TIME":"1.75 / 1.65 / 1.55 / 1.45",
+        "BEAR ARMOR":"3 / 4 / 5 / 6",
+        "BEAR MOVESPEED":"340 / 360 / 380 / 400",
+        "CAST POINT":"0.5s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Links Lone Druid and the Spirit Bear, sharing a percentage of their armor with each other, increasing the attack speed of both and causing damage dealt by the Spirit Bear to heal Lone Druid.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"lone-druid-spirit-link",
+      "manacost":null,
+      "name":"Spirit Link",
+      "notes":null,
+      "stats":{
+        "ATTACK SPEED":"16 / 32 / 48 / 64",
+        "SHARED LIFESTEAL":"20% / 35% / 50% / 65%",
+        "ARMOR SHARED":"8% / 12% / 16% / 20%"
+      }
+    },
+    {
+      "cooldown":"38 / 32 / 26 / 20",
+      "desc":"Lone Druid and the Spirit Bear roar fiercely causing nearby enemies to flee towards their base in terror. Their movement speed is increased by 20%.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"lone-druid-savage-roar",
+      "manacost":"50",
+      "name":"Savage Roar",
+      "notes":"Cooldown is shared with Spirit Bear.",
+      "stats":{
+        "RANGE":"375",
+        "ENEMY MOVEMENT SPEED BONUS":"20%",
+        "DURATION":"5.0",
+        "RADIUS":"700",
+        "BONUS MOVEMENT SPEED":"20%",
+        "BONUS ATTACK SPEED":"60",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"100",
+      "desc":"Lone Druid learns to morph himself into a raging bear, losing his ranged advantage, but gaining increased bonus armor and health, and improved versions of Entangling Claws and Demolish.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"lone-druid-true-form",
+      "manacost":"200",
+      "name":"True Form",
+      "notes":"Cooldowns of items that are different for ranged and melee units will be based on which form Lone Druid was in when the item was used.",
+      "stats":{
+        "BONUS ARMOR":"8 / 10 / 12",
+        "BONUS HP":"500 / 1000 / 1500",
+        "BASE ATTACK TIME":"1.7",
+        "DURATION":"40.0",
+        "TRANSFORM TIME":"1.933",
+        "CAST POINT":"0s"
+      }
+    }
+  ]
+}

@@ -1,1 +1,127 @@
-{"id":"batrider","talents":[{"level":25,"option1":"Flamebreak applies +2 Sticky Napalm Stacks","option2":"+6.5s Firefly Duration"},{"level":20,"option1":"+2 Flamebreak Charges","option2":"+6 Sticky Napalm Damage"},{"level":15,"option1":"-10s Flaming Lasso Cooldown","option2":"+20 Movement Speed"},{"level":10,"option1":"+75 Flamebreak Knockback Distance","option2":"+75 Sticky Napalm Radius"}],"abilities":[{"cooldown":"3","desc":"Drenches an area in sticky oil, amplifying damage from Batrider's attacks and abilities and slowing the movement speed and turn rate of enemies in the area.  Additional casts of Sticky Napalm continue to increase damage, up to [10, 10, 10, 10] stacks. Applies a small amount of damage with each cast.","effects":{"ABILITY":"Point Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"batrider-sticky-napalm","manacost":"20","name":"Sticky Napalm","notes":"Sticky Napalm deals 50% damage to creeps.","stats":{"EXTRA DAMAGE":"6 / 12 / 18 / 24","RADIUS":"375","DURATION":"6","MOVEMENT SLOW":"-2% / -4% / -6% / -8%","TURN RATE SLOW":"-10% / -30% / -50% / -70%","APPLICATION DAMAGE":"6 / 12 / 18 / 24","CAST POINT":"0s"}},{"cooldown":"18 / 17 / 16 / 15","desc":"Hurls an explosive cocktail that explodes when it reaches the target location, knocking back, and dealing damage over time to enemies in the area.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"batrider-flamebreak","manacost":"110 / 115 / 120 / 125","name":"Flamebreak","notes":null,"stats":{"IMPACT DAMAGE":"30 / 60 / 90 / 120","DAMAGE PER SECOND":"15","BURN DURATION":"2 / 4 / 6 / 8","RADIUS":"500","KNOCKBACK DISTANCE":"300","CAST POINT":"0.2s"}},{"cooldown":"52 / 46 / 40 / 34","desc":"Batrider takes to the skies, laying down a trail of flames from the air.  The fire damages any enemies it touches, and destroys trees below Batrider. Batrider has bonus day/night vision while Firefly is active.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"batrider-firefly","manacost":"125","name":"Firefly","notes":"The trail persists through Batrider's death.","stats":{"DAMAGE PER SECOND":"20 / 35 / 50 / 65","MOVEMENT SPEED":"3% / 6% / 9% / 12%","RADIUS":"200","DURATION":"15","BONUS VISION":"100 / 200 / 300 / 400","CAST POINT":"0s"}},{"cooldown":null,"desc":"","effects":{"PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"batrider-application-damage:","manacost":null,"name":"APPLICATION DAMAGE:","notes":null,"stats":{}},{"cooldown":null,"desc":"Lassoes an enemy and drags them in Batrider's wake. Dragged units cannot move, attack, or use abilities.  Teleporting or blinking will break the lasso.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Strong Dispels Only"},"id":"batrider-flaming-lasso","manacost":"150 / 175 / 200","name":"Flaming Lasso","notes":"Batrider cannot attack while using Flaming Lasso.","stats":{"DURATION":"3 / 3 / 4","DAMAGE PER SECOND":"35 / 55 / 75","CAST POINT":"0.2s"}}]}
+{
+  "id":"batrider",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Flamebreak applies +2 Sticky Napalm Stacks",
+      "option2":"+10 Sticky Napalm Damage"
+    },
+    {
+      "level":20,
+      "option1":"+2 Flamebreak Charges",
+      "option2":"+4.5s Firefly Duration"
+    },
+    {
+      "level":15,
+      "option1":"-10s Flaming Lasso Cooldown",
+      "option2":"+20 Movement Speed"
+    },
+    {
+      "level":10,
+      "option1":"+50 Flamebreak Knockback Distance",
+      "option2":"+50 Sticky Napalm Radius"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"3",
+      "desc":"Drenches an area in sticky oil, amplifying damage from Batrider\\'s attacks and abilities and slowing the movement speed and turn rate of enemies in the area.  Additional casts of Sticky Napalm continue to increase damage, up to [10, 10, 10, 10] stacks. Applies a small amount of damage with each cast.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"batrider-sticky-napalm",
+      "manacost":"25",
+      "name":"Sticky Napalm",
+      "notes":"Sticky Napalm deals 50% damage to creeps.",
+      "stats":{
+        "EXTRA DAMAGE":"6 / 12 / 18 / 24",
+        "RADIUS":"375",
+        "DURATION":"6",
+        "MOVEMENT SLOW":"-2% / -4% / -6% / -8%",
+        "TURN RATE SLOW":"-10% / -30% / -50% / -70%",
+        "APPLICATION DAMAGE":"6 / 12 / 18 / 24",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"18 / 17 / 16 / 15",
+      "desc":"Hurls an explosive cocktail that explodes when it reaches the target location, knocking back, and dealing damage over time to enemies in the area.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"batrider-flamebreak",
+      "manacost":"110 / 115 / 120 / 125",
+      "name":"Flamebreak",
+      "notes":null,
+      "stats":{
+        "IMPACT DAMAGE":"30 / 60 / 90 / 120",
+        "DAMAGE PER SECOND":"15",
+        "BURN DURATION":"2 / 4 / 6 / 8",
+        "RADIUS":"500",
+        "KNOCKBACK DISTANCE":"250",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"52 / 46 / 40 / 34",
+      "desc":"Batrider takes to the skies, laying down a trail of flames from the air.  The fire damages any enemies it touches, and destroys trees below Batrider. Batrider has bonus day/night vision while Firefly is active.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"batrider-firefly",
+      "manacost":"125",
+      "name":"Firefly",
+      "notes":"The trail persists through Batrider's death.",
+      "stats":{
+        "DAMAGE PER SECOND":"20 / 35 / 50 / 65",
+        "MOVEMENT SPEED":"3% / 6% / 9% / 12%",
+        "RADIUS":"200",
+        "DURATION":"15",
+        "BONUS VISION":"50 / 100 / 150 / 200",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"",
+      "effects":{
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"batrider-application-damage:",
+      "manacost":null,
+      "name":"APPLICATION DAMAGE:",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":null,
+      "desc":"Lassoes an enemy and drags them in Batrider\\'s wake. Dragged units cannot move, attack, or use abilities.  Teleporting or blinking will break the lasso.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"batrider-flaming-lasso",
+      "manacost":"150 / 175 / 200",
+      "name":"Flaming Lasso",
+      "notes":"Batrider cannot attack while using Flaming Lasso.",
+      "stats":{
+        "DURATION":"2 / 3 / 3",
+        "DAMAGE PER SECOND":"35 / 55 / 75",
+        "CAST POINT":"0.2s"
+      }
+    }
+  ]
+}

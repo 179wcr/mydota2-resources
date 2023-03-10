@@ -1,1 +1,139 @@
-{"id":"terrorblade","talents":[{"level":25,"option1":"+20s Metamorphosis Duration","option2":"-34s Sunder Cooldown"},{"level":20,"option1":"+10s Conjure Image Duration","option2":"+10 All Stats"},{"level":15,"option1":"+15% Reflection Slow","option2":"+300 Health"},{"level":10,"option1":"+10% Conjure Image Damage","option2":"-3s Reflection Cooldown"}],"abilities":[{"cooldown":null,"desc":"Terrorblade brings forth an invulnerable dark reflection of all enemy heroes in a target area. Affected enemy heroes are slowed and attacked by their reflection.","effects":{"ABILITY":"Point Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"terrorblade-reflection","manacost":"35 / 40 / 45 / 50","name":"Reflection","notes":"Reflections can only attack their source.","stats":{"REFLECTION DURATION":"5","REFLECTION DAMAGE":"55% / 70% / 85% / 100%","MOVEMENT SLOW":"15% / 20% / 25% / 30%","RADIUS":"500","CAST POINT":"0.3s"}},{"cooldown":"16","desc":"Creates an illusion of Terrorblade that deals damage.","effects":{"ABILITY":"No Target"},"id":"terrorblade-conjure-image","manacost":"55 / 65 / 75 / 85","name":"Conjure Image","notes":"Illusions created by Conjure Image are visually different for enemies.","stats":{"ILLUSION DURATION":"34.0","ILLUSION DAMAGE":"30% / 40% / 50% / 60%","ILLUSION DAMAGE TAKEN":"300.0%","CAST POINT":"0.15s"}},{"cooldown":"150","desc":"Terrorblade transforms into a powerful demon with a ranged attack. Any of Terrorblade's illusions that are within 1200 range will also be transformed by Metamorphosis.","effects":{"ABILITY":"No Target","DISPELLABLE":"Cannot be dispelled"},"id":"terrorblade-metamorphosis","manacost":"100","name":"Metamorphosis","notes":"Cooldowns of items that are different for ranged and melee units will be based on which form Terrorblade was in when the item was used.","stats":{"DURATION":"35 / 40 / 45 / 50","TRANSFORMATION TIME":"0.35","BASE ATTACK TIME":"1.5","ATTACK RANGE":"490 / 510 / 530 / 550","BONUS DAMAGE":"30 / 40 / 50 / 60","ILLUSION AURA RADIUS":"1200","CAST POINT":"0s"}},{"cooldown":"14","desc":"Costs part of Terrorblade's current HP to cast, dispelling Terrorblade and providing bonus movement and attack speed.  The bonuses are stronger out of Metamorphosis. Cooldown: [14].","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical"},"id":"terrorblade-demon-zeal","manacost":"0","name":"Demon Zeal","notes":null,"stats":{"BONUS ATTACK SPEED":"50","BONUS MOVEMENT SPEED":"50%","MELEE BONUS":"100%","CURRENT HEALTH COST":"20%","CAST POINT":"0.2s"}},{"cooldown":"90","desc":"Causes a wave to travel outwards in all directions forcing enemy heroes to become Feared upon impact, and grants Terrorblade Metamorphosis for a short time.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical"},"id":"terrorblade-terror-wave","manacost":"75","name":"Terror Wave","notes":null,"stats":{"FEAR DURATION":"2.5","RADIUS":"1600","METAMORPHOSIS DURATION":"10.0"}},{"cooldown":"120 / 80 / 40","desc":"Severs the life from both Terrorblade and a target hero, exchanging a percentage of both units' current health. Some health points must remain.","effects":{"ABILITY":"Unit Target","PIERCES SPELL IMMUNITY":"No"},"id":"terrorblade-sunder","manacost":"100 / 75 / 50","name":"Sunder","notes":null,"stats":{"MINIMUM HP SWAP":"35% / 30% / 25%","CAST POINT":"0.35s"}}]}
+{
+  "id":"terrorblade",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+20s Metamorphosis Duration",
+      "option2":"-34s Sunder Cooldown"
+    },
+    {
+      "level":20,
+      "option1":"+10s Conjure Image Duration",
+      "option2":"+10 All Stats"
+    },
+    {
+      "level":15,
+      "option1":"+15% Reflection Slow",
+      "option2":"+300 Health"
+    },
+    {
+      "level":10,
+      "option1":"+10% Conjure Image Damage",
+      "option2":"-3s Reflection Cooldown"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"Terrorblade brings forth an invulnerable dark reflection of all enemy heroes in a target area. Affected enemy heroes are slowed and attacked by their reflection.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"terrorblade-reflection",
+      "manacost":"35 / 40 / 45 / 50",
+      "name":"Reflection",
+      "notes":"Reflections can only attack their source.",
+      "stats":{
+        "REFLECTION DURATION":"5",
+        "REFLECTION DAMAGE":"55% / 70% / 85% / 100%",
+        "MOVEMENT SLOW":"15% / 20% / 25% / 30%",
+        "RADIUS":"500",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"16",
+      "desc":"Creates an illusion of Terrorblade that deals damage.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"terrorblade-conjure-image",
+      "manacost":"55 / 65 / 75 / 85",
+      "name":"Conjure Image",
+      "notes":"Illusions created by Conjure Image are visually different for enemies.",
+      "stats":{
+        "ILLUSION DURATION":"34.0",
+        "ILLUSION DAMAGE":"30% / 40% / 50% / 60%",
+        "ILLUSION DAMAGE TAKEN":"300.0%",
+        "CAST POINT":"0.15s"
+      }
+    },
+    {
+      "cooldown":"150",
+      "desc":"Terrorblade transforms into a powerful demon with a ranged attack. Any of Terrorblade\\'s illusions that are within 1200 range will also be transformed by Metamorphosis.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Physical",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"terrorblade-metamorphosis",
+      "manacost":"100",
+      "name":"Metamorphosis",
+      "notes":"Cooldowns of items that are different for ranged and melee units will be based on which form Terrorblade was in when the item was used.",
+      "stats":{
+        "DURATION":"35 / 40 / 45 / 50",
+        "TRANSFORMATION TIME":"0.35",
+        "BASE ATTACK TIME":"1.5",
+        "ATTACK RANGE":"490 / 510 / 530 / 550",
+        "BONUS DAMAGE":"30 / 40 / 50 / 60",
+        "ILLUSION AURA RADIUS":"1200",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"14",
+      "desc":"Costs part of Terrorblade\\'s current HP to cast, dispelling Terrorblade and providing bonus movement and attack speed.  The bonuses are stronger out of Metamorphosis.DISPEL TYPE: Basic Dispel",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"terrorblade-demon-zeal",
+      "manacost":"0",
+      "name":"Demon Zeal",
+      "notes":null,
+      "stats":{
+        "BONUS ATTACK SPEED":"50",
+        "BONUS MOVEMENT SPEED":"50",
+        "MELEE BONUS":"100%",
+        "DURATION":"7",
+        "CURRENT HEALTH COST":"20%",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"90",
+      "desc":"Causes a wave to travel outwards in all directions forcing enemy heroes to become Feared upon impact, and grants Terrorblade Metamorphosis for a short time.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"terrorblade-terror-wave",
+      "manacost":"75",
+      "name":"Terror Wave",
+      "notes":null,
+      "stats":{
+        "FEAR DURATION":"2.5",
+        "RADIUS":"1600",
+        "METAMORPHOSIS DURATION":"10.0"
+      }
+    },
+    {
+      "cooldown":"120 / 80 / 40",
+      "desc":"Severs the life from both Terrorblade and a target hero, exchanging a percentage of both units\\' current health. Some health points must remain.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"terrorblade-sunder",
+      "manacost":"100 / 75 / 50",
+      "name":"Sunder",
+      "notes":null,
+      "stats":{
+        "MINIMUM HP SWAP":"35% / 30% / 25%",
+        "CAST POINT":"0.35s"
+      }
+    }
+  ]
+}

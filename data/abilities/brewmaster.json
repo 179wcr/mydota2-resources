@@ -1,1 +1,115 @@
-{"id":"brewmaster","talents":[{"level":25,"option1":"Cinder Brew applies Fear when ignited","option2":"Brewlings Gain Drunken Brawler Passive"},{"level":20,"option1":"+80 Attack Speed","option2":"+1200 Brewlings Health"},{"level":15,"option1":"+1x Brewed Up multiplier for Drunken Brawler","option2":"+30% Cinder Brew Damage/Duration"},{"level":10,"option1":"+200 Thunder Clap AoE","option2":"+15 Damage"}],"abilities":[{"cooldown":"13","desc":"Slams the ground, dealing damage and slowing the movement speed and attack rate of nearby enemy units.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"brewmaster-thunder-clap","manacost":"90 / 100 / 110 / 120","name":"Thunder Clap","notes":null,"stats":{"RADIUS":"400","DAMAGE":"90 / 160 / 230 / 300","MOVEMENT SLOW":"25% / 35% / 45% / 55%","ATTACK SLOW":"25 / 35 / 45 / 55","DURATION":"4.0","CAST POINT":"0.4s"}},{"cooldown":"20 / 17 / 14 / 11","desc":"Drenches himself and an area in alcohol, causing enemy units to move slower and ignited once they take any spell damage. Duration is increased by 3.0 seconds when enemies are ignited. While Brewmaster is Brewed Up, His Drunken Brawler Stances are stronger.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"brewmaster-cinder-brew","manacost":"50 / 60 / 70 / 80","name":"Cinder Brew","notes":null,"stats":{"DURATION":"5.0","IGNITE TOTAL DAMAGE":"75 / 150 / 225 / 300","MOVEMENT SLOW":"24% / 28% / 32% / 36%","CAST POINT":"0.2s"}},{"cooldown":"0","desc":"Brewmaster can switch stances based on the elements he controls gaining passive bonuses that improve against enemies when Brewed Up.Earth Brawler - Grants [1, 3, 5, 7] armor and [5, 10, 15, 20]% Magic Resistance. Bonuses are 3x when Brewed Up.Storm Brawler - Grants [15, 20, 25, 30]% evasion and [5, 7, 9, 11]% Bonus Move Speed. Bonuses are 3x when Brewed Up.Fire Brawler - Grants 24% chance to crit for [145, 160, 175, 190]% of your attack damage. Chance is 3x when Brewed Up.","effects":{"ABILITY":"No Target","DISPELLABLE":"Yes"},"id":"brewmaster-drunken-brawler","manacost":"0","name":"Drunken Brawler","notes":"Stacks diminishingly with other sources of Evasion.","stats":{}},{"cooldown":"20","desc":"Creates a Brewling based on Brewmaster's current Drunken Brawler Stance. If the Brewling moves 1600 range away from Brewmaster, it can no longer cast spells and is slowed by 50%. Otherwise, all of the Brewling spells have a 100% cooldown penalty. A new Brewling cannot be resummoned for 3s if the current one takes damage from enemy Heroes or hero-controlled units. If the Brewling dies, the ability goes on cooldown for 70 seconds.Only one Brewling can exist at a time. If Brewmaster uses Primal Split, the existing Brewling disappears.","effects":{"ABILITY":"No Target","DISPELLABLE":"Cannot be dispelled"},"id":"brewmaster-primal-companion","manacost":"50","name":"Primal Companion","notes":null,"stats":{}},{"cooldown":"140 / 130 / 120","desc":"Splits Brewmaster into elements, forming 3 specialized warriors, adept at survival, each with their own abilities. If any of them survive until the end of their summoned timer, the Brewmaster is reborn.","effects":{"ABILITY":"No Target","DISPELLABLE":"Cannot be dispelled"},"id":"brewmaster-primal-split","manacost":"125 / 150 / 175","name":"Primal Split","notes":"When the spell ends, Brewmaster will take the place of an element in this order, assuming they are alive: Earth, Storm, Fire.","stats":{"DURATION":"16 / 18 / 20","CAST POINT":"0.55s"}}]}
+{
+  "id":"brewmaster",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Cinder Brew applies Fear when ignited",
+      "option2":"Brewlings Gain Drunken Brawler Passive"
+    },
+    {
+      "level":20,
+      "option1":"+80 Attack Speed",
+      "option2":"+1200 Brewlings Health"
+    },
+    {
+      "level":15,
+      "option1":"+1x Brewed Up multiplier for Drunken Brawler",
+      "option2":"+30% Cinder Brew Damage/Duration"
+    },
+    {
+      "level":10,
+      "option1":"+200 Thunder Clap AoE",
+      "option2":"+15 Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"13",
+      "desc":"Slams the ground, dealing damage and slowing the movement speed and attack rate of nearby enemy units.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"brewmaster-thunder-clap",
+      "manacost":"90 / 100 / 110 / 120",
+      "name":"Thunder Clap",
+      "notes":null,
+      "stats":{
+        "RADIUS":"400",
+        "DAMAGE":"90 / 160 / 230 / 300",
+        "MOVEMENT SLOW":"25% / 35% / 45% / 55%",
+        "ATTACK SLOW":"25 / 35 / 45 / 55",
+        "DURATION":"4.0",
+        "CAST POINT":"0.4s"
+      }
+    },
+    {
+      "cooldown":"20 / 17 / 14 / 11",
+      "desc":"Drenches himself and an area in alcohol, causing enemy units to move slower and ignited once they take any spell damage. Duration is increased by 3.0 seconds when enemies are ignited. While Brewmaster is Brewed Up, His Drunken Brawler Stances are stronger.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"brewmaster-cinder-brew",
+      "manacost":"50 / 60 / 70 / 80",
+      "name":"Cinder Brew",
+      "notes":null,
+      "stats":{
+        "DURATION":"5.0",
+        "IGNITE TOTAL DAMAGE":"80 / 160 / 240 / 320",
+        "MOVEMENT SLOW":"24% / 28% / 32% / 36%",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Brewmaster can switch stances based on the elements he controls, gaining passive bonuses that improve against enemies when Brewed Up.Earth Brawler - Grants [1, 3, 5, 7] armor and [5, 10, 15, 20]% Magic Resistance. Bonuses are 3x when Brewed Up.Storm Brawler - Grants [15, 20, 25, 30]% evasion and [5, 7, 9, 11]% Bonus Move Speed. Bonuses are 3x when Brewed Up.Fire Brawler - Grants 24% chance to critical strike for [145, 160, 175, 190]% of your attack damage. Chance is 3x when Brewed Up.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"brewmaster-drunken-brawler",
+      "manacost":"0",
+      "name":"Drunken Brawler",
+      "notes":"Stacks diminishingly with other sources of Evasion.",
+      "stats":{}
+    },
+    {
+      "cooldown":"20",
+      "desc":"Creates a Brewling based on Brewmaster\\'s current Drunken Brawler Stance. If the Brewling moves 1600 range away from Brewmaster, it can no longer cast spells and is slowed by 50%. Otherwise, all of the Brewling spells have a 100% cooldown penalty. A new Brewling cannot be resummoned for 3s if the current one takes damage from enemy Heroes or hero-controlled units. If the Brewling dies, the ability goes on cooldown for 70 seconds.Only one Brewling can exist at a time. If Brewmaster uses Primal Split, the existing Brewling disappears.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"brewmaster-primal-companion",
+      "manacost":"50",
+      "name":"Primal Companion",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"140 / 130 / 120",
+      "desc":"Splits Brewmaster into elements, forming 3 specialized warriors, adept at survival, each with their own abilities. If any of them survive until the end of their summoned timer, the Brewmaster is reborn.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"brewmaster-primal-split",
+      "manacost":"125 / 150 / 175",
+      "name":"Primal Split",
+      "notes":"When the spell ends, Brewmaster will take the place of an element in this order, assuming they are alive: Earth, Storm, Fire.",
+      "stats":{
+        "DURATION":"16 / 18 / 20",
+        "EARTH BREWLING HP":"1400 / 2300 / 3200",
+        "STORM BREWLING HP":"1000 / 1500 / 2000",
+        "FIRE BREWLING HP":"1300 / 1450 / 1600",
+        "VOID BREWLING HP":"1200 / 1500 / 1800",
+        "CAST POINT":"0.55s"
+      }
+    }
+  ]
+}

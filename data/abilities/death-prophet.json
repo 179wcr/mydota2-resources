@@ -1,1 +1,110 @@
-{"id":"death-prophet","talents":[{"level":25,"option1":"+8 Exorcism Spirits","option2":"-20s Spirit Siphon Replenish Time"},{"level":20,"option1":"+400 Health","option2":"20.0% Spirit Siphon Move Speed Slow"},{"level":15,"option1":"-2.0s Crypt Swarm Cooldown","option2":"+30 Spirit Siphon Damage/Heal"},{"level":10,"option1":"+12% Magic Resistance","option2":"+30 Damage"}],"abilities":[{"cooldown":"8 / 7 / 6 / 5","desc":"Sends a swarm of winged beasts to savage enemy units in front of Death Prophet.","effects":{"ABILITY":"Point Target, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"death-prophet-crypt-swarm","manacost":"80 / 95 / 110 / 125","name":"Crypt Swarm","notes":"Can hit units up to 1110 range away.","stats":{"DAMAGE":"75 / 150 / 225 / 300","CAST RANGE":"810","CAST POINT":"0.2s"}},{"cooldown":"15 / 14 / 13 / 12","desc":"Fires a projectile that prevents enemy units in a target area from casting spells.","effects":{"ABILITY":"Point Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"death-prophet-silence","manacost":"80 / 90 / 100 / 110","name":"Silence","notes":"Doesn't prevent usage of items.","stats":{"RADIUS":"425","DURATION":"3 / 4 / 5 / 6","CAST POINT":"0.2s"}},{"cooldown":"0","desc":"Creates a spirit link between Death Prophet and an enemy unit, draining health from the enemy.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"death-prophet-spirit-siphon","manacost":"80","name":"Spirit Siphon","notes":"Cannot cast multiple on same target.","stats":{"DAMAGE":"20 / 40 / 60 / 80","DURATION":"6","CAST POINT":"0.1s"}},{"cooldown":"150","desc":"Unleashes evil spirits to drain the life of nearby enemy units and structures. At the end of the spell's duration, Death Prophet is healed in proportion to the damage dealt. Deals 50% damage to buildings. Lasts [35] seconds. Passively grants Movement Speed.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"death-prophet-exorcism","manacost":"250 / 350 / 450","name":"Exorcism","notes":"Spirit damage isn't reduced by damage block abilities.","stats":{"RADIUS":"700","SPIRITS":"8 / 16 / 24","LIFE DRAIN":"25%","SPIRIT DAMAGE":"61","MOVESPEED SLOW":"100%","SLOW DURATION":"0.3","SPIRIT BONUS DAMAGE":"50%","PASSIVE MOVEMENT BONUS":"12% / 16% / 20%","ACTIVE MOVEMENT BONUS":"12% / 16% / 20%","CAST POINT":"0.5s"}}]}
+{
+  "id":"death-prophet",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+8 Exorcism Spirits",
+      "option2":"-20s Spirit Siphon Replenish Time"
+    },
+    {
+      "level":20,
+      "option1":"+30 Spirit Siphon Damage/Heal",
+      "option2":"20.0% Spirit Siphon Move Speed Slow"
+    },
+    {
+      "level":15,
+      "option1":"-2.0s Crypt Swarm Cooldown",
+      "option2":"+300 Health"
+    },
+    {
+      "level":10,
+      "option1":"+12% Magic Resistance",
+      "option2":"+30 Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"9 / 8 / 7 / 6",
+      "desc":"Sends a swarm of winged beasts to savage enemy units in front of Death Prophet.",
+      "effects":{
+        "ABILITY":"Point Target, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"death-prophet-crypt-swarm",
+      "manacost":"80 / 90 / 100 / 110",
+      "name":"Crypt Swarm",
+      "notes":"Can hit units up to 1110 range away.",
+      "stats":{
+        "DAMAGE":"85 / 160 / 235 / 310",
+        "CAST RANGE":"810",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"15 / 14 / 13 / 12",
+      "desc":"Fires a projectile that prevents enemy units in a target area from casting spells.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"death-prophet-silence",
+      "manacost":"80 / 90 / 100 / 110",
+      "name":"Silence",
+      "notes":"Doesn't prevent usage of items.",
+      "stats":{
+        "RADIUS":"425",
+        "DURATION":"3 / 4 / 5 / 6",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Creates a spirit link between Death Prophet and an enemy unit, draining health from the enemy.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"death-prophet-spirit-siphon",
+      "manacost":"80",
+      "name":"Spirit Siphon",
+      "notes":"Cannot cast multiple on same target.",
+      "stats":{
+        "DAMAGE":"25 / 50 / 75 / 100",
+        "DURATION":"6",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"150",
+      "desc":"Unleashes evil spirits to drain the life of nearby enemy units and structures. At the end of the spell\\'s duration, Death Prophet is healed in proportion to the damage dealt. Deals 50% damage to buildings. Lasts [35] seconds. Passively grants Movement Speed.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"death-prophet-exorcism",
+      "manacost":"200 / 300 / 400",
+      "name":"Exorcism",
+      "notes":"Spirit damage isn't reduced by damage block abilities.",
+      "stats":{
+        "RADIUS":"700",
+        "SPIRITS":"8 / 16 / 24",
+        "LIFE DRAIN":"25%",
+        "SPIRIT DAMAGE":"61",
+        "MOVESPEED SLOW":"100%",
+        "SLOW DURATION":"0.3",
+        "SPIRIT BONUS DAMAGE":"50%",
+        "PASSIVE MOVEMENT BONUS":"12% / 16% / 20%",
+        "ACTIVE MOVEMENT BONUS":"8% / 12% / 16%",
+        "CAST POINT":"0.5s"
+      }
+    }
+  ]
+}

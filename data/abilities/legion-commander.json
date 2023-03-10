@@ -1,1 +1,110 @@
-{"id":"legion-commander","talents":[{"level":25,"option1":"Press the Attack grants 2s Spell Immunity","option2":"+50% Moment of Courage Lifesteal"},{"level":20,"option1":"+10% Moment of Courage Proc Chance","option2":"250 AoE Press The Attack"},{"level":15,"option1":"+100 Overwhelming Odds Hero Damage","option2":"+40.0 Press The Attack HP Regen"},{"level":10,"option1":"+8 Duel Bonus Damage","option2":"+100 Overwhelming Odds Radius"}],"abilities":[{"cooldown":"15","desc":"Turns the enemies' numbers against them, dealing damage and granting you bonus movement speed per unit or per hero.  Deals bonus damage to illusions and summoned units as a percent of their current health.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"legion-commander-overwhelming-odds","manacost":"100 / 110 / 120 / 130","name":"Overwhelming Odds","notes":null,"stats":{"BASE DAMAGE":"35 / 65 / 95 / 125","DAMAGE PER CREEP":"14 / 16 / 18 / 20","DAMAGE PER HERO":"35 / 65 / 95 / 125","ILLUSION DAMAGE":"25%","BONUS SPEED (CREEPS)":"3%","BONUS SPEED (HEROES)":"9%","SPEED DURATION":"7.0","RADIUS":"330 / 340 / 350 / 360","ARMOR PER CREEP":"1","ARMOR PER HERO":"5","DURATION":"15","CAST POINT":"0.3s"}},{"cooldown":"16 / 15 / 14 / 13","desc":"Removes debuffs and disables from the target friendly unit, and grants bonus attack speed and health regen for a short time.DISPEL TYPE: Strong Dispel","effects":{"ABILITY":"Unit Target","AFFECTS":"Allied Units","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"legion-commander-press-the-attack","manacost":"110","name":"Press The Attack","notes":null,"stats":{"DURATION":"5.0","BONUS ATTACK SPEED":"65 / 90 / 115 / 140","HP REGEN":"30 / 40 / 50 / 60","CAST POINT":"0.2s"}},{"cooldown":"1.9 / 1.5 / 1.1 / 0.7","desc":"When attacked, Legion Commander has a chance to immediately counterattack with bonus lifesteal.","effects":{"ABILITY":"Passive"},"id":"legion-commander-moment-of-courage","manacost":null,"name":"Moment of Courage","notes":null,"stats":{"COUNTERATTACK CHANCE":"25%","LIFESTEAL":"55% / 65% / 75% / 85%"}},{"cooldown":null,"desc":"Legion Commander and the target enemy hero are forced to attack each other for a short duration.  Neither hero can use items or abilities.  If either hero dies during the duration, the hero winning the Duel gains permanent bonus damage.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Heroes","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"legion-commander-duel","manacost":"75","name":"Duel","notes":"Winning a Duel automatically casts Press the Attack on yourself.","stats":{"DURATION":"6 / 7 / 8","BONUS DAMAGE":"10 / 20 / 30","DAMAGE REDUCTION":"50%","COOLDOWN REDUCTION":"20.0","CAST POINT":"0.3s"}}]}
+{
+  "id":"legion-commander",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Press the Attack grants 1.5s Spell Immunity",
+      "option2":"+50% Moment of Courage Lifesteal"
+    },
+    {
+      "level":20,
+      "option1":"+12% Moment of Courage Proc Chance",
+      "option2":"250 AoE Press The Attack"
+    },
+    {
+      "level":15,
+      "option1":"+100 Overwhelming Odds Hero Damage",
+      "option2":"+40.0 Press The Attack HP Regen"
+    },
+    {
+      "level":10,
+      "option1":"+8 Duel Bonus Damage",
+      "option2":"+100 Overwhelming Odds Radius"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"15",
+      "desc":"Turns the enemies\\' numbers against them, dealing damage and granting you bonus movement speed per unit or per hero.  Deals bonus damage to illusions and summoned units as a percent of their current health.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"legion-commander-overwhelming-odds",
+      "manacost":"100 / 110 / 120 / 130",
+      "name":"Overwhelming Odds",
+      "notes":null,
+      "stats":{
+        "BASE DAMAGE":"35 / 65 / 95 / 125",
+        "DAMAGE PER CREEP":"14 / 16 / 18 / 20",
+        "DAMAGE PER HERO":"35 / 65 / 95 / 125",
+        "ILLUSION DAMAGE":"25%",
+        "BONUS SPEED (CREEPS)":"3%",
+        "BONUS SPEED (HEROES)":"9%",
+        "SPEED DURATION":"7.0",
+        "RADIUS":"330 / 340 / 350 / 360",
+        "ARMOR PER CREEP":"1",
+        "ARMOR PER HERO":"5",
+        "DURATION":"15",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"16 / 15 / 14 / 13",
+      "desc":"Removes debuffs and disables from the target friendly unit, and grants bonus attack speed and health regen for a short time.DISPEL TYPE: Strong Dispel",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Allied Units",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"legion-commander-press-the-attack",
+      "manacost":"110",
+      "name":"Press The Attack",
+      "notes":null,
+      "stats":{
+        "DURATION":"5.0",
+        "BONUS ATTACK SPEED":"65 / 90 / 115 / 140",
+        "HP REGEN":"30 / 40 / 50 / 60",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"1.9 / 1.5 / 1.1 / 0.7",
+      "desc":"When attacked, Legion Commander has a chance to immediately counterattack with bonus lifesteal.",
+      "effects":{
+        "ABILITY":"Passive"
+      },
+      "id":"legion-commander-moment-of-courage",
+      "manacost":null,
+      "name":"Moment of Courage",
+      "notes":null,
+      "stats":{
+        "CHANCE TO COUNTERATTACK":"25%",
+        "LIFESTEAL":"55% / 65% / 75% / 85%"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Legion Commander and the target enemy hero are forced to attack each other for a short duration.  Neither hero can use items or abilities.  If either hero dies during the duration, the hero winning the Duel gains permanent bonus damage.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Heroes",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"legion-commander-duel",
+      "manacost":"75",
+      "name":"Duel",
+      "notes":"Winning a Duel automatically casts Press the Attack on yourself.",
+      "stats":{
+        "DURATION":"6 / 7 / 8",
+        "BONUS DAMAGE":"10 / 20 / 30",
+        "DAMAGE REDUCTION":"50%",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

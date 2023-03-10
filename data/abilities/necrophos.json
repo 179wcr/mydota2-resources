@@ -1,1 +1,132 @@
-{"id":"necrophos","talents":[{"level":25,"option1":"-2.5s Death Pulse Cooldown","option2":"+0.5% Heartstopper Aura Damage"},{"level":20,"option1":"+32% Heartstopper Regen Reduction","option2":"+15% Ghost Shroud Self Restoration Amp"},{"level":15,"option1":"+32 Death Pulse Heal","option2":"+24% Ghost Shroud Slow"},{"level":10,"option1":"+2s Heartstopper Aura Stack Duration","option2":"+100 Reaper's Scythe Cast Range"}],"abilities":[{"cooldown":"8 / 7 / 6 / 5","desc":"Necrophos releases a wave of death around him, dealing damage to enemy units and healing allied units.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"necrophos-death-pulse","manacost":"100 / 130 / 160 / 190","name":"Death Pulse","notes":"Can heal Spell Immune units.","stats":{"DAMAGE":"100 / 160 / 220 / 280","RADIUS":"500","HEAL":"55 / 80 / 105 / 130","CAST POINT":"0s"}},{"cooldown":null,"desc":"Necrophos slips into the realm that separates the living from the dead. Unable to attack or be attacked, he emits an aura that slows enemies around him. He takes additional magic damage in this form, but his restorative powers are amplified.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"necrophos-ghost-shroud","manacost":"50","name":"Ghost Shroud","notes":null,"stats":{"DURATION":"3 / 3 / 4 / 4","RESTORATION AMPLIFICATION":"45% / 55% / 65% / 75%","MOVEMENT SLOW":"12% / 16% / 20% / 24%","SLOW RADIUS":"750","INCREASED MAGIC DAMAGE":"-40%","CAST POINT":"0s"}},{"cooldown":null,"desc":"Necrophos stills the hearts of his opponents, causing nearby enemy units to lose a percentage of their max health over time. Passively provides regen for 8 seconds for each unit Necrophos kills.","effects":{"ABILITY":"Aura, Passive","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"necrophos-heartstopper-aura","manacost":null,"name":"Heartstopper Aura","notes":"Does not affect ancient creeps.","stats":{"RADIUS":"800","HEALTH DECAY":"0% / 1% / 1% / 2%","HEALTH REGEN PER KILL":"4 / 5 / 6 / 7","MANA REGEN PER KILL":"4 / 5 / 6 / 7","HERO KILL REGEN MULTIPLIER":"6","REGEN DURATION":"8","GHOST SHROUD MULTIPLIER":"2"}},{"cooldown":"16","desc":"Spawns a fast moving large Death Pulse towards the target enemy or ally, causing the target to become ethereal. Reduces enemy magic resistance. Spreads towards nearby enemies and allies after impact.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"necrophos-death-seeker","manacost":"125","name":"Death Seeker","notes":null,"stats":{"ETHEREAL DURATION":"2.5","MAGIC RESISTANCE REDUCTION":"25%","CAST POINT":"0.2s"}},{"cooldown":"110","desc":"Stuns the target enemy hero, then deals damage based on how much life it is missing. If Necrophos kills an enemy this way, he'll permanently gain Health and Mana Regen. Any kill under this effect is credited to Necrophos.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Heroes","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"necrophos-reaper's-scythe","manacost":"250 / 375 / 500","name":"Reaper's Scythe","notes":"Damage is dealt at the end of the stun.","stats":{"DAMAGE PER MISSING HP":"0","STUN DURATION":"1","HP REGEN":"2 / 4 / 6","MANA REGEN":"1 / 2 / 3","CAST POINT":"0.45s"}}]}
+{
+  "id":"necrophos",
+  "talents":[
+    {
+      "level":25,
+      "option1":"-2.5s Death Pulse Cooldown",
+      "option2":"+0.5% Heartstopper Aura Damage"
+    },
+    {
+      "level":20,
+      "option1":"+32% Heartstopper Regen Reduction",
+      "option2":"+15% Ghost Shroud Self Restoration Amp"
+    },
+    {
+      "level":15,
+      "option1":"+32 Death Pulse Heal",
+      "option2":"+24% Ghost Shroud Slow"
+    },
+    {
+      "level":10,
+      "option1":"+2s Heartstopper Aura Stack Duration",
+      "option2":"+100 Reaper's Scythe Cast Range"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"8 / 7 / 6 / 5",
+      "desc":"Necrophos releases a wave of death around him, dealing damage to enemy units and healing allied units.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"necrophos-death-pulse",
+      "manacost":"100 / 120 / 140 / 160",
+      "name":"Death Pulse",
+      "notes":"Death Pulse can't be disjointed.",
+      "stats":{
+        "DAMAGE":"100 / 160 / 220 / 280",
+        "RADIUS":"500",
+        "HEAL":"55 / 80 / 105 / 130",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Necrophos slips into the realm that separates the living from the dead. Unable to attack or be attacked, he emits an aura that slows enemies around him. He takes additional magic damage in this form, but his restorative powers are amplified.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"necrophos-ghost-shroud",
+      "manacost":"50",
+      "name":"Ghost Shroud",
+      "notes":null,
+      "stats":{
+        "DURATION":"3 / 3 / 4 / 4",
+        "RESTORATION AMPLIFICATION":"45% / 55% / 65% / 75%",
+        "MOVEMENT SLOW":"12% / 16% / 20% / 24%",
+        "SLOW RADIUS":"750",
+        "INCREASED MAGIC DAMAGE":"-25%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Necrophos stills the hearts of his opponents, causing nearby enemy units to lose a percentage of their max health over time. Passively provides regen for 8 seconds for each unit Necrophos kills.",
+      "effects":{
+        "ABILITY":"Aura, Passive",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"necrophos-heartstopper-aura",
+      "manacost":null,
+      "name":"Heartstopper Aura",
+      "notes":"Does not affect ancient creeps.",
+      "stats":{
+        "RADIUS":"800",
+        "HEALTH DECAY":"0% / 1% / 1% / 2%",
+        "HEALTH REGEN PER KILL":"4 / 5 / 6 / 7",
+        "MANA REGEN PER KILL":"4 / 5 / 6 / 7",
+        "HERO KILL REGEN MULTIPLIER":"6",
+        "REGEN DURATION":"8",
+        "GHOST SHROUD MULTIPLIER":"2"
+      }
+    },
+    {
+      "cooldown":"16",
+      "desc":"Spawns a fast moving large Death Pulse towards the target enemy or ally, causing the target to become ethereal. Reduces enemy magic resistance. Spreads towards nearby enemies and allies after impact.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"necrophos-death-seeker",
+      "manacost":"125",
+      "name":"Death Seeker",
+      "notes":null,
+      "stats":{
+        "ETHEREAL DURATION":"2.5",
+        "MAGIC RESISTANCE REDUCTION":"25%",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"110",
+      "desc":"Stuns the target enemy hero, then deals damage based on how much life it is missing. If Necrophos kills an enemy this way, he\\'ll permanently gain Health and Mana Regen. Any kill under this effect is credited to Necrophos.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Heroes",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"necrophos-reaper's-scythe",
+      "manacost":"250 / 375 / 500",
+      "name":"Reaper's Scythe",
+      "notes":"Damage is dealt at the end of the stun.",
+      "stats":{
+        "DAMAGE PER MISSING HP":"0",
+        "STUN DURATION":"1",
+        "HP REGEN":"2 / 4 / 6",
+        "MANA REGEN":"1 / 2 / 3",
+        "CAST POINT":"0.45s"
+      }
+    }
+  ]
+}

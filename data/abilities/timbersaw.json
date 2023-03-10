@@ -1,1 +1,173 @@
-{"id":"timbersaw","talents":[{"level":25,"option1":"+1125 Timber Chain Range","option2":"+10% Whirling Death Attribute Reduction"},{"level":20,"option1":"+4% Chakram Slow","option2":"+16 Strength"},{"level":15,"option1":"+6 Reactive Armor Stacks and Duration","option2":"+8% Spell Amplification"},{"level":10,"option1":"+1.5 Mana Regen","option2":"+200 Health"}],"abilities":[{"cooldown":"7.5 / 7.0 / 6.5 / 6.0","desc":"Timbersaw whirls extremely sharp edges, damaging enemies and destroying trees around him in an area.  If an enemy hero is affected, it loses some of its primary attribute for a short duration.  Whirling Death will deal bonus damage per tree destroyed.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"timbersaw-whirling-death","manacost":"80","name":"Whirling Death","notes":null,"stats":{"RADIUS":"325","DAMAGE":"80 / 120 / 160 / 200","TREE BONUS DAMAGE":"11 / 18 / 25 / 32","STAT LOSS PERCENT":"10%","STAT LOSS DURATION":"12 / 13 / 14 / 15","CAST POINT":"0s"}},{"cooldown":"4","desc":"Timbersaw fires a chain that embeds itself in the first tree it hits, pulling him towards it.  Any enemy in the path takes damage.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"No"},"id":"timbersaw-timber-chain","manacost":"60 / 70 / 80 / 90","name":"Timber Chain","notes":null,"stats":{"LATCH RANGE":"750 / 900 / 1050 / 1200","RADIUS":"225","SPEED":"2200 / 2400 / 2600 / 2800","DAMAGE":"70 / 120 / 170 / 220","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Each time Timbersaw is attacked, he gains increased health regen and armor. Heroes grant double the amount.","effects":{"ABILITY":"Passive","DISPELLABLE":"Cannot be dispelled"},"id":"timbersaw-reactive-armor","manacost":null,"name":"Reactive Armor","notes":null,"stats":{"BONUS ARMOR":"0.5 / 0.6 / 0.7 / 0.8","BONUS HP REGEN":"0.4 / 0.5 / 0.6 / 0.7","MAX STACKS":"10 / 20 / 30 / 40","STACK DURATION":"10 / 12 / 14 / 16"}},{"cooldown":"8","desc":"Launches a second independent Chakram.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"No"},"id":"timbersaw-second-chakram","manacost":"75 / 125 / 175","name":"Second Chakram","notes":"Slow effects from two chakrams do not stack.","stats":{}},{"cooldown":"20","desc":"Releases a flame in the direction Timbersaw is facing. Applies a debuff that deals damage per second and slows enemy movement speed. Affects buildings for reduced damage.","effects":{"ABILITY":"No Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"timbersaw-flamethrower","manacost":"100","name":"Flamethrower","notes":null,"stats":{"DAMAGE PER SECOND":"80","DURATION":"7","WIDTH":"275","RANGE":"400","MOVE SLOW":"30%","BUILDING DAMAGE":"40%","DEBUFF LINGER TIME":"2.0","CAST POINT":"0s"}},{"cooldown":"8","desc":"Fires Timbersaw's main saw blade at the target location where it will spin in place, dealing damage in an area around it.  Enemies caught in the saw blade will move more slowly for every 5% of health missing. The blade deals damage and cuts down trees in its path when fired and retracted.  While active the ability costs mana, and Timbersaw loses the ability to attack.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"timbersaw-chakram","manacost":"75 / 125 / 175","name":"Chakram","notes":"The Chakram will return if Timbersaw runs out of mana or moves over 2000.0 distance away.","stats":{"RADIUS":"200","PASS DAMAGE":"110 / 155 / 200","DAMAGE PER SECOND":"50 / 75 / 100","SLOW":"5%","MANA COST PER SECOND":"14 / 22 / 30","BONUS DAMAGE PER SECOND":"20","CAST POINT":"0.15s"}},{"cooldown":"0","desc":"Returns the Chakram to Timbersaw.","effects":{"ABILITY":"No Target"},"id":"timbersaw-return-chakram","manacost":null,"name":"Return Chakram","notes":null,"stats":{}},{"cooldown":"0","desc":"Returns the Chakram to Timbersaw.","effects":{"ABILITY":"No Target"},"id":"timbersaw-return-second-chakram","manacost":null,"name":"Return Second Chakram","notes":null,"stats":{}}]}
+{
+  "id":"timbersaw",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+1125 Timber Chain Range",
+      "option2":"+12% Whirling Death Attribute Reduction"
+    },
+    {
+      "level":20,
+      "option1":"+4% Chakram Slow",
+      "option2":"+16 Strength"
+    },
+    {
+      "level":15,
+      "option1":"+6 Reactive Armor Stacks and Duration",
+      "option2":"+8% Spell Amplification"
+    },
+    {
+      "level":10,
+      "option1":"+1.5 Mana Regen",
+      "option2":"+200 Health"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"7.5 / 7.0 / 6.5 / 6.0",
+      "desc":"Timbersaw whirls extremely sharp edges, damaging enemies and destroying trees around him in an area.  If an enemy hero is affected, it loses some of its primary attribute for a short duration.  Whirling Death will deal bonus damage per tree destroyed.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"timbersaw-whirling-death",
+      "manacost":"80",
+      "name":"Whirling Death",
+      "notes":null,
+      "stats":{
+        "RADIUS":"325",
+        "DAMAGE":"80 / 120 / 160 / 200",
+        "TREE BONUS DAMAGE":"11 / 18 / 25 / 32",
+        "STAT LOSS PERCENT":"10%",
+        "STAT LOSS DURATION":"12 / 13 / 14 / 15",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"4",
+      "desc":"Timbersaw fires a chain that embeds itself in the first tree it hits, pulling him towards it.  Any enemy in the path takes damage.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"timbersaw-timber-chain",
+      "manacost":"60 / 70 / 80 / 90",
+      "name":"Timber Chain",
+      "notes":null,
+      "stats":{
+        "LATCH RANGE":"750 / 900 / 1050 / 1200",
+        "RADIUS":"225",
+        "SPEED":"2200 / 2400 / 2600 / 2800",
+        "DAMAGE":"70 / 120 / 170 / 220",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Each time Timbersaw is attacked, he gains increased health regen and armor. Heroes grant double the amount.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"timbersaw-reactive-armor",
+      "manacost":null,
+      "name":"Reactive Armor",
+      "notes":null,
+      "stats":{
+        "BONUS ARMOR":"0.5 / 0.6 / 0.7 / 0.8",
+        "BONUS HP REGEN":"0.4 / 0.5 / 0.6 / 0.7",
+        "MAX STACKS":"10 / 20 / 30 / 40",
+        "STACK DURATION":"10 / 12 / 14 / 16"
+      }
+    },
+    {
+      "cooldown":"8",
+      "desc":"Launches a second independent Chakram.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"timbersaw-second-chakram",
+      "manacost":"75 / 125 / 175",
+      "name":"Second Chakram",
+      "notes":"Slow effects from two chakrams do not stack.",
+      "stats":{}
+    },
+    {
+      "cooldown":"20",
+      "desc":"Releases a flame in the direction Timbersaw is facing. Applies a debuff that deals damage per second and slows enemy movement speed. Affects buildings for reduced damage.",
+      "effects":{
+        "ABILITY":"No Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"timbersaw-flamethrower",
+      "manacost":"100",
+      "name":"Flamethrower",
+      "notes":null,
+      "stats":{
+        "DAMAGE PER SECOND":"80",
+        "DURATION":"8",
+        "WIDTH":"275",
+        "RANGE":"400",
+        "MOVE SLOW":"30%",
+        "BUILDING DAMAGE":"40%",
+        "DEBUFF LINGER TIME":"2.0",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"8",
+      "desc":"Fires Timbersaw\\'s main saw blade at the target location where it will spin in place, dealing damage in an area around it.  Enemies caught in the saw blade will move more slowly for every 5% of health missing. The blade deals damage and cuts down trees in its path when fired and retracted.  While active the ability costs mana, and Timbersaw loses the ability to attack.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"timbersaw-chakram",
+      "manacost":"75 / 125 / 175",
+      "name":"Chakram",
+      "notes":"The Chakram will return if Timbersaw runs out of mana or moves over 2000.0 distance away.",
+      "stats":{
+        "RADIUS":"200",
+        "PASS DAMAGE":"110 / 155 / 200",
+        "DAMAGE PER SECOND":"50 / 75 / 100",
+        "SLOW":"5%",
+        "MANA COST PER SECOND":"14 / 22 / 30",
+        "BONUS DAMAGE PER SECOND":"20",
+        "CAST POINT":"0.15s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Returns the Chakram to Timbersaw.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"timbersaw-return-chakram",
+      "manacost":null,
+      "name":"Return Chakram",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"0",
+      "desc":"Returns the Chakram to Timbersaw.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"timbersaw-return-second-chakram",
+      "manacost":null,
+      "name":"Return Second Chakram",
+      "notes":null,
+      "stats":{}
+    }
+  ]
+}

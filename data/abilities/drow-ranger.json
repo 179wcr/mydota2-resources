@@ -1,1 +1,119 @@
-{"id":"drow-ranger","talents":[{"level":25,"option1":"+3.0 Multishot Waves","option2":"+12% Marksmanship Chance"},{"level":20,"option1":"-4.0s Gust Cooldown","option2":"+25% Multishot Damage"},{"level":15,"option1":"-8.0s Multishot Cooldown","option2":"Gust Reveals Invisible Units"},{"level":10,"option1":"+15.0 Frost Arrow Damage","option2":"+15% Gust Self Movement Speed"}],"abilities":[{"cooldown":"0","desc":"Adds a freezing effect to Drow's attacks, slowing enemy movement and dealing bonus damage.  Slow lasts [1.5] seconds.","effects":{"ABILITY":"Auto-Cast, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"drow-ranger-frost-arrows","manacost":"12","name":"Frost Arrows","notes":"The slow duration is refreshed on successive casts.","stats":{"MOVEMENT SLOW":"-10% / -25% / -40% / -55%","BONUS DAMAGE":"5 / 10 / 15 / 20","REGEN REDUCTION PER STACK":"10%","BONUS DAMAGE PER STACK":"5","STACK DURATION":"7.0","BURST RADIUS":"650","BURST DAMAGE PER STACK":"60","BURST MOVEMENT SLOW":"40%","BURST SLOW DURATION":"2.0","MAX STACKS":"7","CAST POINT":"0s"}},{"cooldown":"16 / 15 / 14 / 13","desc":"Releases a wave that silences and knocks back enemy units. Knockback distance is relative to how close they are to Drow. Drow Gains Movement Speed for the same duration.","effects":{"ABILITY":"Point Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"drow-ranger-gust","manacost":"70","name":"Gust","notes":null,"stats":{"WIDTH":"250","SILENCE DURATION":"3 / 4 / 5 / 6","KNOCKBACK MAX":"450","KNOCKBACK DURATION":"0","BONUS MOVESPEED":"10%","CAST POINT":"0.25s"}},{"cooldown":"26 / 24 / 22 / 20","desc":"Channeling. Drow releases a flurry of arrows in continuous salvos, hitting enemies for extra damage and applying longer duration Frost Arrows. Lasts up to [1.75] seconds.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No"},"id":"drow-ranger-multishot","manacost":"50 / 70 / 90 / 110","name":"Multishot","notes":null,"stats":{"WAVE COUNT":"3","ARROWS PER WAVE":"4","ARROW BASE DAMAGE BONUS":"100% / 120% / 140% / 160%","ARROW SLOW DURATION":"1.25 / 2.0 / 2.75 / 3.5","ARROW RANGE MULTIPLIER":"1.75","CAST POINT":"0s"}},{"cooldown":null,"desc":"Drow's experiences in battle grant her a chance to launch arrows with incredible accuracy and effectiveness. Pierces through the enemy's defenses, ignoring their base armor. Grants Drow and nearby ranged heroes with bonus agility based on Drow's current agility. This ability is disabled if there is an enemy hero within 400 range.","effects":{"ABILITY":"Passive","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes"},"id":"drow-ranger-marksmanship","manacost":null,"name":"Marksmanship","notes":"Marksmanship procs have true strike.","stats":{"CHANCE":"20% / 30% / 40%","BONUS PROC DAMAGE":"40 / 60 / 80","AGILITY BONUS":"30% / 40% / 50%","AGILITY RADIUS":"1200","DAMAGE REDUCTION":"50%"}}]}
+{
+  "id":"drow-ranger",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+3.0 Multishot Waves",
+      "option2":"+12% Marksmanship Chance"
+    },
+    {
+      "level":20,
+      "option1":"-4.0s Gust Cooldown",
+      "option2":"+25% Multishot Damage"
+    },
+    {
+      "level":15,
+      "option1":"-8.0s Multishot Cooldown",
+      "option2":"Gust Reveals Invisible Units"
+    },
+    {
+      "level":10,
+      "option1":"+15.0 Frost Arrow Damage",
+      "option2":"+15% Gust Self Movement Speed"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"0",
+      "desc":"Adds a freezing effect to Drow\\'s attacks, slowing enemy movement and dealing bonus damage.  Slow lasts [1.5] seconds.",
+      "effects":{
+        "ABILITY":"Auto-Cast, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"drow-ranger-frost-arrows",
+      "manacost":"9 / 10 / 11 / 12",
+      "name":"Frost Arrows",
+      "notes":"The slow duration is refreshed on successive casts.",
+      "stats":{
+        "MOVEMENT SLOW":"-10% / -25% / -40% / -55%",
+        "BONUS DAMAGE":"6 / 12 / 18 / 24",
+        "REGEN REDUCTION PER STACK":"8%",
+        "BONUS DAMAGE PER STACK":"5",
+        "STACK DURATION":"7.0",
+        "BURST RADIUS":"650",
+        "BURST DAMAGE PER STACK":"60",
+        "BURST MOVEMENT SLOW":"40%",
+        "BURST SLOW DURATION":"2.0",
+        "MAX STACKS":"7",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"19 / 17 / 15 / 13",
+      "desc":"Releases a wave that silences and knocks back enemy units. Knockback distance is relative to how close they are to Drow. Drow Gains Movement Speed for the same duration.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"drow-ranger-gust",
+      "manacost":"70",
+      "name":"Gust",
+      "notes":null,
+      "stats":{
+        "WIDTH":"250",
+        "SILENCE DURATION":"3 / 4 / 5 / 6",
+        "KNOCKBACK MAX":"450",
+        "KNOCKBACK DURATION":"0",
+        "BONUS MOVESPEED":"10%",
+        "CAST POINT":"0.25s"
+      }
+    },
+    {
+      "cooldown":"26 / 24 / 22 / 20",
+      "desc":"CHANNELED - Drow releases a flurry of arrows in continuous salvos, hitting enemies for extra damage and applying longer duration Frost Arrows. Lasts up to [1.75] seconds.",
+      "effects":{
+        "ABILITY":"Channelled, Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"drow-ranger-multishot",
+      "manacost":"50 / 70 / 90 / 110",
+      "name":"Multishot",
+      "notes":"Frost Arrows' damage and slow do not pierce magic immunity.",
+      "stats":{
+        "WAVE COUNT":"3",
+        "ARROWS PER WAVE":"4",
+        "ARROW BASE DAMAGE BONUS":"100% / 120% / 140% / 160%",
+        "ARROW SLOW DURATION":"1.25 / 2.0 / 2.75 / 3.5",
+        "ARROW RANGE MULTIPLIER":"1.75",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Drow\\'s experiences in battle grant her a chance to launch arrows with incredible accuracy and effectiveness. Pierces through the enemy\\'s defenses, ignoring their base armor. Grants Drow and nearby ranged heroes with bonus agility based on Drow\\'s current agility, with allies receiving 50% of the bonus Drow receives. This ability is disabled if there is an enemy hero within 400 range.",
+      "effects":{
+        "ABILITY":"Passive",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"drow-ranger-marksmanship",
+      "manacost":null,
+      "name":"Marksmanship",
+      "notes":"Marksmanship procs have true strike.",
+      "stats":{
+        "CHANCE":"20% / 30% / 40%",
+        "BONUS PROC DAMAGE":"40 / 60 / 80",
+        "AGILITY BONUS":"30% / 40% / 50%",
+        "AGILITY RADIUS":"1200",
+        "DAMAGE REDUCTION":"50%"
+      }
+    }
+  ]
+}

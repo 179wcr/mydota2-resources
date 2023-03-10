@@ -1,1 +1,112 @@
-{"id":"gyrocopter","talents":[{"level":25,"option1":"3x Call Down","option2":"-6s Flak Cannon Cooldown"},{"level":20,"option1":"+16 Rocket Barrage Damage","option2":"+40 Flak Cannon Damage"},{"level":15,"option1":"+2 Flak Cannon Attacks","option2":"+0.4s Homing Missile Stun Duration"},{"level":10,"option1":"+200 Health","option2":"+300 Movement Speed during Rocket Barrage"}],"abilities":[{"cooldown":"7.0 / 6.5 / 6.0 / 5.5","desc":"Launches a salvo of rockets at nearby enemy units in a radius around the Gyrocopter.  Lasts [3] seconds.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"gyrocopter-rocket-barrage","manacost":"75 / 80 / 85 / 90","name":"Rocket Barrage","notes":"Rocket Barrage can't hit units Gyrocopter has no vision over.","stats":{"RADIUS":"400","ROCKETS PER SECOND":"10","ROCKET DAMAGE":"6 / 12 / 18 / 24","CAST POINT":"0s"}},{"cooldown":"26 / 21 / 16 / 11","desc":"Fires a homing missile to seek the targeted enemy unit. The missile gains speed over time, dealing damage and stunning when it impacts the target. Enemy units can destroy the missile before it reaches its target.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"gyrocopter-homing-missile","manacost":"120 / 130 / 140 / 150","name":"Homing Missile","notes":"The missile will follow and hit invisible units.","stats":{"DAMAGE":"90 / 180 / 270 / 360","HITS TO DESTROY":"3","TOWER HITS TO DESTROY":"6","STUN DURATION":"1.8 / 2.2 / 2.6 / 3.0","CAST POINT":"0s"}},{"cooldown":"20","desc":"Gyrocopter's attacks hit all enemy units in an area around it for a limited number of attacks.  Only the main target of attacks will receive attack bonuses such as Critical Strike.  Lasts [10] seconds or until the attacks are used.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"gyrocopter-flak-cannon","manacost":"50 / 60 / 70 / 80","name":"Flak Cannon","notes":"Attack range for the primary attack is unchanged.","stats":{"RADIUS":"1000","MAX ATTACKS":"3 / 4 / 5 / 6","SIDE GUNNER FIRE RATE":"1.2","SIDE GUNNER ATTACK RADIUS":"700","CAST POINT":"0s"}},{"cooldown":"90 / 75 / 60","desc":"Call down an aerial missile strike on enemy units in a target area. After 2 seconds, two missiles arrive in succession, with 2 seconds between them.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"gyrocopter-call-down","manacost":"125","name":"Call Down","notes":"The visual indicator is visible to allies only.","stats":{"MISSILE ONE DAMAGE":"150 / 250 / 350","MISSILE TWO DAMAGE":"200 / 275 / 350","MISSILE ONE SLOW":"30.0%","MISSILE TWO SLOW":"60.0%","RADIUS":"600","CAST POINT":"0.3s"}}]}
+{
+  "id":"gyrocopter",
+  "talents":[
+    {
+      "level":25,
+      "option1":"3x Call Down",
+      "option2":"-6s Flak Cannon Cooldown"
+    },
+    {
+      "level":20,
+      "option1":"+16 Rocket Barrage Damage",
+      "option2":"+40 Flak Cannon Damage"
+    },
+    {
+      "level":15,
+      "option1":"+3 Flak Cannon Attacks",
+      "option2":"+0.4s Homing Missile Stun Duration"
+    },
+    {
+      "level":10,
+      "option1":"+200 Health",
+      "option2":"+30 Movement Speed during Rocket Barrage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"7.0 / 6.5 / 6.0 / 5.5",
+      "desc":"Launches a salvo of rockets at nearby enemy units in a radius around the Gyrocopter.  Lasts [3] seconds.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"gyrocopter-rocket-barrage",
+      "manacost":"75 / 80 / 85 / 90",
+      "name":"Rocket Barrage",
+      "notes":"Rocket Barrage can't hit units Gyrocopter has no vision over.",
+      "stats":{
+        "RADIUS":"400",
+        "ROCKETS PER SECOND":"10",
+        "ROCKET DAMAGE":"6 / 12 / 18 / 24",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"26 / 21 / 16 / 11",
+      "desc":"Fires a homing missile to seek the targeted enemy unit. The missile gains speed over time, dealing damage and stunning when it impacts the target. Enemy units can destroy the missile before it reaches its target.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"gyrocopter-homing-missile",
+      "manacost":"120 / 130 / 140 / 150",
+      "name":"Homing Missile",
+      "notes":"The missile will follow and hit invisible units.",
+      "stats":{
+        "DAMAGE":"90 / 180 / 270 / 360",
+        "HITS TO DESTROY":"3",
+        "TOWER HITS TO DESTROY":"6",
+        "STUN DURATION":"1.8 / 2.2 / 2.6 / 3.0",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"18",
+      "desc":"Gyrocopter\\'s attacks hit all enemy units in an area around it for a limited number of attacks.  Only the main target of attacks will receive attack bonuses such as Critical Strike.  Lasts [10] seconds or until the attacks are used.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"gyrocopter-flak-cannon",
+      "manacost":"40 / 50 / 60 / 70",
+      "name":"Flak Cannon",
+      "notes":"Attack range for the primary attack is unchanged.",
+      "stats":{
+        "RADIUS":"1000",
+        "MAX ATTACKS":"3 / 4 / 5 / 6",
+        "SIDE GUNNER FIRE RATE":"1.2",
+        "SIDE GUNNER ATTACK RADIUS":"700",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"90 / 75 / 60",
+      "desc":"Call down an aerial missile strike on enemy units in a target area. After 2 seconds, two missiles arrive in succession, with 2 seconds between them.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"gyrocopter-call-down",
+      "manacost":"125",
+      "name":"Call Down",
+      "notes":"The visual indicator is visible to allies only.",
+      "stats":{
+        "MISSILE ONE DAMAGE":"150 / 250 / 350",
+        "MISSILE TWO DAMAGE":"200 / 275 / 350",
+        "MISSILE ONE SLOW":"30.0%",
+        "MISSILE TWO SLOW":"60.0%",
+        "RADIUS":"600",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

@@ -1,1 +1,133 @@
-{"id":"techies","talents":[{"level":25,"option1":"-0.8s Proximity Mines Activation Delay","option2":"+252 Damage"},{"level":20,"option1":"-15s Blast Off! Cooldown","option2":"+125 Sticky Bomb Latch/Explosion Radius"},{"level":15,"option1":"+3 Mana Regen","option2":"+200 Blast Off! Damage"},{"level":10,"option1":"-3s Proximity Mines Cooldown","option2":"+20% Magic Resistance"}],"abilities":[{"cooldown":"12 / 10 / 8 / 6","desc":"Lobs a Sticky Bomb towards the target area. If it lands next to an enemy hero, the bomb will stick to it, slowing its movement speed. After a few seconds the bomb will explode, dealing damage in an area around the detonation and applying a secondary slow for 3 seconds.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"techies-sticky-bomb","manacost":"100 / 115 / 130 / 145","name":"Sticky Bomb","notes":null,"stats":{"EXPLOSION DELAY":"2","STICK RADIUS":"250","DAMAGE":"90 / 180 / 270 / 360","MOVEMENT SLOW":"25% / 35% / 45% / 55%","SECONDARY MOVEMENT SLOW":"15% / 25% / 35% / 45%","EXPLOSION RADIUS":"300","CAST POINT":"0.2s"}},{"cooldown":"28 / 24 / 20 / 16","desc":"Techies trigger an electric charge giving them bonus movement speed for a short period of time. Enemies attacking Techies are temporarily disarmed and get a Basic Dispel. At the end of the effect, the charge explodes, disarming all enemies within the radius.","effects":{"ABILITY":"No Target","AFFECTS":"Allied Units","DAMAGE TYPE":"Magical"},"id":"techies-reactive-tazer","manacost":"60","name":"Reactive Tazer","notes":null,"stats":{"BUFF DURATION":"6","DISARM DURATION":"2 / 2 / 3 / 3","MOVEMENT BONUS":"15% / 20% / 25% / 30%","EXPLOSION RADIUS":"400","CAST POINT":"0.1s"}},{"cooldown":"39 / 36 / 33 / 30","desc":"Techies hurtle themselves into the enemy's midst, detonating charges upon impact which deal massive area of effect damage and silence enemies. Upon landing, the assault deals Techies non-lethal damage equal to a percentage of their current health.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"techies-blast-off!","manacost":"100 / 125 / 150 / 175","name":"Blast Off!","notes":"This ability destroys trees.","stats":{"RADIUS":"400","FULL DAMAGE":"200 / 300 / 400 / 500","SILENCE DURATION":"4 / 5 / 6 / 7","CURRENT HP SELF DAMAGE":"35% / 30% / 25% / 20%","CAST POINT":"1s"}},{"cooldown":"60","desc":"Plant a warning sign, causing mines within it's radius to be invulnerable. Only one sign can exist at a time. Lasts 60 seconds.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"DAMAGE_TYPE_NONE"},"id":"techies-minefield-sign","manacost":"0","name":"Minefield Sign","notes":null,"stats":{"EFFECT RADIUS":"500","SIGN DURATION":"60","CAST POINT":"1s"}},{"cooldown":"0","desc":"Plant an invisible mine that cannot be detected by True Sight, but is visible if an enemy is within the active 500 AoE of the mine. Mines detonate if an enemy is standing within the active AoE for 1.0 seconds dealing damage and temporarily reducing the enemy's Magic Resistance. The explosion deals full damage if the target is within 150 radius and decreases up to 50% on the edge. Deals 30% damage to buildings.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"techies-proximity-mines","manacost":"110 / 140 / 170","name":"Proximity Mines","notes":"Mines damage and debuff pierce spell immunity.","stats":{"RADIUS":"500","DAMAGE":"400 / 575 / 750","BUILDING DAMAGE":"30%","ACTIVATION DELAY":"1","MAGIC RESISTANCE REDUCTION":"15% / 20% / 25%","DEBUFF DURATION":"5","CAST POINT":"0s"}}]}
+{
+  "id":"techies",
+  "talents":[
+    {
+      "level":25,
+      "option1":"-0.8s Proximity Mines Activation Delay",
+      "option2":"+252 Damage"
+    },
+    {
+      "level":20,
+      "option1":"-15s Blast Off! Cooldown",
+      "option2":"+125 Sticky Bomb Latch/Explosion Radius"
+    },
+    {
+      "level":15,
+      "option1":"+3 Mana Regen",
+      "option2":"+200 Blast Off! Damage"
+    },
+    {
+      "level":10,
+      "option1":"-3s Proximity Mines Cooldown",
+      "option2":"+20% Magic Resistance"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"12 / 10 / 8 / 6",
+      "desc":"Lobs a Sticky Bomb towards the target area. If it lands next to an enemy hero, the bomb will stick to it, slowing its movement speed. After a few seconds the bomb will explode, dealing damage in an area around the detonation and applying a secondary slow for 3 seconds.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"techies-sticky-bomb",
+      "manacost":"100 / 115 / 130 / 145",
+      "name":"Sticky Bomb",
+      "notes":null,
+      "stats":{
+        "EXPLOSION DELAY":"2",
+        "STICK RADIUS":"250",
+        "DAMAGE":"90 / 180 / 270 / 360",
+        "MOVEMENT SLOW":"25% / 35% / 45% / 55%",
+        "SECONDARY MOVEMENT SLOW":"15% / 25% / 35% / 45%",
+        "EXPLOSION RADIUS":"300",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"28 / 24 / 20 / 16",
+      "desc":"Techies trigger an electric charge giving them bonus movement speed for a short period of time. Enemies attacking Techies are temporarily disarmed and get a Basic Dispel. At the end of the effect, the charge explodes, disarming all enemies within the radius.",
+      "effects":{
+        "ABILITY":"No Target",
+        "AFFECTS":"Allied Units",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"techies-reactive-tazer",
+      "manacost":"60",
+      "name":"Reactive Tazer",
+      "notes":null,
+      "stats":{
+        "BUFF DURATION":"6",
+        "DISARM DURATION":"2 / 2 / 3 / 3",
+        "MOVEMENT BONUS":"18% / 22% / 26% / 30%",
+        "EXPLOSION RADIUS":"400",
+        "DAMAGE":"300",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"39 / 36 / 33 / 30",
+      "desc":"Techies hurtle themselves into the enemy\\'s midst, detonating charges upon impact which deal massive area of effect damage and silence enemies. Upon landing, the assault deals Techies non-lethal damage equal to a percentage of their current health.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"techies-blast-off!",
+      "manacost":"100 / 125 / 150 / 175",
+      "name":"Blast Off!",
+      "notes":"This ability destroys trees.",
+      "stats":{
+        "RADIUS":"400",
+        "FULL DAMAGE":"200 / 300 / 400 / 500",
+        "SILENCE DURATION":"4 / 5 / 6 / 7",
+        "CURRENT HP SELF DAMAGE":"35% / 30% / 25% / 20%",
+        "CAST POINT":"1s"
+      }
+    },
+    {
+      "cooldown":"60",
+      "desc":"Plant a warning sign, causing mines within it\\'s radius to be invulnerable. Only one sign can exist at a time. Lasts 60 seconds.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"DAMAGE_TYPE_NONE"
+      },
+      "id":"techies-minefield-sign",
+      "manacost":"0",
+      "name":"Minefield Sign",
+      "notes":null,
+      "stats":{
+        "EFFECT RADIUS":"500",
+        "SIGN DURATION":"60",
+        "CAST POINT":"1s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Plant an invisible mine that cannot be detected by True Sight, but is visible if an enemy is within the active 500 AoE of the mine. Mines detonate if an enemy is standing within the active AoE for 1.0 seconds dealing damage and temporarily reducing the enemy\\'s Magic Resistance. The explosion deals full damage if the target is within 150 radius and decreases up to 50% on the edge. Deals 30% damage to buildings.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"techies-proximity-mines",
+      "manacost":"110 / 140 / 170",
+      "name":"Proximity Mines",
+      "notes":"Spell immune units will reveal mines, but not trigger detonation.",
+      "stats":{
+        "RADIUS":"500",
+        "DAMAGE":"400 / 575 / 750",
+        "BUILDING DAMAGE":"30%",
+        "ACTIVATION DELAY":"1",
+        "MAGIC RESISTANCE REDUCTION":"15% / 20% / 25%",
+        "DEBUFF DURATION":"5",
+        "CAST POINT":"0s"
+      }
+    }
+  ]
+}

@@ -1,1 +1,145 @@
-{"id":"zeus","talents":[{"level":25,"option1":"+100 Arc Lightning Damage","option2":"325 AOE Lightning Bolt"},{"level":20,"option1":"+0.4s Lightning Bolt Ministun","option2":"+100 Thundergod's Wrath Damage"},{"level":15,"option1":"+1 Heavenly Jump Target","option2":"+30 Movement Speed after Heavenly Jump\n                                                        "},{"level":10,"option1":"+250 Health","option2":"-4s Heavenly Jump Cooldown"}],"abilities":[{"cooldown":"1.6","desc":"Hurls a bolt of lightning that leaps through nearby enemy units.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"zeus-arc-lightning","manacost":"80 / 85 / 90 / 95","name":"Arc Lightning","notes":null,"stats":{"DAMAGE":"90 / 120 / 150 / 180","JUMPS":"5 / 7 / 9 / 15","CAST POINT":"0.2s"}},{"cooldown":"6","desc":"Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a 750 radius. Can be cast on the ground, affecting the closest enemy hero in 325 range.","effects":{"ABILITY":"Point Target, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"zeus-lightning-bolt","manacost":"120 / 125 / 130 / 135","name":"Lightning Bolt","notes":"You can interrupt channeling spells and items with this ability.","stats":{"DAMAGE":"125 / 200 / 275 / 350","SIGHT RADIUS":"750","SIGHT DURATION":"5.0","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Zeus performs a Heavenly Jump shocking the closest visible nearby enemy (prioritizing heroes), dealing damage, reducing their movement, attack speed and increasing their cast time. If Zeus was moving forward, he will jump towards that direction. Zeus gets 900 unobstructed vision around him for 3 seconds.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"zeus-heavenly-jump","manacost":"50 / 60 / 70 / 80","name":"Heavenly Jump","notes":null,"stats":{"DAMAGE":"25 / 50 / 75 / 100","DISTANCE":"500","RANGE":"700 / 800 / 900 / 1000","DURATION":"1.6","MOVE SPEED SLOW":"80%","ATTACK SPEED SLOW":"100","CAST TIME INCREASE":"50%"}},{"cooldown":"45","desc":"Creates a storm cloud anywhere on the map that automatically casts Lightning Bolt on nearby enemies.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"zeus-nimbus","manacost":"325","name":"Nimbus","notes":"Towers and creeps do half damage to the Nimbus.","stats":{"DURATION":"30.0","LIGHTNING BOLT BASE COOLDOWN":"2.5","HITS TO DESTROY":"8","CREEP HITS TO DESTROY":"16","CAST POINT":"0.2s"}},{"cooldown":null,"desc":"Zeus shocks any enemy that he attacks or is hit by his abilities, causing damage equal to 8% of their current health.","effects":{"ABILITY":"Passive","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"zeus-static-field","manacost":null,"name":"Static Field","notes":null,"stats":{}},{"cooldown":"130 / 125 / 120","desc":"Strikes all enemy heroes with a bolt of lightning, no matter where they may be. Thundergod's Wrath also provides True Sight around each hero struck. If an enemy hero is invisible, it takes no damage, but the True Sight is still created at that hero's location.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"zeus-thundergod's-wrath","manacost":"300 / 400 / 500","name":"Thundergod's Wrath","notes":null,"stats":{"TRUE SIGHT RADIUS":"500","DURATION":"3","DAMAGE":"300 / 425 / 550","CAST POINT":"0.4s"}}]}
+{
+  "id":"zeus",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+100 Arc Lightning Damage",
+      "option2":"325 AOE Lightning Bolt"
+    },
+    {
+      "level":20,
+      "option1":"+0.4s Lightning Bolt Ministun",
+      "option2":"+100 Thundergod's Wrath Damage"
+    },
+    {
+      "level":15,
+      "option1":"+1 Heavenly Jump Target",
+      "option2":"+30 Movement Speed after Heavenly Jump"
+    },
+    {
+      "level":10,
+      "option1":"+250 Health",
+      "option2":"-4s Heavenly Jump Cooldown"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"1.6",
+      "desc":"Hurls a bolt of lightning that leaps through nearby enemy units.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"zeus-arc-lightning",
+      "manacost":"80 / 85 / 90 / 95",
+      "name":"Arc Lightning",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"90 / 120 / 150 / 180",
+        "JUMPS":"5 / 7 / 9 / 15",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"6",
+      "desc":"Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a 750 radius. Can be cast on the ground, affecting the closest enemy hero in 325 range.",
+      "effects":{
+        "ABILITY":"Point Target, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"zeus-lightning-bolt",
+      "manacost":"120 / 125 / 130 / 135",
+      "name":"Lightning Bolt",
+      "notes":"You can interrupt channeling spells and items with this ability.",
+      "stats":{
+        "DAMAGE":"125 / 200 / 275 / 350",
+        "SIGHT RADIUS":"750",
+        "SIGHT DURATION":"5.0",
+        "MINISTUN DURATION":"0.3",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Zeus performs a Heavenly Jump shocking the closest visible nearby enemy (prioritizing heroes), dealing damage, reducing their movement, attack speed and increasing their cast time. If Zeus was moving forward, he will jump towards that direction. Zeus gets 900 unobstructed vision around him for 3 seconds.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"zeus-heavenly-jump",
+      "manacost":"50 / 60 / 70 / 80",
+      "name":"Heavenly Jump",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"25 / 50 / 75 / 100",
+        "DISTANCE":"500",
+        "RANGE":"700 / 800 / 900 / 1000",
+        "DURATION":"1.6",
+        "MOVE SPEED SLOW":"80%",
+        "ATTACK SPEED SLOW":"100",
+        "CAST TIME INCREASE":"50%",
+        "TARGETS":"1"
+      }
+    },
+    {
+      "cooldown":"45",
+      "desc":"Creates a storm cloud anywhere on the map that automatically casts Lightning Bolt on nearby enemies.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"zeus-nimbus",
+      "manacost":"325",
+      "name":"Nimbus",
+      "notes":"Towers and creeps do half damage to the Nimbus.",
+      "stats":{
+        "DURATION":"30.0",
+        "LIGHTNING BOLT BASE COOLDOWN":"2.5",
+        "RADIUS":"450",
+        "HITS TO DESTROY":"8",
+        "CREEP HITS TO DESTROY":"16",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Zeus shocks any enemy that he attacks or is hit by his abilities, causing damage equal to 8% of their current health.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"zeus-static-field",
+      "manacost":null,
+      "name":"Static Field",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"130 / 125 / 120",
+      "desc":"Strikes all enemy heroes with a bolt of lightning, no matter where they may be.  Thundergod\\'s Wrath also provides True Sight around each hero struck.  If an enemy hero is invisible, it takes no damage, but the True Sight is still created at that hero\\'s location.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"zeus-thundergod's-wrath",
+      "manacost":"300 / 400 / 500",
+      "name":"Thundergod's Wrath",
+      "notes":null,
+      "stats":{
+        "TRUE SIGHT RADIUS":"500",
+        "DURATION":"3",
+        "DAMAGE":"300 / 425 / 550",
+        "CAST POINT":"0.4s"
+      }
+    }
+  ]
+}

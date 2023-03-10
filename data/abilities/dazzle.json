@@ -1,1 +1,126 @@
-{"id":"dazzle","talents":[{"level":25,"option1":"+0.5 Bad Juju Armor Reduction","option2":"-32% Poison Touch Slow"},{"level":20,"option1":"+40 Poison Touch DPS","option2":"+225 Heal On Shallow Grave End"},{"level":15,"option1":"+350 Poison Touch Attack Range","option2":"+50 Shadow Wave Heal / Damage"},{"level":10,"option1":"+1.75 Mana Regen","option2":"+50 Damage"}],"abilities":[{"cooldown":"27 / 23 / 19 / 15","desc":"Releases a cone of poison that strikes multiple enemy units. Deals damage over time and slows the targets. Anytime the targets get attacked by Dazzle, the debuff duration is refreshed and slow is increased.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"dazzle-poison-touch","manacost":"110 / 120 / 130 / 140","name":"Poison Touch","notes":"The damage is not reduced by damage block abilities.","stats":{"TARGETS":"2 / 4 / 6 / 8","DAMAGE PER SECOND":"16 / 28 / 40 / 52","SLOW":"-16% / -18% / -20% / -22%","DURATION":"4 / 5 / 6 / 7","BONUS SLOW PER HIT":"-2% / -2% / -3% / -3%","CAST POINT":"0.3s"}},{"cooldown":"36 / 30 / 24 / 18","desc":"An ally blessed with Shallow Grave, no matter how close to death, cannot die while under its protection. Healing on that ally is also amplified for the duration based on the hero's HP.","effects":{"ABILITY":"Unit Target","AFFECTS":"Allied Heroes","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"dazzle-shallow-grave","manacost":"120 / 130 / 140 / 150","name":"Shallow Grave","notes":"HP cannot go below 1 while under the effects of Shallow Grave, but Axe's Culling Blade will still kill the hero.","stats":{"DURATION":"3.5 / 4.0 / 4.5 / 5.0","HEAL AMPLIFICATION PER 10% MISSING":"2% / 4% / 6% / 8%","CAST POINT":"0.3s"}},{"cooldown":"12 / 11 / 10 / 9","desc":"Sends out a bolt of power that arcs between allies, healing them while damaging any enemy units standing nearby.  Dazzle is always healed by Shadow Wave.","effects":{"ABILITY":"Unit Target","AFFECTS":"Allied Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes"},"id":"dazzle-shadow-wave","manacost":"90","name":"Shadow Wave","notes":"If enemies are near multiple allied units affected by Shadow Wave, they will take multiple instances of damage.","stats":{"HEAL ARC RADIUS":"475","DAMAGE RADIUS":"185","MAX HEAL TARGETS":"4 / 5 / 6 / 7","DAMAGE":"60 / 85 / 110 / 135","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Whenever Dazzle Casts a Spell, all other abilities currently on cooldown have their cooldowns reduced.","effects":{"ABILITY":"Passive","AFFECTS":"Allied Heroes"},"id":"dazzle-good-juju","manacost":null,"name":"Good Juju","notes":null,"stats":{"COOLDOWN REDUCTION PER CAST":"1 / 1 / 2","CAST POINT":"0.2s"}},{"cooldown":"15","desc":"Whenever a Unit is affected by Dazzle's spells they temporarily gain/lose armor.  Can be activated to heal/deal physical damage to units based on the amount of charges they have.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"dazzle-bad-juju","manacost":"50 / 75 / 100","name":"Bad Juju","notes":null,"stats":{"ARMOR REDUCTION/INCREASE PER STACK":"1 / 2 / 3","DURATION":"8 / 10 / 12","HEAL/DAMAGE PER STACK":"40 / 50 / 60","CAST POINT":"0.2s"}}]}
+{
+  "id":"dazzle",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+0.5 Bad Juju Armor Reduction/Increase",
+      "option2":"-40% Poison Touch Slow"
+    },
+    {
+      "level":20,
+      "option1":"+45 Poison Touch DPS",
+      "option2":"+200 Heal On Shallow Grave End"
+    },
+    {
+      "level":15,
+      "option1":"+350 Poison Touch Attack Range",
+      "option2":"+45 Shadow Wave Heal / Damage"
+    },
+    {
+      "level":10,
+      "option1":"+1.75 Mana Regen",
+      "option2":"+60 Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"27 / 23 / 19 / 15",
+      "desc":"Releases a cone of poison that strikes multiple enemy units. Deals damage over time and slows the targets. Anytime the targets get attacked by Dazzle, the debuff duration is refreshed and slow is increased.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"dazzle-poison-touch",
+      "manacost":"125 / 130 / 135 / 140",
+      "name":"Poison Touch",
+      "notes":"The damage is not reduced by damage block abilities.",
+      "stats":{
+        "TARGETS":"2 / 4 / 6 / 8",
+        "DAMAGE PER SECOND":"16 / 28 / 40 / 52",
+        "SLOW":"-16% / -18% / -20% / -22%",
+        "DURATION":"5 / 6 / 7 / 8",
+        "BONUS SLOW PER HIT":"-2% / -2% / -3% / -3%",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"36 / 30 / 24 / 18",
+      "desc":"An ally blessed with Shallow Grave, no matter how close to death, cannot die while under its protection. Healing on that ally is also amplified for the duration based on the hero\\'s HP.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Allied Heroes",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"dazzle-shallow-grave",
+      "manacost":"120 / 130 / 140 / 150",
+      "name":"Shallow Grave",
+      "notes":"HP cannot go below 1 while under the effects of Shallow Grave, but Axe's Culling Blade will still kill the hero.",
+      "stats":{
+        "DURATION":"3.5 / 4.0 / 4.5 / 5.0",
+        "HEAL AMPLIFICATION PER 10% MISSING":"2% / 4% / 6% / 8%",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"12 / 11 / 10 / 9",
+      "desc":"Sends out a bolt of power that arcs between allies, healing them while damaging any enemy units standing nearby.  Dazzle is always healed by Shadow Wave.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Allied Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"dazzle-shadow-wave",
+      "manacost":"90",
+      "name":"Shadow Wave",
+      "notes":"If enemies are near multiple allied units affected by Shadow Wave, they will take multiple instances of damage.",
+      "stats":{
+        "HEAL ARC RADIUS":"475",
+        "DAMAGE RADIUS":"185",
+        "MAX HEAL TARGETS":"4 / 5 / 6 / 7",
+        "DAMAGE":"60 / 85 / 110 / 135",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Whenever Dazzle Casts a Spell, all other abilities currently on cooldown have their cooldowns reduced.",
+      "effects":{
+        "ABILITY":"Passive",
+        "AFFECTS":"Allied Heroes"
+      },
+      "id":"dazzle-good-juju",
+      "manacost":null,
+      "name":"Good Juju",
+      "notes":null,
+      "stats":{
+        "COOLDOWN REDUCTION PER CAST":"1 / 1 / 2",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"15",
+      "desc":"Whenever a Unit is affected by Dazzle\\'s spells they temporarily gain/lose armor.  Can be activated to heal/deal damage to units based on the amount of charges they have.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"dazzle-bad-juju",
+      "manacost":"50 / 75 / 100",
+      "name":"Bad Juju",
+      "notes":null,
+      "stats":{
+        "ARMOR REDUCTION/INCREASE PER STACK":"1 / 2 / 3",
+        "DURATION":"8 / 10 / 12",
+        "HEAL/DAMAGE PER STACK":"40 / 50 / 60",
+        "CAST POINT":"0.2s"
+      }
+    }
+  ]
+}

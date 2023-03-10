@@ -1,1 +1,103 @@
-{"id":"vengeful-spirit","talents":[{"level":25,"option1":"Magic Missile Pierces Spell Immunity","option2":"+16% Vengeance Aura Base Damage Bonus"},{"level":20,"option1":"-15.0s Nether Swap Cooldown","option2":"+200 Magic Missile Damage"},{"level":15,"option1":"-2.0s Magic Missile Cooldown","option2":"-2 Wave of Terror Armor"},{"level":10,"option1":"+125 Magic Missile Cast Range","option2":"+150 Nether Swap Enemy Damage"}],"abilities":[{"cooldown":"12 / 11 / 10 / 9","desc":"Fires a magic missile at an enemy unit, stunning and dealing damage.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"vengeful-spirit-magic-missile","manacost":"100 / 110 / 120 / 130","name":"Magic Missile","notes":null,"stats":{"STUN DURATION":"1","DAMAGE":"90 / 180 / 270 / 360","CAST POINT":"0.3s"}},{"cooldown":"16 / 14 / 12 / 10","desc":"Vengeful Spirit lets loose a wicked cry, weakening the armor of enemies and giving vision of the path ahead.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"vengeful-spirit-wave-of-terror","manacost":"25 / 30 / 35 / 40","name":"Wave of Terror","notes":null,"stats":{"DAMAGE":"85 / 100 / 115 / 130","ARMOR REDUCTION":"-3 / -4 / -5 / -6","VISION DURATION":"4.0","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Vengeful Spirit's presence increases the damage of nearby friendly heroes.","effects":{"ABILITY":"Aura, Passive","PIERCES SPELL IMMUNITY":"Yes"},"id":"vengeful-spirit-vengeance-aura","manacost":null,"name":"Vengeance Aura","notes":"Strong Illusions are not instantly killed by spells.","stats":{"BASE DAMAGE BONUS":"11% / 18% / 25% / 32%","RADIUS":"1200"}},{"cooldown":"50 / 40 / 30","desc":"Instantaneously swaps positions with a target Hero, friend or enemy.  Nether Swap interrupts channeling abilities on the target. Enemy Swapped units take 50 damage, Allied swapped units receive less damage for a short duration","effects":{"ABILITY":"Unit Target","PIERCES SPELL IMMUNITY":"Yes"},"id":"vengeful-spirit-nether-swap","manacost":"100 / 150 / 200","name":"Nether Swap","notes":"Channeling spells are interrupted by Nether Swap.","stats":{"DAMAGE REDUCTION":"30 / 40 / 50","DAMAGE REDUCTION DURATION":"3","CAST POINT":"0.4s"}}]}
+{
+  "id":"vengeful-spirit",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Magic Missile Pierces Spell Immunity",
+      "option2":"+16% Vengeance Aura Base Damage Bonus"
+    },
+    {
+      "level":20,
+      "option1":"-15.0s Nether Swap Cooldown",
+      "option2":"+200 Magic Missile Damage"
+    },
+    {
+      "level":15,
+      "option1":"-2.0s Magic Missile Cooldown",
+      "option2":"--2 Wave of Terror Armor"
+    },
+    {
+      "level":10,
+      "option1":"+125 Magic Missile Cast Range",
+      "option2":"+150 Nether Swap Enemy Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"12 / 11 / 10 / 9",
+      "desc":"Fires a magic missile at an enemy unit, stunning and dealing damage.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"vengeful-spirit-magic-missile",
+      "manacost":"100 / 110 / 120 / 130",
+      "name":"Magic Missile",
+      "notes":null,
+      "stats":{
+        "STUN DURATION":"1",
+        "DAMAGE":"90 / 180 / 270 / 360",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"16 / 14 / 12 / 10",
+      "desc":"Vengeful Spirit lets loose a wicked cry, weakening the armor of enemies and giving vision of the path ahead.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"vengeful-spirit-wave-of-terror",
+      "manacost":"25 / 30 / 35 / 40",
+      "name":"Wave of Terror",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"85 / 100 / 115 / 130",
+        "ARMOR REDUCTION":"-3 / -4 / -5 / -6",
+        "VISION DURATION":"4.0",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Vengeful Spirit\\'s presence increases the damage of nearby friendly heroes.",
+      "effects":{
+        "ABILITY":"Aura, Passive",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"vengeful-spirit-vengeance-aura",
+      "manacost":null,
+      "name":"Vengeance Aura",
+      "notes":null,
+      "stats":{
+        "BASE DAMAGE BONUS":"11% / 18% / 25% / 32%",
+        "RADIUS":"1200"
+      }
+    },
+    {
+      "cooldown":"50 / 40 / 30",
+      "desc":"Instantaneously swaps positions with a target Hero, friend or enemy. Nether Swap interrupts channeling abilities on the target. Enemy Swapped units take damage. Allied swapped units receive less damage for a short duration.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"vengeful-spirit-nether-swap",
+      "manacost":"100 / 150 / 200",
+      "name":"Nether Swap",
+      "notes":"Channeling spells are interrupted by Nether Swap.",
+      "stats":{
+        "DAMAGE REDUCTION":"30% / 40% / 50%",
+        "DAMAGE REDUCTION DURATION":"3",
+        "DAMAGE":"50",
+        "CAST POINT":"0.4s"
+      }
+    }
+  ]
+}

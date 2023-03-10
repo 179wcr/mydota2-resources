@@ -1,1 +1,171 @@
-{"id":"tusk","talents":[{"level":25,"option1":"-8s Snowball Cooldown","option2":"12% Chance Walrus Punch"},{"level":20,"option1":"+75% Walrus Punch Crit","option2":"-6s Ice Shards Cooldown"},{"level":15,"option1":"+120 Snowball Damage","option2":"+325 Health"},{"level":10,"option1":"+0.5s Walrus Punch Stun Duration","option2":"+25 Tag Team Damage"}],"abilities":[{"cooldown":"23 / 20 / 17 / 14","desc":"Tusk compresses shards of ice into a ball of frozen energy that damages all enemies it comes in contact with. When the ball reaches its target destination the shards are released, creating a barrier that lasts for [4, 5, 6, 7] seconds.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"tusk-ice-shards","manacost":"100","name":"Ice Shards","notes":"Creates an impassable barrier.","stats":{"RADIUS":"200","SHARD DAMAGE":"75 / 150 / 225 / 300","SHARD DURATION":"4 / 5 / 6 / 7","MOVE SLOW":"40%","DAMAGE PER SECOND":"60","SHARD DEPTH":"300","CAST POINT":"0.1s"}},{"cooldown":"21 / 19 / 17 / 15","desc":"Tusk begins rolling into a snowball. Allies within a 350 radius can also be added to the snowball by right-clicking on them, even while the snowball is moving. Once launched, any enemies caught in the snowball's path will be stunned and take damage. Each allied Hero in the snowball will add to its damage.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"tusk-snowball","manacost":"75","name":"Snowball","notes":"Allies can click on a snowball to add themselves to it.","stats":{"BASE DAMAGE":"80 / 140 / 200 / 260","SNOWBALL SPEED":"625 / 650 / 675 / 700","BONUS DAMAGE PER ALLY":"25 / 50 / 75 / 100","STUN DURATION":"0.8 / 1.0 / 1.2 / 1.4","LAUNCH TIME":"3.0","GATHER RADIUS":"350","CAST POINT":"0.1s"}},{"cooldown":"24 / 21 / 18 / 15","desc":"Temporarily applies a negative debuff aura around you, causing enemies that are attacked under it to take bonus physical damage and reduced movement speed. Lasts 5.0 seconds.","effects":{"ABILITY":"No Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"tusk-tag-team","manacost":"70","name":"Tag Team","notes":"Affects attacks from allied heroes, Tusk or any of his units.","stats":{"BONUS DAMAGE":"20 / 45 / 70 / 95","MOVEMENT SLOW":"75%","SLOW DURATION":"0.5","DEBUFF DURATION":"5.0","CAST POINT":"0s"}},{"cooldown":"12","desc":"Kicks the closest enemy unit in a targeted direction, stunning, damaging, and slowing them. Also deals damage to all heroes within 250 radius of its landing area. Cooldown is reduced by 50% if kicking a creep.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Yes"},"id":"tusk-walrus-kick","manacost":"100","name":"Walrus Kick","notes":null,"stats":{"KICK PUSH DISTANCE":"1400","MOVE SLOW":"40%","SLOW DURATION":"4","DAMAGE":"350","CAST POINT":"0.2s"}},{"cooldown":"30","desc":"Summons a flying Sigil that slows movement speed by -40% for enemies within 650 radius. Lasts 25 seconds. Cooldown: 30","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No"},"id":"tusk-frozen-sigil","manacost":"70","name":"Frozen Sigil","notes":"Heroes deal 1 damage to the sigil, while non-hero units deal 0.25 damage.","stats":{"AURA RADIUS":"650","DURATION":"25.0","MOVEMENT SLOW":"40%","ATTACK SLOW":"0","CAST POINT":"0.1s"}},{"cooldown":"20 / 15 / 10","desc":"Tusk connects with his mighty Walrus Punch, a critical strike so powerful it launches its victim into the air. The victim is slowed upon landing.","effects":{"ABILITY":"Auto-Cast, Unit Target","AFFECTS":"Enemy Units","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Yes"},"id":"tusk-walrus-punch!","manacost":"75","name":"Walrus PUNCH!","notes":"Walrus PUNCH has true strike.","stats":{"CRITICAL DAMAGE":"300% / 350% / 400%","AIR TIME":"1.0","SLOW DURATION":"2 / 3 / 4","MOVEMENT SLOW":"40%","CAST POINT":"0s"}},{"cooldown":null,"desc":"Launch the snowball toward the target.","effects":{"ABILITY":"No Target"},"id":"tusk-launch-snowball","manacost":null,"name":"Launch Snowball","notes":"Each Meepo clone added to the snowball will add its own bonus damage.","stats":{}}]}
+{
+  "id":"tusk",
+  "talents":[
+    {
+      "level":25,
+      "option1":"-8s Snowball Cooldown",
+      "option2":"12% Chance Walrus Punch"
+    },
+    {
+      "level":20,
+      "option1":"+75% Walrus Punch Crit",
+      "option2":"-6s Ice Shards Cooldown"
+    },
+    {
+      "level":15,
+      "option1":"+120 Snowball Damage",
+      "option2":"+325 Health"
+    },
+    {
+      "level":10,
+      "option1":"+0.5s Walrus Punch Stun Duration",
+      "option2":"+25 Tag Team Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"23 / 20 / 17 / 14",
+      "desc":"Tusk compresses shards of ice into a ball of frozen energy that damages all enemies it comes in contact with. When the ball reaches its target destination the shards are released, creating a barrier that lasts for [4, 5, 6, 7] seconds.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"tusk-ice-shards",
+      "manacost":"100",
+      "name":"Ice Shards",
+      "notes":"Creates an impassable barrier.",
+      "stats":{
+        "RADIUS":"200",
+        "SHARD DAMAGE":"75 / 150 / 225 / 300",
+        "SHARD DURATION":"4 / 5 / 6 / 7",
+        "MOVE SLOW":"40%",
+        "DAMAGE PER SECOND":"60",
+        "SHARD DEPTH":"300",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"21 / 19 / 17 / 15",
+      "desc":"Tusk begins rolling into a snowball. Allies within a 350 radius can also be added to the snowball by right-clicking on them, even while the snowball is moving. Once launched, any enemies caught in the snowball\\'s path will be stunned and take damage. Each allied Hero in the snowball will add to its damage.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"tusk-snowball",
+      "manacost":"75",
+      "name":"Snowball",
+      "notes":"Allies can click on a snowball to add themselves to it.",
+      "stats":{
+        "BASE DAMAGE":"80 / 140 / 200 / 260",
+        "SNOWBALL SPEED":"625 / 650 / 675 / 700",
+        "BONUS DAMAGE PER ALLY":"25 / 50 / 75 / 100",
+        "STUN DURATION":"0.8 / 1.0 / 1.2 / 1.4",
+        "LAUNCH TIME":"3.0",
+        "GATHER RADIUS":"350",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"24 / 21 / 18 / 15",
+      "desc":"Temporarily applies a negative debuff aura around you, causing enemies that are attacked under it to take bonus physical damage and reduced movement speed. Lasts 5.0 seconds.",
+      "effects":{
+        "ABILITY":"No Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"tusk-tag-team",
+      "manacost":"70",
+      "name":"Tag Team",
+      "notes":"Affects attacks from allied heroes, Tusk or any of his units.",
+      "stats":{
+        "BONUS DAMAGE":"20 / 45 / 70 / 95",
+        "MOVEMENT SLOW":"75%",
+        "SLOW DURATION":"0.5",
+        "DEBUFF DURATION":"5.0",
+        "RADIUS":"350",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"12",
+      "desc":"Kicks the closest enemy unit in the drawn direction, stunning, damaging, and slowing them. Also deals damage to all heroes within 250 radius of its landing area. Cooldown is reduced by 50% if kicking a creep.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"tusk-walrus-kick",
+      "manacost":"100",
+      "name":"Walrus Kick",
+      "notes":null,
+      "stats":{
+        "KICK PUSH DISTANCE":"1400",
+        "MOVE SLOW":"40%",
+        "SLOW DURATION":"4",
+        "DAMAGE":"350",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"30",
+      "desc":"Summons a flying Sigil that slows movement speed by -40% for enemies within 650 radius. Lasts 25 seconds. Cooldown: 30",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"tusk-frozen-sigil",
+      "manacost":"70",
+      "name":"Frozen Sigil",
+      "notes":"Heroes deal 1 damage to the sigil, while non-hero units deal 0.25 damage.",
+      "stats":{
+        "AURA RADIUS":"650",
+        "DURATION":"25.0",
+        "MOVEMENT SLOW":"40%",
+        "ATTACK SLOW":"0",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"20 / 15 / 10",
+      "desc":"Tusk connects with his mighty Walrus Punch, a critical strike so powerful it launches its victim into the air. The victim is slowed upon landing.",
+      "effects":{
+        "ABILITY":"Auto-Cast, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"tusk-walrus-punch!",
+      "manacost":"75",
+      "name":"Walrus PUNCH!",
+      "notes":"Walrus PUNCH has true strike.",
+      "stats":{
+        "CRITICAL DAMAGE":"250% / 325% / 400%",
+        "AIR TIME":"1.0",
+        "SLOW DURATION":"2 / 3 / 4",
+        "MOVEMENT SLOW":"40%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Launch the snowball toward the target.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"tusk-launch-snowball",
+      "manacost":null,
+      "name":"Launch Snowball",
+      "notes":"Each Meepo clone added to the snowball will add its own bonus damage.",
+      "stats":{}
+    }
+  ]
+}

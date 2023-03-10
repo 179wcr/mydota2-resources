@@ -1,1 +1,114 @@
-{"id":"marci","talents":[{"level":25,"option1":"1.5s Sidekick Spell Immunity","option2":"1.5s Unleash Pulse Silence"},{"level":20,"option1":"+15% Unleash Movement Speed","option2":"+0.7s Rebound Stun Duration"},{"level":15,"option1":"-3s Rebound Cooldown","option2":"+15% Sidekick Lifesteal"},{"level":10,"option1":"+60 Dispose Damage","option2":"+125 Rebound Cast/Jump Range"}],"abilities":[{"cooldown":"16 / 14 / 12 / 10","desc":"Marci grabs an allied or enemy target and throws it effortlessly behind her, damaging and slowing the unit if it's an enemy. Any enemy units in the landing area will also be damaged and slowed.","effects":{"ABILITY":"Unit Target","AFFECTS":"Heroes","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"marci-dispose","manacost":"90","name":"Dispose","notes":null,"stats":{"THROW DISTANCE":"275","SLOW DURATION":"3.0","IMPACT DAMAGE":"70 / 120 / 170 / 220","MOVEMENT SLOW":"20% / 30% / 40% / 50%","CAST POINT":"0.2s"}},{"cooldown":null,"desc":"Vector targeted. Marci bounds to the targeted unit, choosing a direction and distance she will spring away from it. Upon reaching the unit, Marci lunges to her final destination, damaging and stunning enemies where she lands. The ally receives [25, 30, 35, 40]% bonus movement speed for 5.0s.","effects":{"ABILITY":"Unit Target","AFFECTS":"Allied Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"marci-rebound","manacost":"70 / 80 / 90 / 100","name":"Rebound","notes":"Marci's initial run to her target unit can be disjointed.","stats":{"CAST / JUMP RANGE":"800","IMPACT DAMAGE":"75 / 150 / 225 / 300","STUN DURATION":"0 / 1 / 1 / 2","CAST POINT":"0.1s"}},{"cooldown":"36 / 28 / 20 / 12","desc":"Marci's loyalty helps ensure survival, imbuing a chosen allied hero and herself with lifesteal and attack damage.","effects":{"ABILITY":"Unit Target","AFFECTS":"Allied Heroes","DISPELLABLE":"Yes"},"id":"marci-sidekick","manacost":"45 / 40 / 35 / 30","name":"Sidekick","notes":"Marci can self-cast Sidekick to buff herself and the nearest allied hero within 700 range.","stats":{"DURATION":"6.0","LIFESTEAL":"35% / 40% / 45% / 50%","BONUS DAMAGE":"20 / 35 / 50 / 65","CAST POINT":"0s"}},{"cooldown":"100 / 80 / 60","desc":"Marci taps a hidden power, gaining Fury charges that allow her to deliver a rapid sequence of strikes  that slow movement and attack speed of the target for 2.0s. The last strike in every Fury combo creates a damaging pulse around the target. In between Fury combos, Marci is unable to attack for 1.75s.Marci gains 15% movement speed when Unleash is cast.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","DISPELLABLE":"Cannot be dispelled"},"id":"marci-unleash","manacost":"100 / 125 / 150","name":"Unleash","notes":"Once a Fury combo is started, each attack must be delivered within 1s or the Fury combo expires.","stats":{"DURATION":"16","STRIKES PER FURY":"3 / 4 / 5","PULSE RADIUS":"800","PULSE DAMAGE":"50 / 100 / 150","MOVEMENT SLOW":"30.0%","BASE ATTACK SPEED SLOW":"60 / 80 / 100","CAST POINT":"0.2s"}}]}
+{
+  "id":"marci",
+  "talents":[
+    {
+      "level":25,
+      "option1":"1.5s Sidekick Spell Immunity",
+      "option2":"1.5s Unleash Pulse Silence"
+    },
+    {
+      "level":20,
+      "option1":"+15% Unleash Movement Speed",
+      "option2":"+0.7s Rebound Stun Duration"
+    },
+    {
+      "level":15,
+      "option1":"-3s Rebound Cooldown",
+      "option2":"+15% Sidekick Lifesteal"
+    },
+    {
+      "level":10,
+      "option1":"+60 Dispose Damage",
+      "option2":"+125 Rebound Cast/Jump Range"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"16 / 14 / 12 / 10",
+      "desc":"Marci grabs an allied or enemy target and throws it effortlessly behind her, damaging and slowing the unit if it\\'s an enemy. Any enemy units in the landing area will also be damaged and slowed.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Heroes",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"marci-dispose",
+      "manacost":"90",
+      "name":"Dispose",
+      "notes":null,
+      "stats":{
+        "THROW DISTANCE":"250",
+        "SLOW DURATION":"3",
+        "IMPACT DAMAGE":"70 / 120 / 170 / 220",
+        "MOVEMENT SLOW":"20% / 30% / 40% / 50%",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Marci bounds to the targeted allied unit, choosing a direction and distance she will spring away from it. Upon reaching the unit, Marci lunges to her final destination, damaging and stunning enemies where she lands. The ally receives [25, 30, 35, 40]% bonus movement speed for 5.0s.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Allied Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"marci-rebound",
+      "manacost":"70 / 80 / 90 / 100",
+      "name":"Rebound",
+      "notes":"Marci's initial run to her target unit can be disjointed.",
+      "stats":{
+        "CAST / JUMP RANGE":"450 / 550 / 650 / 750",
+        "IMPACT DAMAGE":"75 / 150 / 225 / 300",
+        "STUN DURATION":"0 / 1 / 1 / 2",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"36 / 28 / 20 / 12",
+      "desc":"Marci\\'s loyalty helps ensure survival, imbuing a chosen allied hero and herself with lifesteal and attack damage.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Allied Heroes",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"marci-sidekick",
+      "manacost":"45 / 40 / 35 / 30",
+      "name":"Sidekick",
+      "notes":"Marci can self-cast Sidekick to buff herself and the nearest allied hero within 700 range.",
+      "stats":{
+        "DURATION":"7.0",
+        "LIFESTEAL":"30% / 35% / 40% / 45%",
+        "BONUS DAMAGE":"20 / 35 / 50 / 65",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"100 / 80 / 60",
+      "desc":"Marci taps a hidden power, gaining Fury charges that allow her to deliver a rapid sequence of strikes that slow movement and attack speed of the target for 2.0s. The last strike in every Fury combo creates a damaging pulse around the target. In between Fury combos, Marci is unable to attack for 1.5s.Marci gains 15% movement speed when Unleash is cast.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"marci-unleash",
+      "manacost":"100 / 125 / 150",
+      "name":"Unleash",
+      "notes":"Removes attack speed limit.",
+      "stats":{
+        "DURATION":"16",
+        "STRIKES PER FURY":"3 / 4 / 5",
+        "BONUS ATTACK SPEED":"700 / 975 / 1325",
+        "PULSE RADIUS":"800",
+        "PULSE DAMAGE":"50 / 100 / 150",
+        "MOVEMENT SLOW":"30.0%",
+        "BASE ATTACK SPEED SLOW":"60 / 80 / 100",
+        "CAST POINT":"0.2s"
+      }
+    }
+  ]
+}

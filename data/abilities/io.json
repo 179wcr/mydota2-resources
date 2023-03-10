@@ -1,1 +1,146 @@
-{"id":"io","talents":[{"level":25,"option1":"Attack Tethered Ally's Target","option2":"+400 Health to Tethered Units"},{"level":20,"option1":"-25s Relocate Cooldown","option2":"+0.2% Overcharge Max HP Regen Bonus"},{"level":15,"option1":"+55 Spirits Hero Damage","option2":"+6% Tether Movement Speed"},{"level":10,"option1":"+15 Attack Damage to Tethered Units","option2":"+15% Tether Enemy Move/Attack Slow"}],"abilities":[{"cooldown":"12","desc":"Tethers Io to an allied unit, granting bonus movement speed to both. When Io restores health or mana, the tethered unit gains a larger portion of that amount. The tether breaks when the allied unit moves too far away, or Io cancels the tether.","effects":{"ABILITY":"Unit Target","AFFECTS":"Allies","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"io-tether","manacost":"40","name":"Tether","notes":"Io's movement speed matches the tethered unit's.","stats":{"MAX TETHER DISTANCE":"1000","MOVEMENT SPEED BONUS":"6% / 8% / 10% / 12%","HP/MANA TRANSFER":"0% / 0% / 1% / 1%","ENEMY MOVE/ATTACK SLOW":"15% / 25% / 35% / 45%","CAST POINT":"0s"}},{"cooldown":"26 / 24 / 22 / 20","desc":"Summon five particle spirits that dance in a circle around Io. If a particle collides with an enemy hero, it explodes, damaging all enemy units in an area around it.  Creeps take minor damage from touching a particle spirit, but do not cause them to explode.  When its duration ends, any remaining Spirits explode.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"io-spirits","manacost":"100 / 110 / 120 / 130","name":"Spirits","notes":"After summoning, Io can call the spirits in and out.","stats":{"CREEP DAMAGE":"10 / 15 / 20 / 25","HERO DAMAGE":"30 / 50 / 70 / 90","OSCILLATION RADIUS":"650","EXPLOSION RADIUS":"360","DURATION":"19","MOVEMENT SLOW":"15%","SLOW DURATION":"0.3","CAST POINT":"0s"}},{"cooldown":"25 / 22 / 19 / 16","desc":"Io gains bonus attack speed, spell amplification, and HP Regen based on max health.  If Io is Tethered to an ally, that unit also gains the bonuses.","effects":{"ABILITY":"No Target","DISPELLABLE":"Cannot be dispelled"},"id":"io-overcharge","manacost":"40 / 60 / 80 / 100","name":"Overcharge","notes":null,"stats":{"ATTACK SPEED":"35 / 60 / 85 / 110","SPELL AMPLIFICATION":"8% / 10% / 12% / 14%","MAX HEALTH REGEN":"0%","DURATION":"8","BONUS SPELL AMP":"10%","SPELL LIFESTEAL":"10%","CAST POINT":"0s"}},{"cooldown":"0","desc":"Sends the spirits closer to you. Can be toggled on and off.","effects":{"ABILITY":"Toggle"},"id":"io-spirits-in","manacost":null,"name":"Spirits In","notes":null,"stats":{}},{"cooldown":null,"desc":"Sends the spirits farther away from you. Can be toggled on and off.","effects":{"ABILITY":"Toggle"},"id":"io-spirits-out","manacost":null,"name":"Spirits Out","notes":null,"stats":{}},{"cooldown":"100 / 90 / 80","desc":"Teleports Io and any tethered ally to any location. After the spell expires Io and any tethered ally will return to their original location. Double-click to teleport to your team's base fountain.","effects":{"ABILITY":"Point Target","DISPELLABLE":"Cannot be dispelled"},"id":"io-relocate","manacost":"175","name":"Relocate","notes":"If an allied hero is Tethered, that hero will teleported along with you. You can break the tether at any time to prevent that hero from teleporting with you.","stats":{"CAST TIME":"3.5 / 3.25 / 3.0","RETURN TIME":"12","CAST POINT":"0s"}},{"cooldown":"1","desc":"Break the link to the tethered unit.","effects":{"ABILITY":"No Target"},"id":"io-break-tether","manacost":null,"name":"Break Tether","notes":null,"stats":{}}]}
+{
+  "id":"io",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Attack Tethered Ally's Target",
+      "option2":"+400 Health to Tethered Units"
+    },
+    {
+      "level":20,
+      "option1":"-25s Relocate Cooldown",
+      "option2":"+0.2% Overcharge Max HP Regen Bonus"
+    },
+    {
+      "level":15,
+      "option1":"+55 Spirits Hero Damage",
+      "option2":"+6% Tether Movement Speed"
+    },
+    {
+      "level":10,
+      "option1":"+15 Attack Damage to Tethered Units",
+      "option2":"+15% Tether Enemy Move/Attack Slow"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"12",
+      "desc":"Tethers Io to an allied unit, granting bonus movement speed to both. When Io restores health or mana, the tethered unit gains a portion of that amount. The tether breaks when the allied unit moves too far away, or Io cancels the tether. Tether briefly slows enemies touching it.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Allies",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"io-tether",
+      "manacost":"40",
+      "name":"Tether",
+      "notes":"Io's movement speed matches the tethered unit's.",
+      "stats":{
+        "MAX TETHER DISTANCE":"1000",
+        "MOVEMENT SPEED BONUS":"6% / 8% / 10% / 12%",
+        "HP/MANA TRANSFER":"60% / 80% / 100% / 120%",
+        "ENEMY MOVE/ATTACK SLOW":"15% / 25% / 35% / 45%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"26 / 24 / 22 / 20",
+      "desc":"Summon five particle spirits that dance in a circle around Io. If a particle collides with an enemy hero, it explodes, damaging all enemy units in an area around it.  Creeps take minor damage from touching a particle spirit, but do not cause them to explode.  When its duration ends, any remaining Spirits explode.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"io-spirits",
+      "manacost":"100 / 110 / 120 / 130",
+      "name":"Spirits",
+      "notes":"After summoning, Io can call the spirits in and out.",
+      "stats":{
+        "CREEP DAMAGE":"10 / 15 / 20 / 25",
+        "HERO DAMAGE":"30 / 50 / 70 / 90",
+        "OSCILLATION RADIUS":"650",
+        "EXPLOSION RADIUS":"360",
+        "DURATION":"19",
+        "MOVEMENT SLOW":"15%",
+        "SLOW DURATION":"0.3",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"25 / 22 / 19 / 16",
+      "desc":"Io gains bonus attack speed, spell amplification, and HP Regen based on max health.  If Io is Tethered to an ally, that unit also gains the bonuses.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"io-overcharge",
+      "manacost":"40 / 60 / 80 / 100",
+      "name":"Overcharge",
+      "notes":null,
+      "stats":{
+        "ATTACK SPEED":"35 / 60 / 85 / 110",
+        "SPELL AMPLIFICATION":"8% / 10% / 12% / 14%",
+        "MAX HEALTH REGEN":"0%",
+        "DURATION":"8",
+        "BONUS SPELL AMP":"10%",
+        "SPELL LIFESTEAL":"10%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Sends the spirits closer to you. Can be toggled on and off.",
+      "effects":{
+        "ABILITY":"Toggle"
+      },
+      "id":"io-spirits-in",
+      "manacost":null,
+      "name":"Spirits In",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":null,
+      "desc":"Sends the spirits farther away from you. Can be toggled on and off.",
+      "effects":{
+        "ABILITY":"Toggle"
+      },
+      "id":"io-spirits-out",
+      "manacost":null,
+      "name":"Spirits Out",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"100 / 90 / 80",
+      "desc":"Teleports Io and a tethered ally to any location. After the spell expires, Io and the tethered ally will return to their original location. Double-click to teleport to your team\\'s base fountain.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"io-relocate",
+      "manacost":"175",
+      "name":"Relocate",
+      "notes":"Only heroes, creep heroes, and illusions can be relocated.",
+      "stats":{
+        "CAST TIME":"3.5 / 3.25 / 3.0",
+        "RETURN TIME":"12",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"1",
+      "desc":"Break the link to the tethered unit.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"io-break-tether",
+      "manacost":null,
+      "name":"Break Tether",
+      "notes":null,
+      "stats":{}
+    }
+  ]
+}

@@ -1,1 +1,108 @@
-{"id":"chaos-knight","talents":[{"level":25,"option1":"+10.0s Phantasm Duration","option2":"+10% Chaos Strike Chance"},{"level":20,"option1":"Reality Rift Pierces Spell Immune","option2":"+0.5 Min/Max Chaos Bolt Duration"},{"level":15,"option1":"-75% Phantasm Illusion Incoming Damage","option2":"-3s Chaos Bolt Cooldown"},{"level":10,"option1":"+225 Reality Rift Pull Distance","option2":"+22% Chaos Strike Lifesteal"}],"abilities":[{"cooldown":"13 / 12 / 11 / 10","desc":"Throws a mysterious bolt of energy at the target unit. It stuns for a random duration and deals random damage.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"chaos-knight-chaos-bolt","manacost":"110 / 120 / 130 / 140","name":"Chaos Bolt","notes":"Nearby illusions will mimic the cast animation.","stats":{"MINIMUM STUN":"1.25 / 1.5 / 1.75 / 2.0","MAXIMUM STUN":"2.2 / 2.8 / 3.4 / 4.0","MINIMUM DAMAGE":"60 / 90 / 120 / 150","MAXIMUM DAMAGE":"120 / 180 / 240 / 300","BONUS CAST RANGE":"150","ILLUSION DURATION":"6.0","CAST POINT":"0.4s"}},{"cooldown":"18 / 14 / 10 / 6","desc":"Teleports Chaos Knight, any images he has, and the target unit to a point along the line between him and the target. Reduces armor of the enemy unit for 6.0 seconds.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"chaos-knight-reality-rift","manacost":"50","name":"Reality Rift","notes":"Chaos Knight and the target unit are made to face each other, and Chaos Knight and his phantasms are issued an attack order against the target.","stats":{"CAST RANGE":"550 / 600 / 650 / 700","PULL DISTANCE":"250 / 300 / 350 / 400","ARMOR REDUCTION":"4 / 5 / 6 / 7","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Chaos Knight and his illusions' attacks have a chance to deal a critical strike of varying strength, in addition to a lifesteal for percentage of the damage. Deals 1.5x damage to creeps.","effects":{"ABILITY":"Passive","PIERCES SPELL IMMUNITY":"Yes"},"id":"chaos-knight-chaos-strike","manacost":null,"name":"Chaos Strike","notes":null,"stats":{"CHANCE":"33.33%","CRITICAL MIN":"120%","CRITICAL MAX":"140% / 175% / 210% / 245%","CRITICAL LIFESTEAL":"20% / 30% / 40% / 50%"}},{"cooldown":"75","desc":"Summons several phantasmal copies of the Chaos Knight from alternate dimensions. The phantasms are strong illusions that deal 100% damage, but take 325% damage.DISPEL TYPE: Basic Dispel","effects":{"ABILITY":"No Target","AFFECTS":"Allied Heroes"},"id":"chaos-knight-phantasm","manacost":"75 / 125 / 175","name":"Phantasm","notes":"Strong Illusions are not instantly killed by spells.","stats":{"NUMBER OF PHANTASMS":"1 / 2 / 3","PHANTASM DURATION":"30.0","PHANTASM DAMAGE":"100%","PHANTASM DAMAGE TAKEN":"325%","CAST POINT":"0.4s"}}]}
+{
+  "id":"chaos-knight",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+10.0s Phantasm Duration",
+      "option2":"+10% Chaos Strike Chance"
+    },
+    {
+      "level":20,
+      "option1":"Reality Rift Pierces Spell Immunity",
+      "option2":"+0.75 Min/Max Chaos Bolt Duration"
+    },
+    {
+      "level":15,
+      "option1":"--75% Phantasm Illusion Incoming Damage",
+      "option2":"-3s Chaos Bolt Cooldown"
+    },
+    {
+      "level":10,
+      "option1":"+225 Reality Rift Pull Distance",
+      "option2":"+22% Chaos Strike Lifesteal"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"13 / 12 / 11 / 10",
+      "desc":"Throws a mysterious bolt of energy at the target unit. It stuns for a random duration and deals random damage.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"chaos-knight-chaos-bolt",
+      "manacost":"110",
+      "name":"Chaos Bolt",
+      "notes":"Nearby illusions will mimic the cast animation.",
+      "stats":{
+        "MINIMUM STUN":"1.25 / 1.5 / 1.75 / 2.0",
+        "MAXIMUM STUN":"2.2 / 2.8 / 3.4 / 4.0",
+        "MINIMUM DAMAGE":"60 / 90 / 120 / 150",
+        "MAXIMUM DAMAGE":"120 / 180 / 240 / 300",
+        "BONUS CAST RANGE":"150",
+        "ILLUSION DURATION":"6.0",
+        "CAST POINT":"0.4s"
+      }
+    },
+    {
+      "cooldown":"18 / 14 / 10 / 6",
+      "desc":"Teleports Chaos Knight, any illusions he has, and the target unit to a point along the line between him and the target. Reduces armor of the enemy unit for 6.0 seconds.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"chaos-knight-reality-rift",
+      "manacost":"50",
+      "name":"Reality Rift",
+      "notes":"Chaos Knight and the target unit are made to face each other, and Chaos Knight and his phantasms are issued an attack order against the target.",
+      "stats":{
+        "CAST RANGE":"550 / 600 / 650 / 700",
+        "PULL DISTANCE":"250 / 300 / 350 / 400",
+        "ARMOR REDUCTION":"4 / 5 / 6 / 7",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Chaos Knight and his illusions\\' attacks have a chance to deal a critical strike of varying strength with bonus lifesteal. Deals 1.5x damage to creeps.",
+      "effects":{
+        "ABILITY":"Passive",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"chaos-knight-chaos-strike",
+      "manacost":null,
+      "name":"Chaos Strike",
+      "notes":null,
+      "stats":{
+        "CHANCE":"33.33%",
+        "CRITICAL MIN":"125%",
+        "CRITICAL MAX":"140% / 175% / 210% / 245%",
+        "CRITICAL LIFESTEAL":"20% / 30% / 40% / 50%"
+      }
+    },
+    {
+      "cooldown":"75",
+      "desc":"Summons several phantasmal copies of the Chaos Knight from alternate dimensions. The phantasms are strong illusions that deal 100% damage, but take 325% damage.DISPEL TYPE: Basic Dispel",
+      "effects":{
+        "ABILITY":"No Target",
+        "AFFECTS":"Allied Heroes"
+      },
+      "id":"chaos-knight-phantasm",
+      "manacost":"75 / 125 / 175",
+      "name":"Phantasm",
+      "notes":"Strong Illusions are not instantly killed by spells.",
+      "stats":{
+        "NUMBER OF PHANTASMS":"1 / 2 / 3",
+        "PHANTASM DURATION":"30.0",
+        "PHANTASM DAMAGE":"100%",
+        "PHANTASM DAMAGE TAKEN":"325%",
+        "CAST POINT":"0.4s"
+      }
+    }
+  ]
+}

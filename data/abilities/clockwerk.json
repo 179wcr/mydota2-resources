@@ -1,1 +1,142 @@
-{"id":"clockwerk","talents":[{"level":25,"option1":"-0.25s Battery Assault Interval","option2":"Spell Immunity Inside Power Cogs"},{"level":20,"option1":"Power Cogs Leash Units Inside","option2":"Rocket Flare True Sight"},{"level":15,"option1":"+24 Battery Assault Damage","option2":"+2 Power Cogs Hit To Kill"},{"level":10,"option1":"-2s Power Cogs Cooldown","option2":"-2s Rocket Flare Cooldown"}],"abilities":[{"cooldown":"24 / 22 / 20 / 18","desc":"Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun. Deals double damage to creeps.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"clockwerk-battery-assault","manacost":"100","name":"Battery Assault","notes":"Remains active if Clockwerk is disabled.","stats":{"RADIUS":"275","DURATION":"10","INTERVAL":"0","DAMAGE":"20 / 45 / 70 / 95"}},{"cooldown":null,"desc":"Forms a barrier of energized cogs around Clockwerk, trapping any units that are near.  Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down.  Cogs can be destroyed by enemy attacks, but Clockwerk can destroy them with just one.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"clockwerk-power-cogs","manacost":"80","name":"Power Cogs","notes":"Cogs can shock invisible units.","stats":{"DURATION":"5 / 6 / 7 / 8","DAMAGE":"50 / 125 / 200 / 275","MANA BURN":"50 / 80 / 110 / 140","ATTACKS REQUIRED":"2","CAST POINT":"0.2s"}},{"cooldown":null,"desc":"Fires a global range flare that explodes over a given area, damaging enemies and providing vision for 6.0 seconds.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"clockwerk-rocket-flare","manacost":"35 / 40 / 45 / 50","name":"Rocket Flare","notes":null,"stats":{"RADIUS":"600","DAMAGE":"80 / 120 / 160 / 200","CAST POINT":"0.3s"}},{"cooldown":"50","desc":"Supercharges Clockwerks abilities: Battery Assault affects all enemies in it's range; Clockwerk's attack speed in Power Cogs is increased; Rocket Flares have a reduced cooldown and fire additional rockets to either side of the target; Hookshot stun radius and duration is increased. Clockwerk becomes stunned after the duration runs out.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No"},"id":"clockwerk-overclocking","manacost":"150","name":"Overclocking","notes":null,"stats":{"DURATION":"13","COGS BONUS ATTACK SPEED":"250","SELF STUN DURATION":"3","HOOKSHOT RADIUS BONUS":"50%","HOOKSHOT DURATION BONUS":"50%","BONUS ROCKET FLARES":"2","ROCKET FLARE COOLDOWN":"3"}},{"cooldown":"16","desc":"Clockwerk activates a jetpack, gaining flying movement, flying vision, and bonus movement speed. Clockwerk has a severely-limited turn rate during this time and cannot attack. Jetpack is cancelled upon casting Hookshot.","effects":{"ABILITY":"No Target"},"id":"clockwerk-jetpack","manacost":"75","name":"Jetpack","notes":null,"stats":{"BONUS SPEED":"20%","DURATION":"6.0"}},{"cooldown":"60 / 45 / 30","desc":"Fires a grappling device rapidly at the target location.  If the hook hits a unit, Clockwerk launches himself into the target, stunning and dealing damage to everyone in a [175, 175, 175] radius around the hit target.  Any enemies Clockwerk collides with along the way are damaged and stunned.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Strong Dispels Only"},"id":"clockwerk-hookshot","manacost":"150","name":"Hookshot","notes":"Hookshot will latch and take Clockwerk to allies, but not damage or disable them.","stats":{"STUN DURATION":"1.5 / 1.75 / 2.0","DAMAGE":"75 / 175 / 275","CAST POINT":"0.3s"}}]}
+{
+  "id":"clockwerk",
+  "talents":[
+    {
+      "level":25,
+      "option1":"-0.25s Battery Assault Interval",
+      "option2":"Spell Immunity Inside Power Cogs"
+    },
+    {
+      "level":20,
+      "option1":"Power Cogs Leash Units Inside",
+      "option2":"Rocket Flare True Sight"
+    },
+    {
+      "level":15,
+      "option1":"+24 Battery Assault Damage",
+      "option2":"+2 Power Cogs Hit To Kill"
+    },
+    {
+      "level":10,
+      "option1":"-2s Power Cogs Cooldown",
+      "option2":"-2s Rocket Flare Cooldown"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"24 / 22 / 20 / 18",
+      "desc":"Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun. Deals double damage to creeps.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"clockwerk-battery-assault",
+      "manacost":"90",
+      "name":"Battery Assault",
+      "notes":"Remains active if Clockwerk is disabled.",
+      "stats":{
+        "RADIUS":"275",
+        "DURATION":"10",
+        "INTERVAL":"0",
+        "DAMAGE":"20 / 45 / 70 / 95"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Forms a barrier of energized cogs around Clockwerk, trapping any units that are near.  Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down.  Cogs can be destroyed by enemy attacks, but Clockwerk can destroy them with just one.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"clockwerk-power-cogs",
+      "manacost":"80",
+      "name":"Power Cogs",
+      "notes":"Cogs can shock invisible units.",
+      "stats":{
+        "DURATION":"5 / 6 / 7 / 8",
+        "DAMAGE":"50 / 125 / 200 / 275",
+        "MANA BURN":"50 / 80 / 110 / 140",
+        "ATTACKS REQUIRED":"2",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Fires a global range flare that explodes over a given area, damaging enemies and providing vision for 6.0 seconds.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"clockwerk-rocket-flare",
+      "manacost":"35 / 40 / 45 / 50",
+      "name":"Rocket Flare",
+      "notes":null,
+      "stats":{
+        "RADIUS":"600",
+        "DAMAGE":"80 / 120 / 160 / 200",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"50",
+      "desc":"Supercharges Clockwerks abilities: Battery Assault affects all enemies in it\\'s range; Clockwerk\\'s attack speed in Power Cogs is increased; Rocket Flares have a reduced cooldown and fire additional rockets to either side of the target; Hookshot stun radius and duration is increased. Clockwerk becomes stunned after the duration runs out.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"clockwerk-overclocking",
+      "manacost":"90",
+      "name":"Overclocking",
+      "notes":null,
+      "stats":{
+        "DURATION":"13",
+        "COGS BONUS ATTACK SPEED":"250",
+        "SELF STUN DURATION":"3",
+        "HOOKSHOT RADIUS BONUS":"50%",
+        "HOOKSHOT DURATION BONUS":"50%",
+        "BONUS ROCKET FLARES":"2",
+        "ROCKET FLARE COOLDOWN":"3"
+      }
+    },
+    {
+      "cooldown":"16",
+      "desc":"Clockwerk activates a jetpack, gaining flying movement, flying vision, and bonus movement speed. Clockwerk has a severely-limited turn rate during this time and cannot attack. Jetpack is cancelled upon casting Hookshot.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"clockwerk-jetpack",
+      "manacost":"75",
+      "name":"Jetpack",
+      "notes":null,
+      "stats":{
+        "BONUS SPEED":"20%",
+        "DURATION":"6.0"
+      }
+    },
+    {
+      "cooldown":"60 / 45 / 30",
+      "desc":"Fires a grappling device rapidly at the target location.  If the hook hits a unit, Clockwerk launches himself into the target, stunning and dealing damage to everyone in a [175, 175, 175] radius around the hit target.  Any enemies Clockwerk collides with along the way are damaged and stunned.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"clockwerk-hookshot",
+      "manacost":"100 / 125 / 150",
+      "name":"Hookshot",
+      "notes":"Hookshot will latch and take Clockwerk to allies, but not damage or disable them.",
+      "stats":{
+        "STUN DURATION":"1.5 / 1.75 / 2.0",
+        "DAMAGE":"75 / 175 / 275",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

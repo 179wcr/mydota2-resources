@@ -1,1 +1,104 @@
-{"id":"outworld-destroyer","talents":[{"level":25,"option1":"-60.0s Sanity's Eclipse Cooldown","option2":"+2% Arcane Orb Damage"},{"level":20,"option1":"+0.15 Sanity's Eclipse Mana Difference Multiplier","option2":"+20 Strength"},{"level":15,"option1":"+30 Movement Speed","option2":"+100 Astral Imprisonment Cast Range"},{"level":10,"option1":"+20 Attack Speed","option2":"+200 Health"}],"abilities":[{"cooldown":"6 / 4 / 2 / 0","desc":"Adds extra pure damage to Outworld Destroyer's attacks, based on his remaining mana pool.","effects":{"ABILITY":"Auto-Cast, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"outworld-destroyer-arcane-orb","manacost":"0","name":"Arcane Orb","notes":"The damage is calculated after the mana cost is spent.","stats":{"MANA POOL TO DAMAGE":"13% / 14% / 15% / 16%","CURRENT MANA COST":"20%"}},{"cooldown":"24 / 20 / 16 / 12","desc":"Places a target unit into an astral prison. The hidden unit is invulnerable and disabled. When the astral prison implodes, it deals damage to the target and steals a percentage of their max mana.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"outworld-destroyer-astral-imprisonment","manacost":"150","name":"Astral Imprisonment","notes":"Max mana steal does not increase Outworld Destroyer's current mana values or directly reduce the victim's mana values.","stats":{"DURATION":"1 / 2 / 3 / 4","DAMAGE":"120 / 200 / 280 / 360","MANA CAPACITY STEAL":"16% / 18% / 20% / 22%","MANA STEAL DURATION":"30 / 40 / 50 / 60","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Passively grants you a chance to restore a percentage of your max mana each time you cast an ability.","effects":{"ABILITY":"Passive","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"outworld-destroyer-essence-flux","manacost":null,"name":"Essence Flux","notes":null,"stats":{"CHANCE":"30%","MAX MANA RESTORE":"25% / 35% / 45% / 55%","CAST POINT":"0.75s"}},{"cooldown":"160 / 145 / 130","desc":"Unleashes a psychic blast that deals to enemies based on the difference between your mana and the target's mana. Sanity's Eclipse can hit units trapped by Astral Imprisonment.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"outworld-destroyer-sanity's-eclipse","manacost":"200 / 325 / 450","name":"Sanity's Eclipse","notes":"Does not damage creeps or neutral units.","stats":{"BASE DAMAGE":"200 / 300 / 400","RADIUS":"400 / 500 / 600","CAST RANGE":"700","MANA DIFFERENCE MULTIPLIER":"0.4","CAST POINT":"0.25s"}}]}
+{
+  "id":"outworld-destroyer",
+  "talents":[
+    {
+      "level":25,
+      "option1":"-60.0s Sanity's Eclipse Cooldown",
+      "option2":"+2% Arcane Orb Damage"
+    },
+    {
+      "level":20,
+      "option1":"+0.15 Sanity's Eclipse Mana Difference Multiplier",
+      "option2":"+20 Strength"
+    },
+    {
+      "level":15,
+      "option1":"+30 Movement Speed",
+      "option2":"+100 Astral Imprisonment Cast Range"
+    },
+    {
+      "level":10,
+      "option1":"+20 Attack Speed",
+      "option2":"+200 Health"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"6 / 4 / 2 / 0",
+      "desc":"Adds extra pure damage to Outworld Destroyer\\'s attacks, based on his remaining mana pool.",
+      "effects":{
+        "ABILITY":"Auto-Cast, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"outworld-destroyer-arcane-orb",
+      "manacost":"0",
+      "name":"Arcane Orb",
+      "notes":"The damage is calculated after the mana cost is spent.",
+      "stats":{
+        "MANA POOL TO DAMAGE":"13% / 14% / 15% / 16%",
+        "CURRENT MANA COST":"20%"
+      }
+    },
+    {
+      "cooldown":"18 / 16 / 14 / 12",
+      "desc":"Places a target unit into an astral prison. The hidden unit is invulnerable and disabled. When the astral prison implodes, it deals damage to the target and steals a percentage of their max mana.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"outworld-destroyer-astral-imprisonment",
+      "manacost":"150",
+      "name":"Astral Imprisonment",
+      "notes":"Max mana steal does not increase Outworld Destroyer's current mana values or directly reduce the victim's mana values.",
+      "stats":{
+        "DURATION":"1 / 2 / 3 / 4",
+        "DAMAGE":"120 / 200 / 280 / 360",
+        "MANA CAPACITY STEAL":"16% / 18% / 20% / 22%",
+        "MANA STEAL DURATION":"30 / 40 / 50 / 60",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Passively grants you a chance to restore a percentage of your max mana each time you cast an ability.",
+      "effects":{
+        "ABILITY":"Passive"
+      },
+      "id":"outworld-destroyer-essence-flux",
+      "manacost":null,
+      "name":"Essence Flux",
+      "notes":null,
+      "stats":{
+        "CHANCE":"30%",
+        "MAX MANA RESTORE":"25% / 35% / 45% / 55%",
+        "CAST POINT":"0.75s"
+      }
+    },
+    {
+      "cooldown":"160 / 145 / 130",
+      "desc":"Unleashes a psychic blast that deals damage to enemies based on the difference between your mana and the target\\'s mana. Sanity\\'s Eclipse can hit units trapped by Astral Imprisonment. Deals bonus damage to illusions.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"outworld-destroyer-sanity's-eclipse",
+      "manacost":"200 / 325 / 450",
+      "name":"Sanity's Eclipse",
+      "notes":"Does not damage creeps or neutral units.",
+      "stats":{
+        "BASE DAMAGE":"200 / 300 / 400",
+        "RADIUS":"400 / 500 / 600",
+        "CAST RANGE":"700",
+        "MANA DIFFERENCE MULTIPLIER":"0.4",
+        "ILLUSION DAMAGE":"200.0%",
+        "CAST POINT":"0.25s"
+      }
+    }
+  ]
+}

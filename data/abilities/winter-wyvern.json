@@ -1,1 +1,114 @@
-{"id":"winter-wyvern","talents":[{"level":25,"option1":"Splinter Blast 1.5s Stun","option2":"+1.5s Winter's Curse Duration"},{"level":20,"option1":"+100 Splinter Blast Damage","option2":"+12% Arctic Burn Slow"},{"level":15,"option1":"+400 Splinter Blast Shatter Radius","option2":"+2.0s Arctic Burn Debuff Duration"},{"level":10,"option1":"+35 Damage","option2":"+25.0HP/s Cold Embrace Heal"}],"abilities":[{"cooldown":"38 / 32 / 26 / 20","desc":"Winter Wyvern soars upon an arctic wind, granting her unobstructed movement and allowing her to exhale a blistering chill into each attack. While soaring, her attacks travel further and faster, and slow enemies with a magical freeze that strips them of [6.0, 7.0, 8.0, 9.0]% of their current health each second. Her sight is also hardened against night's chill, granting her 400 additional vision range at night while soaring.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"winter-wyvern-arctic-burn","manacost":"100","name":"Arctic Burn","notes":"The damage and slow from Arctic Burn can be dispelled.","stats":{"FLIGHT DURATION":"7 / 8 / 9 / 10","BONUS ATTACK RANGE":"350 / 400 / 450 / 500","HEALTH BURN":"6% / 7% / 8% / 9%","BURN DURATION":"5.0","MOVEMENT SLOW":"16% / 24% / 32% / 40%","ADDED NIGHT VISION RANGE":"400","MANA PER SECOND":"20","MOVEMENT SPEED":"25%","CAST POINT":"0s"}},{"cooldown":"7","desc":"Launches a ball of brittle ice toward an enemy. The ice shatters on impact, leaving the primary target completely unaffected, while hurling damaging splinters into nearby enemies in a 500 radius. Enemies struck by these splinters are slowed by 30%.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"winter-wyvern-splinter-blast","manacost":"105 / 120 / 135 / 150","name":"Splinter Blast","notes":"The primary projectile cannot be disjointed.","stats":{"DAMAGE":"100 / 180 / 260 / 340","SHATTER RADIUS":"500","MOVEMENT SLOW":"30%","SLOW DURATION":"4.0","CAST POINT":"0.3s"}},{"cooldown":"24 / 21 / 18 / 15","desc":"Encases an ally in an icy cocoon, freezing them solid while healing a base amount as well as a percentage of their maximum health each second. The cocoon blocks all physical damage.","effects":{"ABILITY":"Unit Target","AFFECTS":"Allied Units","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"winter-wyvern-cold-embrace","manacost":"50 / 60 / 70 / 80","name":"Cold Embrace","notes":null,"stats":{"DURATION":"4.0","BASE HEAL PER SECOND":"30 / 35 / 40 / 45","MAX HEAL PER SECOND":"1.75% / 2.5% / 3.25% / 4.0%","CAST POINT":"0.3s"}},{"cooldown":"90 / 85 / 80","desc":"Winter Wyvern freezes an enemy in place while striking those nearby with a maddening curse which causes them to attack their frozen ally with increased attack speed. The frozen ally and those cursed to attack their ally are immune to all damage from their enemies with the exception of Winter Wyvern or her controlled units.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","PIERCES SPELL IMMUNITY":"Yes"},"id":"winter-wyvern-winter's-curse","manacost":"250","name":"Winter's Curse","notes":"If there are no allies within range of the Cursed enemy for 2.5 seconds the effect will end early.","stats":{"CURSE RADIUS":"525","CURSE DAMAGE REDUCTION":"100%","CURSE ATTACK SPEED":"65","CURSE DURATION":"4.5 / 5.0 / 5.5","CAST POINT":"0.3s"}}]}
+{
+  "id":"winter-wyvern",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Splinter Blast 1.5s Stun",
+      "option2":"+1.5s Winter's Curse Duration"
+    },
+    {
+      "level":20,
+      "option1":"+100 Splinter Blast Damage",
+      "option2":"+12% Arctic Burn Slow"
+    },
+    {
+      "level":15,
+      "option1":"+400 Splinter Blast Shatter Radius",
+      "option2":"+2.0s Arctic Burn Debuff Duration"
+    },
+    {
+      "level":10,
+      "option1":"+35 Damage",
+      "option2":"+25.0HP/s Cold Embrace Heal"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"38 / 32 / 26 / 20",
+      "desc":"Winter Wyvern soars upon an arctic wind, granting her unobstructed movement and allowing her to exhale a blistering chill into each attack. While soaring, her attacks travel further and faster, and slow enemies with a magical freeze that strips them of [6.0, 7.0, 8.0, 9.0]% of their current health each second. Her sight is also hardened against night\\'s chill, granting her 400 additional vision range at night while soaring.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"winter-wyvern-arctic-burn",
+      "manacost":"100",
+      "name":"Arctic Burn",
+      "notes":"The damage and slow from Arctic Burn can be dispelled.",
+      "stats":{
+        "FLIGHT DURATION":"7 / 8 / 9 / 10",
+        "BONUS ATTACK RANGE":"350 / 400 / 450 / 500",
+        "HEALTH BURN":"6% / 7% / 8% / 9%",
+        "BURN DURATION":"5.0",
+        "MOVEMENT SLOW":"16% / 24% / 32% / 40%",
+        "ADDED NIGHT VISION RANGE":"400",
+        "MANA PER SECOND":"20",
+        "MOVEMENT SPEED":"25%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"7",
+      "desc":"Launches a ball of brittle ice toward an enemy. The ice shatters on impact, leaving the primary target completely unaffected, while hurling damaging splinters into nearby enemies in a 500 base radius. Enemies struck by these splinters are slowed by 30%.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"winter-wyvern-splinter-blast",
+      "manacost":"105 / 120 / 135 / 150",
+      "name":"Splinter Blast",
+      "notes":"The primary projectile cannot be disjointed.",
+      "stats":{
+        "SHATTER RADIUS":"500",
+        "MOVEMENT SLOW":"30%",
+        "SLOW DURATION":"4.0",
+        "DAMAGE":"100 / 180 / 260 / 340",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"24 / 21 / 18 / 15",
+      "desc":"Encases an ally in an icy cocoon, freezing them solid while healing a base amount as well as a percentage of their maximum health each second. The cocoon blocks all physical damage.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Allied Units",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"winter-wyvern-cold-embrace",
+      "manacost":"50 / 60 / 70 / 80",
+      "name":"Cold Embrace",
+      "notes":null,
+      "stats":{
+        "DURATION":"4.0",
+        "BASE HEAL PER SECOND":"30 / 35 / 40 / 45",
+        "MAX HEAL PER SECOND":"1.75% / 2.5% / 3.25% / 4.0%",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"90 / 85 / 80",
+      "desc":"Winter Wyvern dispells then freezes an enemy in place while striking those nearby with a maddening curse which causes them to attack their frozen ally with increased attack speed. The frozen ally and those cursed to attack their ally are immune to all damage from their enemies with the exception of Winter Wyvern or her controlled units.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"winter-wyvern-winter's-curse",
+      "manacost":"250",
+      "name":"Winter's Curse",
+      "notes":"If there are no allies within range of the Cursed enemy for 2.5 seconds the effect will end early.",
+      "stats":{
+        "CURSE RADIUS":"525",
+        "CURSE DAMAGE REDUCTION":"100%",
+        "CURSE ATTACK SPEED":"65",
+        "CURSE DURATION":"4.5 / 5.0 / 5.5",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

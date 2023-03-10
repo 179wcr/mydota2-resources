@@ -1,1 +1,125 @@
-{"id":"juggernaut","talents":[{"level":25,"option1":"+2 Healing Ward Health","option2":"+1s Omnislash Duration"},{"level":20,"option1":"+150 Blade Fury DPS","option2":"+40% Blade Dance Lifesteal"},{"level":15,"option1":"+1s Blade Fury Duration","option2":"-20.0s Healing Ward Cooldown"},{"level":10,"option1":"+75.0 Blade Fury Radius","option2":"+5 All Stats"}],"abilities":[{"cooldown":"42 / 34 / 26 / 18","desc":"Causes a bladestorm of destructive force around Juggernaut, rendering him immune to magic and dealing damage to nearby enemy units. DISPEL TYPE: Basic Dispel","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"juggernaut-blade-fury","manacost":"120 / 110 / 100 / 90","name":"Blade Fury","notes":"Juggernaut can still perform attacks while in Blade Fury. However, only units that are not affected by Blade Fury, such as wards or structures, will take damage from these attacks.","stats":{"RADIUS":"260","DAMAGE":"90 / 115 / 140 / 165","DURATION":"5.0","BONUS MOVE SPEED":"75","ATTACK RATE":"1.0","ATTACK DAMAGE":"75%","CAST POINT":"0s"}},{"cooldown":"60","desc":"Summons a Healing Ward which heals all nearby allied units, based on their max health.  The Healing Ward moves at 325 movement speed after being summoned.  Lasts [25] seconds.","effects":{"ABILITY":"Point Target","PIERCES SPELL IMMUNITY":"Yes"},"id":"juggernaut-healing-ward","manacost":"140 / 130 / 120 / 110","name":"Healing Ward","notes":"Multiple Healing Wards do not stack.","stats":{"MAX HEALTH PER SECOND":"2% / 3% / 4% / 5%","RADIUS":"400","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Gives Juggernaut a chance to deal critical damage on each attack.","effects":{"ABILITY":"Passive"},"id":"juggernaut-blade-dance","manacost":null,"name":"Blade Dance","notes":null,"stats":{"CRITICAL CHANCE":"20% / 25% / 30% / 35%","CRITICAL DAMAGE":"180%"}},{"cooldown":"20","desc":"Performs a short Omnislash for 0.8 seconds.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"juggernaut-swiftslash","manacost":"125","name":"Swiftslash","notes":null,"stats":{}},{"cooldown":"130","desc":"Juggernaut leaps towards the target enemy units, and then slashes the target and other nearby enemy units at an increased attack rate. Juggernaut is invulnerable for the duration.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"juggernaut-omnislash","manacost":"200 / 275 / 350","name":"Omnislash","notes":"Omnislash applies a basic dispel to Juggernaut on cast.","stats":{"SLASHES RATE MULTIPLIER":"1.5","BONUS DAMAGE":"30 / 40 / 50","BONUS ATTACK SPEED":"40","DURATION":"3","SLASH JUMP RADIUS":"425","CAST POINT":"0.3s"}}]}
+{
+  "id":"juggernaut",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+2 Healing Ward Hits to Kill",
+      "option2":"+1s Omnislash Duration"
+    },
+    {
+      "level":20,
+      "option1":"+150 Blade Fury DPS",
+      "option2":"+40% Blade Dance Lifesteal"
+    },
+    {
+      "level":15,
+      "option1":"+1s Blade Fury Duration",
+      "option2":"-20.0s Healing Ward Cooldown"
+    },
+    {
+      "level":10,
+      "option1":"+100.0 Blade Fury Radius",
+      "option2":"+5 All Stats"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"42 / 34 / 26 / 18",
+      "desc":"Causes a bladestorm of destructive force around Juggernaut, rendering him immune to magic and dealing damage to nearby enemy units. DISPEL TYPE: Basic Dispel",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"juggernaut-blade-fury",
+      "manacost":"120 / 110 / 100 / 90",
+      "name":"Blade Fury",
+      "notes":"Juggernaut can still perform attacks while in Blade Fury. However, only units that are not affected by Blade Fury, such as wards or structures, will take damage from these attacks.",
+      "stats":{
+        "RADIUS":"260",
+        "DAMAGE":"90 / 115 / 140 / 165",
+        "DURATION":"5.0",
+        "BONUS MOVE SPEED":"75",
+        "ATTACK RATE":"1.4",
+        "ATTACK DAMAGE":"75%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"60",
+      "desc":"Summons a Healing Ward which heals all nearby allied units, based on their max health.  The Healing Ward moves at 325 movement speed after being summoned.  Lasts [25] seconds.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"juggernaut-healing-ward",
+      "manacost":"140 / 130 / 120 / 110",
+      "name":"Healing Ward",
+      "notes":"Multiple Healing Wards do not stack.",
+      "stats":{
+        "MAX HEALTH PER SECOND":"2% / 3% / 4% / 5%",
+        "RADIUS":"400",
+        "HITS TO DESTROY":"1",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Gives Juggernaut a chance to deal critical damage on each attack.",
+      "effects":{
+        "ABILITY":"Passive"
+      },
+      "id":"juggernaut-blade-dance",
+      "manacost":null,
+      "name":"Blade Dance",
+      "notes":null,
+      "stats":{
+        "CRITICAL CHANCE":"20% / 25% / 30% / 35%",
+        "CRITICAL DAMAGE":"190%"
+      }
+    },
+    {
+      "cooldown":"20",
+      "desc":"Performs a short Omnislash for 0.8 seconds.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"juggernaut-swiftslash",
+      "manacost":"125",
+      "name":"Swiftslash",
+      "notes":null,
+      "stats":{
+        "DURATION":"0.8",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"130",
+      "desc":"Juggernaut leaps towards the target enemy units, and then slashes the target and other nearby enemy units at an increased attack rate. Juggernaut is invulnerable for the duration.DISPEL TYPE: Basic Dispel",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"juggernaut-omnislash",
+      "manacost":"200 / 275 / 350",
+      "name":"Omnislash",
+      "notes":"You can use items during Omnislash.",
+      "stats":{
+        "SLASHES RATE MULTIPLIER":"1.5",
+        "BONUS DAMAGE":"30 / 40 / 50",
+        "BONUS ATTACK SPEED":"40",
+        "DURATION":"3",
+        "SLASH JUMP RADIUS":"425",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

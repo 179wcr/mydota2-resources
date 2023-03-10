@@ -1,1 +1,133 @@
-{"id":"leshrac","talents":[{"level":25,"option1":"+25 Diabolic Edict Explosions","option2":"Lightning Storm Can Bounce Twice On Units"},{"level":20,"option1":"+40 Pulse Nova Damage","option2":"+20 Strength"},{"level":15,"option1":"+25 Movement Speed","option2":"+100 Lightning Storm Damage"},{"level":10,"option1":"+40 Split Earth Radius","option2":"+1.75 Mana Regen"}],"abilities":[{"cooldown":"9","desc":"Splits the earth under enemies. Deals damage and stuns for a short duration.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"leshrac-split-earth","manacost":"80 / 100 / 120 / 140","name":"Split Earth","notes":"There is a 0.35 second delay before the effect is applied.","stats":{"DAMAGE":"120 / 180 / 240 / 300","STUN DELAY":"0.35","RADIUS":"150 / 175 / 200 / 225","STUN DURATION":"2.0","CAST POINT":"0.7s"}},{"cooldown":"22","desc":"Saturates the area around Leshrac with magical explosions that deal pure damage to enemy units and structures.  The fewer units available to attack, the more damage those units will take. Lasts [10] seconds.","effects":{"ABILITY":"No Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"leshrac-diabolic-edict","manacost":"95 / 120 / 135 / 155","name":"Diabolic Edict","notes":"The explosions will continue even if Leshrac is killed.","stats":{"DAMAGE":"7 / 14 / 21 / 28","EXPLOSIONS":"40","RADIUS":"500","CAST POINT":"0.5s"}},{"cooldown":"4","desc":"Summons a lightning storm that blasts the target enemy unit, then strikes any nearby enemy units. Struck enemies are slowed.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"leshrac-lightning-storm","manacost":"80 / 100 / 120 / 140","name":"Lightning Storm","notes":null,"stats":{"DAMAGE":"70 / 120 / 170 / 220","LIGHTNING STRIKES":"5 / 7 / 9 / 11","LIGHTNING JUMP RADIUS":"475","MOVEMENT SLOW":"-75%","SLOW DURATION":"0.4 / 0.6 / 0.8 / 1.0","CAST POINT":"0.3s"}},{"cooldown":"25","desc":"Causes Leshrac and all nearby enemies to turn ethereal, preventing them from attacking, slowing them, and making them take more magic damage. Increases Leshrac's speed rather than reducing it. Does not cause Leshrac to take amplified damage.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No"},"id":"leshrac-nihilism","manacost":"75","name":"Nihilism","notes":null,"stats":{"DURATION":"4.0","INCREASED MAGIC DAMAGE":"30%","SLOW":"30%","RADIUS":"450"}},{"cooldown":"1","desc":"Creates waves of damaging energy around Leshrac, one per second, to damage nearby enemy units. Drains Leshrac's mana with each pulse.","effects":{"ABILITY":"No Target, Toggle","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"leshrac-pulse-nova","manacost":"70","name":"Pulse Nova","notes":null,"stats":{"MANA/SEC":"25 / 45 / 65","RADIUS":"525","DAMAGE":"100 / 150 / 200","CAST POINT":"0s"}}]}
+{
+  "id":"leshrac",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+25 Diabolic Edict Explosions",
+      "option2":"Lightning Storm Can Bounce Twice On Units"
+    },
+    {
+      "level":20,
+      "option1":"+40 Pulse Nova Damage",
+      "option2":"+20 Strength"
+    },
+    {
+      "level":15,
+      "option1":"+25 Movement Speed",
+      "option2":"+100 Lightning Storm Damage"
+    },
+    {
+      "level":10,
+      "option1":"+40 Split Earth Radius",
+      "option2":"+1.5 Mana Regen"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"9",
+      "desc":"Splits the earth under enemies. Deals damage and stuns for a short duration.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"leshrac-split-earth",
+      "manacost":"80 / 100 / 120 / 140",
+      "name":"Split Earth",
+      "notes":"There is a 0.35 second delay before the effect is applied.",
+      "stats":{
+        "DAMAGE":"120 / 180 / 240 / 300",
+        "STUN DELAY":"0.35",
+        "RADIUS":"150 / 175 / 200 / 225",
+        "STUN DURATION":"2.0",
+        "CAST POINT":"0.7s"
+      }
+    },
+    {
+      "cooldown":"22",
+      "desc":"Saturates the area around Leshrac with magical explosions that deal pure damage to enemy units and structures.  The fewer units available to attack, the more damage those units will take. Lasts [10] seconds.",
+      "effects":{
+        "ABILITY":"No Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"leshrac-diabolic-edict",
+      "manacost":"95 / 120 / 135 / 155",
+      "name":"Diabolic Edict",
+      "notes":"The explosions will continue even if Leshrac is killed.",
+      "stats":{
+        "DAMAGE":"7 / 14 / 21 / 28",
+        "EXPLOSIONS":"40",
+        "RADIUS":"500",
+        "CAST POINT":"0.5s"
+      }
+    },
+    {
+      "cooldown":"4",
+      "desc":"Summons a lightning storm that blasts the target enemy unit, then strikes any nearby enemy units. Struck enemies are slowed.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"leshrac-lightning-storm",
+      "manacost":"80 / 100 / 120 / 140",
+      "name":"Lightning Storm",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"70 / 120 / 170 / 220",
+        "LIGHTNING STRIKES":"5 / 7 / 9 / 11",
+        "LIGHTNING JUMP RADIUS":"475",
+        "MOVEMENT SLOW":"-75%",
+        "SLOW DURATION":"0.4 / 0.6 / 0.8 / 1.0",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"25",
+      "desc":"Causes Leshrac and all nearby enemies to turn ethereal, preventing them from attacking, slowing them, and making them take more magic damage. Increases Leshrac\\'s speed rather than reducing it. Does not cause Leshrac to take amplified damage.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"leshrac-nihilism",
+      "manacost":"75",
+      "name":"Nihilism",
+      "notes":null,
+      "stats":{
+        "DURATION":"4.0",
+        "INCREASED MAGIC DAMAGE":"30%",
+        "SLOW":"30%",
+        "RADIUS":"450"
+      }
+    },
+    {
+      "cooldown":"1",
+      "desc":"Creates waves of damaging energy around Leshrac, one per second, to damage nearby enemy units. Drains Leshrac\\'s mana with each pulse.",
+      "effects":{
+        "ABILITY":"No Target, Toggle",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"leshrac-pulse-nova",
+      "manacost":"70",
+      "name":"Pulse Nova",
+      "notes":null,
+      "stats":{
+        "MANA/SEC":"25 / 45 / 65",
+        "RADIUS":"525",
+        "DAMAGE":"90 / 135 / 180",
+        "CAST POINT":"0s"
+      }
+    }
+  ]
+}

@@ -1,1 +1,151 @@
-{"id":"morphling","talents":[{"level":25,"option1":"+1s Adaptive Strike Stun Duration","option2":"+2 Waveform Charges"},{"level":20,"option1":"+1s Adaptive Strike Stun Duration","option2":"Waveform Attacks Targets"},{"level":15,"option1":"+15 Agility","option2":"+16s Morph Duration"},{"level":10,"option1":"+250 Waveform Range","option2":"+15% Magic Resistance"}],"abilities":[{"cooldown":"20 / 17 / 14 / 11","desc":"Morphling dissolves into liquid and surges forward, damaging enemy units in his path.  Morphling is invulnerable during Waveform.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"morphling-waveform","manacost":"130","name":"Waveform","notes":null,"stats":{"DAMAGE":"75 / 150 / 225 / 300","CAST POINT":"0.25s"}},{"cooldown":"10","desc":"Launches a surge of water toward an enemy unit, dealing base damage plus additional damage based on Morphling's agility times a multiplier.  If Morphling's agility is 50% higher than strength, the maximum agility multiplier is used.  Also puts Adaptive Strike (Strength) on a 3 second cooldown.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"morphling-adaptive-strike-(agility)","manacost":"50 / 60 / 70 / 80","name":"Adaptive Strike (Agility)","notes":"Projectile moves at 1150 speed.","stats":{"BASE DAMAGE":"40 / 50 / 60 / 70","DAMAGE MIN AGI MULTIPLIER":"0.5","DAMAGE MAX AGI MULTIPLIER":"1 / 1 / 2 / 2","CAST POINT":"0.25s"}},{"cooldown":"10","desc":"Launches a surge of water toward an enemy unit, stunning and knocking back the target based on Morphling's strength. If his strength is 50% higher than his agility, the maximum stun/knockback is dealt.  Also puts Adaptive Strike (Agility) on a 3 second cooldown.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"morphling-adaptive-strike-(strength)","manacost":"50 / 60 / 70 / 80","name":"Adaptive Strike (Strength)","notes":"Projectile moves at 1150 speed.","stats":{"STUN MIN":"0.5","STUN MAX":"1 / 2 / 2 / 3","KNOCKBACK MIN":"100","KNOCKBACK MAX":"500","CAST POINT":"0.25s"}},{"cooldown":"0","desc":"Morphling shifts its form, pulling points from Strength and pouring them into Agility. The process is reversible.  Additional points in Attribute Shift increase the rate of stat change.  Passively grants bonus Agility.","effects":{"ABILITY":"No Target, Toggle"},"id":"morphling-attribute-shift-(agility-gain)","manacost":null,"name":"Attribute Shift (Agility Gain)","notes":"Leveling up Agility Gain will also level up Strength Gain.","stats":{"BONUS AGILITY":"3 / 5 / 7 / 9","SHIFT RATE":"5 / 10 / 15 / 20","MANA COST PER SECOND":"5 / 10 / 15 / 20"}},{"cooldown":"0","desc":"Morphling shifts its form, pulling points from Agility and pouring them into Strength. The process is reversible.  Additional points in Attribute Shift increase the rate of stat change.  Passively grants bonus Strength.","effects":{"ABILITY":"No Target, Toggle"},"id":"morphling-attribute-shift-(strength-gain)","manacost":null,"name":"Attribute Shift (Strength Gain)","notes":"Leveling up Strength Gain will also level up Agility Gain.","stats":{"BONUS STRENGTH":"3 / 5 / 7 / 9","SHIFT RATE":"5 / 10 / 15 / 20","MANA COST PER SECOND":"5 / 10 / 15 / 20"}},{"cooldown":"140 / 100 / 60","desc":"Morphling changes his form to match the targeted enemy, gaining their basic abilities. Can be toggled for the duration of the ability.","effects":{"ABILITY":"Unit Target","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"morphling-morph","manacost":"50","name":"Morph","notes":"Morph won't copy Shard/Scepter abilities unless Morphling owns the respective item.","stats":{"DURATION":"20","TARGET STATS STOLEN":"20%","SPELL AMPLIFICATION STOLEN (INT)":"25%","ATTACK SPEED STOLEN (AGI)":"70%","STATUS RESIST STOLEN (STR)":"40%","CAST POINT":"0.25s"}},{"cooldown":"1","desc":"Toggles Morphling's form between his own and the replicated enemy.","effects":{"ABILITY":"No Target","DISPELLABLE":"Cannot be dispelled"},"id":"morphling-morph-replicate","manacost":"0","name":"Morph Replicate","notes":null,"stats":{}}]}
+{
+  "id":"morphling",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+35 Strength",
+      "option2":"-40%% Waveform Cooldown"
+    },
+    {
+      "level":20,
+      "option1":"+1s Adaptive Strike Stun Duration",
+      "option2":"Waveform Attacks Targets"
+    },
+    {
+      "level":15,
+      "option1":"+15 Agility",
+      "option2":"+16s Morph Duration"
+    },
+    {
+      "level":10,
+      "option1":"+250 Waveform Range",
+      "option2":"+15% Magic Resistance"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"Morphling dissolves into liquid and surges forward, damaging enemy units in his path.  Morphling is invulnerable during Waveform.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"morphling-waveform",
+      "manacost":"130",
+      "name":"Waveform",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"75 / 150 / 225 / 300",
+        "CAST POINT":"0.25s"
+      }
+    },
+    {
+      "cooldown":"10",
+      "desc":"Launches a surge of water toward an enemy unit, dealing base damage plus additional damage based on Morphling\\'s agility times a multiplier.  If Morphling\\'s agility is 50% higher than strength, the maximum agility multiplier is used.  Also puts Adaptive Strike (Strength) on a 3 second cooldown.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"morphling-adaptive-strike-(agility)",
+      "manacost":"40 / 50 / 60 / 70",
+      "name":"Adaptive Strike (Agility)",
+      "notes":"Projectile moves at 1150 speed.",
+      "stats":{
+        "BASE DAMAGE":"55 / 65 / 75 / 85",
+        "DAMAGE MIN AGI MULTIPLIER":"0.5",
+        "DAMAGE MAX AGI MULTIPLIER":"1 / 1 / 2 / 2",
+        "CAST POINT":"0.25s"
+      }
+    },
+    {
+      "cooldown":"10",
+      "desc":"Launches a surge of water toward an enemy unit, stunning and knocking back the target based on Morphling\\'s strength. If his strength is 50% higher than his agility, the maximum stun/knockback is dealt.  Also puts Adaptive Strike (Agility) on a 3 second cooldown.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"morphling-adaptive-strike-(strength)",
+      "manacost":"40 / 50 / 60 / 70",
+      "name":"Adaptive Strike (Strength)",
+      "notes":"Projectile moves at 1150 speed.",
+      "stats":{
+        "STUN MIN":"0.5",
+        "STUN MAX":"1 / 2 / 2 / 3",
+        "KNOCKBACK MIN":"100",
+        "KNOCKBACK MAX":"500",
+        "CAST POINT":"0.25s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Morphling shifts its form, pulling points from Strength and pouring them into Agility. The process is reversible.  Additional points in Attribute Shift increase the rate of stat change.  Passively grants bonus Agility.",
+      "effects":{
+        "ABILITY":"No Target, Toggle"
+      },
+      "id":"morphling-attribute-shift-(agility-gain)",
+      "manacost":null,
+      "name":"Attribute Shift (Agility Gain)",
+      "notes":"Leveling up Agility Gain will also level up Strength Gain.",
+      "stats":{
+        "BONUS AGILITY":"3 / 5 / 7 / 9",
+        "SHIFT RATE":"5 / 10 / 15 / 20",
+        "MANA COST PER SECOND":"5 / 10 / 15 / 20"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Morphling shifts its form, pulling points from Agility and pouring them into Strength. The process is reversible.  Additional points in Attribute Shift increase the rate of stat change.  Passively grants bonus Strength.",
+      "effects":{
+        "ABILITY":"No Target, Toggle"
+      },
+      "id":"morphling-attribute-shift-(strength-gain)",
+      "manacost":null,
+      "name":"Attribute Shift (Strength Gain)",
+      "notes":"Leveling up Strength Gain will also level up Agility Gain.",
+      "stats":{
+        "BONUS STRENGTH":"3 / 5 / 7 / 9",
+        "SHIFT RATE":"5 / 10 / 15 / 20",
+        "MANA COST PER SECOND":"5 / 10 / 15 / 20"
+      }
+    },
+    {
+      "cooldown":"140 / 100 / 60",
+      "desc":"Morphling changes his form to match the targeted enemy, gaining their basic abilities. Can be toggled for the duration of the ability.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"morphling-morph",
+      "manacost":"50",
+      "name":"Morph",
+      "notes":"Morph won't copy Shard/Scepter abilities unless Morphling owns the respective item.",
+      "stats":{
+        "DURATION":"20",
+        "TARGET STATS STOLEN":"20%",
+        "SPELL AMPLIFICATION STOLEN (INT)":"25%",
+        "ATTACK SPEED STOLEN (AGI)":"70",
+        "STATUS RESIST STOLEN (STR)":"40%",
+        "CAST POINT":"0.25s"
+      }
+    },
+    {
+      "cooldown":"1",
+      "desc":"Toggles Morphling\\'s form between his own and the replicated enemy.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"morphling-morph-replicate",
+      "manacost":"0",
+      "name":"Morph Replicate",
+      "notes":null,
+      "stats":{}
+    }
+  ]
+}

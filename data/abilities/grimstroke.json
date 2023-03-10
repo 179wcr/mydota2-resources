@@ -1,1 +1,135 @@
-{"id":"grimstroke","talents":[{"level":25,"option1":"+50% Stroke of Fate Damage","option2":"+150 Ink Swell Radius"},{"level":20,"option1":"+3 Hits to Kill Phantom","option2":"+1000 Stroke of Fate Cast Range"},{"level":15,"option1":"+16% Ink Swell Movement Speed","option2":"+20.0% Soulbind Spell Damage"},{"level":10,"option1":"-5.0s Ink Swell Cooldown","option2":"+50 Phantom's Embrace DPS"}],"abilities":[{"cooldown":"11 / 9 / 7 / 5","desc":"Grimstroke paints a path of ink with his brush, damaging and slowing enemies. The damage is increased with each enemy the ink hits.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"grimstroke-stroke-of-fate","manacost":"100 / 110 / 120 / 130","name":"Stroke of Fate","notes":null,"stats":{"BASE DAMAGE":"100 / 160 / 220 / 280","BONUS DMG PER TARGET":"20 / 30 / 40 / 50","MOVEMENT SLOW":"50% / 60% / 70% / 80%","SLOW DURATION":"1.75","CAST RANGE":"0","CAST POINT":"0.6s"}},{"cooldown":"36 / 30 / 24 / 18","desc":"Summons a phantom that moves quickly towards the target, latching to it when she arrives. Once latched, the phantom damages and silences. If she survives the full latch duration she rends her victim for heavy damage and refreshes Phantom's Embrace's cooldown.Hero attacks against the phantom count as 3 attacks each.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"grimstroke-phantom's-embrace","manacost":"80 / 100 / 120 / 140","name":"Phantom's Embrace","notes":"The phantom will return if the target dies during the latch.","stats":{"LATCH DURATION":"5.0","ATTACKS TO DESTROY":"6 / 6 / 9 / 9","PHANTOM DPS":"10 / 20 / 30 / 40","REND DAMAGE":"120 / 200 / 280 / 360","CAST POINT":"0s"}},{"cooldown":"30 / 26 / 22 / 18","desc":"Grimstroke shrouds an allied unit in ink, increasing its movement speed. Enemies in range of the allied unit are damaged with inky tendrils over time. After 3.0 seconds it triggers, applying damage and stun in an area around the unit in proportion to how long ink tendril was near any hero.","effects":{"ABILITY":"Unit Target","AFFECTS":"Allied Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"grimstroke-ink-swell","manacost":"120 / 130 / 140 / 150","name":"Ink Swell","notes":null,"stats":{"BUFF DURATION":"3.0","MOVEMENT SPEED BONUS":"10% / 12% / 14% / 16%","RADIUS":"375","MAX DAMAGE":"90 / 180 / 270 / 360","MAX STUN DURATION":"1.1 / 1.9 / 2.7 / 3.5","INK TENDRILS DPS":"25 / 35 / 45 / 55","MAX THRESHOLD DURATION":"2.5","CAST POINT":"0.15s"}},{"cooldown":"35","desc":"Creates an ink illusion of a target enemy hero. Illusion is spell immune, and has bonus movement speed and attack damage.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Heroes","PIERCES SPELL IMMUNITY":"No"},"id":"grimstroke-dark-portrait","manacost":"200","name":"Dark Portrait","notes":null,"stats":{"ILLUSION DURATION":"25","ILLUSION OUTGOING DAMAGE":"150%","ILLUSION DAMAGE TAKEN":"300%","ILLUSION MOVESPEED BONUS":"30%","CAST POINT":"0s"}},{"cooldown":"90 / 70 / 50","desc":"Binds a targeted enemy hero to its nearest allied hero within the bind radius, preventing both from moving away from each other. Any unit-targeted ability that either bound hero receives also gets cast on the other hero. If the bind is broken before the duration expires, the initial target will be bound to its nearest allied hero in the radius.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Heroes","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"grimstroke-soulbind","manacost":"150 / 200 / 250","name":"Soulbind","notes":"Provides vision of both leashed units.","stats":{"DURATION":"6 / 7 / 8","BIND RADIUS":"600","CAST POINT":"0.15s"}}]}
+{
+  "id":"grimstroke",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+50% Stroke of Fate Damage",
+      "option2":"+150 Ink Swell Radius"
+    },
+    {
+      "level":20,
+      "option1":"+3 Hits to Kill Phantom",
+      "option2":"+1000 Stroke of Fate Cast Range"
+    },
+    {
+      "level":15,
+      "option1":"+16% Ink Swell Movement Speed",
+      "option2":"+25.0% Soulbind Spell Damage"
+    },
+    {
+      "level":10,
+      "option1":"-5.0s Ink Swell Cooldown",
+      "option2":"+50 Phantom's Embrace DPS"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"11 / 9 / 7 / 5",
+      "desc":"Grimstroke paints a path of ink with his brush, damaging and slowing enemies. The damage is increased with each enemy the ink hits.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"grimstroke-stroke-of-fate",
+      "manacost":"100 / 110 / 120 / 130",
+      "name":"Stroke of Fate",
+      "notes":null,
+      "stats":{
+        "BASE DAMAGE":"100 / 160 / 220 / 280",
+        "BONUS DMG PER TARGET":"20 / 30 / 40 / 50",
+        "MOVEMENT SLOW":"50% / 60% / 70% / 80%",
+        "SLOW DURATION":"1.75",
+        "CAST RANGE":"0",
+        "CAST POINT":"0.6s"
+      }
+    },
+    {
+      "cooldown":"36 / 30 / 24 / 18",
+      "desc":"Summons a phantom that moves quickly towards the target, latching to it when she arrives. Once latched, the phantom damages and silences. If she survives the full latch duration she rends her victim for heavy damage and refreshes Phantom\\'s Embrace\\'s cooldown.Hero attacks against the phantom count as 3 attacks each.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"grimstroke-phantom's-embrace",
+      "manacost":"80 / 100 / 120 / 140",
+      "name":"Phantom's Embrace",
+      "notes":"The phantom will return if the target dies during the latch.",
+      "stats":{
+        "LATCH DURATION":"5.0",
+        "ATTACKS TO DESTROY":"6 / 6 / 9 / 9",
+        "PHANTOM DPS":"10 / 20 / 30 / 40",
+        "REND DAMAGE":"120 / 200 / 280 / 360",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"30 / 26 / 22 / 18",
+      "desc":"Grimstroke shrouds an allied unit in ink, increasing its movement speed. Enemies in range of the allied unit are damaged with inky tendrils over time. After 3.0 seconds it triggers, applying damage and stun in an area around the unit in proportion to how long ink tendril was near any hero.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Allied Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"grimstroke-ink-swell",
+      "manacost":"120 / 130 / 140 / 150",
+      "name":"Ink Swell",
+      "notes":null,
+      "stats":{
+        "BUFF DURATION":"3.0",
+        "MOVEMENT SPEED BONUS":"12% / 14% / 16% / 18%",
+        "RADIUS":"375",
+        "MAX DAMAGE":"90 / 180 / 270 / 360",
+        "MAX STUN DURATION":"1.1 / 1.9 / 2.7 / 3.5",
+        "INK TENDRILS DPS":"25 / 40 / 55 / 70",
+        "MAX THRESHOLD DURATION":"2.5",
+        "CAST POINT":"0.15s"
+      }
+    },
+    {
+      "cooldown":"35",
+      "desc":"Creates an ink illusion of a target enemy hero. Illusion is spell immune, and has bonus movement speed and attack damage.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Heroes",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"grimstroke-dark-portrait",
+      "manacost":"200",
+      "name":"Dark Portrait",
+      "notes":null,
+      "stats":{
+        "ILLUSION DURATION":"25",
+        "ILLUSION OUTGOING DAMAGE":"150%",
+        "ILLUSION DAMAGE TAKEN":"350%",
+        "ILLUSION MOVESPEED BONUS":"30%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"70 / 60 / 50",
+      "desc":"Binds a targeted enemy hero to its nearest allied hero within the bind radius, preventing both from moving away from each other. Any unit-targeted ability that either bound hero receives also gets cast on the other hero. If the bind is broken before the duration expires, the initial target will be bound to its nearest allied hero in the radius.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Heroes",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"grimstroke-soulbind",
+      "manacost":"150 / 200 / 250",
+      "name":"Soulbind",
+      "notes":"Provides vision of both leashed units.",
+      "stats":{
+        "DURATION":"6 / 7 / 8",
+        "BIND RADIUS":"600",
+        "CAST POINT":"0.15s"
+      }
+    }
+  ]
+}

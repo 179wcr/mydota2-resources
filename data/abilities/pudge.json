@@ -1,1 +1,122 @@
-{"id":"pudge","talents":[{"level":25,"option1":"x1.5x Flesh Heap Stack Str and Damage Block bonuses","option2":"x1.8x Dismember Damage/Heal"},{"level":20,"option1":"-4s Meat Hook Cooldown","option2":"+0.8s Dismember Duration"},{"level":15,"option1":"+120 Meat Hook Damage","option2":"+10% Spell Lifesteal"},{"level":10,"option1":"-16% Rot Slow","option2":"+4 Armor"}],"abilities":[{"cooldown":null,"desc":"Launches a bloody hook toward a unit or location. The hook will snag the first unit it encounters, dragging the unit back to Pudge, killing it if it's a non-ancient creep and dealing damage if it is an enemy otherwise.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"Yes"},"id":"pudge-meat-hook","manacost":"110","name":"Meat Hook","notes":"Meat Hook can hit and drag runes to Pudge, refunding the Hook's mana cost.","stats":{"DAMAGE":"150 / 220 / 290 / 360","CAST RANGE":"1300","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"A toxic cloud that deals intense damage and slows movement--harming not only enemy units but Pudge himself.","effects":{"ABILITY":"No Target, Toggle","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"pudge-rot","manacost":null,"name":"Rot","notes":"If Pudge is silenced, he can't deactivate Rot if it's activated.","stats":{"RADIUS":"250","MOVE SLOW":"-14% / -20% / -26% / -32%","DAMAGE":"30 / 60 / 90 / 120","BONUS DAMAGE":"100","BONUS RADIUS":"200","REGEN REDUCTION":"25%","CAST POINT":"0s"}},{"cooldown":"20 / 18 / 16 / 14","desc":"Gives Pudge a guaranteed damage block against all types of attack. Passively grants bonus strength that increases each time Pudge kills an enemy Hero or it dies in his vicinity.  Flesh Heap is retroactive, meaning it can gain charges before it is skilled, which then become active.","effects":{"ABILITY":"No Target","DISPELLABLE":"Cannot be dispelled"},"id":"pudge-flesh-heap","manacost":"35 / 50 / 65 / 80","name":"Flesh Heap","notes":null,"stats":{"DAMAGE BLOCK":"7 / 14 / 21 / 28","STRENGTH BONUS":"1 / 1 / 1 / 2","RANGE":"450"}},{"cooldown":null,"desc":"Ejects the swallowed allied hero inside of you.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No"},"id":"pudge-eject","manacost":null,"name":"Eject","notes":null,"stats":{}},{"cooldown":null,"desc":"CHANNELED - Pudge chows down on an enemy unit, disabling it and dealing damage over time. Pudge gets healed for the same amount he damages. Lasts longer on creeps.","effects":{"ABILITY":"Channelled, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Strong Dispels Only"},"id":"pudge-dismember","manacost":"100 / 130 / 170","name":"Dismember","notes":"If a unit becomes invisible while Dismembered, it will still be under the effects of Dismember.","stats":{"DAMAGE PER SECOND":"80 / 100 / 120","STRENGTH MULTIPLIER":"0","CREEP DURATION":"6.0","MAX HP REGEN":"5%","ALLY CAST RANGE":"300","COOLDOWN REDUCTION":"5.0","CAST POINT":"0.3s"}}]}
+{
+  "id":"pudge",
+  "talents":[
+    {
+      "level":25,
+      "option1":"x1.5x Flesh Heap Stack Str and Damage Block bonuses",
+      "option2":"x1.8x Dismember Damage/Heal"
+    },
+    {
+      "level":20,
+      "option1":"-4s Meat Hook Cooldown",
+      "option2":"+0.8s Dismember Duration"
+    },
+    {
+      "level":15,
+      "option1":"+120 Meat Hook Damage",
+      "option2":"+8% Spell Lifesteal"
+    },
+    {
+      "level":10,
+      "option1":"-16% Rot Slow",
+      "option2":"+4 Armor"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"Launches a bloody hook toward a unit or location. The hook will snag the first unit it encounters, dragging the unit back to Pudge, killing it if it\\'s a non-ancient creep and dealing damage if it is an enemy otherwise.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"pudge-meat-hook",
+      "manacost":"110",
+      "name":"Meat Hook",
+      "notes":"Meat Hook can hit and drag runes to Pudge, refunding the Hook's mana cost.",
+      "stats":{
+        "DAMAGE":"150 / 220 / 290 / 360",
+        "CAST RANGE":"1300",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"A toxic cloud that deals intense damage and slows movement--harming not only enemy units but Pudge himself.",
+      "effects":{
+        "ABILITY":"No Target, Toggle",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"pudge-rot",
+      "manacost":null,
+      "name":"Rot",
+      "notes":"Rot self-damage is non-lethal.",
+      "stats":{
+        "RADIUS":"250",
+        "MOVE SLOW":"-14% / -20% / -26% / -32%",
+        "DAMAGE":"30 / 60 / 90 / 120",
+        "BONUS DAMAGE":"95",
+        "BONUS RADIUS":"200",
+        "REGEN REDUCTION":"25%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"20 / 19 / 18 / 17",
+      "desc":"Gives Pudge damage block against all sources. Passively grants bonus strength that increases each time Pudge kills an enemy Hero or it dies in his vicinity.  Flesh Heap is retroactive, meaning it can gain charges before it is skilled, which then become active.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"pudge-flesh-heap",
+      "manacost":"35 / 50 / 65 / 80",
+      "name":"Flesh Heap",
+      "notes":null,
+      "stats":{
+        "DAMAGE BLOCK":"8 / 14 / 20 / 26",
+        "STRENGTH BONUS":"1 / 1 / 1 / 2",
+        "RANGE":"450",
+        "DURATION":"5 / 6 / 7 / 8"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Ejects the swallowed allied hero inside of you.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"pudge-eject",
+      "manacost":null,
+      "name":"Eject",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":null,
+      "desc":"CHANNELED - Pudge chows down on an enemy unit, disabling it and dealing damage over time. Damage is increased by Pudge\\'s Strength and heals him for the total amount. Pudge pulls the unit at a rate of 75 units, up to a minimum of 125 range. Lasts longer on creeps.",
+      "effects":{
+        "ABILITY":"Channelled, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"pudge-dismember",
+      "manacost":"100 / 130 / 170",
+      "name":"Dismember",
+      "notes":"If a unit becomes invisible while Dismembered, it will still be under the effects of Dismember.",
+      "stats":{
+        "DAMAGE PER SECOND":"80 / 100 / 120",
+        "STRENGTH MULTIPLIER":"0",
+        "CREEP DURATION":"6.0",
+        "MAX HP REGEN":"5%",
+        "ALLY CAST RANGE":"300",
+        "COOLDOWN REDUCTION":"5.0",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

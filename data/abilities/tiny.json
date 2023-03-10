@@ -1,1 +1,146 @@
-{"id":"tiny","talents":[{"level":25,"option1":"2 Toss Charges","option2":"-8s Avalanche Cooldown"},{"level":20,"option1":"Toss Requires No Target","option2":"+40% Grow Bonus Damage With Tree"},{"level":15,"option1":"+80 Avalanche Damage","option2":"+10% Status Resistance"},{"level":10,"option1":"+10 Strength","option2":"+20 Movement Speed"}],"abilities":[{"cooldown":"26 / 22 / 18 / 14","desc":"Bombards an area with rocks, continously doing small intervals of damage and stun to enemy units. Avalanche does 2x damage to units being tossed.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"tiny-avalanche","manacost":"120","name":"Avalanche","notes":null,"stats":{"RADIUS":"325 / 350 / 375 / 400","AVALANCHE DURATION":"1.4","AVALANCHE DAMAGE":"75 / 150 / 225 / 300","CAST POINT":"0s"}},{"cooldown":"17 / 15 / 13 / 11","desc":"Grabs the nearest unit in a 300 radius around Tiny, ally or enemy, and launches it at the target unit or rune to deal damage where they land.","effects":{"ABILITY":"Unit Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes"},"id":"tiny-toss","manacost":"110 / 120 / 130 / 140","name":"Toss","notes":"Toss deals 33% of its damage to buildings.","stats":{"RADIUS":"275","DAMAGE":"75 / 150 / 225 / 300","CAST POINT":"0s"}},{"cooldown":"19 / 16 / 13 / 10","desc":"Grabs a tree to whack enemies on the head for a limited number of attacks. Grants bonus attack range. Attacks deal more damage and fully splash on units along the way. The tree can be thrown, to deal your attack to a unit at a distance.","effects":{"ABILITY":"Unit Target","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"tiny-tree-grab","manacost":"40","name":"Tree Grab","notes":"The cooldown begins when the tree is thrown.","stats":{"ATTACK COUNT":"5","BONUS BASE DAMAGE":"20","BONUS BUILDING DAMAGE":"40% / 55% / 70% / 85%","ATTACK RANGE":"350","SPLASH DAMAGE":"40% / 60% / 80% / 100%","CAST POINT":"0.2s"}},{"cooldown":"15","desc":"Tiny channels to throw random trees within range towards the targeted area. Deals Tiny's attack damage to enemies in that area with each tree thrown.","effects":{"ABILITY":"Channelled, Point Target","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes"},"id":"tiny-tree-volley","manacost":"200","name":"Tree Volley","notes":null,"stats":{"TARGET RADIUS":"400","TREE GRAB RADIUS":"700","THROW INTERVAL":"0.4","CAST POINT":"0.2s"}},{"cooldown":null,"desc":"Tiny gains craggy mass, increasing his attack damage, and armor, and toss power while slowing his attack speed.","effects":{"ABILITY":"Passive"},"id":"tiny-grow","manacost":null,"name":"Grow","notes":null,"stats":{"BONUS ARMOR":"10 / 15 / 20","BONUS DAMAGE":"50 / 100 / 150","TREE BONUS DAMAGE MULTIPLIER BONUS":"20% / 30% / 40%","ATTACK SPEED REDUCTION":"-30%","TOSS BONUS DAMAGE":"100 / 200 / 300"}},{"cooldown":null,"desc":"Throws the tree at the target unit, proccing your attack on it and splashing damage around the target.","effects":{"ABILITY":"Point Target, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No"},"id":"tiny-tree-throw","manacost":null,"name":"Tree Throw","notes":null,"stats":{"CAST RANGE":"1200","SPLASH RADIUS":"275","MOVEMENT SLOW":"25%","SLOW DURATION":"2.5","CAST POINT":"0.2s"}}]}
+{
+  "id":"tiny",
+  "talents":[
+    {
+      "level":25,
+      "option1":"2 Toss Charges",
+      "option2":"-8s Avalanche Cooldown"
+    },
+    {
+      "level":20,
+      "option1":"Toss Requires No Target",
+      "option2":"+40% Grow Bonus Damage With Tree"
+    },
+    {
+      "level":15,
+      "option1":"+80 Avalanche Damage",
+      "option2":"+10% Status Resistance"
+    },
+    {
+      "level":10,
+      "option1":"+10 Strength",
+      "option2":"+20 Movement Speed"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"26 / 22 / 18 / 14",
+      "desc":"Bombards an area with rocks, continously doing small intervals of damage and stun to enemy units. Avalanche does 2x damage to units being tossed.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"tiny-avalanche",
+      "manacost":"120",
+      "name":"Avalanche",
+      "notes":null,
+      "stats":{
+        "RADIUS":"325 / 340 / 355 / 370",
+        "AVALANCHE DURATION":"1.4",
+        "AVALANCHE DAMAGE":"75 / 150 / 225 / 300",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"17 / 15 / 13 / 11",
+      "desc":"Grabs the nearest unit in a 300 radius around Tiny, ally or enemy, and launches it at the target unit or rune to deal damage where they land.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"tiny-toss",
+      "manacost":"110 / 120 / 130 / 140",
+      "name":"Toss",
+      "notes":"Spell Immune units can be targeted but cannot be tossed or damaged.",
+      "stats":{
+        "RADIUS":"275",
+        "DAMAGE":"75 / 150 / 225 / 300",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"19 / 16 / 13 / 10",
+      "desc":"Grabs a tree to whack enemies on the head for a limited number of attacks. Grants bonus attack range. Attacks deal more damage and fully splash on units along the way. The tree can be thrown, to deal your attack to a unit at a distance.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"tiny-tree-grab",
+      "manacost":"40",
+      "name":"Tree Grab",
+      "notes":"The cooldown begins when the tree is thrown.",
+      "stats":{
+        "ATTACK COUNT":"5",
+        "BONUS BASE DAMAGE":"20",
+        "BONUS BUILDING DAMAGE":"40% / 55% / 70% / 85%",
+        "ATTACK RANGE":"350",
+        "SPLASH DAMAGE":"40% / 60% / 80% / 100%",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"17",
+      "desc":"CHANNELED - Tiny channels to throw random trees within range towards the targeted area. Deals Tiny\\'s attack damage to enemies in that area with each tree thrown.",
+      "effects":{
+        "ABILITY":"Channelled, Point Target",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"tiny-tree-volley",
+      "manacost":"200",
+      "name":"Tree Volley",
+      "notes":null,
+      "stats":{
+        "TARGET RADIUS":"400",
+        "TREE GRAB RADIUS":"700",
+        "THROW INTERVAL":"0.5",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Tiny gains craggy mass, increasing his attack damage, and armor, and toss power while slowing his attack speed.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DAMAGE TYPE":"Physical"
+      },
+      "id":"tiny-grow",
+      "manacost":null,
+      "name":"Grow",
+      "notes":null,
+      "stats":{
+        "BONUS ARMOR":"10 / 15 / 20",
+        "BONUS DAMAGE":"50 / 100 / 150",
+        "TREE BONUS DAMAGE MULTIPLIER BONUS":"20% / 30% / 40%",
+        "ATTACK SPEED REDUCTION":"-30%",
+        "TOSS BONUS DAMAGE":"100 / 200 / 300"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Throws the tree at the target unit, proccing your attack on it and splashing damage around the target.",
+      "effects":{
+        "ABILITY":"Point Target, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"tiny-tree-throw",
+      "manacost":null,
+      "name":"Tree Throw",
+      "notes":null,
+      "stats":{
+        "CAST RANGE":"1200",
+        "SPLASH RADIUS":"275",
+        "MOVEMENT SLOW":"25%",
+        "SLOW DURATION":"2.5",
+        "CAST POINT":"0.2s"
+      }
+    }
+  ]
+}

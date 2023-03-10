@@ -1,1 +1,165 @@
-{"id":"kunkka","talents":[{"level":25,"option1":"-2s Tidebringer Cooldown","option2":"Ghostship Fleet"},{"level":20,"option1":"+70% Tidebringer Cleave","option2":"+80 Torrent AoE"},{"level":15,"option1":"+45 Damage","option2":"+30%% Torrent Knock Up/Stun Duration"},{"level":10,"option1":"+25% X Mark the Spot Move Speed","option2":"Tidebringer applies +1% slow for +1s"}],"abilities":[{"cooldown":"16 / 14 / 12 / 10","desc":"Summons a rising torrent that, after a short delay, hurls enemy units into the sky, stunning, dealing damage and slowing movement speed.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"kunkka-torrent","manacost":"90 / 100 / 110 / 120","name":"Torrent","notes":"Units tossed in the air will be stunned and still able to be attacked.","stats":{"RADIUS":"225","MOVE SLOW":"-40%","SLOW DURATION":"1 / 2 / 3 / 4","STUN DURATION":"1.6","DELAY":"1","DAMAGE":"80 / 160 / 240 / 320","CAST POINT":"0.4s"}},{"cooldown":null,"desc":"Kunkka's legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike.","effects":{"ABILITY":"Auto-Cast, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes"},"id":"kunkka-tidebringer","manacost":null,"name":"Tidebringer","notes":"Cleave damage goes through spell immunity.","stats":{"CLEAVE RANGE":"650 / 800 / 950 / 1100","DAMAGE BONUS":"30 / 60 / 90 / 120","CLEAVE DAMAGE":"150%","CAST POINT":"0s"}},{"cooldown":"30 / 24 / 18 / 12","desc":"Targets a friendly or enemy Hero, marks their position with an X, and returns them to it after several seconds.  Kunkka can trigger the return at any time during the duration. Lasts twice as long on allied heroes.","effects":{"ABILITY":"Unit Target","AFFECTS":"Heroes","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"kunkka-x-marks-the-spot","manacost":"50","name":"X Marks the Spot","notes":"Interrupts channeling spells.","stats":{"ENEMY DELAY":"4.0","ALLIED DELAY":"8.0","CAST POINT":"0.4s"}},{"cooldown":"70","desc":"Releases a visible Torrent in a random area around Kunkka once every 0.25 for 5.0 seconds. Spawns within 1100 range of him.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"kunkka-torrent-storm","manacost":"250","name":"Torrent Storm","notes":null,"stats":{}},{"cooldown":"12","desc":"Releases a Tidal Wave that spawns behind Kunkka. Deals damage and drags enemies along it for the duration. Enemies cannot attack while being dragged.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"kunkka-tidal-wave","manacost":"75","name":"Tidal Wave","notes":null,"stats":{"SPEED":"700","RADIUS":"750","DURATION":"1.25","KNOCKBACK DISTANCE":"600.0","CAST POINT":"0.2s"}},{"cooldown":null,"desc":"Summons a ghostly ship that sails through the battle before smashing apart, damaging and stunning all enemies caught near the wreckage. Allied heroes touched by the Ghostship are given a swig of The Admiral's Rum, receiving bonus movement speed and a delayed reaction to incoming damage.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"kunkka-ghostship","manacost":"125 / 175 / 225","name":"Ghostship","notes":"The boat has a movement speed of 650.","stats":{"DAMAGE":"400 / 500 / 600","IMPACT DELAY":"3.1","RANGE":"2000","WIDTH":"425","RUM BONUS SPEED":"12%","RUM DURATION":"10","STUN DURATION":"1","DAMAGE DELAYED":"40%","CAST POINT":"0.3s"}},{"cooldown":"1","desc":"Returns the marked hero to the X.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No"},"id":"kunkka-return","manacost":"0","name":"Return","notes":null,"stats":{}}]}
+{
+  "id":"kunkka",
+  "talents":[
+    {
+      "level":25,
+      "option1":"-2s Tidebringer Cooldown",
+      "option2":"Ghostship Fleet"
+    },
+    {
+      "level":20,
+      "option1":"+70% Tidebringer Cleave",
+      "option2":"+80 Torrent AoE"
+    },
+    {
+      "level":15,
+      "option1":"+45 Damage",
+      "option2":"+30%% Torrent Knock Up/Stun Duration"
+    },
+    {
+      "level":10,
+      "option1":"+25% X Marks the Spot Move Speed",
+      "option2":"Tidebringer applies +1% slow for +1s"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"16 / 14 / 12 / 10",
+      "desc":"Summons a rising torrent that, after a short delay, hurls enemy units into the sky, stunning, dealing damage and slowing movement speed.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"kunkka-torrent",
+      "manacost":"100",
+      "name":"Torrent",
+      "notes":"Units tossed in the air will be stunned and still able to be attacked.",
+      "stats":{
+        "RADIUS":"225",
+        "MOVE SLOW":"-40%",
+        "SLOW DURATION":"1 / 2 / 3 / 4",
+        "STUN DURATION":"1.6",
+        "DELAY":"1",
+        "DAMAGE":"80 / 160 / 240 / 320",
+        "CAST POINT":"0.4s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Kunkka\\'s legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike.",
+      "effects":{
+        "ABILITY":"Auto-Cast, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"kunkka-tidebringer",
+      "manacost":null,
+      "name":"Tidebringer",
+      "notes":null,
+      "stats":{
+        "CLEAVE RANGE":"650 / 800 / 950 / 1100",
+        "DAMAGE BONUS":"30 / 60 / 90 / 120",
+        "CLEAVE DAMAGE":"150%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"30 / 24 / 18 / 12",
+      "desc":"Targets a friendly or enemy Hero, marks their position with an X, and returns them to it after several seconds.  Kunkka can trigger the return at any time during the duration. Lasts twice as long on allied heroes.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Heroes",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"kunkka-x-marks-the-spot",
+      "manacost":"50",
+      "name":"X Marks the Spot",
+      "notes":"Interrupts channeling spells.",
+      "stats":{
+        "ENEMY DELAY":"4.0",
+        "ALLIED DELAY":"8.0",
+        "CAST POINT":"0.4s"
+      }
+    },
+    {
+      "cooldown":"70",
+      "desc":"Releases a visible Torrent in a random area around Kunkka once every 0.25 for 5.0 seconds. Spawns within 1100 range of him.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"kunkka-torrent-storm",
+      "manacost":"250",
+      "name":"Torrent Storm",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"12",
+      "desc":"Releases a Tidal Wave that spawns behind Kunkka. Deals damage and drags enemies along it for the duration. Enemies cannot attack while being dragged.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"kunkka-tidal-wave",
+      "manacost":"75",
+      "name":"Tidal Wave",
+      "notes":null,
+      "stats":{
+        "SPEED":"700",
+        "RADIUS":"750",
+        "DAMAGE":"250",
+        "DURATION":"1.25",
+        "KNOCKBACK DISTANCE":"600.0",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Summons a ghostly ship that sails through the battle before smashing apart, damaging and stunning all enemies caught near the wreckage. Allied heroes touched by the Ghostship are given a swig of The Admiral\\'s Rum, receiving bonus movement speed and a delayed reaction to incoming damage.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"kunkka-ghostship",
+      "manacost":"125 / 175 / 225",
+      "name":"Ghostship",
+      "notes":"The boat has a movement speed of 650.",
+      "stats":{
+        "DAMAGE":"400 / 500 / 600",
+        "IMPACT DELAY":"3.1",
+        "RANGE":"2000",
+        "WIDTH":"450",
+        "RUM BONUS SPEED":"15%",
+        "RUM DURATION":"10",
+        "STUN DURATION":"1",
+        "DAMAGE DELAYED":"45%",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"1",
+      "desc":"Returns the marked hero to the X.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"kunkka-return",
+      "manacost":"0",
+      "name":"Return",
+      "notes":null,
+      "stats":{}
+    }
+  ]
+}

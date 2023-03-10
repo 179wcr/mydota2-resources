@@ -1,1 +1,114 @@
-{"id":"anti-mage","talents":[{"level":25,"option1":"-50s Mana Void Cooldown","option2":"+20% Counterspell Magic Resistance"},{"level":20,"option1":"+250 Blink Cast Range","option2":"+0.1 Mana Void Damage Multiplier"},{"level":15,"option1":"+150 Mana Void Radius","option2":"+0.6% Max Mana Mana Burn"},{"level":10,"option1":"-1s Blink Cooldown","option2":"+9 Strength"}],"abilities":[{"cooldown":null,"desc":"Burns an opponent's mana on each attack and deals damage equal to a percentage of the mana burnt. Enemies with no mana left are temporarily slowed.","effects":{"ABILITY":"Passive","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No"},"id":"anti-mage-mana-break","manacost":null,"name":"Mana Break","notes":"Mana Break has 50% effect if caused by illusions.","stats":{"MANA BURNED PER HIT":"28 / 40 / 52 / 64","MAX MANA BURNED PER HIT":"1% / 1% / 2% / 3%","MOVE SPEED SLOW ON FULL DRAIN":"10% / 20% / 30% / 40%","SLOW DURATION":"0.75"}},{"cooldown":null,"desc":"Short distance teleportation that allows Anti-Mage to move in and out of combat.","effects":{"ABILITY":"Point Target"},"id":"anti-mage-blink","manacost":"45","name":"Blink","notes":"You can use Blink to dodge incoming projectiles.","stats":{}},{"cooldown":"15 / 11 / 7 / 3","desc":"Passively grants magic resistance. Counterspell may be activated to create an anti-magic shell around Anti-Mage that blocks and sends any targeted spells back towards enemies instead.","effects":{"ABILITY":"No Target","DISPELLABLE":"Yes"},"id":"anti-mage-counterspell","manacost":"45","name":"Counterspell","notes":null,"stats":{"MAGIC RESISTANCE":"15% / 25% / 35% / 45%","DURATION":"1.2","CAST POINT":"0s"}},{"cooldown":"0","desc":"Blinks an illusion at the target enemy or location and attack for a brief time. Counterspell is replicated on the Blink Fragment illusion. Has 3 Charges.","effects":{"ABILITY":"Point Target, Unit Target","AFFECTS":"Enemy Units","PIERCES SPELL IMMUNITY":"No"},"id":"anti-mage-blink-fragment","manacost":"45","name":"Blink Fragment","notes":null,"stats":{"ILLUSION DURATION":"7","ILLUSION OUTGOING DAMAGE":"-25%","CAST POINT":"0.2s"}},{"cooldown":null,"desc":"For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies.  The main target is also mini-stunned.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"anti-mage-mana-void","manacost":"100 / 200 / 300","name":"Mana Void","notes":"Damage is calculated based on the primary target's mana, but applied to all enemies within the area of effect.","stats":{"DAMAGE":"0 / 0 / 1","STUN DURATION":"0.3","RADIUS":"500","CAST POINT":"0.3s"}}]}
+{
+  "id":"anti-mage",
+  "talents":[
+    {
+      "level":25,
+      "option1":"-50s Mana Void Cooldown",
+      "option2":"+20% Counterspell Magic Resistance"
+    },
+    {
+      "level":20,
+      "option1":"+250 Blink Cast Range",
+      "option2":"+0.1 Mana Void Damage Multiplier"
+    },
+    {
+      "level":15,
+      "option1":"+150 Mana Void Radius",
+      "option2":"+0.6% Max Mana Mana Burn"
+    },
+    {
+      "level":10,
+      "option1":"-1s Blink Cooldown",
+      "option2":"+9 Strength"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"Burns an opponent\\'s mana on each attack and deals damage equal to a percentage of the mana burnt. Enemies with no mana left are temporarily slowed.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"anti-mage-mana-break",
+      "manacost":null,
+      "name":"Mana Break",
+      "notes":"Mana Break has 50% effect if caused by illusions.",
+      "stats":{
+        "MANA BURNED AS DAMAGE":"50%",
+        "MANA BURNED PER HIT":"28 / 40 / 52 / 64",
+        "MAX MANA BURNED PER HIT":"1% / 1% / 2% / 3%",
+        "MOVE SPEED SLOW ON FULL DRAIN":"25% / 30% / 35% / 40%",
+        "SLOW DURATION":"0.75"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Short distance teleportation that allows Anti-Mage to move in and out of combat.",
+      "effects":{
+        "ABILITY":"Point Target"
+      },
+      "id":"anti-mage-blink",
+      "manacost":"45",
+      "name":"Blink",
+      "notes":"You can use Blink to dodge incoming projectiles.",
+      "stats":{}
+    },
+    {
+      "cooldown":"15 / 11 / 7 / 3",
+      "desc":"Passively grants magic resistance. Counterspell may be activated to create an anti-magic shell around Anti-Mage that blocks and sends any targeted spells back towards enemies instead.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"anti-mage-counterspell",
+      "manacost":"45",
+      "name":"Counterspell",
+      "notes":null,
+      "stats":{
+        "MAGIC RESISTANCE":"15% / 25% / 35% / 45%",
+        "DURATION":"1.2",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Blinks an illusion to the target enemy or location, which attacks for a brief time. Counterspell is replicated on the Blink Fragment illusion. Has 3 Charges.",
+      "effects":{
+        "ABILITY":"Point Target, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"anti-mage-blink-fragment",
+      "manacost":"45",
+      "name":"Blink Fragment",
+      "notes":null,
+      "stats":{
+        "ILLUSION DURATION":"7",
+        "ILLUSION OUTGOING DAMAGE":"-25%",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies.  The main target is also mini-stunned.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"anti-mage-mana-void",
+      "manacost":"100 / 200 / 300",
+      "name":"Mana Void",
+      "notes":"Damage is calculated based on the primary target's mana, but applied to all enemies within the area of effect.",
+      "stats":{
+        "DAMAGE":"0 / 0 / 1",
+        "STUN DURATION":"0.3",
+        "RADIUS":"500",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

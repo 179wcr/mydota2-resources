@@ -1,1 +1,120 @@
-{"id":"lina","talents":[{"level":25,"option1":"Laguna Blade damage is Pure and pierces Spell Immunity","option2":"-25s Laguna Blade Cooldown"},{"level":20,"option1":"+1/+1% Fiery Soul Per Stack","option2":"+11% Spell Amplification"},{"level":15,"option1":"+130 Light Strike Array Damage","option2":"+350 Health"},{"level":10,"option1":"-3.5s Dragon Slave Cooldown","option2":"+25 Damage"}],"abilities":[{"cooldown":null,"desc":"Lina channels the breath of a dragon, sending out a wave of fire that scorches every enemy in its path.","effects":{"ABILITY":"Point Target, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"lina-dragon-slave","manacost":"100 / 115 / 130 / 145","name":"Dragon Slave","notes":"Dragon Slave can hit units up to 1225 units away.","stats":{"DAMAGE":"85 / 160 / 235 / 310","CAST POINT":"0.45s"}},{"cooldown":"13 / 11 / 9 / 7","desc":"Summons a column of flames that damages and stuns enemies.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"lina-light-strike-array","manacost":"100 / 105 / 110 / 115","name":"Light Strike Array","notes":"Light Strike Array will destroy trees in its area of effect.","stats":{"RADIUS":"250","CAST DELAY":"0.5","STUN DURATION":"1.6 / 1.9 / 2.2 / 2.5","DAMAGE":"100 / 150 / 200 / 250","CAST POINT":"0.45s"}},{"cooldown":null,"desc":"Grants bonus attack and movement speed each time Lina hits an enemy with a spell. Stacks with itself. Lasts 18 seconds.","effects":{"ABILITY":"Passive","DISPELLABLE":"Cannot be dispelled"},"id":"lina-fiery-soul","manacost":null,"name":"Fiery Soul","notes":"Using items does not trigger Fiery Soul.","stats":{"ATTACK SPEED BONUS":"10 / 20 / 30 / 40","MOVE SPEED BONUS":"1% / 2% / 2% / 3%","MAX STACKS":"7","DURATION":"18"}},{"cooldown":"25","desc":"Grants Lina unobstructed movement and increases her spell damage and magic resistance","effects":{"ABILITY":"No Target","DISPELLABLE":"Cannot be dispelled"},"id":"lina-flame-cloak","manacost":"50","name":"Flame Cloak","notes":null,"stats":{"DURATION":"6","MAGIC RESISTANCE":"35%","SPELL AMP":"30","CAST POINT":"0s"}},{"cooldown":null,"desc":"Fires off a bolt of lightning at a single enemy unit, dealing massive damage.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"lina-laguna-blade","manacost":"150 / 300 / 450","name":"Laguna Blade","notes":"Laguna Blade has a 0.25 delay before the damage is applied after the spell is cast, allowing certain abilities to avoid the damage.","stats":{"DAMAGE":"500 / 700 / 900","CAST POINT":"0.45s"}}]}
+{
+  "id":"lina",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Laguna Blade damage is Pure and pierces Spell Immunity",
+      "option2":"-25s Laguna Blade Cooldown"
+    },
+    {
+      "level":20,
+      "option1":"+1/+1% Fiery Soul Per Stack",
+      "option2":"+11% Spell Amplification"
+    },
+    {
+      "level":15,
+      "option1":"+130 Light Strike Array Damage",
+      "option2":"+250 Health"
+    },
+    {
+      "level":10,
+      "option1":"-3.5s Dragon Slave Cooldown",
+      "option2":"+20 Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"Lina channels the breath of a dragon, sending out a wave of fire that scorches every enemy in its path.",
+      "effects":{
+        "ABILITY":"Point Target, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"lina-dragon-slave",
+      "manacost":"100 / 115 / 130 / 145",
+      "name":"Dragon Slave",
+      "notes":"Dragon Slave can hit units up to 1225 units away.",
+      "stats":{
+        "DAMAGE":"85 / 160 / 235 / 310",
+        "CAST POINT":"0.45s"
+      }
+    },
+    {
+      "cooldown":"13 / 11 / 9 / 7",
+      "desc":"Summons a column of flames that damages and stuns enemies.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"lina-light-strike-array",
+      "manacost":"115",
+      "name":"Light Strike Array",
+      "notes":"Light Strike Array will destroy trees in its area of effect.",
+      "stats":{
+        "RADIUS":"250",
+        "CAST DELAY":"0.5",
+        "STUN DURATION":"1.6 / 1.9 / 2.2 / 2.5",
+        "DAMAGE":"100 / 150 / 200 / 250",
+        "CAST POINT":"0.45s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Grants bonus attack and movement speed each time Lina hits an enemy with a spell. Stacks with itself. Lasts 18 seconds.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"lina-fiery-soul",
+      "manacost":null,
+      "name":"Fiery Soul",
+      "notes":"Using items does not trigger Fiery Soul.",
+      "stats":{
+        "ATTACK SPEED BONUS":"8 / 16 / 24 / 32",
+        "MOVE SPEED BONUS":"1% / 1% / 2% / 2%",
+        "MAX STACKS":"7",
+        "DURATION":"18"
+      }
+    },
+    {
+      "cooldown":"25",
+      "desc":"Grants Lina unobstructed movement and increases her spell damage and magic resistance",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"lina-flame-cloak",
+      "manacost":"50",
+      "name":"Flame Cloak",
+      "notes":null,
+      "stats":{
+        "DURATION":"6",
+        "MAGIC RESISTANCE":"35%",
+        "SPELL AMP":"30%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Fires off a bolt of lightning at a single enemy unit, dealing massive damage.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"lina-laguna-blade",
+      "manacost":"150 / 300 / 450",
+      "name":"Laguna Blade",
+      "notes":"Laguna Blade has a 0.25 delay before the damage is applied after the spell is cast, allowing certain abilities to avoid the damage.",
+      "stats":{
+        "DAMAGE":"500 / 700 / 900",
+        "CAST POINT":"0.45s"
+      }
+    }
+  ]
+}

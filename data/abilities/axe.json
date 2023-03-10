@@ -1,1 +1,110 @@
-{"id":"axe","talents":[{"level":25,"option1":"x2x Battle Hunger Armor Multiplier","option2":"+100 Berserker's Call AoE"},{"level":20,"option1":"+1 Bonus Armor per Culling Blade Stack","option2":"+150 Culling Blade Damage"},{"level":15,"option1":"+30 Counter Helix Damage","option2":"-10% Battle Hunger Slow"},{"level":10,"option1":"+10% Movement Speed per active Battle Hunger","option2":"+8 Berseker's Call Armor"}],"abilities":[{"cooldown":"17 / 15 / 13 / 11","desc":"Axe taunts nearby enemy units, forcing them to attack him, while he gains bonus armor during the duration.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"axe-berserker's-call","manacost":"80 / 90 / 100 / 110","name":"Berserker's Call","notes":null,"stats":{"RADIUS":"300","BONUS ARMOR":"25","DURATION":"2 / 2 / 2 / 3","CAST POINT":"0.3s"}},{"cooldown":"20 / 15 / 10 / 5","desc":"Enrages an enemy unit, causing it to take damage over time until it kills another unit or the duration ends. The damage is increased by a factor of Axe's armor. The enemy is also slowed as long as he's facing away from Axe.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"axe-battle-hunger","manacost":"50 / 60 / 70 / 80","name":"Battle Hunger","notes":"Destroying buildings will also remove the debuff.","stats":{"DURATION":"12.0","MOVEMENT SLOW":"-11% / -19% / -27% / -35%","DAMAGE PER SECOND":"10 / 15 / 20 / 25","ARMOR MULTIPLIER":"1","CAST POINT":"0.3s"}},{"cooldown":"0.3","desc":"When attacked, Axe has a chance to perform a helix counter attack, dealing pure damage to all nearby enemies.","effects":{"ABILITY":"Passive","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"Yes"},"id":"axe-counter-helix","manacost":null,"name":"Counter Helix","notes":"Counter Helix triggers when the attack hits.","stats":{"DAMAGE":"60 / 100 / 140 / 180","RADIUS":"275","CHANCE TO HELIX":"17% / 18% / 19% / 20%"}},{"cooldown":"100 / 85 / 70","desc":"Axe spots a weakness and strikes, dealing pure damage. When an enemy hero is killed with Culling Blade, its cooldown is reset, Axe gains bonus armor permanently and all nearby allied units gain bonus movement speed.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Yes"},"id":"axe-culling-blade","manacost":"100 / 125 / 150","name":"Culling Blade","notes":"Culling Blade death cannot be prevented with other abilities like Shallow Grave.","stats":{"DAMAGE":"250 / 350 / 450","KILL MOVE SPEED BONUS":"20% / 25% / 30%","KILL ATTACK SPEED BONUS":"20 / 30 / 40","KILL SPEED DURATION":"6","KILL SPEED RADIUS":"900","ARMOR PER KILL":"1 / 1 / 2","CAST POINT":"0.3s"}}]}
+{
+  "id":"axe",
+  "talents":[
+    {
+      "level":25,
+      "option1":"x2x Battle Hunger Armor Multiplier",
+      "option2":"+100 Berserker's Call AoE"
+    },
+    {
+      "level":20,
+      "option1":"+1 Bonus Armor per Culling Blade Stack",
+      "option2":"+150 Culling Blade Damage"
+    },
+    {
+      "level":15,
+      "option1":"+30 Counter Helix Damage",
+      "option2":"-12% Battle Hunger Slow"
+    },
+    {
+      "level":10,
+      "option1":"+12% Movement Speed per active Battle Hunger",
+      "option2":"+8 Berserker's Call Armor"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"17 / 15 / 13 / 11",
+      "desc":"Axe taunts nearby enemy units, forcing them to attack him, while he gains bonus armor during the duration.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"axe-berserker's-call",
+      "manacost":"80 / 90 / 100 / 110",
+      "name":"Berserker's Call",
+      "notes":null,
+      "stats":{
+        "RADIUS":"300",
+        "BONUS ARMOR":"25",
+        "DURATION":"2 / 2 / 2 / 3",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"20 / 15 / 10 / 5",
+      "desc":"Enrages an enemy unit, causing it to take damage over time until it kills another unit or the duration ends. The damage is increased by a factor of Axe\\'s armor. The enemy is also slowed as long as they are facing away from Axe.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"axe-battle-hunger",
+      "manacost":"50 / 60 / 70 / 80",
+      "name":"Battle Hunger",
+      "notes":"Destroying buildings will also remove the debuff.",
+      "stats":{
+        "DURATION":"12.0",
+        "MOVEMENT SLOW":"-11% / -19% / -27% / -35%",
+        "DAMAGE PER SECOND":"10 / 15 / 20 / 25",
+        "ARMOR MULTIPLIER":"1",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"0.3",
+      "desc":"When attacked, Axe has a chance to perform a helix counter attack, dealing pure damage to all nearby enemies.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"axe-counter-helix",
+      "manacost":null,
+      "name":"Counter Helix",
+      "notes":"Counter Helix triggers when the attack hits.",
+      "stats":{
+        "DAMAGE":"60 / 100 / 140 / 180",
+        "RADIUS":"300",
+        "CHANCE TO HELIX":"17% / 18% / 19% / 20%"
+      }
+    },
+    {
+      "cooldown":"100 / 85 / 70",
+      "desc":"Axe spots a weakness and strikes, dealing pure damage. When an enemy hero is killed with Culling Blade, its cooldown is reset, Axe gains bonus armor permanently and all nearby allied units gain bonus movement speed.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"axe-culling-blade",
+      "manacost":"100 / 125 / 150",
+      "name":"Culling Blade",
+      "notes":"Culling Blade death cannot be prevented with other abilities like Shallow Grave.",
+      "stats":{
+        "DAMAGE":"250 / 350 / 450",
+        "KILL MOVE SPEED BONUS":"20% / 25% / 30%",
+        "KILL ATTACK SPEED BONUS":"20 / 30 / 40",
+        "KILL SPEED DURATION":"6",
+        "KILL SPEED RADIUS":"900",
+        "ARMOR PER KILL":"1 / 1 / 2",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

@@ -1,1 +1,175 @@
-{"id":"beastmaster","talents":[{"level":25,"option1":"-30s Primal Roar Cooldown","option2":"-5s Wild Axes Cooldown"},{"level":20,"option1":"+250 Health Beastmaster Controlled","option2":"+35 Boar Damage"},{"level":15,"option1":"+2.5% Wild Axes Damage Amp Per Stack","option2":"+25 Movespeed Beastmaster Controlled"},{"level":10,"option1":"+10 Inner Beast Attack Speed","option2":"+30 Damage"}],"abilities":[{"cooldown":null,"desc":"Beastmaster sends his axes flying and calls them home again, slicing through enemy units and trees along their path.  Each axe can hit an enemy once, and amplifies subsequent damage from Beastmaster and his units.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"beastmaster-wild-axes","manacost":"65","name":"Wild Axes","notes":"This ability destroys trees.","stats":{"CAST RANGE":"1500","DAMAGE PER AXE":"40 / 70 / 100 / 130","DAMAGE AMP PER STACK":"6% / 8% / 10% / 12%","CAST POINT":"0.3s"}},{"cooldown":"42 / 38 / 34 / 30","desc":"Beastmaster calls forth a Boar to aid in the battlefield.","effects":{"ABILITY":"No Target"},"id":"beastmaster-call-of-the-wild-boar","manacost":"60 / 65 / 70 / 75","name":"Call of the Wild Boar","notes":null,"stats":{"SUMMON DURATION":"60","BOAR HEALTH":"300 / 450 / 600 / 750","BOAR ATTACK DAMAGE":"20 / 35 / 50 / 65","BOAR SLOW":"10% / 18% / 26% / 34%","BOAR POISON DURATION":"3.0","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Beastmaster sends an invisible Hawk to scout an area.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units"},"id":"beastmaster-call-of-the-wild-hawk","manacost":"30","name":"Call of the Wild Hawk","notes":null,"stats":{"SUMMON DURATION":"60","HAWK HEALTH":"150 / 200 / 250 / 300","HAWK SPEED":"300 / 340 / 380 / 420","HAWK VISION":"750 / 800 / 850 / 900","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Untaps the inner fury of nearby allies, passively increasing their attack speed.","effects":{"ABILITY":"Passive","PIERCES SPELL IMMUNITY":"Yes"},"id":"beastmaster-inner-beast","manacost":null,"name":"Inner Beast","notes":null,"stats":{"RADIUS":"1200","BONUS ATTACK SPEED":"10 / 20 / 30 / 40","CAST POINT":"0s"}},{"cooldown":"50","desc":"Beastmaster beats his drums with ever-increasing speed. Each strike deals damage to enemies around him, healing Beastmaster and units under his control for a portion of damage dealt. Beastmaster cannot strike his drums if he is silenced or stunned.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"beastmaster-drums-of-slom","manacost":"100","name":"Drums Of Slom","notes":null,"stats":{"DAMAGE RADIUS":"600","DAMAGE PER HIT":"110","DURATION":"6","HEAL FROM HEROES":"25%","HEAL FROM CREEPS":"5%","CAST POINT":"0s"}},{"cooldown":null,"desc":"Beastmaster lets loose a deafening roar that stuns, and shoves open a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed. Additionally, Beastmaster and his units gain 40% movement speed for 3 seconds.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Strong Dispels Only"},"id":"beastmaster-primal-roar","manacost":"150 / 175 / 200","name":"Primal Roar","notes":null,"stats":{"STUN DURATION":"3 / 3 / 4","DAMAGE":"150 / 225 / 300","SHOUT WIDTH":"300","MOVEMENT SLOW":"-60%","ATTACK SLOW":"-60","SLOW DURATION":"3 / 3 / 4","CAST POINT":"0.5s"}},{"cooldown":"0","desc":"Cancels Drums of Slom ability","effects":{"ABILITY":"No Target"},"id":"beastmaster-drums-of-slom-cancel","manacost":"0","name":"Drums Of Slom Cancel","notes":null,"stats":{}},{"cooldown":null,"desc":"","effects":{"ABILITY":"No Target"},"id":"beastmaster-beastmaster_call_of_the_wild","manacost":null,"name":"beastmaster_call_of_the_wild","notes":null,"stats":{}}]}
+{
+  "id":"beastmaster",
+  "talents":[
+    {
+      "level":25,
+      "option1":"-30s Primal Roar Cooldown",
+      "option2":"-5s Wild Axes Cooldown"
+    },
+    {
+      "level":20,
+      "option1":"+250 Max Health Aura to Beastmaster and his units",
+      "option2":"+35 Boar Attack Damage"
+    },
+    {
+      "level":15,
+      "option1":"+10 Inner Beast Attack Speed",
+      "option2":"+20 Movespeed Aura to Beastmaster and his units"
+    },
+    {
+      "level":10,
+      "option1":"+2.5% Wild Axes Damage Amp Per Stack",
+      "option2":"+30 Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"Beastmaster sends his axes flying and calls them home again, slicing through enemy units and trees along their path.  Each axe can hit an enemy once, and amplifies subsequent damage from Beastmaster and his units.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"beastmaster-wild-axes",
+      "manacost":"65",
+      "name":"Wild Axes",
+      "notes":"This ability destroys trees.",
+      "stats":{
+        "CAST RANGE":"1500",
+        "DAMAGE PER AXE":"40 / 70 / 100 / 130",
+        "DEBUFF DURATION":"12",
+        "DAMAGE AMP PER STACK":"6% / 8% / 10% / 12%",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"42 / 38 / 34 / 30",
+      "desc":"Beastmaster calls forth a Boar to aid in the battlefield. The Boar has a passive poison attack that slows attack and movement speeds.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Physical"
+      },
+      "id":"beastmaster-call-of-the-wild-boar",
+      "manacost":"60 / 65 / 70 / 75",
+      "name":"Call of the Wild Boar",
+      "notes":null,
+      "stats":{
+        "SUMMON DURATION":"60",
+        "BOAR BASE HEALTH":"300 / 450 / 600 / 750",
+        "BOAR ATTACK DAMAGE":"20 / 35 / 50 / 65",
+        "BOAR SLOW":"10% / 18% / 26% / 34%",
+        "BOAR POISON DURATION":"3.0",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Beastmaster sends an invisible Hawk to scout an area.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units"
+      },
+      "id":"beastmaster-call-of-the-wild-hawk",
+      "manacost":"30",
+      "name":"Call of the Wild Hawk",
+      "notes":null,
+      "stats":{
+        "SUMMON DURATION":"60",
+        "HAWK BASE HEALTH":"150 / 200 / 250 / 300",
+        "HAWK BASE SPEED":"300 / 340 / 380 / 420",
+        "HAWK VISION":"750 / 800 / 850 / 900",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Untaps the inner fury of nearby allies, passively increasing their attack speed.",
+      "effects":{
+        "ABILITY":"Passive",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"beastmaster-inner-beast",
+      "manacost":null,
+      "name":"Inner Beast",
+      "notes":null,
+      "stats":{
+        "RADIUS":"1200",
+        "BONUS ATTACK SPEED":"10 / 20 / 30 / 40",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"40",
+      "desc":"Beastmaster beats his drums with ever-increasing speed. Each strike deals damage to enemies around him, healing Beastmaster and units under his control for a portion of damage dealt. Beastmaster cannot strike his drums if he is silenced or stunned.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"beastmaster-drums-of-slom",
+      "manacost":"100",
+      "name":"Drums of Slom",
+      "notes":null,
+      "stats":{
+        "DAMAGE RADIUS":"600",
+        "DAMAGE PER HIT":"115",
+        "DURATION":"6",
+        "HEAL FROM HEROES":"25%",
+        "HEAL FROM CREEPS":"5%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Beastmaster lets loose a deafening roar that stuns, and shoves open a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed. Additionally, Beastmaster and his units gain 40% movement speed for 3 seconds.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"beastmaster-primal-roar",
+      "manacost":"150 / 175 / 200",
+      "name":"Primal Roar",
+      "notes":null,
+      "stats":{
+        "STUN DURATION":"3 / 3 / 4",
+        "DAMAGE":"150 / 225 / 300",
+        "SHOUT WIDTH":"300",
+        "MOVEMENT SLOW":"-60%",
+        "ATTACK SLOW":"-60",
+        "SLOW DURATION":"3 / 3 / 4",
+        "CAST POINT":"0.5s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Cancels Drums of Slom ability",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"beastmaster-drums-of-slom-cancel",
+      "manacost":"0",
+      "name":"Drums of Slom Cancel",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":null,
+      "desc":"",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"beastmaster-beastmaster_call_of_the_wild",
+      "manacost":null,
+      "name":"beastmaster_call_of_the_wild",
+      "notes":null,
+      "stats":{}
+    }
+  ]
+}

@@ -1,1 +1,121 @@
-{"id":"clinkz","talents":[{"level":25,"option1":"Searing Arrows Multishot","option2":"+25% Burning Barrage Damage"},{"level":20,"option1":"+3.0 Burning Barrage arrows","option2":"+125 Attack Range"},{"level":15,"option1":"Death Pact Steal creep abilities","option2":"+20% Death Pact Health"},{"level":10,"option1":"-3.0s Skeleton Walk Cooldown","option2":"+20 Searing Arrows Damage"}],"abilities":[{"cooldown":"30 / 26 / 22 / 18","desc":"Clinkz channels and shoots multiple piercing arrows in the target direction that hit all enemy units dealing a percentage of Clinkz' attack damage and applying attack modifiers.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No"},"id":"clinkz-burning-barrage","manacost":"40 / 55 / 70 / 85","name":"Burning Barrage","notes":"Bonus Attack Range increases the length of Burning Barrage.","stats":{"ARROWS FIRED":"6","RANGE":"750 / 800 / 850 / 900","DAMAGE PER ARROW":"50% / 55% / 60% / 65%","CAST POINT":"0.2s"}},{"cooldown":"0","desc":"Imbues Clinkz's arrows with fire for extra damage.","effects":{"ABILITY":"Auto-Cast, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes"},"id":"clinkz-searing-arrows","manacost":"10","name":"Searing Arrows","notes":"The damage is directly added to Clinkz' attack damage, as physical damage.","stats":{"BONUS DAMAGE":"24 / 36 / 48 / 60","CAST POINT":"0s"}},{"cooldown":"20 / 19 / 18 / 17","desc":"Clinkz moves invisibly through units until the moment he attacks or uses items.","effects":{"ABILITY":"No Target","DISPELLABLE":"Cannot be dispelled"},"id":"clinkz-skeleton-walk","manacost":"80","name":"Skeleton Walk","notes":"Has a fadetime of [0.6, 0.6, 0.6, 0.6] seconds.","stats":{"DURATION":"25 / 30 / 35 / 40","BONUS MOVEMENT SPEED":"15% / 30% / 45% / 60%","CAST POINT":"0s"}},{"cooldown":"80","desc":"Clinkz summons an army of fiery ranged skeleton archers. Archers are immobile and die with 2 attacks from a hero. Skeletons deal a percentage of Clinkz' damage, use his current Searing Arrows ability and attack only heroes. Attack range is equal to Clinkz's attack range.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Physical"},"id":"clinkz-burning-army","manacost":"150","name":"Burning Army","notes":null,"stats":{"RANGE":"1300","DURATION":"30.0","COUNT":"5","ATTACK RATE":"1.6","DAMAGE":"30%","SPAWN INTERVAL":"0.5","CAST POINT":"0s"}},{"cooldown":"80 / 70 / 60","desc":"Clinkz consumes the target enemy unit or friendly unit, gaining max health and damage based on its current health. Does not take Clinkz out of Skeleton Walk.","effects":{"ABILITY":"Unit Target","DISPELLABLE":"Cannot be dispelled"},"id":"clinkz-death-pact","manacost":"100","name":"Death Pact","notes":"When the duration ends, max HP returns to normal, but current HP stays the same.","stats":{"DURATION":"65.0","BONUS HEALTH":"30% / 55% / 80%","BONUS DAMAGE":"4% / 8% / 12%","CAST POINT":"0.2s"}}]}
+{
+  "id":"clinkz",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Searing Arrows Multishot",
+      "option2":"+25% Burning Barrage Damage"
+    },
+    {
+      "level":20,
+      "option1":"+3.0 Burning Barrage arrows",
+      "option2":"+125 Attack Range"
+    },
+    {
+      "level":15,
+      "option1":"Death Pact Steal creep abilities",
+      "option2":"+20% Death Pact Health"
+    },
+    {
+      "level":10,
+      "option1":"-3.0s Skeleton Walk Cooldown",
+      "option2":"+20 Searing Arrows Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"30 / 26 / 22 / 18",
+      "desc":"CHANNELED - Clinkz channels and shoots multiple piercing arrows in the target direction that hit all enemy units dealing a percentage of Clinkz\\' attack damage and applying attack modifiers.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"clinkz-burning-barrage",
+      "manacost":"45 / 60 / 75 / 90",
+      "name":"Burning Barrage",
+      "notes":"Bonus Attack Range increases the length of Burning Barrage.",
+      "stats":{
+        "ARROWS FIRED":"6",
+        "RANGE":"750 / 800 / 850 / 900",
+        "DAMAGE PER ARROW":"50% / 55% / 60% / 65%",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Imbues Clinkz\\'s arrows with fire for extra damage.",
+      "effects":{
+        "ABILITY":"Auto-Cast, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"clinkz-searing-arrows",
+      "manacost":"10",
+      "name":"Searing Arrows",
+      "notes":"The damage is directly added to Clinkz' attack damage, as physical damage.",
+      "stats":{
+        "BONUS DAMAGE":"24 / 36 / 48 / 60",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"20 / 19 / 18 / 17",
+      "desc":"Clinkz moves invisibly through units until the moment he attacks or uses items. 1 Burning Army Skeletons are created when leaving invisibility.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"clinkz-skeleton-walk",
+      "manacost":"80",
+      "name":"Skeleton Walk",
+      "notes":"Has a fadetime of 0.6 seconds.",
+      "stats":{
+        "DURATION":"25 / 30 / 35 / 40",
+        "BONUS MOVEMENT SPEED":"15% / 30% / 45% / 60%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"80",
+      "desc":"Clinkz summons an army of fiery ranged skeleton archers. Archers are immobile and die with 2 attacks from a hero. Skeletons deal a percentage of Clinkz\\' damage, use his current Searing Arrows ability and attack only heroes. Attack range is equal to Clinkz\\'s attack range.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Physical"
+      },
+      "id":"clinkz-burning-army",
+      "manacost":"150",
+      "name":"Burning Army",
+      "notes":null,
+      "stats":{
+        "RANGE":"1300",
+        "DURATION":"30.0",
+        "COUNT":"5",
+        "ATTACK RATE":"1.6",
+        "DAMAGE":"30%",
+        "SPAWN INTERVAL":"0.5",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"80 / 70 / 60",
+      "desc":"Clinkz consumes the target enemy creep or friendly creep, gaining max health and damage based on its maximum health. Does not take Clinkz out of Skeleton Walk.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"clinkz-death-pact",
+      "manacost":"100",
+      "name":"Death Pact",
+      "notes":"When the duration ends, max HP returns to normal, but current HP stays the same.",
+      "stats":{
+        "DURATION":"65.0",
+        "BONUS HEALTH":"30% / 55% / 80%",
+        "BONUS DAMAGE":"4% / 8% / 12%",
+        "CAST POINT":"0.2s"
+      }
+    }
+  ]
+}

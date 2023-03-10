@@ -1,1 +1,118 @@
-{"id":"crystal-maiden","talents":[{"level":25,"option1":"+240 Crystal Nova Damage","option2":"+1.25s Frostbite Duration"},{"level":20,"option1":"+50 Freezing Field Damage","option2":"+200 Attack Speed"},{"level":15,"option1":"-3s Crystal Nova Cooldown","option2":"+125 Frostbite Cast Range"},{"level":10,"option1":"+125 Crystal Nova AoE","option2":"+250 Health"}],"abilities":[{"cooldown":null,"desc":"A burst of damaging frost slows enemy movement and attack rate in the targeted area.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"crystal-maiden-crystal-nova","manacost":null,"name":"Crystal Nova","notes":null,"stats":{"RADIUS":"425","MOVEMENT SLOW":"-20% / -30% / -40% / -50%","ATTACK SLOW":"-30 / -45 / -60 / -75","DURATION":"5","DAMAGE":"130 / 170 / 210 / 260"}},{"cooldown":null,"desc":"Encases an enemy unit in ice, prohibiting movement and attack, while dealing damage over time. Lasts 10 seconds on creeps level 6 or lower.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"crystal-maiden-frostbite","manacost":null,"name":"Frostbite","notes":"Frostbite is considered a root.","stats":{"DAMAGE PER SECOND":"100","HERO DURATION":"1 / 2 / 2 / 3","CREEP DURATION":"10"}},{"cooldown":null,"desc":"Gives additional mana regeneration to all friendly units on the map. Allies within a 1200 radius of Crystal Maiden receive 2x the mana regeneration. Crystal Maiden herself receives 4x the bonus.","effects":{"ABILITY":"Passive","PIERCES SPELL IMMUNITY":"Yes"},"id":"crystal-maiden-arcane-aura","manacost":null,"name":"Arcane Aura","notes":null,"stats":{"MANA REGEN":"0 / 0 / 1 / 1"}},{"cooldown":null,"desc":"CHANNELED - Surrounds Crystal Maiden with 100 random icy explosions that slow enemies and deal massive damage. Grants bonus armor while channeling. Lasts 10 seconds.","effects":{"ABILITY":"Channelled, No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"crystal-maiden-freezing-field","manacost":null,"name":"Freezing Field","notes":"Explosions occur every 0.1 seconds.","stats":{"RADIUS":"810","EXPLOSION RADIUS":"320","BONUS ARMOR":"20","MOVEMENT SLOW":"-40%","ATTACK SLOW":"-60","DAMAGE":"105 / 170 / 250"}},{"cooldown":"1","desc":"Immediately stops the Freezing Field","effects":{"ABILITY":"No Target"},"id":"crystal-maiden-stop-freezing-field","manacost":null,"name":"Stop Freezing Field","notes":null,"stats":{}}]}
+{
+  "id":"crystal-maiden",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+240 Crystal Nova Damage",
+      "option2":"+1.25s Frostbite Duration"
+    },
+    {
+      "level":20,
+      "option1":"+50 Freezing Field Damage",
+      "option2":"+200 Attack Speed"
+    },
+    {
+      "level":15,
+      "option1":"-3s Crystal Nova Cooldown",
+      "option2":"+125 Frostbite Cast Range"
+    },
+    {
+      "level":10,
+      "option1":"+125 Crystal Nova AoE",
+      "option2":"+250 Health"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"A burst of damaging frost slows enemy movement and attack rate in the targeted area.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"crystal-maiden-crystal-nova",
+      "manacost":null,
+      "name":"Crystal Nova",
+      "notes":"Crystal Nova provides vision in the targeted area for the duration.",
+      "stats":{
+        "RADIUS":"425",
+        "MOVEMENT SLOW":"-20% / -30% / -40% / -50%",
+        "ATTACK SLOW":"-30 / -45 / -60 / -75",
+        "DURATION":"5",
+        "DAMAGE":"130 / 170 / 210 / 260"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Encases an enemy unit in ice, prohibiting movement and attack, while dealing damage over time. Lasts 10 seconds on creeps level 6 or lower.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"crystal-maiden-frostbite",
+      "manacost":null,
+      "name":"Frostbite",
+      "notes":"Frostbite is considered a root.",
+      "stats":{
+        "DAMAGE PER SECOND":"100",
+        "HERO DURATION":"1 / 2 / 2 / 3",
+        "CREEP DURATION":"10"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Gives additional mana regeneration to all friendly units on the map. Allies within a 1200 radius of Crystal Maiden receive 3x the mana regeneration. Crystal Maiden herself receives 6x the bonus.",
+      "effects":{
+        "ABILITY":"Passive",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"crystal-maiden-arcane-aura",
+      "manacost":null,
+      "name":"Arcane Aura",
+      "notes":null,
+      "stats":{
+        "MANA REGEN":"0 / 0 / 0 / 1",
+        "CLOSE MANA REGEN":"1 / 1 / 2 / 3",
+        "SELF MANA REGEN":"2 / 3 / 4 / 6"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"CHANNELED - Surrounds Crystal Maiden with 100 random icy explosions that slow enemies and deal massive damage. Grants bonus armor while channeling. Lasts 10 seconds.",
+      "effects":{
+        "ABILITY":"Channelled, No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"crystal-maiden-freezing-field",
+      "manacost":null,
+      "name":"Freezing Field",
+      "notes":"Explosions occur every 0.1 seconds.",
+      "stats":{
+        "RADIUS":"810",
+        "EXPLOSION RADIUS":"320",
+        "BONUS ARMOR":"20",
+        "MOVEMENT SLOW":"-40%",
+        "ATTACK SLOW":"-60",
+        "DAMAGE":"105 / 170 / 250"
+      }
+    },
+    {
+      "cooldown":"1",
+      "desc":"Immediately stops the Freezing Field",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"crystal-maiden-stop-freezing-field",
+      "manacost":null,
+      "name":"Stop Freezing Field",
+      "notes":null,
+      "stats":{}
+    }
+  ]
+}

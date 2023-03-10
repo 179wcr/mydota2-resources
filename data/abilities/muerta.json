@@ -1,0 +1,104 @@
+{
+  "id":"muerta",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+25% Magic Resistance",
+      "option2":"+20% Gunslinger chance"
+    },
+    {
+      "level":20,
+      "option1":"The Calling summons +2 additional revenants",
+      "option2":"2 Dead Shot Charges"
+    },
+    {
+      "level":15,
+      "option1":"+25 Damage",
+      "option2":"+250 Dead Shot Cast Range"
+    },
+    {
+      "level":10,
+      "option1":"+8 Strength",
+      "option2":"+100 Dead Shot damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"16 / 14 / 12 / 10",
+      "desc":"Muerta fires a ghostly trickshot at an enemy unit or tree. When the bullet strikes, it damages and briefly slows, then ricochets in the targeted direction.The ricochet damages all units that it passes through, stopping when it hits a hero. Heroes hit by the ricochet are feared away from the impact.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"muerta-dead-shot",
+      "manacost":"100 / 120 / 140 / 160",
+      "name":"Dead Shot",
+      "notes":"Can ricochet off of magic immune targets.",
+      "stats":{
+        "DAMAGE":"75 / 150 / 225 / 300",
+        "RICOCHET FEAR DURATION":"1 / 1 / 1 / 2",
+        "IMPACT SLOW PERCENT":"-100%",
+        "IMPACT SLOW DURATION":"0.5",
+        "CAST POINT":"0.15s"
+      }
+    },
+    {
+      "cooldown":"30",
+      "desc":"Summons a group of 4 revenants that slowly circle the targeted location. Enemies within the area are slowed and have reduced attack speed. Revenants deal damage and silence enemies as they pass through them.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"muerta-the-calling",
+      "manacost":"150 / 175 / 200 / 225",
+      "name":"The Calling",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"45 / 90 / 135 / 180",
+        "DURATION":"10",
+        "MOVEMENT SLOW":"-30%",
+        "ATTACK SLOW":"-30 / -40 / -50 / -60",
+        "SILENCE DURATION":"2 / 2 / 3 / 3",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Muerta\\'s attacks have a chance to fire a second shot at another target, prioritizing Heroes.",
+      "effects":{
+        "ABILITY":"Passive",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"muerta-gunslinger",
+      "manacost":null,
+      "name":"Gunslinger",
+      "notes":"The secondary shot can trigger attack modifiers.",
+      "stats":{
+        "CHANCE":"20% / 30% / 40% / 50%"
+      }
+    },
+    {
+      "cooldown":"75 / 60 / 45",
+      "desc":"Muerta transforms, becoming immune to physical damage. All of her attack damage is dealt as magical damage. Muerta gains bonus attack damage and phased movement.Muerta can attack ethereal units, but deals no damage to Magic Immune targets.DISPEL TYPE: Basic Dispel",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"muerta-pierce-the-veil",
+      "manacost":"150 / 250 / 350",
+      "name":"Pierce the Veil",
+      "notes":"Other ethereal effects will not stop Muerta from being able to attack.",
+      "stats":{
+        "DURATION":"6 / 7 / 8",
+        "TRANSFORM DURATION":"0.35",
+        "BONUS ATTACK DAMAGE":"50 / 75 / 100",
+        "CAST POINT":"0s"
+      }
+    }
+  ]
+}

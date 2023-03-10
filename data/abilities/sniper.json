@@ -1,1 +1,128 @@
-{"id":"sniper","talents":[{"level":25,"option1":"+6 Shrapnel Charges","option2":"+100 Attack Range"},{"level":20,"option1":"+24 Shrapnel DPS","option2":"+28 Knockback Distance Headshot"},{"level":15,"option1":"-14% Shrapnel Slow","option2":"+30 Attack Speed"},{"level":10,"option1":"+30 Headshot Damage","option2":"+1.0s Take Aim Duration"}],"abilities":[{"cooldown":"0","desc":"Consumes a charge to launch a ball of shrapnel that showers the target area in explosive pellets. Enemies are subject to damage and slowed movement. Reveals the targeted area. Shrapnel charges restore every [35] seconds.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"sniper-shrapnel","manacost":"50","name":"Shrapnel","notes":"Provides vision in the targeted area.","stats":{"MOVEMENT SLOW":"-12% / -18% / -24% / -30%","RADIUS":"450","DAMAGE":"25 / 40 / 55 / 70","DURATION":"10.0","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Sniper increases his accuracy, giving him a chance to deal extra damage and knock back his enemies. Headshots  briefly slow enemy movement and attack speed slowed by -100%.","effects":{"ABILITY":"Passive","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No"},"id":"sniper-headshot","manacost":null,"name":"Headshot","notes":"Works on allied creeps.","stats":{"DAMAGE":"20 / 50 / 80 / 110","CHANCE":"40%","KNOCKBACK DISTANCE":"10","SLOW DURATION":"0.5"}},{"cooldown":"20 / 18 / 16 / 14","desc":"Extends the attack range of Sniper's rifle. Can be activated to provide 100% Headshot chance for 3 seconds. Slows you by [45, 40, 35, 30]% for the duration.","effects":{"ABILITY":"No Target","DISPELLABLE":"Yes"},"id":"sniper-take-aim","manacost":"50","name":"Take Aim","notes":null,"stats":{"BONUS RANGE":"100 / 200 / 300 / 400","CAST POINT":"0s"}},{"cooldown":"10","desc":"Launches a grenade at the target area, dealing damage to enemies and knocking them and Sniper himself back.  Enemies affected are disarmed and have their movement slowed after the knockback.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"sniper-concussive-grenade","manacost":"50","name":"Concussive Grenade","notes":null,"stats":{"DAMAGE":"25","RADIUS":"375","MOVE SLOW":"50%","SLOW DURATION":"3","KNOCKBACK DISTANCE":"475","CAST POINT":"0.1s"}},{"cooldown":"20 / 15 / 10","desc":"Sniper locks onto a target enemy unit and, after a short aiming duration, fires a devastating shot that deals damage at long range and mini-stuns the target.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"sniper-assassinate","manacost":"175 / 225 / 275","name":"Assassinate","notes":"Interrupts channeling spells, including on Spell Immune units.","stats":{"DAMAGE":"320 / 510 / 700","STUN DURATION":"1","AIM DURATION":"0.5","CAST POINT":"2s"}}]}
+{
+  "id":"sniper",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+6 Shrapnel Charges",
+      "option2":"+100 Attack Range"
+    },
+    {
+      "level":20,
+      "option1":"+24 Shrapnel DPS",
+      "option2":"+28 Knockback Distance Headshot"
+    },
+    {
+      "level":15,
+      "option1":"+-14% Shrapnel Slow",
+      "option2":"+30 Attack Speed"
+    },
+    {
+      "level":10,
+      "option1":"+30 Headshot Damage",
+      "option2":"+1.0s Take Aim Duration"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"0",
+      "desc":"Consumes a charge to launch a ball of shrapnel that showers the target area in explosive pellets. Enemies are subject to damage and slowed movement. Reveals the targeted area. Shrapnel charges restore every [35] seconds.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"sniper-shrapnel",
+      "manacost":"75",
+      "name":"Shrapnel",
+      "notes":"Provides vision in the targeted area.",
+      "stats":{
+        "MOVEMENT SLOW":"-12% / -18% / -24% / -30%",
+        "RADIUS":"400",
+        "DAMAGE":"25 / 40 / 55 / 70",
+        "DURATION":"10.0",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Sniper increases his accuracy, giving him a chance to deal extra damage and knock back his enemies. Headshots briefly slow enemy movement and attack speed by -100%.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"sniper-headshot",
+      "manacost":null,
+      "name":"Headshot",
+      "notes":"Works on allied creeps.",
+      "stats":{
+        "DAMAGE":"20 / 50 / 80 / 110",
+        "CHANCE":"40%",
+        "KNOCKBACK DISTANCE":"10",
+        "SLOW DURATION":"0.5"
+      }
+    },
+    {
+      "cooldown":"20 / 18 / 16 / 14",
+      "desc":"Extends the attack range of Sniper\\'s rifle. Can be activated to provide 100% Headshot chance. Slows you by [45, 40, 35, 30]% for the duration.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"sniper-take-aim",
+      "manacost":"50",
+      "name":"Take Aim",
+      "notes":null,
+      "stats":{
+        "BONUS RANGE":"100 / 200 / 300 / 400",
+        "DURATION":"3.0",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"10",
+      "desc":"Launches a grenade at the target area, dealing damage to enemies and knocking them and Sniper himself back. Enemies affected are disarmed and have their movement slowed after the knockback.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"sniper-concussive-grenade",
+      "manacost":"50",
+      "name":"Concussive Grenade",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"25",
+        "RADIUS":"375",
+        "MOVE SLOW":"50%",
+        "SLOW DURATION":"3",
+        "KNOCKBACK DISTANCE":"475",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"20 / 15 / 10",
+      "desc":"Sniper locks onto a target enemy unit and, after a short aiming duration, fires a devastating shot that deals damage at long range and mini-stuns the target.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"sniper-assassinate",
+      "manacost":"175 / 225 / 275",
+      "name":"Assassinate",
+      "notes":"Invisibility doesn't disjoint the projectile.",
+      "stats":{
+        "DAMAGE":"320 / 510 / 700",
+        "STUN DURATION":"1",
+        "AIM DURATION":"0.5",
+        "CAST POINT":"2s"
+      }
+    }
+  ]
+}

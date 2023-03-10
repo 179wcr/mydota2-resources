@@ -1,1 +1,122 @@
-{"id":"skywrath-mage","talents":[{"level":25,"option1":"+450 Mystic Flare Damage","option2":"Arcane Bolt Pierces Spell Immunity"},{"level":20,"option1":"-12% Ancient Seal Magic Resistance Reduction","option2":"Global Concussive Shot"},{"level":15,"option1":"+1 Arcane Bolt Per Cast","option2":"-8s Ancient Seal Cooldown"},{"level":10,"option1":"+8 Intelligence","option2":"+175 Health"}],"abilities":[{"cooldown":"5 / 4 / 3 / 2","desc":"Skywrath Mage launches a slow-moving bolt of arcane magic, dealing damage to an enemy unit based on Skywrath Mage's intelligence.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"skywrath-mage-arcane-bolt","manacost":"95","name":"Arcane Bolt","notes":"Arcane Bolt cannot be disjointed.","stats":{"BASE DAMAGE":"75 / 95 / 115 / 135","INT DAMAGE MULTIPLIER":"1.5","CAST POINT":"0.1s"}},{"cooldown":"15 / 14 / 13 / 12","desc":"Skywrath Mage sets off a long range shot that hits the closest hero within a long range.  Upon impact, it deals damage and slows in an area of effect.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"skywrath-mage-concussive-shot","manacost":"80 / 85 / 90 / 95","name":"Concussive Shot","notes":"Provides 400 vision around the projectile, and reveals the target area for 3.34 seconds upon impact.","stats":{"SHOT RANGE":"1600","DAMAGE RADIUS":"250","DAMAGE":"120 / 180 / 240 / 300","SLOW DURATION":"4.0","SLOW":"40%","CAST POINT":"0s"}},{"cooldown":"14","desc":"Skywrath Mage seals the targeted unit with an ancient rune, silencing it and causing it to take additional damage from spells.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"skywrath-mage-ancient-seal","manacost":"80 / 90 / 100 / 110","name":"Ancient Seal","notes":"The magic damage resistance reduction doesn't affect creeps.","stats":{"INCREASED MAGIC DAMAGE":"-20% / -25% / -30% / -35%","DURATION":"3 / 4 / 5 / 6","CAST POINT":"0.1s"}},{"cooldown":null,"desc":"Every time Skywrath Mage deals magic damage to an enemy hero with an ability, he gains a buff that grants bonus Intelligence and Armor. Each cast stacks independently.","effects":{"ABILITY":"Passive"},"id":"skywrath-mage-shield-of-the-scion","manacost":null,"name":"Shield of the Scion","notes":null,"stats":{"STACK DURATION":"35","BONUS INTELLIGENCE":"2","BONUS ARMOR":"0.5"}},{"cooldown":"60 / 40 / 20","desc":"Skywrath Mage uses his ultimate magical ability to conjure a precise and violent mystical field that lays waste to his adversaries. Deals massive damage distributed evenly among any Heroes in the area over 2.2 seconds.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"skywrath-mage-mystic-flare","manacost":"300 / 550 / 800","name":"Mystic Flare","notes":"Mystic Flare will damage enemy creeps if no enemy heroes are present.","stats":{"RADIUS":"170","DURATION":"2.2","DAMAGE":"800 / 1200 / 1600","CAST POINT":"0.1s"}}]}
+{
+  "id":"skywrath-mage",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+450 Mystic Flare Damage",
+      "option2":"Arcane Bolt Pierces Spell Immunity"
+    },
+    {
+      "level":20,
+      "option1":"+-12% Ancient Seal Increased Magic Damage",
+      "option2":"Global Concussive Shot"
+    },
+    {
+      "level":15,
+      "option1":"+1 Arcane Bolt Per Cast",
+      "option2":"-8s Ancient Seal Cooldown"
+    },
+    {
+      "level":10,
+      "option1":"+8 Intelligence",
+      "option2":"+175 Health"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"5 / 4 / 3 / 2",
+      "desc":"Skywrath Mage launches a slow-moving bolt of arcane magic, dealing damage to an enemy unit based on Skywrath Mage\\'s intelligence.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"skywrath-mage-arcane-bolt",
+      "manacost":"95",
+      "name":"Arcane Bolt",
+      "notes":"Arcane Bolt cannot be disjointed.",
+      "stats":{
+        "BASE DAMAGE":"75 / 95 / 115 / 135",
+        "INT DAMAGE MULTIPLIER":"1.5",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"15 / 14 / 13 / 12",
+      "desc":"Skywrath Mage sets off a long range shot that hits the closest hero within a long range.  Upon impact, it deals damage and slows in an area of effect. Deals 75% damage to creeps.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"skywrath-mage-concussive-shot",
+      "manacost":"80 / 85 / 90 / 95",
+      "name":"Concussive Shot",
+      "notes":"Provides 400 vision around the projectile, and reveals the target area for 3.34 seconds upon impact.",
+      "stats":{
+        "SHOT RANGE":"1600",
+        "DAMAGE RADIUS":"250",
+        "DAMAGE":"120 / 180 / 240 / 300",
+        "SLOW DURATION":"4.0",
+        "SLOW":"40%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"14",
+      "desc":"Skywrath Mage seals the targeted unit with an ancient rune, silencing it and causing it to take additional damage from spells.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"skywrath-mage-ancient-seal",
+      "manacost":"80 / 90 / 100 / 110",
+      "name":"Ancient Seal",
+      "notes":"The magic damage resistance reduction doesn't affect creeps.",
+      "stats":{
+        "INCREASED MAGIC DAMAGE":"-20% / -25% / -30% / -35%",
+        "DURATION":"3 / 4 / 5 / 6",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Every time Skywrath Mage deals magic damage to an enemy hero with an ability, he gains a buff that grants bonus Intelligence and Armor. Each charge stacks independently.",
+      "effects":{
+        "ABILITY":"Passive"
+      },
+      "id":"skywrath-mage-shield-of-the-scion",
+      "manacost":null,
+      "name":"Shield of the Scion",
+      "notes":null,
+      "stats":{
+        "STACK DURATION":"35",
+        "BONUS INTELLIGENCE":"2",
+        "BONUS ARMOR":"0.5"
+      }
+    },
+    {
+      "cooldown":"60 / 40 / 20",
+      "desc":"Skywrath Mage uses his ultimate magical ability to conjure a precise and violent mystical field that lays waste to his adversaries. Deals massive damage distributed evenly among any Heroes in the area over 2.2 seconds.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"skywrath-mage-mystic-flare",
+      "manacost":"300 / 550 / 800",
+      "name":"Mystic Flare",
+      "notes":"Mystic Flare will damage enemy creeps if no enemy heroes are present.",
+      "stats":{
+        "RADIUS":"170",
+        "DURATION":"2.2",
+        "DAMAGE":"800 / 1200 / 1600",
+        "CAST POINT":"0.1s"
+      }
+    }
+  ]
+}

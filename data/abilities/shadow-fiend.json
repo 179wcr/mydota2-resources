@@ -1,1 +1,158 @@
-{"id":"shadow-fiend","talents":[{"level":25,"option1":"Shadowraze Applies Attack Damage","option2":"-5s Shadowraze Cooldown"},{"level":20,"option1":"+0.4s Requiem Fear per line","option2":"+3.0 Damage Per Soul"},{"level":15,"option1":"+100 Shadowraze Damage","option2":"Presence Aura Affects Building"},{"level":10,"option1":"+25 Attack Speed","option2":"+25 Shadowraze Stack Damage"}],"abilities":[{"cooldown":null,"desc":"Shadow Fiend razes the ground directly in front of him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack. Each consecutive stack also decreases turn rate and movement speed.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"shadow-fiend-shadowraze","manacost":"75 / 80 / 85 / 90","name":"Shadowraze","notes":"Stack duration refreshes on stack gain.","stats":{"BASE DAMAGE":"90 / 160 / 230 / 300","RANGE":"200","BONUS PER STACK":"50 / 60 / 70 / 80","STACK DURATION":"8","MOVESPEED REDUCTION":"-15%","TURN RATE REDUCTION":"-30%","CAST POINT":"0.55s"}},{"cooldown":null,"desc":"Shadow Fiend razes the ground a short distance away from him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack. Each consecutive stack also decreases turn rate and movement speed.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"shadow-fiend-shadowraze","manacost":"75 / 80 / 85 / 90","name":"Shadowraze","notes":"Stack duration refreshes on stack gain.","stats":{"BASE DAMAGE":"90 / 160 / 230 / 300","RANGE":"450","BONUS PER STACK":"50 / 60 / 70 / 80","STACK DURATION":"8","MOVESPEED REDUCTION":"-15%","TURN RATE REDUCTION":"-30%","CAST POINT":"0.55s"}},{"cooldown":null,"desc":"Shadow Fiend razes the ground a longer distance away from him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack. Each consecutive stack also decreases turn rate and movement speed.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"shadow-fiend-shadowraze","manacost":"75 / 80 / 85 / 90","name":"Shadowraze","notes":"Stack duration refreshes on stack gain.","stats":{"BASE DAMAGE":"90 / 160 / 230 / 300","RANGE":"700","BONUS PER STACK":"50 / 60 / 70 / 80","STACK DURATION":"8","MOVESPEED REDUCTION":"-15%","TURN RATE REDUCTION":"-30%","CAST POINT":"0.55s"}},{"cooldown":"3","desc":"Shadow Fiend steals the soul from units he kills, gaining bonus damage. On death, he releases 40% of them from bondage.","effects":{"ABILITY":"Passive","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes"},"id":"shadow-fiend-necromastery","manacost":"0","name":"Necromastery","notes":"Denies and neutral creeps also provide bonus damage through Necromastery.","stats":{"DAMAGE PER SOUL":"1 / 2 / 3 / 4","MAX SOULS":"25","SOULS PER KILL":"2","CRITICAL DAMAGE":"190%","FEAR DURATION":"0.5","CAST POINT":"0s"}},{"cooldown":"10","desc":"Shadow Fiend's presence reduces the armor of nearby enemies.","effects":{"ABILITY":"Aura, Passive","PIERCES SPELL IMMUNITY":"Yes"},"id":"shadow-fiend-presence-of-the-dark-lord","manacost":null,"name":"Presence of the Dark Lord","notes":"Stacks fully with other armor reduction abilities and aura.","stats":{"REDUCTION":"-4 / -5 / -6 / -7","RADIUS":"1200"}},{"cooldown":null,"desc":"Shadow Fiend gathers his captured souls to release them as lines of demonic energy. Units near Shadow Fiend when the souls are released can be damaged by several lines of energy. Any unit damaged by Requiem of Souls will be feared and have its movement speed and magic resistance reduced for 0.9 seconds for each line hit up to a maximum of 2.7. Lines of energy are created for every soul captured through Necromastery.  Requiem of Souls is automatically cast whenever Shadow Fiend dies, regardless of its cooldown.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"shadow-fiend-requiem-of-souls","manacost":"150 / 175 / 200","name":"Requiem of Souls","notes":"Fear and movement slow do not apply when if the Requiem was released on death.","stats":{"DAMAGE":"80 / 120 / 160","MOVEMENT REDUCTION":"-20% / -25% / -30%","MAGIC RESIST REDUCTION":"-5% / -10% / -15%","FEAR DURATION PER SOUL HIT":"0.9","FEAR DURATION MAX":"2.7","HEAL ON RETURN":"100%","DAMAGE ON RETURN":"40%","CAST POINT":"1.67s"}}]}
+{
+  "id":"shadow-fiend",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Shadowraze Applies Attack Damage",
+      "option2":"-5s Shadowraze Cooldown"
+    },
+    {
+      "level":20,
+      "option1":"+0.3s Requiem Fear per line",
+      "option2":"+3.0 Damage Per Soul"
+    },
+    {
+      "level":15,
+      "option1":"+100 Shadowraze Damage",
+      "option2":"Presence Aura Affects Building"
+    },
+    {
+      "level":10,
+      "option1":"+25 Attack Speed",
+      "option2":"+25 Shadowraze Stack Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"Shadow Fiend razes the ground directly in front of him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack. Each consecutive stack also decreases turn rate and movement speed.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"shadow-fiend-shadowraze",
+      "manacost":"75 / 80 / 85 / 90",
+      "name":"Shadowraze",
+      "notes":"Stack duration refreshes on stack gain.",
+      "stats":{
+        "BASE DAMAGE":"90 / 160 / 230 / 300",
+        "RANGE":"200",
+        "BONUS PER STACK":"50 / 60 / 70 / 80",
+        "STACK DURATION":"8",
+        "MOVESPEED REDUCTION":"-12% / -13% / -14% / -15%",
+        "TURN RATE REDUCTION":"-30%",
+        "CAST POINT":"0.55s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Shadow Fiend razes the ground a short distance away from him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack. Each consecutive stack also decreases turn rate and movement speed.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"shadow-fiend-shadowraze",
+      "manacost":"75 / 80 / 85 / 90",
+      "name":"Shadowraze",
+      "notes":"Stack duration refreshes on stack gain.",
+      "stats":{
+        "BASE DAMAGE":"90 / 160 / 230 / 300",
+        "RANGE":"450",
+        "BONUS PER STACK":"50 / 60 / 70 / 80",
+        "STACK DURATION":"8",
+        "MOVESPEED REDUCTION":"-12% / -13% / -14% / -15%",
+        "TURN RATE REDUCTION":"-30%",
+        "CAST POINT":"0.55s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Shadow Fiend razes the ground a longer distance away from him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack. Each consecutive stack also decreases turn rate and movement speed.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"shadow-fiend-shadowraze",
+      "manacost":"75 / 80 / 85 / 90",
+      "name":"Shadowraze",
+      "notes":"Stack duration refreshes on stack gain.",
+      "stats":{
+        "BASE DAMAGE":"90 / 160 / 230 / 300",
+        "RANGE":"700",
+        "BONUS PER STACK":"50 / 60 / 70 / 80",
+        "STACK DURATION":"8",
+        "MOVESPEED REDUCTION":"-12% / -13% / -14% / -15%",
+        "TURN RATE REDUCTION":"-30%",
+        "CAST POINT":"0.55s"
+      }
+    },
+    {
+      "cooldown":"3",
+      "desc":"Shadow Fiend steals the soul from units he kills, gaining bonus damage. On death, he releases 40% of them from bondage.",
+      "effects":{
+        "ABILITY":"Passive",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"shadow-fiend-necromastery",
+      "manacost":"0",
+      "name":"Necromastery",
+      "notes":"Denies and neutral creeps also provide bonus damage through Necromastery.",
+      "stats":{
+        "DAMAGE PER SOUL":"1 / 2 / 3 / 4",
+        "MAX SOULS":"25",
+        "SOULS PER KILL":"2",
+        "CRITICAL DAMAGE":"190%",
+        "FEAR DURATION":"0.5",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"10",
+      "desc":"Shadow Fiend\\'s presence reduces the armor of nearby enemies.",
+      "effects":{
+        "ABILITY":"Aura, Passive",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"shadow-fiend-presence-of-the-dark-lord",
+      "manacost":null,
+      "name":"Presence of the Dark Lord",
+      "notes":"Stacks fully with other armor reduction abilities and aura.",
+      "stats":{
+        "REDUCTION":"-4 / -5 / -6 / -7",
+        "RADIUS":"1200"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Shadow Fiend gathers his captured souls to release them as lines of demonic energy. Units near Shadow Fiend when the souls are released can be damaged by several lines of energy. Any unit damaged by Requiem of Souls will be feared and have its movement speed and magic resistance reduced for 0.9 seconds for each line hit up to a maximum of 2.7. Lines of energy are created for every soul captured through Necromastery.  Requiem of Souls is automatically cast whenever Shadow Fiend dies, regardless of its cooldown.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"shadow-fiend-requiem-of-souls",
+      "manacost":"150 / 175 / 200",
+      "name":"Requiem of Souls",
+      "notes":"Fear and movement slow do not apply if the Requiem was released on death.",
+      "stats":{
+        "DAMAGE":"80 / 120 / 160",
+        "MOVEMENT REDUCTION":"-20% / -25% / -30%",
+        "MAGIC RESIST REDUCTION":"-5% / -10% / -15%",
+        "FEAR DURATION PER SOUL HIT":"0.9",
+        "FEAR DURATION MAX":"2.7",
+        "HEAL ON RETURN":"100%",
+        "DAMAGE ON RETURN":"40%",
+        "CAST POINT":"1.67s"
+      }
+    }
+  ]
+}

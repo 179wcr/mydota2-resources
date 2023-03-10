@@ -1,1 +1,124 @@
-{"id":"dragon-knight","talents":[{"level":25,"option1":"+400 AoE Dragon Tail During Elder Dragon Form","option2":"+12 Dragon Blood HP Regen/Armor"},{"level":20,"option1":"+75% Breathe Fire Damage/Cast Range in Dragon Form","option2":"+175 Elder Dragon Form Attack Range"},{"level":15,"option1":"+400 Health","option2":"+0.5s Dragon Tail"},{"level":10,"option1":"-30% Breathe Fire Damage Reduction","option2":"+15 Damage"}],"abilities":[{"cooldown":"14 / 13 / 12 / 11","desc":"Unleashes a breath of fire in front of Dragon Knight that burns enemies and reduces the damage their attacks deal.","effects":{"ABILITY":"Point Target, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"dragon-knight-breathe-fire","manacost":"90 / 95 / 100 / 105","name":"Breathe Fire","notes":"Hits units up to 900 away.","stats":{"DAMAGE":"80 / 160 / 240 / 320","DAMAGE REDUCTION":"-30%","REDUCTION DURATION":"11","CAST POINT":"0.2s"}},{"cooldown":"16 / 14 / 12 / 10","desc":"Dragon Knight smites an enemy unit in melee range with his shield, stunning it while dealing minor damage.  When in Elder Dragon Form, the cast range increases to 400.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"dragon-knight-dragon-tail","manacost":"70 / 80 / 90 / 100","name":"Dragon Tail","notes":null,"stats":{"DAMAGE":"70 / 100 / 130 / 160","STUN DURATION":"2.25 / 2.5 / 2.75 / 3.0","CAST POINT":"0s"}},{"cooldown":null,"desc":"The life blood of the Dragon improves health regeneration and strengthens armor.","effects":{"ABILITY":"Passive"},"id":"dragon-knight-dragon-blood","manacost":null,"name":"Dragon Blood","notes":null,"stats":{"HEALTH REGEN":"3 / 6 / 9 / 12","ARMOR":"3 / 6 / 9 / 12"}},{"cooldown":"20","desc":"Ignites an area, dealing damage over time that lingers on enemies in it. Has reduced cast range when melee.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"dragon-knight-fireball","manacost":"100","name":"Fireball","notes":null,"stats":{"RADIUS":"350","DAMAGE PER SECOND":"75","DURATION":"8.0","LINGER DURATION":"2","DRAGON FORM CAST RANGE":"1400","MELEE CAST RANGE":"600","CAST POINT":"0.2s"}},{"cooldown":"115 / 110 / 105 / 100","desc":"Dragon Knight takes the form of one of three powerful elder dragons, increasing his speed, and Dragon Tail's range, while granting him new powers.LEVEL 1 Green Dragon - Corrosive Breath: attacks deal [20, 20, 20, 30] poison damage per second for [5.0, 5.0, 5.0] seconds. Works on structures.LEVEL 2 Red Dragon - Splash Attack: attacks damage all enemy units in a 350 radius for [75, 75, 75, 100]% damage, with Corrosive Breath added to the targets.LEVEL 3 Blue Dragon - Frost Breath: slows movement speed by [-40, -40, -40, -60]% and attack speed by [-40, -40, -40, -60] of enemy units in Splash Attack range for [3.0, 3.0, 3.0] seconds, with Corrosive Breath added to the targets.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"dragon-knight-elder-dragon-form","manacost":"50","name":"Elder Dragon Form","notes":"Cooldowns of items that are different for ranged and melee units will be based on which form Dragon Knight was in when the item was used.","stats":{"DURATION":"60.0","BONUS MOVE SPEED":"25 / 30 / 35","BONUS ATTACK RANGE":"350"}}]}
+{
+  "id":"dragon-knight",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+400 AoE Dragon Tail During Elder Dragon Form",
+      "option2":"+12 Dragon Blood HP Regen/Armor"
+    },
+    {
+      "level":20,
+      "option1":"+75% Breathe Fire Damage/Cast Range in Dragon Form",
+      "option2":"+175 Elder Dragon Form Attack Range"
+    },
+    {
+      "level":15,
+      "option1":"+400 Health",
+      "option2":"+0.5s Dragon Tail Stun"
+    },
+    {
+      "level":10,
+      "option1":"-30% Breathe Fire Damage Reduction",
+      "option2":"+15 Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"14 / 13 / 12 / 11",
+      "desc":"Unleashes a breath of fire in front of Dragon Knight that burns enemies and reduces the damage their attacks deal.",
+      "effects":{
+        "ABILITY":"Point Target, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"dragon-knight-breathe-fire",
+      "manacost":"90 / 95 / 100 / 105",
+      "name":"Breathe Fire",
+      "notes":"Hits units up to 900 away.",
+      "stats":{
+        "DAMAGE":"80 / 160 / 240 / 320",
+        "DAMAGE REDUCTION":"-30%",
+        "REDUCTION DURATION":"11",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"16 / 14 / 12 / 10",
+      "desc":"Dragon Knight smites an enemy unit in melee range with his shield, stunning it while dealing minor damage.  When in Elder Dragon Form, the cast range increases to 400.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"dragon-knight-dragon-tail",
+      "manacost":"70 / 80 / 90 / 100",
+      "name":"Dragon Tail",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"70 / 100 / 130 / 160",
+        "STUN DURATION":"2.25 / 2.5 / 2.75 / 3.0",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"The life blood of the Dragon improves health regeneration and strengthens armor.",
+      "effects":{
+        "ABILITY":"Passive"
+      },
+      "id":"dragon-knight-dragon-blood",
+      "manacost":null,
+      "name":"Dragon Blood",
+      "notes":null,
+      "stats":{
+        "HEALTH REGEN":"4 / 7 / 10 / 13",
+        "ARMOR":"4 / 7 / 10 / 13"
+      }
+    },
+    {
+      "cooldown":"20",
+      "desc":"Ignites an area, dealing damage over time that lingers on enemies in it. Has reduced cast range when melee.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"dragon-knight-fireball",
+      "manacost":"80",
+      "name":"Fireball",
+      "notes":null,
+      "stats":{
+        "RADIUS":"350",
+        "DAMAGE PER SECOND":"75",
+        "DURATION":"8.0",
+        "LINGER DURATION":"2",
+        "DRAGON FORM CAST RANGE":"1400",
+        "MELEE CAST RANGE":"600",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"100",
+      "desc":"Dragon Knight takes the form of one of three powerful elder dragons, increasing his speed, and Dragon Tail\\'s range, while granting him new powers.LEVEL 1 Green Dragon - Corrosive Breath: attacks deal [20, 20, 20, 30] poison damage per second for [5.0, 5.0, 5.0] seconds. Works on structures.LEVEL 2 Red Dragon - Splash Attack: attacks damage all enemy units in a 350 radius for [75, 75, 75, 100]% damage, with Corrosive Breath added to the targets.LEVEL 3 Blue Dragon - Frost Breath: slows movement speed by [-40, -40, -40, -60]% and attack speed by [-40, -40, -40, -60] of enemy units in Splash Attack range for [3.0, 3.0, 3.0] seconds, with Corrosive Breath added to the targets.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"dragon-knight-elder-dragon-form",
+      "manacost":"50",
+      "name":"Elder Dragon Form",
+      "notes":"Cooldowns of items that are different for ranged and melee units will be based on which form Dragon Knight was in when the item was used.",
+      "stats":{
+        "DURATION":"60.0",
+        "BONUS MOVE SPEED":"25 / 30 / 35",
+        "BONUS ATTACK RANGE":"350"
+      }
+    }
+  ]
+}

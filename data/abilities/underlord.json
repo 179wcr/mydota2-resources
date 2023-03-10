@@ -1,1 +1,110 @@
-{"id":"underlord","talents":[{"level":25,"option1":"+50% Atrophy Allied Hero Bonus","option2":"+0.65s Pit of Malice Root"},{"level":20,"option1":"+15% Atrophy Aura Attack Damage Reduction","option2":"+1% Firestorm Burn Damage"},{"level":15,"option1":"-4s Firestorm Cooldown","option2":"+75 Pit of Malice AoE"},{"level":10,"option1":"+100 Firestorm Radius","option2":"+5 Armor"}],"abilities":[{"cooldown":null,"desc":"Calls down waves of fire that damage enemy units in the target area, burning for additional damage over time.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"underlord-firestorm","manacost":"110 / 120 / 130 / 140","name":"Firestorm","notes":null,"stats":{"RADIUS":"425","WAVE COUNT":"6","WAVE DAMAGE":"25 / 40 / 55 / 70","WAVE INTERVAL":"1.0","MAX HP BURN DAMAGE":"1% / 2% / 2% / 3%","BURN DURATION":"2.0","CAST POINT":"0.5s"}},{"cooldown":"21 / 19 / 17 / 15","desc":"A deadly pit is conjured at the target location; any unit that enters will be rooted. Each enemy unit within the pit are affected every 3.6 seconds.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"underlord-pit-of-malice","manacost":"80 / 100 / 120 / 140","name":"Pit of Malice","notes":null,"stats":{"RADIUS":"400","PIT DURATION":"12.0","DISABLE INTERVAL":"3.6","DISABLE DURATION":"1","CAST POINT":"0.45s"}},{"cooldown":null,"desc":"Nearby enemy units are weakened, losing a portion of their base damage. If an enemy dies while under this effect, Underlord gains temporary bonus damage.","effects":{"ABILITY":"Aura, Passive","DISPELLABLE":"Cannot be dispelled"},"id":"underlord-atrophy-aura","manacost":null,"name":"Atrophy Aura","notes":null,"stats":{"RADIUS":"900","DAMAGE REDUCTION":"5% / 15% / 25% / 35%","BONUS DAMAGE(CREEP)":"2 / 4 / 6 / 8","BONUS DAMAGE(HERO)":"30 / 35 / 40 / 45","DURATION":"30 / 45 / 60 / 75"}},{"cooldown":"120 / 110 / 100","desc":"Opens 2 portals, one next to Underlord and one in the target location. Heroes can channel a portal for 3 seconds to teleport to the other side. Allies that pass through the portal temporarily gain Damage Reduction and Movement Speed. Portals have to be at least 2000 away from each other.","effects":{"ABILITY":"Point Target","PIERCES SPELL IMMUNITY":"No"},"id":"underlord-fiend's-gate","manacost":"100","name":"Fiend's Gate","notes":null,"stats":{"DURATION":"20.0","DAMAGE REDUCTION":"14% / 22% / 30%","BONUS MOVE SPEED":"10% / 20% / 30%","BUFF DURATION":"5 / 6 / 7","CAST POINT":"0.45s"}}]}
+{
+  "id":"underlord",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+50% Atrophy Allied Hero Bonus",
+      "option2":"+0.65s Pit of Malice Root"
+    },
+    {
+      "level":20,
+      "option1":"+15% Atrophy Aura Attack Damage Reduction",
+      "option2":"+1% Firestorm Burn Damage"
+    },
+    {
+      "level":15,
+      "option1":"-4s Firestorm Cooldown",
+      "option2":"+75 Pit of Malice AoE"
+    },
+    {
+      "level":10,
+      "option1":"+100 Firestorm Radius",
+      "option2":"+5 Armor"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"Calls down waves of fire that damage enemy units in the target area, burning for additional damage over time.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"underlord-firestorm",
+      "manacost":"110 / 120 / 130 / 140",
+      "name":"Firestorm",
+      "notes":null,
+      "stats":{
+        "RADIUS":"425",
+        "WAVE COUNT":"6",
+        "WAVE DAMAGE":"30 / 50 / 70 / 90",
+        "WAVE INTERVAL":"1.0",
+        "MAX HP BURN DAMAGE":"1% / 2% / 2% / 3%",
+        "BURN DURATION":"2.0",
+        "CAST POINT":"0.5s"
+      }
+    },
+    {
+      "cooldown":"21 / 19 / 17 / 15",
+      "desc":"A deadly pit is conjured at the target location; any unit that enters will be rooted. Each enemy unit within the pit are affected every 3.6 seconds.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"underlord-pit-of-malice",
+      "manacost":"80 / 100 / 120 / 140",
+      "name":"Pit of Malice",
+      "notes":null,
+      "stats":{
+        "RADIUS":"400",
+        "PIT DURATION":"12.0",
+        "DISABLE INTERVAL":"3.6",
+        "DISABLE DURATION":"1",
+        "CAST POINT":"0.45s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Nearby enemy units are weakened, losing a portion of their base damage. If an enemy dies while under this effect, Underlord gains temporary bonus damage.",
+      "effects":{
+        "ABILITY":"Aura, Passive",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"underlord-atrophy-aura",
+      "manacost":null,
+      "name":"Atrophy Aura",
+      "notes":null,
+      "stats":{
+        "RADIUS":"900",
+        "DAMAGE REDUCTION":"5% / 15% / 25% / 35%",
+        "BONUS DAMAGE(CREEP)":"2 / 4 / 6 / 8",
+        "BONUS DAMAGE(HERO)":"30 / 35 / 40 / 45",
+        "DURATION":"30 / 45 / 60 / 75"
+      }
+    },
+    {
+      "cooldown":"120 / 110 / 100",
+      "desc":"Opens 2 portals, one next to Underlord and one in the target location. Heroes can channel a portal for 3 seconds to teleport to the other side. Allies that pass through the portal temporarily gain Damage Reduction and Movement Speed. Portals have to be at least 2000 away from each other.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"underlord-fiend's-gate",
+      "manacost":"100",
+      "name":"Fiend's Gate",
+      "notes":null,
+      "stats":{
+        "DURATION":"20.0",
+        "DAMAGE REDUCTION":"14% / 22% / 30%",
+        "BONUS MOVE SPEED":"10% / 20% / 30%",
+        "BUFF DURATION":"5 / 6 / 7",
+        "CAST POINT":"0.45s"
+      }
+    }
+  ]
+}

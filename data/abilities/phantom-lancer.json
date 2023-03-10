@@ -1,1 +1,110 @@
-{"id":"phantom-lancer","talents":[{"level":25,"option1":"+24.0% Critical Strike (200.0%)","option2":"-4s Doppelganger CD"},{"level":20,"option1":"+8% Juxtapose Damage","option2":"+300 Phantom Rush Range"},{"level":15,"option1":"-2.0s Spirit Lance CD","option2":"+15 Strength"},{"level":10,"option1":"+2.5s Phantom Rush Bonus Agi Duration","option2":"+50 Spirit Lance Damage"}],"abilities":[{"cooldown":"7","desc":"Sends a magical spirit lance to a target enemy unit that damages and slows, while summoning an illusory phantom to attack the unit.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"phantom-lancer-spirit-lance","manacost":"120","name":"Spirit Lance","notes":"Nearby illusions will mimic the cast animation.","stats":{"LANCE DAMAGE":"100 / 160 / 220 / 280","SLOW DURATION":"3.25","MOVEMENT SLOW":"-10% / -18% / -26% / -34%","ILLUSION DURATION":"2 / 4 / 6 / 8","ILLUSION DAMAGE":"20%","ILLUSION DAMAGE TAKEN":"400%","BOUNCE RADIUS":"750","BONUS ILLUSION DAMAGE":"40%","CAST POINT":"0.3s"}},{"cooldown":"19 / 16 / 13 / 10","desc":"Phantom Lancer briefly vanishes from the battlefield. After 1 second, Phantom Lancer and any of his nearby illusions reappear at a random position within the targeted location, along with two additional doppelgangers. Extends duration of all illusions. The two added doppelgangers have different properties: one takes normal damage and deals none, while the other takes %illusion_2_damage_in_pct% bonus damage and deals %illusion_2_damage_out_pct% less damage.DISPEL TYPE: Basic Dispel","effects":{"ABILITY":"Point Target"},"id":"phantom-lancer-doppelganger","manacost":"50","name":"Doppelganger","notes":"Phantom Lancer and his allies can see which illusion is the 100% damage illusion.","stats":{"TARGET AREA SIZE":"325","ILLUSION GATHER RANGE":"900","REAPPEAR DELAY":"1","DOPPELGANGER DURATION":"8","ILLUSION DURATION EXTENSION":"2","CAST POINT":"0.1s"}},{"cooldown":"13 / 10 / 7 / 4","desc":"When targetting an enemy for an attack, Phantom Lancer quickly charges into range, gaining a temporary agility boost. Phantom Lancer's illusions also have this ability.","effects":{"ABILITY":"No Target, Toggle","DISPELLABLE":"Yes"},"id":"phantom-lancer-phantom-rush","manacost":null,"name":"Phantom Rush","notes":"Rush movement speed is 800.","stats":{"MIN RUSH DISTANCE":"200","MAX RUSH DISTANCE":"600 / 675 / 750 / 825","BONUS AGILITY":"10 / 20 / 30 / 40","BONUS AGILITY DURATION":"1.5"}},{"cooldown":"40","desc":"Phantom Lancer has a chance to fracture his presence on an attack, creating an illusion of himself. Illusions also have a chance to fracture further. Illusions created from Phantom Lancer last for 8 seconds, while illusions created from other illusions last 4 seconds.","effects":{"ABILITY":"Passive"},"id":"phantom-lancer-juxtapose","manacost":"75","name":"Juxtapose","notes":"Illusions created by Juxtapose will attack the target that the ability was triggered upon.","stats":{"MAX ILLUSIONS":"6 / 8 / 10","HERO TRIGGER CHANCE":"40% / 45% / 50%","ILLUSION TRIGGER CHANCE":"8%","ILLUSION DAMAGE":"22%","ILLUSION DAMAGE TAKEN":"650%","BONUS DURATION":"10.0","BONUS ILLUSIONS":"2"}}]}
+{
+  "id":"phantom-lancer",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+24.0% Critical Strike (200.0%)",
+      "option2":"-4s Doppelganger CD"
+    },
+    {
+      "level":20,
+      "option1":"+10% Juxtapose Damage",
+      "option2":"+300 Phantom Rush Range"
+    },
+    {
+      "level":15,
+      "option1":"-2.0s Spirit Lance CD",
+      "option2":"+15 Strength"
+    },
+    {
+      "level":10,
+      "option1":"+2.5s Phantom Rush Bonus Agi Duration",
+      "option2":"+50 Spirit Lance Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"7",
+      "desc":"Sends a magical spirit lance to a target enemy unit that damages and slows, while summoning an illusory phantom to attack the unit.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"phantom-lancer-spirit-lance",
+      "manacost":"120",
+      "name":"Spirit Lance",
+      "notes":"Nearby illusions will mimic the cast animation.",
+      "stats":{
+        "LANCE DAMAGE":"100 / 160 / 220 / 280",
+        "SLOW DURATION":"3.75",
+        "MOVEMENT SLOW":"-14% / -21% / -28% / -35%",
+        "ILLUSION DURATION":"2 / 4 / 6 / 8",
+        "ILLUSION DAMAGE":"20%",
+        "ILLUSION DAMAGE TAKEN":"400%",
+        "BOUNCE RADIUS":"750",
+        "BONUS ILLUSION DAMAGE":"40%",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"19 / 16 / 13 / 10",
+      "desc":"Phantom Lancer briefly vanishes from the battlefield. After 1 second, Phantom Lancer and any of his nearby illusions reappear at a random position within the targeted location, along with two additional doppelgangers. Extends duration of all illusions. The two added doppelgangers have different properties: one takes normal damage and deals none, while the other takes %illusion_2_damage_in_pct% bonus damage and deals %illusion_2_damage_out_pct% less damage.DISPEL TYPE: Basic Dispel",
+      "effects":{
+        "ABILITY":"Point Target"
+      },
+      "id":"phantom-lancer-doppelganger",
+      "manacost":"50",
+      "name":"Doppelganger",
+      "notes":"Phantom Lancer and his allies can see which illusion is the 100% damage illusion.",
+      "stats":{
+        "TARGET AREA SIZE":"325",
+        "ILLUSION GATHER RANGE":"900",
+        "REAPPEAR DELAY":"1",
+        "DOPPELGANGER DURATION":"8",
+        "ILLUSION DURATION EXTENSION":"2",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"13 / 10 / 7 / 4",
+      "desc":"When targetting an enemy for an attack, Phantom Lancer quickly charges into range, gaining a temporary agility boost. Phantom Lancer\\'s illusions also have this ability.",
+      "effects":{
+        "ABILITY":"No Target, Toggle",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"phantom-lancer-phantom-rush",
+      "manacost":null,
+      "name":"Phantom Rush",
+      "notes":"Rush movement speed is 800.",
+      "stats":{
+        "MIN RUSH DISTANCE":"200",
+        "MAX RUSH DISTANCE":"600 / 675 / 750 / 825",
+        "BONUS AGILITY":"10 / 20 / 30 / 40",
+        "BONUS AGILITY DURATION":"1.5"
+      }
+    },
+    {
+      "cooldown":"40",
+      "desc":"Phantom Lancer has a chance to fracture his presence on an attack, creating an illusion of himself. Illusions also have a chance to fracture further. Illusions created from Phantom Lancer last for 8 seconds, while illusions created from other illusions last 4 seconds.",
+      "effects":{
+        "ABILITY":"Passive"
+      },
+      "id":"phantom-lancer-juxtapose",
+      "manacost":"75",
+      "name":"Juxtapose",
+      "notes":"Illusions created by Juxtapose will attack the target that the ability was triggered upon.",
+      "stats":{
+        "MAX ILLUSIONS":"6 / 8 / 10",
+        "HERO TRIGGER CHANCE":"40% / 45% / 50%",
+        "ILLUSION TRIGGER CHANCE":"8%",
+        "ILLUSION DAMAGE":"22%",
+        "ILLUSION DAMAGE TAKEN":"650%",
+        "BONUS DURATION":"10.0",
+        "BONUS ILLUSIONS":"2"
+      }
+    }
+  ]
+}

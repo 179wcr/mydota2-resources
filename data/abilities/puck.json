@@ -1,1 +1,115 @@
-{"id":"puck","talents":[{"level":25,"option1":"Dream Coil Rapid Fire","option2":"Dream Coil Pierces Magic Immunity"},{"level":20,"option1":"+150 Initial/Break Dream Coil Damage","option2":"-4s Waning Rift Cooldown"},{"level":15,"option1":"+75 Waning Rift Damage","option2":"-10s Dream Coil Cooldown"},{"level":10,"option1":"+0.75s Waning Rift Silence Duration","option2":"+50 Illusory Orb Damage"}],"abilities":[{"cooldown":null,"desc":"Puck launches a magic orb that floats in a straight path, damaging enemy units along the way. At any point, Puck may teleport to the orb's location using Ethereal Jaunt.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"puck-illusory-orb","manacost":"80 / 100 / 120 / 140","name":"Illusory Orb","notes":"Jaunting to the Orb will disjoint projectiles.","stats":{"MAX DISTANCE":"1950","DAMAGE":"75 / 150 / 225 / 300","CAST POINT":"0.1s"}},{"cooldown":"16 / 15 / 14 / 13","desc":"Puck teleports to the target location and releases a burst of faerie dust that deals damage and silences enemy units nearby.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"puck-waning-rift","manacost":"100 / 110 / 120 / 130","name":"Waning Rift","notes":null,"stats":{"RADIUS":"400","DURATION":"2 / 2 / 3 / 3","DAMAGE":"70 / 130 / 190 / 250","MAX DISTANCE":"400","CAST POINT":"0.1s"}},{"cooldown":"8.0 / 7.5 / 7.0 / 6.5","desc":"CHANNELED - Puck briefly shifts into another dimension where it is immune from harm.","effects":{"ABILITY":"Channelled, No Target"},"id":"puck-phase-shift","manacost":"0","name":"Phase Shift","notes":"Puck is invulnerable during Phase Shift.","stats":{"DURATION":"1 / 1 / 2 / 3","CAST POINT":"0s"}},{"cooldown":null,"desc":"Teleports Puck to a flying Illusory Orb.","effects":{"ABILITY":"No Target"},"id":"puck-ethereal-jaunt","manacost":null,"name":"Ethereal Jaunt","notes":null,"stats":{}},{"cooldown":"75","desc":"Creates a coil of volatile magic that latches onto enemy Heroes, damaging and leashing them.  If the enemy hero stretches the coil by moving too far away, it snaps, stunning and dealing additional damage.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"puck-dream-coil","manacost":"100 / 150 / 200","name":"Dream Coil","notes":null,"stats":{"COIL DURATION":"6.0","BREAK RADIUS":"600","INITIAL DAMAGE":"125 / 200 / 275","BREAK STUN DURATION":"1 / 2 / 3","BREAK DAMAGE":"200 / 300 / 400","CAST POINT":"0.1s"}}]}
+{
+  "id":"puck",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Dream Coil Rapid Fire",
+      "option2":"Dream Coil Pierces Magic Immunity"
+    },
+    {
+      "level":20,
+      "option1":"+150 Initial/Break Dream Coil Damage",
+      "option2":"-4s Waning Rift Cooldown"
+    },
+    {
+      "level":15,
+      "option1":"+75 Waning Rift Damage",
+      "option2":"-10s Dream Coil Cooldown"
+    },
+    {
+      "level":10,
+      "option1":"+0.75s Waning Rift Silence Duration",
+      "option2":"+50 Illusory Orb Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":null,
+      "desc":"Puck launches a magic orb that floats in a straight path, damaging enemy units along the way. At any point, Puck may teleport to the orb\\'s location using Ethereal Jaunt.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"puck-illusory-orb",
+      "manacost":"110 / 120 / 130 / 140",
+      "name":"Illusory Orb",
+      "notes":"Jaunting to the Orb will disjoint projectiles.",
+      "stats":{
+        "MAX DISTANCE":"1950",
+        "DAMAGE":"75 / 150 / 225 / 300",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"16 / 15 / 14 / 13",
+      "desc":"Puck teleports to the target location and releases a burst of faerie dust that deals damage and silences enemy units nearby.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"puck-waning-rift",
+      "manacost":"100 / 110 / 120 / 130",
+      "name":"Waning Rift",
+      "notes":null,
+      "stats":{
+        "RADIUS":"400",
+        "DURATION":"2 / 2 / 3 / 3",
+        "DAMAGE":"60 / 120 / 180 / 240",
+        "MAX DISTANCE":"400",
+        "CAST POINT":"0.1s"
+      }
+    },
+    {
+      "cooldown":"8.0 / 7.5 / 7.0 / 6.5",
+      "desc":"CHANNELED - Puck briefly shifts into another dimension where it is immune from harm.",
+      "effects":{
+        "ABILITY":"Channelled, No Target"
+      },
+      "id":"puck-phase-shift",
+      "manacost":"0",
+      "name":"Phase Shift",
+      "notes":"Puck is invulnerable during Phase Shift.",
+      "stats":{
+        "DURATION":"1 / 1 / 2 / 3",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Teleports Puck to a flying Illusory Orb.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"puck-ethereal-jaunt",
+      "manacost":null,
+      "name":"Ethereal Jaunt",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"75",
+      "desc":"Creates a coil of volatile magic that latches onto enemy Heroes, damaging and leashing them.  If the enemy hero stretches the coil by moving too far away, it snaps, stunning and dealing additional damage.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"puck-dream-coil",
+      "manacost":"100 / 150 / 200",
+      "name":"Dream Coil",
+      "notes":null,
+      "stats":{
+        "COIL DURATION":"6.0",
+        "BREAK RADIUS":"600",
+        "INITIAL DAMAGE":"150 / 230 / 310",
+        "BREAK STUN DURATION":"1 / 2 / 3",
+        "BREAK DAMAGE":"200 / 300 / 400",
+        "CAST POINT":"0.1s"
+      }
+    }
+  ]
+}

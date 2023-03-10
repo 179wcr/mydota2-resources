@@ -1,1 +1,170 @@
-{"id":"visage","talents":[{"level":25,"option1":"+1 Familiar","option2":"Gravekeeper's Cloak  grants +10 Armor"},{"level":20,"option1":"+25 Visage and Familiars Movement Speed","option2":"+20 Soul Assumption Damage Per Charge"},{"level":15,"option1":"Soul Assumption Hits 2 Targets","option2":"+1.0 Armor Corruption to Visage and Familiars"},{"level":10,"option1":"+6.0 Visage and Familiars Attack Damage","option2":"-3.0s Grave Chill Cooldown"}],"abilities":[{"cooldown":"16 / 14 / 12 / 10","desc":"Visage drains the movement and attack speed of the targeted unit, gaining it for itself and nearby familiars.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"visage-grave-chill","manacost":"90","name":"Grave Chill","notes":"Familiars within 900 range of Visage will also receive bonuses from Grave Chill.","stats":{"DURATION":"6.0","MOVE SPEED DRAIN":"15% / 20% / 25% / 30%","ATTACK SPEED DRAIN":"34 / 46 / 58 / 70","CAST POINT":"0.2s"}},{"cooldown":"4","desc":"Visage gathers charges of soul essence each time nearby heroes take more than 100 damage. When the essence is released, it deals base damage as well as damage for each gathered soul charge.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"visage-soul-assumption","manacost":"135","name":"Soul Assumption","notes":"Soul Assumption cannot be disjointed.","stats":{"BASE DAMAGE":"20","DAMAGE PER CHARGE":"70","MAX CHARGES":"3 / 4 / 5 / 6","CHARGE DURATION":"6.0","GATHER DAMAGE THRESHOLD":"100","GATHER DAMAGE RADIUS":"1800","CAST POINT":"0.2s"}},{"cooldown":null,"desc":"Visage generates a layered barrier that protects him from damage.  If he receives damage from a player, one layer is removed, and takes time to recover.","effects":{"ABILITY":"Passive"},"id":"visage-gravekeeper's-cloak","manacost":null,"name":"Gravekeeper's Cloak","notes":"Familiars within 1200 range of Visage will receive the current damage reduction from Gravekeeper's Cloak.","stats":{"MAX LAYERS":"4","DAMAGE REDUCTION PER LAYER":"8% / 12% / 16% / 20%","LAYER RECOVERY TIME":"6 / 5 / 4 / 3","MINIMUM DAMAGE":"40","MAX DAMAGE REDUCTION":"80%","COOLDOWN":"60.0","MANA COST":"125"}},{"cooldown":"0","desc":"After a short delay, the nearest Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After 6.0 seconds, the Familiar will automatically leave Stone Form.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"visage-stone-form","manacost":"0","name":"Stone Form","notes":"While Stone Form is not dispellable, the stun can be removed by strong dispels.","stats":{"STUN RADIUS":"375","DAMAGE":"60 / 100 / 140","STUN DURATION":"1.0 / 1.25 / 1.5","BONUS REGEN":"150 / 175 / 200","CAST POINT":"0s"}},{"cooldown":"45","desc":"Turns Visage and familiars invisible, granting Visage bonus movement speed and upgrading its movement type to flying. When Visage or its familiars leave invisibility they deal more damage for a short duration. Lasts 35.0 seconds. Invisibility ends when attacking or casting.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"visage-silent-as-the-grave","manacost":"100","name":"Silent as the Grave","notes":null,"stats":{"BONUS DAMAGE DURATION":"4.0","BONUS DAMAGE":"25%","BONUS MOVESPEED":"20%","CAST POINT":"0s"}},{"cooldown":"130 / 120 / 110","desc":"Conjures two blind Familiars to fight for Visage.  Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing.  While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health.  Familiars grant high bounty when killed.","effects":{"ABILITY":"No Target"},"id":"visage-summon-familiars","manacost":"150","name":"Summon Familiars","notes":"Familiars within range of Visage will receive bonuses from Gravekeeper's Cloak and Grave Chill.","stats":{"HP":"500 / 600 / 700","FAMILIAR SPEED":"430","FAMILIAR ATTACK DAMAGE":"25 / 50 / 75","CAST POINT":"0s"}},{"cooldown":"14","desc":"After a short delay, the Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After 6.0 seconds, the Familiar will automatically leave Stone Form.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"visage-stone-form","manacost":null,"name":"Stone Form","notes":null,"stats":{"STUN RADIUS":"375","DAMAGE":"60 / 100 / 140","STUN DURATION":"1.0 / 1.25 / 1.5","STONE DURATION":"6.0","BONUS REGEN":"150 / 175 / 200","CAST POINT":"0s"}}]}
+{
+  "id":"visage",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+1 Familiar",
+      "option2":"Gravekeeper's Cloak  grants +10 Armor"
+    },
+    {
+      "level":20,
+      "option1":"+20 Visage and Familiars Movement Speed",
+      "option2":"+20 Soul Assumption Damage Per Charge"
+    },
+    {
+      "level":15,
+      "option1":"Soul Assumption Hits 2 Targets",
+      "option2":"+1.0 Armor Corruption to Visage and Familiars"
+    },
+    {
+      "level":10,
+      "option1":"+6.0 Visage and Familiars Attack Damage",
+      "option2":"-3.0s Grave Chill Cooldown"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"17 / 15 / 13 / 11",
+      "desc":"Visage drains the movement and attack speed of the targeted unit, gaining it for itself and nearby familiars.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"visage-grave-chill",
+      "manacost":"100",
+      "name":"Grave Chill",
+      "notes":"Familiars within 900 range of Visage will also receive bonuses from Grave Chill.",
+      "stats":{
+        "DURATION":"6.0",
+        "MOVE SPEED DRAIN":"15% / 20% / 25% / 30%",
+        "ATTACK SPEED DRAIN":"25 / 40 / 55 / 70",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"4",
+      "desc":"Visage gathers charges of soul essence each time nearby heroes take more than 100 damage. When the essence is released, it deals base damage as well as damage for each gathered soul charge.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"visage-soul-assumption",
+      "manacost":"135",
+      "name":"Soul Assumption",
+      "notes":"Charges are only gained for damage greater than 2.0 and less than 3000.0 that is dealt by a player or Roshan.  Self-damage or Soul Assumption damage isn't counted.",
+      "stats":{
+        "BASE DAMAGE":"20",
+        "DAMAGE PER CHARGE":"70",
+        "MAX CHARGES":"3 / 4 / 5 / 6",
+        "CHARGE DURATION":"6.0",
+        "GATHER DAMAGE THRESHOLD":"100",
+        "GATHER DAMAGE RADIUS":"1800",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Visage generates a layered barrier that protects him from damage.  If he receives damage from a player, one layer is removed, and takes time to recover.",
+      "effects":{
+        "ABILITY":"Passive"
+      },
+      "id":"visage-gravekeeper's-cloak",
+      "manacost":null,
+      "name":"Gravekeeper's Cloak",
+      "notes":"Familiars within 900 range of Visage will receive the current damage reduction from Gravekeeper's Cloak.",
+      "stats":{
+        "MAX LAYERS":"4",
+        "DAMAGE REDUCTION PER LAYER":"8% / 12% / 16% / 20%",
+        "LAYER RECOVERY TIME":"6 / 5 / 4 / 3",
+        "MINIMUM DAMAGE":"40",
+        "MAX DAMAGE REDUCTION":"80%",
+        "COOLDOWN":"65.0",
+        "MANA COST":"125"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"After a short delay, the nearest Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After 6.0 seconds, the Familiar will automatically leave Stone Form.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"visage-stone-form",
+      "manacost":"0",
+      "name":"Stone Form",
+      "notes":"While Stone Form is not dispellable, the stun can be removed by strong dispels.",
+      "stats":{
+        "STUN RADIUS":"375",
+        "DAMAGE":"60 / 100 / 140",
+        "STUN DURATION":"1.0 / 1.25 / 1.5",
+        "BONUS REGEN":"150 / 175 / 200",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"45",
+      "desc":"Turns Visage and familiars invisible, granting Visage bonus movement speed and upgrading its movement type to flying. When Visage or its familiars leave invisibility they deal more damage for a short duration. Lasts 35.0 seconds. Invisibility ends when attacking or casting.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"visage-silent-as-the-grave",
+      "manacost":"100",
+      "name":"Silent as the Grave",
+      "notes":null,
+      "stats":{
+        "BONUS DAMAGE DURATION":"4.0",
+        "BONUS DAMAGE":"25%",
+        "BONUS MOVESPEED":"20%",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"130 / 120 / 110",
+      "desc":"Conjures blind Familiars to fight for Visage.  Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing.  While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health.  Familiars grant high bounty when killed.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Physical"
+      },
+      "id":"visage-summon-familiars",
+      "manacost":"150",
+      "name":"Summon Familiars",
+      "notes":"Familiars within range of Visage will receive bonuses from Gravekeeper's Cloak and Grave Chill.",
+      "stats":{
+        "HP":"500 / 600 / 700",
+        "FAMILIAR SPEED":"430",
+        "FAMILIAR ATTACK DAMAGE":"25 / 50 / 75",
+        "FAMILIAR COUNT":"2",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"14",
+      "desc":"After a short delay, the Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area.  The Familiar becomes invulnerable, and will regain its health very rapidly.  After 6.0 seconds, the Familiar will automatically leave Stone Form.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"visage-stone-form",
+      "manacost":null,
+      "name":"Stone Form",
+      "notes":null,
+      "stats":{
+        "STUN RADIUS":"375",
+        "DAMAGE":"60 / 100 / 140",
+        "STUN DURATION":"1.0 / 1.25 / 1.5",
+        "STONE DURATION":"6.0",
+        "BONUS REGEN":"150 / 175 / 200",
+        "CAST POINT":"0s"
+      }
+    }
+  ]
+}

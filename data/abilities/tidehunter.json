@@ -1,1 +1,124 @@
-{"id":"tidehunter","talents":[{"level":25,"option1":"50% chance of Anchor Smash on attack","option2":"+1s Ravage Stun"},{"level":20,"option1":"+40 Kraken Shell Damage Block","option2":"Anchor Smash affects buildings"},{"level":15,"option1":"-25% Anchor Smash Damage Reduction","option2":"+120 Gush Damage"},{"level":10,"option1":"+10.0% Gush Slow","option2":"+50 Anchor Smash Damage"}],"abilities":[{"cooldown":"12","desc":"Summons a gush of water to damage an enemy unit, reducing their movement speed and armor.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"tidehunter-gush","manacost":"100 / 105 / 110 / 115","name":"Gush","notes":null,"stats":{"DAMAGE":"110 / 160 / 210 / 260","SLOW":"-40%","ARMOR REDUCTION":"3 / 4 / 5 / 6","RADIUS":"260","COOLDOWN":"7","RANGE":"2200","CAST POINT":"0.3s"}},{"cooldown":null,"desc":"Thickens Tidehunter's hide to passively block a portion of any incoming physical attack damage. The hide also removes negative status effects if the damage taken crosses a threshold.Does not stack with items that provide Damage Block.DISPEL TYPE: Strong Dispel","effects":{"ABILITY":"Passive"},"id":"tidehunter-kraken-shell","manacost":null,"name":"Kraken Shell","notes":"Kraken Shell removes most debuffs, even if they are generally not purgable.","stats":{"DAMAGE BLOCK":"16 / 34 / 52 / 70","DAMAGE THRESHOLD":"600 / 550 / 500 / 450","THRESHOLD TIMER":"7"}},{"cooldown":"7 / 6 / 5 / 4","desc":"Tidehunter swings his mighty anchor to attack and deal bonus damage to nearby enemies and reduce their attack damage.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"tidehunter-anchor-smash","manacost":"40 / 50 / 60 / 70","name":"Anchor Smash","notes":"Anchor Smash works on all Ancient creeps except for Roshan.","stats":{"ATTACK BONUS DAMAGE":"40 / 85 / 130 / 175","DAMAGE REDUCTION":"-30% / -40% / -50% / -60%","DURATION":"6","RADIUS":"375","CAST POINT":"0.4s"}},{"cooldown":"20","desc":"Tidehunter unleashes a targeted slew of tentacles that damage and stun enemies within reach. The tentacles deal 50% of Ravage's damage and stun, with a range 75% of Ravage's radius.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"tidehunter-tendrils-of-the-deep","manacost":"80","name":"Tendrils of the Deep","notes":null,"stats":{}},{"cooldown":"150","desc":"Slams the ground, causing tentacles to erupt in all directions, damaging and stunning all nearby enemy units.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"tidehunter-ravage","manacost":"150 / 225 / 325","name":"Ravage","notes":"Ravage waves move outwards at a speed of 725.","stats":{"DAMAGE":"200 / 300 / 400","RADIUS":"1250","DURATION":"2","CAST POINT":"0.3s"}}]}
+{
+  "id":"tidehunter",
+  "talents":[
+    {
+      "level":25,
+      "option1":"50% chance of Anchor Smash on attack",
+      "option2":"+1s Ravage Stun"
+    },
+    {
+      "level":20,
+      "option1":"+40 Kraken Shell Damage Block",
+      "option2":"Anchor Smash affects buildings"
+    },
+    {
+      "level":15,
+      "option1":"-25% Anchor Smash Damage Reduction",
+      "option2":"+120 Gush Damage"
+    },
+    {
+      "level":10,
+      "option1":"+10.0% Gush Slow",
+      "option2":"+50 Anchor Smash Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"12",
+      "desc":"Summons a gush of water to damage an enemy unit, reducing their movement speed and armor.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"tidehunter-gush",
+      "manacost":"100 / 105 / 110 / 115",
+      "name":"Gush",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"110 / 160 / 210 / 260",
+        "SLOW":"-40%",
+        "ARMOR REDUCTION":"3 / 4 / 5 / 6",
+        "RADIUS":"260",
+        "COOLDOWN":"7",
+        "RANGE":"2200",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Thickens Tidehunter\\'s hide to passively block a portion of any incoming physical attack damage. The hide also removes negative status effects if the damage taken crosses a threshold.Does not stack with items that provide Damage Block.DISPEL TYPE: Strong Dispel",
+      "effects":{
+        "ABILITY":"Passive"
+      },
+      "id":"tidehunter-kraken-shell",
+      "manacost":null,
+      "name":"Kraken Shell",
+      "notes":"Kraken Shell removes most debuffs, even if they are generally not purgable.",
+      "stats":{
+        "DAMAGE BLOCK":"16 / 34 / 52 / 70",
+        "DAMAGE THRESHOLD":"600 / 550 / 500 / 450",
+        "THRESHOLD TIMER":"7"
+      }
+    },
+    {
+      "cooldown":"7 / 6 / 5 / 4",
+      "desc":"Tidehunter swings his mighty anchor to attack and deal bonus damage to nearby enemies and reduce their attack damage.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"tidehunter-anchor-smash",
+      "manacost":"40 / 50 / 60 / 70",
+      "name":"Anchor Smash",
+      "notes":"Anchor Smash works on all Ancient creeps except for Roshan.",
+      "stats":{
+        "ATTACK BONUS DAMAGE":"40 / 85 / 130 / 175",
+        "DAMAGE REDUCTION":"-30% / -40% / -50% / -60%",
+        "DURATION":"6",
+        "RADIUS":"375",
+        "CAST POINT":"0.4s"
+      }
+    },
+    {
+      "cooldown":"20",
+      "desc":"Tidehunter unleashes a targeted slew of tentacles that damage and stun enemies within reach. The tentacles deal 50% of Ravage\\'s damage and stun, with a range 75% of Ravage\\'s radius.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"tidehunter-tendrils-of-the-deep",
+      "manacost":"80",
+      "name":"Tendrils of the Deep",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"150",
+      "desc":"Slams the ground, causing tentacles to erupt in all directions, damaging and stunning all nearby enemy units.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"tidehunter-ravage",
+      "manacost":"150 / 225 / 325",
+      "name":"Ravage",
+      "notes":"Ravage waves move outwards at a speed of 725.",
+      "stats":{
+        "DAMAGE":"250 / 350 / 450",
+        "RADIUS":"1250",
+        "DURATION":"2",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

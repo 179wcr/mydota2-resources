@@ -1,1 +1,151 @@
-{"id":"primal-beast","talents":[{"level":25,"option1":"+100%% Pulverize Duration","option2":"Pulverize Pierces Magic Immunity"},{"level":20,"option1":"+4 Uproar Armor Per Stack","option2":"+25% Trample Attack Multiplier"},{"level":15,"option1":"Beast dispells himself when activating Uproar","option2":"-5s Trample Cooldown"},{"level":10,"option1":"+20% Magic Resistance During Trample","option2":"+90 Onslaught Damage"}],"abilities":[{"cooldown":"25 / 22 / 19 / 16","desc":"Primal Beast charges up and then runs in the chosen direction, knocking back enemies and allies alike. Enemy units are damaged and stunned on impact. The longer the charge duration, the farther Primal Beast's momentum will carry him.  Can be cancelled at any time with the Stop command.","effects":{"ABILITY":"Point Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"primal-beast-onslaught","manacost":"120","name":"Onslaught","notes":null,"stats":{"RUN SPEED":"1200","MAX DISTANCE":"2000","DAMAGE":"110 / 200 / 290 / 380","TIME TO MAX CHARGE":"1.5","STUN DURATION":"1","CAST POINT":"0.15s"}},{"cooldown":null,"desc":"Primal Beast stomps over everything. For every 140 units traveled, all enemies around the Beast receive damage. Deals base damage plus a multiplier of Primal Beast's attack damage. Primal Beast is disarmed for the duration of the ability.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"primal-beast-trample","manacost":"90 / 85 / 80 / 75","name":"Trample","notes":null,"stats":{"DAMAGE AOE":"230","BASE DAMAGE":"12 / 28 / 44 / 60","DURATION":"5.5","ATTACK DAMAGE MULTIPLIER":"35%"}},{"cooldown":"0","desc":"The Beast's temper passively provides bonus damage. Additionally, for every instance of 50 damage or more Primal Beast takes from enemy heroes, he accumulates stacks of Uproar.  When activated, Primal Beast releases a roar that slows surrounding enemies and grants the Beast additional attack damage and armor for 7 seconds based on his current stacks of Uproar.","effects":{"ABILITY":"No Target","DISPELLABLE":"Cannot be dispelled"},"id":"primal-beast-uproar","manacost":null,"name":"Uproar","notes":null,"stats":{"BASE BONUS DAMAGE":"10 / 15 / 20 / 25","BONUS DAMAGE PER STACK":"10 / 20 / 30 / 40","MAX STACKS":"5","SLOW PER STACK":"8%","SLOW DURATION":"3.0","ROAR RADIUS":"900","ROAR ARMOR BONUS PER STACK":"1 / 2 / 3 / 4","DAMAGE":"100","SPLIT DELAY":"1.25","BREAK DURATION":"2.5"}},{"cooldown":"25","desc":"Primal Beast throws a rock at the target location that stuns and damages enemies. The rock cannot be thrown within a minimum range of Primal Beast. After landing, the throck splits into 3 additional fragments that land behind the initial target location.","effects":{"ABILITY":"Point Target","AFFECTS":"Heroes","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"No"},"id":"primal-beast-rock-throw","manacost":"85","name":"Rock Throw","notes":null,"stats":{"DAMAGE":"300","IMPACT RADIUS":"225","MIN RANGE":"550","MIN TRAVEL TIME":"0.45","MAX TRAVEL TIME":"1.7","STUN DURATION":"1.75","FRAGMENT FLIGHT DISTANCE":"600","FRAGMENT IMPACT RADIUS":"150","CAST POINT":"0.5s"}},{"cooldown":"0.3","desc":"Begins the rush to the specified location.","effects":{"ABILITY":"No Target"},"id":"primal-beast-begin-onslaught","manacost":null,"name":"Begin Onslaught","notes":null,"stats":{}},{"cooldown":"32 / 28 / 24","desc":"Primal Beast channels his rage, grabbing the target enemy and slamming them into the ground repeatedly, damaging and mini-stunning any enemies caught in the AoE. Lasts 2.3 seconds.","effects":{"ABILITY":"Channelled, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical"},"id":"primal-beast-pulverize","manacost":"100 / 115 / 130","name":"Pulverize","notes":null,"stats":{"AOE RADIUS":"600","HIT INTERVAL":"0.75","STUN DURATION":"0.25","HIT DAMAGE":"150 / 210 / 270","CAST POINT":"0.25s"}}]}
+{
+  "id":"primal-beast",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+100%% Pulverize Duration",
+      "option2":"Pulverize Pierces Magic Immunity"
+    },
+    {
+      "level":20,
+      "option1":"+4 Uproar Armor Per Stack",
+      "option2":"+25% Trample Attack Multiplier"
+    },
+    {
+      "level":15,
+      "option1":"Beast dispels himself when activating Uproar",
+      "option2":"-5s Trample Cooldown"
+    },
+    {
+      "level":10,
+      "option1":"+20% Magic Resistance During Trample",
+      "option2":"+90 Onslaught Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"25 / 22 / 19 / 16",
+      "desc":"Primal Beast charges up and then runs in the chosen direction, knocking back enemies and allies alike. Enemy units are damaged and stunned on impact. The longer the charge duration, the farther Primal Beast\\'s momentum will carry him.  Can be cancelled at any time with the Stop command.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"primal-beast-onslaught",
+      "manacost":"120",
+      "name":"Onslaught",
+      "notes":null,
+      "stats":{
+        "RUN SPEED":"1200",
+        "MAX DISTANCE":"2000",
+        "DAMAGE":"95 / 190 / 285 / 380",
+        "TIME TO MAX CHARGE":"1.5",
+        "STUN DURATION":"1",
+        "CAST POINT":"0.15s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Primal Beast stomps over everything. For every 140 units traveled, all enemies around the Beast receive damage. Deals base damage plus a multiplier of Primal Beast\\'s attack damage. Primal Beast is disarmed for the duration of the ability.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"primal-beast-trample",
+      "manacost":"90 / 85 / 80 / 75",
+      "name":"Trample",
+      "notes":null,
+      "stats":{
+        "DAMAGE AOE":"230",
+        "BASE DAMAGE":"15 / 30 / 45 / 60",
+        "DURATION":"5.5",
+        "ATTACK DAMAGE MULTIPLIER":"35%"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"The Beast\\'s temper passively provides bonus damage. Additionally, for every instance of 50 damage or more Primal Beast takes from enemy heroes, he accumulates stacks of Uproar.  When activated, Primal Beast releases a roar that slows surrounding enemies and grants the Beast additional attack damage and armor for 7 seconds based on his current stacks of Uproar.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"primal-beast-uproar",
+      "manacost":null,
+      "name":"Uproar",
+      "notes":null,
+      "stats":{
+        "BASE BONUS DAMAGE":"6 / 12 / 18 / 24",
+        "BONUS DAMAGE PER STACK":"10 / 20 / 30 / 40",
+        "MAX STACKS":"5",
+        "SLOW PER STACK":"8%",
+        "SLOW DURATION":"3.0",
+        "ROAR RADIUS":"900",
+        "ROAR ARMOR BONUS PER STACK":"1 / 2 / 3 / 4",
+        "DAMAGE":"100",
+        "SPLIT DELAY":"1.25",
+        "BREAK DURATION":"2.5"
+      }
+    },
+    {
+      "cooldown":"25",
+      "desc":"Primal Beast throws a rock at the target location that stuns and damages enemies. The rock cannot be thrown within a minimum range of Primal Beast. After landing, the throck splits into 3 additional fragments that land behind the initial target location.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "AFFECTS":"Heroes",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"primal-beast-rock-throw",
+      "manacost":"85",
+      "name":"Rock Throw",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"325",
+        "IMPACT RADIUS":"225",
+        "MIN RANGE":"550",
+        "MIN TRAVEL TIME":"0.45",
+        "MAX TRAVEL TIME":"1.7",
+        "STUN DURATION":"1.75",
+        "FRAGMENT FLIGHT DISTANCE":"600",
+        "FRAGMENT IMPACT RADIUS":"150",
+        "CAST POINT":"0.5s"
+      }
+    },
+    {
+      "cooldown":"0.3",
+      "desc":"Begins the rush to the specified location.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"primal-beast-begin-onslaught",
+      "manacost":null,
+      "name":"Begin Onslaught",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"32 / 28 / 24",
+      "desc":"CHANNELED - Primal Beast channels his rage, grabbing the target enemy and slamming them into the ground repeatedly, damaging and mini-stunning any enemies caught in the AoE. Lasts 2.3 seconds.",
+      "effects":{
+        "ABILITY":"Channelled, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical"
+      },
+      "id":"primal-beast-pulverize",
+      "manacost":"100",
+      "name":"Pulverize",
+      "notes":null,
+      "stats":{
+        "AOE RADIUS":"600",
+        "HIT INTERVAL":"0.75",
+        "STUN DURATION":"0.25",
+        "HIT DAMAGE":"150 / 210 / 270",
+        "CAST POINT":"0.25s"
+      }
+    }
+  ]
+}

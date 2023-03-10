@@ -1,1 +1,173 @@
-{"id":"phoenix","talents":[{"level":25,"option1":"+1000 Icarus Dive Cast Range","option2":"+3 Supernova Hit Count"},{"level":20,"option1":"+0.5s Supernova Stun Duration","option2":"+1.5% Max Health Sun Ray Damage"},{"level":15,"option1":"+500 Health","option2":"+20 Fire Spirits Damage Per Second"},{"level":10,"option1":"+6% Spell Amplification","option2":"+25% Icarus Dive Slow"}],"abilities":[{"cooldown":"36 / 34 / 32 / 30","desc":"Phoenix dives forward in an arc with a fixed distance in the targeted direction, dealing damage over time and slowing the movement speed of any units it comes into contact with, and then orbiting back to its original position. If Phoenix casts Supernova, the dive ends.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"phoenix-icarus-dive","manacost":"0","name":"Icarus Dive","notes":"Icarus Dive has a 2.0 second travel duration, and can be cancelled by casting the ability again while in flight.","stats":{"HP COST":"15%","DIVE LENGTH":"1100 / 1200 / 1300 / 1400","BURN DURATION":"4.0","DAMAGE PER SECOND":"15 / 35 / 55 / 75","MOVE SLOW":"16% / 19% / 22% / 25%","CAST POINT":"0.2s"}},{"cooldown":"50 / 40 / 30 / 20","desc":"Summons 4 fire spirits that circle around Phoenix. Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"phoenix-fire-spirits","manacost":"100","name":"Fire Spirits","notes":"Fire Spirits reveal the area they strike for 1 second.","stats":{"HP COST":"20%","SPIRIT DURATION":"20.0","RADIUS":"200","BURN DURATION":"4.0","ATTACK SPEED SLOW":"-80 / -100 / -120 / -140","DAMAGE PER SECOND":"20 / 40 / 60 / 80"}},{"cooldown":"30","desc":"Phoenix expels a beam of light at the cost of its own health. The beam damages enemies and heals allies for a base amount plus a percentage of their health. The percentage increases as the beam continues to fire.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"phoenix-sun-ray","manacost":"100 / 110 / 120 / 130","name":"Sun Ray","notes":"Phoenix can use items and abilities without canceling Sun Ray.","stats":{"HEALTH COST PER SECOND":"6%","BASE DAMAGE PER SECOND":"14 / 20 / 26 / 32","MAX DAMAGE":"1.0% / 2.75% / 4.5% / 6.25%","BASE HEAL PER SECOND":"7 / 10 / 13 / 16","MAX HEAL":"0.5% / 1.0% / 1.5% / 2.0%","CAST POINT":"0.01s"}},{"cooldown":null,"desc":"Toggles slow forward movement during Sun Ray firing.","effects":{"ABILITY":"No Target"},"id":"phoenix-toggle-movement","manacost":null,"name":"Toggle Movement","notes":"Sun Ray allows Phoenix to move over cliffs and trees.","stats":{}},{"cooldown":"120","desc":"The Phoenix willingly ends its current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area. The sun can be destroyed by attacks from enemy Heroes. After [6] seconds the sun explodes, stunning all nearby enemies while restoring Phoenix to full health and mana with refreshed abilities.DISPEL TYPE: Strong Dispel","effects":{"ABILITY":"No Target","AFFECTS":"Allied Heroes","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"phoenix-supernova","manacost":"150 / 200 / 250","name":"Supernova","notes":null,"stats":{"RADIUS":"1200","DAMAGE PER SECOND":"60 / 90 / 120","STUN DURATION":"2.0 / 2.5 / 3.0","ATTACKS TO DESTROY":"7 / 10 / 13","CAST RANGE":"500","CAST POINT":"0.01s"}},{"cooldown":"0","desc":"Each fire spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"phoenix-launch-fire-spirit","manacost":"0","name":"Launch Fire Spirit","notes":"Fire Spirits reveal the area they strike for 1 second.","stats":{"HP COST":"20%","SPIRIT DURATION":"20","RADIUS":"200","BURN DURATION":"4.0","ATTACK SPEED SLOW":"-80 / -100 / -120 / -140","DAMAGE PER SECOND":"15 / 35 / 55 / 75"}},{"cooldown":null,"desc":"Immediately cancels the dive.","effects":{"ABILITY":"No Target"},"id":"phoenix-stop-icarus-dive","manacost":null,"name":"Stop Icarus Dive","notes":null,"stats":{}},{"cooldown":null,"desc":"Immediately stops the Sun Ray.","effects":{"ABILITY":"No Target"},"id":"phoenix-stop-sun-ray","manacost":null,"name":"Stop Sun Ray","notes":null,"stats":{}}]}
+{
+  "id":"phoenix",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+1000 Icarus Dive Cast Range",
+      "option2":"+3 Supernova Hit Count"
+    },
+    {
+      "level":20,
+      "option1":"+0.5s Supernova Stun Duration",
+      "option2":"+1.5% Max Health Sun Ray Damage"
+    },
+    {
+      "level":15,
+      "option1":"+500 Health",
+      "option2":"+20 Fire Spirits Damage Per Second"
+    },
+    {
+      "level":10,
+      "option1":"+6% Spell Amplification",
+      "option2":"+25% Icarus Dive Slow"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"36 / 34 / 32 / 30",
+      "desc":"Phoenix dives forward in an arc with a fixed distance in the targeted direction, dealing damage over time and slowing the movement speed of any units it comes into contact with, and then orbiting back to its original position. If Phoenix casts Supernova, the dive ends.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"phoenix-icarus-dive",
+      "manacost":"0",
+      "name":"Icarus Dive",
+      "notes":"Icarus Dive has a 2.0 second travel duration, and can be cancelled by casting the ability again while in flight.",
+      "stats":{
+        "HP COST":"15%",
+        "DIVE LENGTH":"1100 / 1200 / 1300 / 1400",
+        "BURN DURATION":"4.0",
+        "DAMAGE PER SECOND":"15 / 35 / 55 / 75",
+        "MOVE SLOW":"16% / 19% / 22% / 25%",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"50 / 40 / 30 / 20",
+      "desc":"Summons 4 fire spirits that circle around Phoenix. Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"phoenix-fire-spirits",
+      "manacost":"100",
+      "name":"Fire Spirits",
+      "notes":"Fire Spirits reveal the area they strike for 1 second.",
+      "stats":{
+        "HP COST":"20%",
+        "SPIRIT DURATION":"20.0",
+        "RADIUS":"200",
+        "BURN DURATION":"4.0",
+        "ATTACK SPEED SLOW":"-80 / -100 / -120 / -140",
+        "DAMAGE PER SECOND":"20 / 40 / 60 / 80"
+      }
+    },
+    {
+      "cooldown":"30",
+      "desc":"Phoenix expels a beam of light at the cost of its own health. The beam damages enemies and heals allies for a base amount plus a percentage of their health. The percentage increases as the beam continues to fire.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"phoenix-sun-ray",
+      "manacost":"100 / 110 / 120 / 130",
+      "name":"Sun Ray",
+      "notes":"Phoenix can use items and abilities without canceling Sun Ray.",
+      "stats":{
+        "HEALTH COST PER SECOND":"6%",
+        "BASE DAMAGE PER SECOND":"14 / 20 / 26 / 32",
+        "MAX DAMAGE":"1.0% / 2.75% / 4.5% / 6.25%",
+        "BASE HEAL PER SECOND":"7 / 10 / 13 / 16",
+        "MAX HEAL":"0.5% / 1.0% / 1.5% / 2.0%",
+        "CAST POINT":"0.01s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Toggles slow forward movement during Sun Ray firing.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"phoenix-toggle-movement",
+      "manacost":null,
+      "name":"Toggle Movement",
+      "notes":"Sun Ray allows Phoenix to move over cliffs and trees.",
+      "stats":{}
+    },
+    {
+      "cooldown":"120",
+      "desc":"The Phoenix willingly ends its current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area. The sun can be destroyed by attacks from enemy Heroes. After [6] seconds the sun explodes, stunning all nearby enemies while restoring Phoenix to full health and mana with refreshed abilities.DISPEL TYPE: Strong Dispel",
+      "effects":{
+        "ABILITY":"No Target",
+        "AFFECTS":"Allied Heroes",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"phoenix-supernova",
+      "manacost":"150 / 200 / 250",
+      "name":"Supernova",
+      "notes":null,
+      "stats":{
+        "RADIUS":"1200",
+        "DAMAGE PER SECOND":"60 / 90 / 120",
+        "STUN DURATION":"2.0 / 2.5 / 3.0",
+        "ATTACKS TO DESTROY":"7 / 10 / 13",
+        "CAST RANGE":"500",
+        "CAST POINT":"0.01s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Each fire spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"phoenix-launch-fire-spirit",
+      "manacost":"0",
+      "name":"Launch Fire Spirit",
+      "notes":"Fire Spirits reveal the area they strike for 1 second.",
+      "stats":{
+        "HP COST":"20%",
+        "SPIRIT DURATION":"20",
+        "RADIUS":"200",
+        "BURN DURATION":"4.0",
+        "ATTACK SPEED SLOW":"-80 / -100 / -120 / -140",
+        "DAMAGE PER SECOND":"20 / 40 / 60 / 80"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Immediately cancels the dive.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"phoenix-stop-icarus-dive",
+      "manacost":null,
+      "name":"Stop Icarus Dive",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":null,
+      "desc":"Immediately stops the Sun Ray.",
+      "effects":{
+        "ABILITY":"No Target"
+      },
+      "id":"phoenix-stop-sun-ray",
+      "manacost":null,
+      "name":"Stop Sun Ray",
+      "notes":null,
+      "stats":{}
+    }
+  ]
+}

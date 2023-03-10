@@ -1,1 +1,112 @@
-{"id":"bounty-hunter","talents":[{"level":25,"option1":"+250 Track Gold","option2":"2 Shuriken Toss Charges"},{"level":20,"option1":"+50 Jinada Gold Steal","option2":"Track Grants 600 Ground Vision"},{"level":15,"option1":"Half Track Bonus Speed to Allies","option2":"+2s Silence on Hit With Shadow Walk"},{"level":10,"option1":"+40 Jinada Damage","option2":"+10% Shadow Walk Slow"}],"abilities":[{"cooldown":"5","desc":"Hurls a deadly shuriken at an enemy unit, dealing damage and mini-stunning the target.  The shuriken will bounce to any Tracked units who are within a 1200 radius of each other.  Deals bonus damage to Tracked targets.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No"},"id":"bounty-hunter-shuriken-toss","manacost":"50 / 60 / 70 / 80","name":"Shuriken Toss","notes":"This spell interrupts channeling abilities.","stats":{"DAMAGE":"80 / 120 / 160 / 200","TRACK BOUNCE RANGE":"1200","MINISTUN DURATION":"0.2","CAST RANGE":"375 / 425 / 475 / 525","CAST POINT":"0.3s"}},{"cooldown":"12 / 9 / 6 / 3","desc":"Bounty Hunter plans his next hit, dealing bonus damage and stealing some unreliable gold.","effects":{"ABILITY":"Auto-Cast, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes"},"id":"bounty-hunter-jinada","manacost":null,"name":"Jinada","notes":null,"stats":{"BONUS DAMAGE":"60 / 100 / 140 / 180","GOLD STEAL":"12 / 20 / 28 / 36","CAST POINT":"0s"}},{"cooldown":null,"desc":"Bounty Hunter becomes invisible and gains the ability to move through other units until he attacks or uses an ability.  If he breaks the invisibility with an attack, that attack will slow the target's movement speed.","effects":{"ABILITY":"No Target","AFFECTS":"Allied Heroes","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"bounty-hunter-shadow-walk","manacost":"65","name":"Shadow Walk","notes":"Will not break most channeling of spells upon activation.","stats":{"INVISIBILITY DURATION":"20 / 25 / 30 / 35","FADE TIME":"1 / 0 / 0 / 0","MOVEMENT SLOW":"16% / 24% / 32% / 40%","SLOW DURATION":"4","CAST POINT":"0s"}},{"cooldown":"4","desc":"Tracks an enemy hero, granting True Sight of the target, and information on how much gold it is carrying. Bounty Hunter moves fast when near the tracked unit and deals critical strikes when attacking it. If the target dies, Bounty Hunter and nearby heroes collect a bonus bounty of gold. Casting Track does not take you out of invisibility.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Heroes","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Yes"},"id":"bounty-hunter-track","manacost":"60","name":"Track","notes":"Bonus gold is reliable gold.","stats":{"SELF CRITICAL STRIKE":"140% / 170% / 200%","SELF BONUS GOLD":"130 / 225 / 320","ALLIES BONUS GOLD":"40 / 80 / 120","DURATION":"30","SELF BONUS SPEED":"16% / 20% / 24%","SHURIKEN TOSS DAMAGE MULTIPLIER":"140% / 170% / 200%","CAST POINT":"0.3s"}}]}
+{
+  "id":"bounty-hunter",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+250 Track Gold",
+      "option2":"2 Shuriken Toss Charges"
+    },
+    {
+      "level":20,
+      "option1":"+50 Jinada Gold Steal",
+      "option2":"Track Grants 600 Ground Vision"
+    },
+    {
+      "level":15,
+      "option1":"Half Track Bonus Speed to Allies",
+      "option2":"+2s Silence on Hit With Shadow Walk"
+    },
+    {
+      "level":10,
+      "option1":"+40 Jinada Damage",
+      "option2":"+10/+10% Shadow Walk Attack/Move Slow"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"5",
+      "desc":"Hurls a deadly shuriken at an enemy unit, dealing damage and mini-stunning the target.  The shuriken will bounce to any Tracked units who are within a 1200 radius of each other.  Deals bonus damage to Tracked targets.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No"
+      },
+      "id":"bounty-hunter-shuriken-toss",
+      "manacost":"50 / 60 / 70 / 80",
+      "name":"Shuriken Toss",
+      "notes":"This spell interrupts channeling abilities.",
+      "stats":{
+        "DAMAGE":"80 / 120 / 160 / 200",
+        "TRACK BOUNCE RANGE":"1200",
+        "MINISTUN DURATION":"0.2",
+        "CAST RANGE":"375 / 425 / 475 / 525",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"9 / 7 / 5 / 3",
+      "desc":"Bounty Hunter plans his next hit, dealing bonus damage and stealing some unreliable gold.",
+      "effects":{
+        "ABILITY":"Auto-Cast, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"bounty-hunter-jinada",
+      "manacost":null,
+      "name":"Jinada",
+      "notes":null,
+      "stats":{
+        "BONUS DAMAGE":"60 / 100 / 140 / 180",
+        "GOLD STEAL":"12 / 20 / 28 / 36",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Bounty Hunter becomes invisible and gains the ability to move through other units until he attacks or uses an ability.  If he breaks the invisibility with an attack, that attack will slow the target\\'s movement and attack speed.",
+      "effects":{
+        "ABILITY":"No Target",
+        "AFFECTS":"Allied Heroes",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"bounty-hunter-shadow-walk",
+      "manacost":"65",
+      "name":"Shadow Walk",
+      "notes":"Will not break most channeling of spells upon activation.",
+      "stats":{
+        "INVISIBILITY DURATION":"20 / 25 / 30 / 35",
+        "FADE TIME":"1 / 0 / 0 / 0",
+        "MOVEMENT SLOW":"15% / 25% / 35% / 45%",
+        "ATTACK SLOW":"15 / 25 / 35 / 45",
+        "SLOW DURATION":"4",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"4",
+      "desc":"Tracks an enemy hero, granting True Sight of the target, and information on how much gold it is carrying. Bounty Hunter moves fast when near the tracked unit and deals critical strikes when attacking it. If the target dies, Bounty Hunter and nearby heroes collect a bonus bounty of gold. Casting Track does not take you out of invisibility.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Heroes",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"bounty-hunter-track",
+      "manacost":"60",
+      "name":"Track",
+      "notes":"Bonus gold is reliable gold.",
+      "stats":{
+        "SELF CRITICAL STRIKE":"140% / 170% / 200%",
+        "SELF BONUS GOLD":"130 / 225 / 320",
+        "ALLIES BONUS GOLD":"40 / 80 / 120",
+        "DURATION":"30",
+        "SELF BONUS SPEED":"16% / 20% / 24%",
+        "SHURIKEN TOSS DAMAGE MULTIPLIER":"140% / 170% / 200%",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

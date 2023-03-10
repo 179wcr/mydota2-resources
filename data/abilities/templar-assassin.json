@@ -1,1 +1,141 @@
-{"id":"templar-assassin","talents":[{"level":25,"option1":"+7 Refraction Instances","option2":"1.0s Meld Hit Bash"},{"level":20,"option1":"-3 Meld Armor Reduction","option2":"Meld Dispels"},{"level":15,"option1":"+120 Psi Blades Attack and Spill Range","option2":"Refraction Can Be Cast While Disabled"},{"level":10,"option1":"+110 Psionic Trap Damage","option2":"+25 Refraction Damage"}],"abilities":[{"cooldown":"17","desc":"Templar Assassin becomes highly elusive, avoiding damage and gaining a bonus to her damage.  The damage and avoidance effects are separate, and have a limited number of instances.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"templar-assassin-refraction","manacost":"85 / 90 / 95 / 100","name":"Refraction","notes":"Refraction is visible to enemies.","stats":{"INSTANCES":"3 / 4 / 5 / 6","BONUS DAMAGE":"25 / 45 / 65 / 85","DURATION":"17","CAST POINT":"0s"}},{"cooldown":"11 / 9 / 7 / 5","desc":"Templar Assassin conceals herself, becoming invisible as long as she remains still.  If Meld's invisibility is broken by attacking an enemy, Lanaya will deal bonus damage to the enemy and reduce their armor for [12] seconds.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"templar-assassin-meld","manacost":"35 / 40 / 45 / 50","name":"Meld","notes":"Meld's armor reduction does not work against towers.","stats":{"BONUS DAMAGE":"80 / 120 / 160 / 200","ARMOR REDUCTION":"-5 / -6 / -7 / -8","CAST POINT":"0s"}},{"cooldown":null,"desc":"Templar Assassin's psi blades slice through the attacked unit, splitting and damaging enemy units directly behind it, while gaining bonus attack range. For each unit it damages, the spill damage is reduced by a percentage.","effects":{"ABILITY":"Passive","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"Yes"},"id":"templar-assassin-psi-blades","manacost":null,"name":"Psi Blades","notes":"Attack effects like Bash will only be applied to the main target.","stats":{"BONUS ATTACK RANGE":"80 / 130 / 180 / 230","PSI BLADE RANGE":"550 / 600 / 650 / 700","SPLIT AMOUNT":"100%","REDUCTION PER TARGET":"5%"}},{"cooldown":"0.5","desc":"Springs the nearest trap, slowing nearby enemies.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"templar-assassin-trap","manacost":"0","name":"Trap","notes":null,"stats":{}},{"cooldown":"10","desc":"Allows Templar Assassin to teleport to any Psionic Trap after channeling for [1.5] seconds, detonating it upon arrival. Channeling Psionic Projection does not break Meld.","effects":{"ABILITY":"Channelled, Point Target"},"id":"templar-assassin-psionic-projection","manacost":"50","name":"Psionic Projection","notes":null,"stats":{"TRAP RADIUS":"400","SLOW DURATION":"5.0","CAST POINT":"0.2s"}},{"cooldown":"11 / 8 / 5","desc":"Templar Assassin places mystical traps that invisibly monitor enemy movement. When sprung at her command, they exert a slowing influence of 30% in the area. Traps charge up to slow 60% after 4.0 seconds. Deals bonus damage when fully charged.","effects":{"ABILITY":"Point Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"templar-assassin-psionic-trap","manacost":"15","name":"Psionic Trap","notes":"Traps have 400/400 vision range and don't prevent neutral camps from spawning.","stats":{"MAX TRAPS":"5 / 8 / 11","MIN MOVEMENT SLOW":"30%","MAX MOVEMENT SLOW":"60%","SLOW DURATION":"5","BONUS DAMAGE":"250 / 300 / 350","MIN SILENCE DURATION":"1.5","MAX SILENCE DURATION":"3.5","BONUS MAX TRAPS":"4","BONUS TRAP VISION":"125","CAST POINT":"0.3s"}}]}
+{
+  "id":"templar-assassin",
+  "talents":[
+    {
+      "level":25,
+      "option1":"+7 Refraction Instances",
+      "option2":"1.0s Meld Hit Bash"
+    },
+    {
+      "level":20,
+      "option1":"-3 Meld Armor Reduction",
+      "option2":"Meld Dispels"
+    },
+    {
+      "level":15,
+      "option1":"+120 Psi Blades Attack and Spill Range",
+      "option2":"Refraction Can Be Cast While Disabled"
+    },
+    {
+      "level":10,
+      "option1":"+110 Psionic Trap Damage",
+      "option2":"+25 Refraction Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"17",
+      "desc":"Templar Assassin becomes highly elusive, avoiding damage and gaining a bonus to her damage.  The damage and avoidance effects are separate, and have a limited number of instances.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"templar-assassin-refraction",
+      "manacost":"85 / 90 / 95 / 100",
+      "name":"Refraction",
+      "notes":"Refraction is visible to enemies.",
+      "stats":{
+        "INSTANCES":"3 / 4 / 5 / 6",
+        "BONUS DAMAGE":"25 / 45 / 65 / 85",
+        "DURATION":"17",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"11 / 9 / 7 / 5",
+      "desc":"Templar Assassin conceals herself, becoming invisible as long as she remains still.  If Meld\\'s invisibility is broken by attacking an enemy, Lanaya will deal bonus damage to the enemy and reduce their armor for [12] seconds.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"templar-assassin-meld",
+      "manacost":"35 / 40 / 45 / 50",
+      "name":"Meld",
+      "notes":"Meld's armor reduction does not work against towers.",
+      "stats":{
+        "BONUS DAMAGE":"80 / 120 / 160 / 200",
+        "ARMOR REDUCTION":"-5 / -6 / -7 / -8",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Templar Assassin\\'s psi blades slice through the attacked unit, splitting and damaging enemy units directly behind it, while gaining bonus attack range. For each unit it damages, the spill damage is reduced by a percentage.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"templar-assassin-psi-blades",
+      "manacost":null,
+      "name":"Psi Blades",
+      "notes":"Attack effects like Bash will only be applied to the main target.",
+      "stats":{
+        "BONUS ATTACK RANGE":"80 / 130 / 180 / 230",
+        "PSI BLADE RANGE":"550 / 600 / 650 / 700",
+        "SPLIT AMOUNT":"100%",
+        "REDUCTION PER TARGET":"5%"
+      }
+    },
+    {
+      "cooldown":"0.5",
+      "desc":"Springs the nearest trap, slowing nearby enemies.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"templar-assassin-trap",
+      "manacost":"0",
+      "name":"Trap",
+      "notes":null,
+      "stats":{}
+    },
+    {
+      "cooldown":"10",
+      "desc":"CHANNELED - Allows Templar Assassin to teleport to any Psionic Trap after channeling for [1.5] seconds, detonating it upon arrival. Channeling Psionic Projection does not break Meld.",
+      "effects":{
+        "ABILITY":"Channelled, Point Target"
+      },
+      "id":"templar-assassin-psionic-projection",
+      "manacost":"50",
+      "name":"Psionic Projection",
+      "notes":null,
+      "stats":{
+        "TRAP RADIUS":"400",
+        "SLOW DURATION":"5.0",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"11 / 8 / 5",
+      "desc":"Templar Assassin places mystical traps that invisibly monitor enemy movement. When sprung at her command, they exert a slowing influence of 30% in the area. Traps charge up to slow 60% after 3.5 seconds. Deals bonus damage when fully charged.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"templar-assassin-psionic-trap",
+      "manacost":"15",
+      "name":"Psionic Trap",
+      "notes":"Traps have 400/400 vision range and don't prevent neutral camps from spawning.",
+      "stats":{
+        "MAX TRAPS":"5 / 8 / 11",
+        "MIN MOVEMENT SLOW":"30%",
+        "MAX MOVEMENT SLOW":"60%",
+        "SLOW DURATION":"5",
+        "BONUS DAMAGE":"250 / 300 / 350",
+        "MIN SILENCE DURATION":"1.5",
+        "MAX SILENCE DURATION":"3.5",
+        "BONUS MAX TRAPS":"4",
+        "BONUS TRAP VISION":"125",
+        "CAST POINT":"0.3s"
+      }
+    }
+  ]
+}

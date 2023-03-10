@@ -1,1 +1,113 @@
-{"id":"sand-king","talents":[{"level":25,"option1":"35% Sand Storm Slow and Blind","option2":"+5 Epicenter Pulses"},{"level":20,"option1":"+100 Epicenter Radius","option2":"-2.0s Burrowstrike Cooldown"},{"level":15,"option1":"+100.0 Caustic Finale Damage","option2":"+125 Sand Storm Radius"},{"level":10,"option1":"+0.3s Burrowstrike Stun","option2":"+20 Sand Storm Damage Per Second"}],"abilities":[{"cooldown":"15 / 14 / 13 / 12","desc":"Sand King burrows into the ground and tunnels forward, damaging and stunning enemy units above him as he resurfaces.","effects":{"ABILITY":"Point Target, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Strong Dispels Only"},"id":"sand-king-burrowstrike","manacost":"110 / 120 / 130 / 140","name":"Burrowstrike","notes":null,"stats":{"DAMAGE":"100 / 160 / 220 / 280","STUN DURATION":"1 / 1 / 2 / 2","CAST RANGE":"1300","CAST POINT":"0s"}},{"cooldown":"40 / 34 / 28 / 22","desc":"Sand King creates a fearsome sandstorm that damages enemy units while hiding him from vision.  The effect ends when Sand King leaves the area.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"sand-king-sand-storm","manacost":"85","name":"Sand Storm","notes":"Sand King briefly becomes visible upon attacking or using spells while in Sand Storm. Sand King will become invisible again in 0.7 seconds.","stats":{"RADIUS":"425 / 500 / 575 / 650","SAND STORM DAMAGE":"25 / 45 / 65 / 85","CAST POINT":"0s"}},{"cooldown":null,"desc":"Sand King's attacks inject a venom that causes enemy units to move more slowly and to violently explode when it dies.","effects":{"ABILITY":"Passive","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"sand-king-caustic-finale","manacost":null,"name":"Caustic Finale","notes":null,"stats":{"EXPLODE RADIUS":"500","BASE DAMAGE":"70 / 90 / 110 / 130","MAX HEALTH DAMAGE":"10% / 14% / 18% / 22%","MOVE SLOW":"-10% / -15% / -20% / -25%"}},{"cooldown":"120 / 110 / 100","desc":"After a cast point of [2] seconds, Sand King sends a disturbance into the earth, causing it to shudder violently. All enemies caught within range will take damage and become slowed. Each subsequent pulse increases the radius of damage dealt.","effects":{"ABILITY":"No Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"sand-king-epicenter","manacost":"150 / 225 / 300","name":"Epicenter","notes":"The pulses have gradually inreasing radius, ranging from 500 to 725.","stats":{"PULSES":"6 / 8 / 10","DAMAGE PER PULSE":"110 / 120 / 130","MOVEMENT SLOW":"-30%","ATTACK SLOW":"-30","RADIUS":"425","DISTANCE FOR PULSE":"700.0","BONUS PULSE DAMAGE":"10","CAST POINT":"2s"}}]}
+{
+  "id":"sand-king",
+  "talents":[
+    {
+      "level":25,
+      "option1":"35% Sand Storm Slow and Blind",
+      "option2":"+5 Epicenter Pulses"
+    },
+    {
+      "level":20,
+      "option1":"+100 Epicenter Base Radius",
+      "option2":"-2.0s Burrowstrike Cooldown"
+    },
+    {
+      "level":15,
+      "option1":"+120.0 Caustic Finale Damage",
+      "option2":"+125 Sand Storm Radius"
+    },
+    {
+      "level":10,
+      "option1":"+0.5s Burrowstrike Stun",
+      "option2":"+20 Sand Storm Damage Per Second"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"15 / 14 / 13 / 12",
+      "desc":"Sand King burrows into the ground and tunnels forward, damaging and stunning enemy units above him as he resurfaces.",
+      "effects":{
+        "ABILITY":"Point Target, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Strong Dispels Only"
+      },
+      "id":"sand-king-burrowstrike",
+      "manacost":"110 / 120 / 130 / 140",
+      "name":"Burrowstrike",
+      "notes":null,
+      "stats":{
+        "DAMAGE":"100 / 160 / 220 / 280",
+        "STUN DURATION":"1 / 1 / 2 / 2",
+        "CAST RANGE":"1300",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":"40 / 34 / 28 / 22",
+      "desc":"Sand King creates a fearsome sandstorm that damages enemy units while hiding him from vision.  The effect ends when Sand King leaves the area.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"sand-king-sand-storm",
+      "manacost":"85",
+      "name":"Sand Storm",
+      "notes":"Sand King briefly becomes visible upon attacking or using spells while in Sand Storm. Sand King will become invisible again in 0.7 seconds.",
+      "stats":{
+        "RADIUS":"425 / 500 / 575 / 650",
+        "SAND STORM DAMAGE":"25 / 45 / 65 / 85",
+        "CAST POINT":"0s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Sand King\\'s attacks inject a venom that causes enemy units to move more slowly and to violently explode when it dies.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"sand-king-caustic-finale",
+      "manacost":null,
+      "name":"Caustic Finale",
+      "notes":null,
+      "stats":{
+        "EXPLODE RADIUS":"500",
+        "BASE DAMAGE":"70 / 90 / 110 / 130",
+        "MAX HEALTH DAMAGE":"10% / 14% / 18% / 22%",
+        "MOVE SLOW":"-14% / -18% / -22% / -26%"
+      }
+    },
+    {
+      "cooldown":"120 / 110 / 100",
+      "desc":"After a cast point of [2] seconds, Sand King sends a disturbance into the earth, causing it to shudder violently. All enemies caught within range will take damage and become slowed. Each subsequent pulse increases the radius of damage dealt.",
+      "effects":{
+        "ABILITY":"No Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"sand-king-epicenter",
+      "manacost":"150 / 225 / 300",
+      "name":"Epicenter",
+      "notes":"The pulses are centered on Sand King, not where he first casted the spell.",
+      "stats":{
+        "PULSES":"6 / 8 / 10",
+        "DAMAGE PER PULSE":"110 / 120 / 130",
+        "BASE RADIUS":"500",
+        "INCREMENTAL RADIUS":"25",
+        "MOVEMENT SLOW":"-30% / -40% / -50%",
+        "ATTACK SLOW":"-30 / -45 / -60",
+        "RADIUS":"425",
+        "DISTANCE FOR PULSE":"700.0",
+        "BONUS PULSE DAMAGE":"10",
+        "CAST POINT":"2s"
+      }
+    }
+  ]
+}

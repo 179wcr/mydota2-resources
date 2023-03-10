@@ -1,1 +1,108 @@
-{"id":"silencer","talents":[{"level":25,"option1":"Last Word Mutes","option2":"+2 Glaives Of Wisdom Bounces"},{"level":20,"option1":"Arcane Curse Undispellable","option2":"+10% Glaives of Wisdom Damage"},{"level":15,"option1":"+0.8x Last Word Int Multiplier","option2":"-25.0s Global Silence Cooldown"},{"level":10,"option1":"+20 Attack Speed","option2":"+12 Arcane Curse Damage"}],"abilities":[{"cooldown":"20 / 18 / 16 / 14","desc":"Curses the target area, causing enemy heroes to take damage and slowing their movement speed. Silenced enemies take 1.5x slow and damage. Anytime affected enemies cast a spell, the duration is increased. The cooldown is paused as long as the target is silenced.","effects":{"ABILITY":"Point Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"silencer-arcane-curse","manacost":"130 / 135 / 140 / 145","name":"Arcane Curse","notes":"Affects creeps.","stats":{"DAMAGE":"16 / 24 / 32 / 40","RADIUS":"425","BASE DURATION":"6","PENALTY DURATION":"2","MOVEMENT SLOW":"-9% / -12% / -15% / -18%","SILENCE PENALTY MULTIPLIER":"1.5","CAST POINT":"0.3s"}},{"cooldown":"0","desc":"Silencer enchants his glaives with his wisdom, dealing additional damage based on his Intelligence. Silencer temporarily steals his target's Intelligence with each hit.","effects":{"ABILITY":"Auto-Cast, Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Pure","PIERCES SPELL IMMUNITY":"No"},"id":"silencer-glaives-of-wisdom","manacost":"15","name":"Glaives of Wisdom","notes":null,"stats":{"INT TO DAMAGE":"15% / 35% / 55% / 75%","INT STEAL":"1 / 1 / 2 / 3","INT STEAL DURATION":"15 / 20 / 25 / 30"}},{"cooldown":"22 / 18 / 14 / 10","desc":"Enchants a target, providing vision of them and causing them to be damaged and silenced if they cast a spell or if the enchantment timer expires. Deals extra damage based on the difference in intelligence between Silencer and the target.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"silencer-last-word","manacost":"100 / 105 / 110 / 115","name":"Last Word","notes":"Channeling abilities will trigger this effect once the caster finishes its channel.","stats":{"BASE DAMAGE":"120 / 160 / 200 / 240","INT MULTIPLIER":"1.0 / 1.5 / 2.0 / 2.5","ENEMY CAST TIMER":"4.0","SILENCE DURATION":"3 / 4 / 5 / 6","CAST RADIUS":"500","CAST POINT":"0.3s"}},{"cooldown":"130 / 115 / 100","desc":"Silencer stops all sound, preventing enemy heroes and units on the map from casting spells.","effects":{"ABILITY":"No Target","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Yes"},"id":"silencer-global-silence","manacost":"300 / 450 / 600","name":"Global Silence","notes":"This skill works on invisible and Spell Immune units, but gaining spell immunity will remove its effect.","stats":{}}]}
+{
+  "id":"silencer",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Last Word Mutes",
+      "option2":"+2 Glaives of Wisdom Bounces"
+    },
+    {
+      "level":20,
+      "option1":"Arcane Curse Undispellable",
+      "option2":"+10% Glaives of Wisdom Damage"
+    },
+    {
+      "level":15,
+      "option1":"+0.8x Last Word Int Multiplier",
+      "option2":"-20.0s Global Silence Cooldown"
+    },
+    {
+      "level":10,
+      "option1":"+20 Attack Speed",
+      "option2":"+10 Arcane Curse Damage"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"22 / 20 / 18 / 16",
+      "desc":"Curses the target area, dealing damage and causing enemy heroes to take damage over time and slowing their movement speed. Silenced enemies take 1.5x slow and damage. Anytime affected enemies cast a spell, the duration is increased. The duration is paused as long as the target is silenced.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"silencer-arcane-curse",
+      "manacost":"130 / 135 / 140 / 145",
+      "name":"Arcane Curse",
+      "notes":"Affects creeps.",
+      "stats":{
+        "DAMAGE":"16 / 24 / 32 / 40",
+        "INITIAL DAMAGE":"40 / 60 / 80 / 100",
+        "RADIUS":"340 / 360 / 380 / 400",
+        "BASE DURATION":"6",
+        "PENALTY DURATION":"2",
+        "MOVEMENT SLOW":"-10% / -15% / -20% / -25%",
+        "SILENCE PENALTY MULTIPLIER":"1.5",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"0",
+      "desc":"Silencer enchants his glaives with his wisdom, dealing additional damage based on his Intelligence. Silencer temporarily steals his target\\'s Intelligence with each hit. If Silencer kills an enemy hero, he permanently steals 2 Intelligence.",
+      "effects":{
+        "ABILITY":"Auto-Cast, Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Pure",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"silencer-glaives-of-wisdom",
+      "manacost":"15",
+      "name":"Glaives of Wisdom",
+      "notes":"The enemy does not need to have the Glaives of Wisdom debuff for Silencer to permanently steal Intelligence.",
+      "stats":{
+        "INT TO DAMAGE":"15% / 35% / 55% / 75%",
+        "INT STEAL":"1 / 1 / 2 / 3",
+        "INT STEAL DURATION":"20 / 25 / 30 / 35"
+      }
+    },
+    {
+      "cooldown":"22 / 18 / 14 / 10",
+      "desc":"Enchants a target, providing vision of them and causing them to be damaged and silenced if they cast a spell or if the enchantment timer expires. Deals extra damage based on the difference in intelligence between Silencer and the target.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"silencer-last-word",
+      "manacost":"100 / 105 / 110 / 115",
+      "name":"Last Word",
+      "notes":"Channeling abilities will trigger this effect once the caster finishes its channel.",
+      "stats":{
+        "BASE DAMAGE":"120 / 160 / 200 / 240",
+        "INT MULTIPLIER":"1.0 / 1.5 / 2.0 / 2.5",
+        "ENEMY CAST TIMER":"4.0",
+        "SILENCE DURATION":"3 / 4 / 5 / 6",
+        "CAST RADIUS":"500",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"130 / 115 / 100",
+      "desc":"Silencer stops all sound, preventing enemy heroes and units on the map from casting spells.",
+      "effects":{
+        "ABILITY":"No Target",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"silencer-global-silence",
+      "manacost":"300 / 450 / 600",
+      "name":"Global Silence",
+      "notes":"This skill works on invisible and Spell Immune units, but gaining spell immunity will remove its effect.",
+      "stats":{}
+    }
+  ]
+}

@@ -1,1 +1,126 @@
-{"id":"riki","talents":[{"level":25,"option1":"Tricks of the Trade Applies a Basic Dispel","option2":"-4 Tricks of the Trade Cooldown"},{"level":20,"option1":"-4s Blink Strike Replenish Time","option2":"+0.5 Backstab Multiplier"},{"level":15,"option1":"-4s Smoke Screen Cooldown","option2":"8% Cloak and Dagger Movement Speed"},{"level":10,"option1":"+0.4s Blink Strike Slow","option2":"+60 Smoke Screen Radius"}],"abilities":[{"cooldown":"20 / 17 / 14 / 11","desc":"Throws down a smoke bomb, silencing enemies, and causing them to miss attacks.","effects":{"ABILITY":"Point Target","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Cannot be dispelled"},"id":"riki-smoke-screen","manacost":"65 / 70 / 75 / 80","name":"Smoke Screen","notes":"Doesn't prevent the use of active items.","stats":{"RADIUS":"300 / 325 / 350 / 375","DURATION":"6","MISS RATE":"30% / 45% / 60% / 75%","CAST POINT":"0.2s"}},{"cooldown":"0.1","desc":"Teleports behind the target unit, momentarily slowing them and striking for bonus damage if it is an enemy.","effects":{"ABILITY":"Unit Target","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"Yes"},"id":"riki-blink-strike","manacost":"50 / 55 / 60 / 65","name":"Blink Strike","notes":"You can Blink Strike to allies, but no damage is dealt.","stats":{"BONUS DAMAGE":"40 / 55 / 70 / 85","SLOW DURATION":"0","CAST POINT":"0.3s"}},{"cooldown":"18 / 16 / 14 / 12","desc":"Riki phases out of the world while striking random enemy units from behind in an area around him.","effects":{"ABILITY":"Channelled, Point Target","AFFECTS":"Allied Heroes","PIERCES SPELL IMMUNITY":"Yes"},"id":"riki-tricks-of-the-trade","manacost":"55","name":"Tricks of the Trade","notes":"Moving while phased out will cancel the ability.","stats":{"RADIUS":"450","ATTACK COUNT":"5","ATTACK DAMAGE":"40%","AGILITY INCREASE":"55% / 70% / 85% / 100%","CAST RANGE":"700","CAST POINT":"0.3s"}},{"cooldown":"12","desc":"Fires a dart at the target enemy, putting them to sleep.  The target will wake up at the end of the duration or if they take too much damage. Upon waking up, the target takes damage and is slowed.","effects":{"ABILITY":"Unit Target","AFFECTS":"Enemy Units","DAMAGE TYPE":"Magical","PIERCES SPELL IMMUNITY":"No","DISPELLABLE":"Yes"},"id":"riki-sleeping-dart","manacost":"75","name":"Sleeping Dart","notes":null,"stats":{"SLEEP DURATION":"3","WAKE DAMAGE":"150","WAKE MOVEMENT SLOW":"30%","WAKE SLOW DURATION":"4","WAKEUP DAMAGE THRESHOLD":"200","CAST POINT":"0.2s"}},{"cooldown":null,"desc":"Riki fades into the shadows, becoming invisible. Every time Riki strikes his enemy from behind, he deals bonus damage based on his Agility. Bonus damage is doubled against non-hero units. When Riki attacks, he becomes visible.","effects":{"ABILITY":"Passive","DAMAGE TYPE":"Physical","PIERCES SPELL IMMUNITY":"Yes","DISPELLABLE":"Cannot be dispelled"},"id":"riki-cloak-and-dagger","manacost":null,"name":"Cloak and Dagger","notes":"Bonus damage from Backstab can't be evaded.","stats":{"AGI DAMAGE MULT":"1 / 1 / 2","FADE DELAY":"4 / 3 / 2"}}]}
+{
+  "id":"riki",
+  "talents":[
+    {
+      "level":25,
+      "option1":"Tricks of the Trade Applies a Basic Dispel",
+      "option2":"-4 Tricks of the Trade Cooldown"
+    },
+    {
+      "level":20,
+      "option1":"-4s Blink Strike Replenish Time",
+      "option2":"+0.5 Backstab Multiplier"
+    },
+    {
+      "level":15,
+      "option1":"-4s Smoke Screen Cooldown",
+      "option2":"8% Cloak and Dagger Movement Speed"
+    },
+    {
+      "level":10,
+      "option1":"+0.4s Blink Strike Slow",
+      "option2":"+60 Smoke Screen Radius"
+    }
+  ],
+  "abilities":[
+    {
+      "cooldown":"20 / 17 / 14 / 11",
+      "desc":"Throws down a smoke bomb, silencing enemies, and causing them to miss attacks.",
+      "effects":{
+        "ABILITY":"Point Target",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"riki-smoke-screen",
+      "manacost":"65 / 70 / 75 / 80",
+      "name":"Smoke Screen",
+      "notes":"Doesn't prevent the use of active items.",
+      "stats":{
+        "RADIUS":"375",
+        "DURATION":"6",
+        "MISS RATE":"30% / 45% / 60% / 75%",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":"0.1",
+      "desc":"Teleports behind the target unit, momentarily slowing them and striking for bonus damage if it is an enemy.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"riki-blink-strike",
+      "manacost":"50 / 55 / 60 / 65",
+      "name":"Blink Strike",
+      "notes":"You can Blink Strike to allies, but no damage is dealt.",
+      "stats":{
+        "BONUS DAMAGE":"40 / 55 / 70 / 85",
+        "SLOW DURATION":"0",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"18 / 16 / 14 / 12",
+      "desc":"CHANNELED - Riki phases out of the world while striking random enemy units from behind in an area around him.",
+      "effects":{
+        "ABILITY":"Channelled, Point Target",
+        "AFFECTS":"Allied Heroes",
+        "PIERCES SPELL IMMUNITY":"Yes"
+      },
+      "id":"riki-tricks-of-the-trade",
+      "manacost":"55",
+      "name":"Tricks of the Trade",
+      "notes":"Moving while phased out will cancel the ability.",
+      "stats":{
+        "RADIUS":"450",
+        "ATTACK COUNT":"5",
+        "ATTACK DAMAGE":"40%",
+        "AGILITY INCREASE":"55% / 70% / 85% / 100%",
+        "CAST RANGE":"700",
+        "CAST POINT":"0.3s"
+      }
+    },
+    {
+      "cooldown":"15",
+      "desc":"Fires a dart at the target enemy, putting them to sleep.  The target will wake up at the end of the duration or if they take too much damage. Upon waking up, the target takes damage and is slowed.",
+      "effects":{
+        "ABILITY":"Unit Target",
+        "AFFECTS":"Enemy Units",
+        "DAMAGE TYPE":"Magical",
+        "PIERCES SPELL IMMUNITY":"No",
+        "DISPELLABLE":"Yes"
+      },
+      "id":"riki-sleeping-dart",
+      "manacost":"75",
+      "name":"Sleeping Dart",
+      "notes":null,
+      "stats":{
+        "SLEEP DURATION":"3",
+        "WAKE DAMAGE":"150",
+        "WAKE MOVEMENT SLOW":"30%",
+        "WAKE SLOW DURATION":"4",
+        "WAKEUP DAMAGE THRESHOLD":"200",
+        "CAST POINT":"0.2s"
+      }
+    },
+    {
+      "cooldown":null,
+      "desc":"Riki fades into the shadows, becoming invisible. Every time Riki strikes his enemy from behind, he deals bonus damage based on his Agility. Bonus damage is doubled against non-hero units. When Riki attacks, he becomes visible.",
+      "effects":{
+        "ABILITY":"Passive",
+        "DAMAGE TYPE":"Physical",
+        "PIERCES SPELL IMMUNITY":"Yes",
+        "DISPELLABLE":"Cannot be dispelled"
+      },
+      "id":"riki-cloak-and-dagger",
+      "manacost":null,
+      "name":"Cloak and Dagger",
+      "notes":"Illusions of Riki will play Backstab animations, but not deal any bonus damage.",
+      "stats":{
+        "AGI DAMAGE MULT":"1 / 1 / 2",
+        "FADE DELAY":"4 / 3 / 2"
+      }
+    }
+  ]
+}
